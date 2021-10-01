@@ -1,21 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <sitemap>
-    <loc>https://fjvela.github.io/en/sitemap.xml</loc>
-    
-      <lastmod>2021-10-01T11:23:48+02:00</lastmod>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://fjvela.github.io/fr/sitemap.xml</loc>
-    
-  </sitemap>
-  
-  <sitemap>
-    <loc>https://fjvela.github.io/fa/sitemap.xml</loc>
-    
-  </sitemap>
-  
-</sitemapindex>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://fjvela.github.io/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-10/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-11/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-12/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-13/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-14/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-15/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-16/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-17/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-2/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-3/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-4/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-5/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-6/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-7/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-8/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy-9/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post-copy/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2021-10-01-first-post/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/</loc>
+    <lastmod>2021-10-01T11:23:48+02:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/categories/</loc>
+  </url><url>
+    <loc>https://fjvela.github.io/series/</loc>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/</loc>
+  </url>
+</urlset>
