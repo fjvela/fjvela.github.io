@@ -8,26 +8,7 @@
       <url>https://fjvela.github.io/papermod-cover.png</url>
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Installation | Update</title>
-      <link>https://fjvela.github.io/posts/papermod/papermod-installation/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/papermod/papermod-installation/</guid>
-      <description>Read Install and Update instructions here</description>
-    </item>
-    
-    <item>
-      <title>Features</title>
-      <link>https://fjvela.github.io/posts/papermod/papermod-features/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/papermod/papermod-features/</guid>
-      <description>Learn About All Features in PaperMod</description>
-    </item>
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://fjvela.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
