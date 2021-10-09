@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Javier Vela Site</title>
+    <title>Posts on @jvela</title>
     <link>https://fjvela.github.io/posts/</link>
-    <description>Recent content in Posts on Javier Vela Site</description>
+    <description>Recent content in Posts on @jvela</description>
     <image>
       <url>https://fjvela.github.io/papermod-cover.png</url>
       <link>https://fjvela.github.io/papermod-cover.png</link>
@@ -11,156 +11,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 01 Oct 2021 11:23:48 +0200</lastBuildDate><atom:link href="https://fjvela.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-10/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
+      <title>Markdown Syntax Guide For L2</title>
+      <link>https://fjvela.github.io/posts/markdown-syntax.fr/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-10/</guid>
-      <description></description>
+      <guid>https://fjvela.github.io/posts/markdown-syntax.fr/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     
     <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-11/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
+      <title>Markdown Syntax Guide For RTL</title>
+      <link>https://fjvela.github.io/posts/markdown-syntax.fa/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-11/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-12/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-12/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-13/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-13/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-14/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-14/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-15/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-15/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-16/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-16/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-17/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-17/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-2/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-3/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-4/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-4/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-5/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-6/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-7/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-8/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy-9/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy-9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://fjvela.github.io/posts/2021-10-01-first-post-copy/</link>
-      <pubDate>Fri, 01 Oct 2021 11:23:48 +0200</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021-10-01-first-post-copy/</guid>
-      <description></description>
+      <guid>https://fjvela.github.io/posts/markdown-syntax.fa/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
     </item>
     
     <item>
@@ -170,6 +35,51 @@
       
       <guid>https://fjvela.github.io/posts/2021-10-01-first-post/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://fjvela.github.io/posts/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/markdown-syntax/</guid>
+      <description>Sample article showcasing basic Markdown syntax and formatting for HTML elements.</description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://fjvela.github.io/posts/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/rich-content/</guid>
+      <description>A brief description of Hugo Shortcodes</description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://fjvela.github.io/posts/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/placeholder-text/</guid>
+      <description>Lorem Ipsum Dolor Si Amet</description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://fjvela.github.io/posts/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/math-typesetting/</guid>
+      <description>A brief guide to setup KaTeX</description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>https://fjvela.github.io/posts/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/emoji-support/</guid>
+      <description>Guide to emoji usage in Hugo</description>
     </item>
     
   </channel>
