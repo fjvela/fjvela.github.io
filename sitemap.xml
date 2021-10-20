@@ -1,37 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://fjvela.github.io/tags/.net-maui/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/dotnet/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/kubernetes/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/others/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/posts/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/posts/2021/weekly-42/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/archives/</loc>
-  </url><url>
-    <loc>https://fjvela.github.io/categories/</loc>
-  </url><url>
-    <loc>https://fjvela.github.io/search/</loc>
-  </url><url>
-    <loc>https://fjvela.github.io/series/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>https://fjvela.github.io/en/sitemap.xml</loc>
+    
+      <lastmod>2021-10-17T00:00:00+00:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>https://fjvela.github.io/es/sitemap.xml</loc>
+    
+  </sitemap>
+  
+</sitemapindex>
