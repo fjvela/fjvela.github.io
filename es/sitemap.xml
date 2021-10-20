@@ -14,9 +14,29 @@
                 href="https://fjvela.github.io/es/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/es/es/archives/</loc>
+    <loc>https://fjvela.github.io/es/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://fjvela.github.io/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://fjvela.github.io/es/archives/"
+                />
   </url><url>
-    <loc>https://fjvela.github.io/es/es/search/</loc>
+    <loc>https://fjvela.github.io/es/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://fjvela.github.io/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://fjvela.github.io/es/search/"
+                />
   </url><url>
     <loc>https://fjvela.github.io/es/categories/</loc>
     <xhtml:link
@@ -29,8 +49,6 @@
                 hreflang="es"
                 href="https://fjvela.github.io/es/categories/"
                 />
-  </url><url>
-    <loc>https://fjvela.github.io/es/es/</loc>
   </url><url>
     <loc>https://fjvela.github.io/es/series/</loc>
     <xhtml:link
