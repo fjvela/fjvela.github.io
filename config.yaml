@@ -18,6 +18,7 @@ minify:
 languages:
   en:
     languageName: "English"
+    languageAltTitle: English
     weight: 1
     menu:
       main:
@@ -31,6 +32,28 @@ languages:
           url: tags/
           weight: 10
         - name: Categories
+          url: categories/
+          weight: 10
+  es:
+    languageName: "Español"
+    languageAltTitle: Español
+    weight: 2
+    homeInfoParams:
+      Title: "Hola a todos, ¡Soy Javi! 👋"
+      Content: >
+        Soy arquitecto de soluciones y un apasionado de las tecnologías cloud y tecnologías microsoft.  Este es mi sitio web para hablar sobre Devops, Azure, AWS, CI/CD, K8S, contenedores y  arquitectura.
+    menu:
+      main:
+        - name: Archivo
+          url: archives
+          weight: 5
+        - name: Buscar
+          url: search/
+          weight: 10
+        - name: Etiquetas
+          url: tags/
+          weight: 10
+        - name: Categorias
           url: categories/
           weight: 10
 
