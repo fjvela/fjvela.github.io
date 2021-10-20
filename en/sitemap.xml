@@ -47,16 +47,6 @@
                 />
   </url><url>
     <loc>https://fjvela.github.io/archives/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/archives/"
-                />
   </url><url>
     <loc>https://fjvela.github.io/categories/</loc>
     <xhtml:link
