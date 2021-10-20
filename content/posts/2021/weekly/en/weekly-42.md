@@ -6,7 +6,7 @@ summary: >
     New LINQ methods in .NET 6, announcing .NET MAUI Preview 9, KubeCon + CloudNativeCon North America 2021, Learn how to easily setup your Kubernetes limits and requests. dapr release 1.4.3, helm release 3.7.1
 date: "2021-10-17"
 tags: ["dotnet", "kubernetes", ".NET MAUI", "others"]
-ShowToc: false
+ShowToc: true
 ---
 ## dotnet
 - <b>Tune in for .NET Conf 2021 and the launch of.NET 6!</b> https://www.dotnetconf.net
@@ -57,7 +57,7 @@ Read more: https://devblogs.microsoft.com/aspnet/asp-net-core-updates-in-net-6-r
 <br>
 
 ## .NET MAUI
-- <b>Announcing .NET MAUI Preview 9</b> is aviable with [.NET RC2](https://devblogs.microsoft.com/dotnet/announcing-net-6-release-candidate-2/) and in the preview channel of Visual Studio 2022 Preview 5:
+- <b>Announcing .NET MAUI Preview 9</b> is available with [.NET RC2](https://devblogs.microsoft.com/dotnet/announcing-net-6-release-candidate-2/) and in the preview channel of Visual Studio 2022 Preview 5:
     - [Updated Controls](https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-9/#updated-controls)
     - [Borders, Corners, and Shadows – Oh my!](https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-9/#borders-corners-and-shadows-oh-my)
     - [Quick Android Startup](https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-9/#quick-android-startup)
@@ -67,7 +67,7 @@ Read more: https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-9/
 <br>
 
 ## Kubernetes 
-- <b> KubeCon + CloudNativeCon North America 2021</b>: During last week we could enjoy KubeCon + CloudNativeCon North America 2021. All events was record and will be available next month  in the CNCF YouTube channel. You can check all sessions here: https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/
+- <b> KubeCon + CloudNativeCon North America 2021</b>: During last week we could enjoy KubeCon + CloudNativeCon North America 2021. All events were record and will be available next month  in the CNCF YouTube channel. You can check all sessions here: https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/program/schedule/
 <br>
 
 - <b>Learn how to easily setup your Kubernetes limits and requests</b> https://sysdig.com/blog/kubernetes-limits-requests/ 
