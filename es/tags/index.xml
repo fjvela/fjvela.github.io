@@ -8,6 +8,52 @@
       <url>https://fjvela.github.io/papermod-cover.png</url>
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 23 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.NET MAUI</title>
+      <link>https://fjvela.github.io/es/tags/.net-maui/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/.net-maui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotnet</title>
+      <link>https://fjvela.github.io/es/tags/dotnet/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eventos</title>
+      <link>https://fjvela.github.io/es/tags/eventos/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/eventos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://fjvela.github.io/es/tags/kubernetes/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visual studio</title>
+      <link>https://fjvela.github.io/es/tags/visual-studio/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/visual-studio/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
