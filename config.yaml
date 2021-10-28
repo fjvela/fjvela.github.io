@@ -122,7 +122,7 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag:  9k5TW79n5H64zWLwEcNkbNITNDDepKoE2udZjirxXM
+      SiteVerificationTag: Z9k5TW79n5H64zWLwEcNkbNITNDDepKoE2udZjirxXM
 
   # assets:
   #   favicon: "<link / abs url>"
