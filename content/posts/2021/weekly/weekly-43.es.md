@@ -14,7 +14,7 @@ El 20 de octubre Microsoft publicó el siguiente post https://devblogs.microsoft
 
 Microsoft eliminó la opción hot reload del .NET SDK (pull request https://github.com/dotnet/sdk/pull/22217) por lo que los desarrolladores ya no podrían hacer uso a través de la línea de comandos y pasando a estar disponible únicamente para los desarrolladores que utilicen Visual Studio 2022.
 
-Este cambio no ha sido bien recibido por la comunidad y ha pedido que vuelva a estar incluida en .NET 6 (pull request https://github.com/dotnet/sdk/pull/22262). Finalmente, Microsoft ha vuelvo a incluir la funcionalidad y estará disponible en .NET 6 también ha pedido disculpas en el post: https://devblogs.microsoft.com/dotnet/net-hot-reload-support-via-cli
+Este cambio no ha sido bien recibido por la comunidad y ha pedido que vuelva a estar incluida en .NET 6 (pull request https://github.com/dotnet/sdk/pull/22262). Finalmente, Microsoft ha vuelto a incluir la funcionalidad y estará disponible en .NET 6 también ha pedido disculpas en el post: https://devblogs.microsoft.com/dotnet/net-hot-reload-support-via-cli
 <br/>
 
 ### Novedades EF en .NET 6
@@ -46,7 +46,7 @@ Revisa todas las novedades de la última preview de .NET MAUI de la mano de Jame
 
 ## Kubernetes 
 ### CVE-2021-25742: Ingress-NGINX
-Si estás utilizando NGINX  como ingress controller en tú clúster kubernetes, deberías actualizar lo antes posible: https://groups.google.com/g/kubernetes-security-announce/c/mT4JJxi9tQY
+Si estás utilizando NGINX  como ingress controller en tu clúster kubernetes, deberías actualizar lo antes posible: https://groups.google.com/g/kubernetes-security-announce/c/mT4JJxi9tQY
 <br/>
 
 ### Linkerd 2.21
