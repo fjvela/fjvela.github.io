@@ -9,40 +9,121 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 23 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>.NET MAUI</title>
-      <link>https://fjvela.github.io/es/tags/.net-maui/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <title>asp.net</title>
+      <link>https://fjvela.github.io/es/tags/asp.net/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/es/tags/.net-maui/</guid>
+      <guid>https://fjvela.github.io/es/tags/asp.net/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dotnet</title>
       <link>https://fjvela.github.io/es/tags/dotnet/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/dotnet/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>HTTP</title>
+      <link>https://fjvela.github.io/es/tags/http/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/http/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTP logging</title>
+      <link>https://fjvela.github.io/es/tags/http-logging/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/http-logging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>log</title>
+      <link>https://fjvela.github.io/es/tags/log/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/log/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logging</title>
+      <link>https://fjvela.github.io/es/tags/logging/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/logging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>request</title>
+      <link>https://fjvela.github.io/es/tags/request/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/request/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>response</title>
+      <link>https://fjvela.github.io/es/tags/response/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>.NET MAUI</title>
+      <link>https://fjvela.github.io/es/tags/.net-maui/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/.net-maui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>eventos</title>
       <link>https://fjvela.github.io/es/tags/eventos/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/eventos/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>github</title>
+      <link>https://fjvela.github.io/es/tags/github/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>kubernetes</title>
       <link>https://fjvela.github.io/es/tags/kubernetes/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>testing</title>
+      <link>https://fjvela.github.io/es/tags/testing/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/testing/</guid>
       <description></description>
     </item>
     

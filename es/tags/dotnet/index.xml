@@ -9,7 +9,25 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 23 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASP.NET Core 6 - HttpLogging (log request/responses)</title>
+      <link>https://fjvela.github.io/es/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</guid>
+      <description>En algunas ocasiones hemos necesitado obtener las información del tráfico de entrada y salida (HTTP request / HTTP response) de nuestras aplicaciones ASP.NET core. Hasta la versión 6 de .NET era necesario escribir nuestro propio middleware. En esta versión, Microsoft ha incluido un middleware para poder loguear esta información.</description>
+    </item>
+    
+    <item>
+      <title>Algunas noticias de la semana 44</title>
+      <link>https://fjvela.github.io/es/posts/2021/weekly/weekly-44/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/posts/2021/weekly/weekly-44/</guid>
+      <description>Algunas noticias de la semana 44</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 43</title>
       <link>https://fjvela.github.io/es/posts/2021/weekly/weekly-43/</link>
