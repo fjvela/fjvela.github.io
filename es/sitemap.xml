@@ -2,8 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://fjvela.github.io/es/tags/.net/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/.net-maui/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://fjvela.github.io/tags/.net-maui/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://fjvela.github.io/es/tags/.net-maui/"
+                />
+  </url><url>
     <loc>https://fjvela.github.io/es/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,17 +31,14 @@
                 href="https://fjvela.github.io/es/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/es/tags/aks/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-45/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-46/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/azure/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/dotnet/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -38,10 +51,23 @@
                 />
   </url><url>
     <loc>https://fjvela.github.io/es/tags/eventos/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/kubernetes/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://fjvela.github.io/tags/kubernetes/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://fjvela.github.io/es/tags/kubernetes/"
+                />
   </url><url>
     <loc>https://fjvela.github.io/es/posts/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,7 +80,7 @@
                 />
   </url><url>
     <loc>https://fjvela.github.io/es/tags/</loc>
-    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -65,6 +91,15 @@
                 hreflang="es"
                 href="https://fjvela.github.io/es/tags/"
                 />
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/xamarin/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/aks/</loc>
+    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-45/</loc>
+    <lastmod>2021-11-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/asp.net/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
@@ -90,37 +125,11 @@
     <loc>https://fjvela.github.io/es/tags/response/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/es/tags/.net-maui/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/tags/.net-maui/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/tags/.net-maui/"
-                />
-  </url><url>
     <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-44/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/github/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/es/tags/kubernetes/</loc>
-    <lastmod>2021-11-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/tags/kubernetes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/tags/kubernetes/"
-                />
   </url><url>
     <loc>https://fjvela.github.io/es/tags/testing/</loc>
     <lastmod>2021-11-01T00:00:00+00:00</lastmod>
