@@ -5,19 +5,6 @@
     <loc>https://fjvela.github.io/es/tags/.net/</loc>
     <lastmod>2021-11-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/es/tags/.net-maui/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/tags/.net-maui/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/tags/.net-maui/"
-                />
-  </url><url>
     <loc>https://fjvela.github.io/es/</loc>
     <lastmod>2021-11-29T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -49,9 +36,6 @@
                 hreflang="es"
                 href="https://fjvela.github.io/es/tags/dotnet/"
                 />
-  </url><url>
-    <loc>https://fjvela.github.io/es/tags/eventos/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/kubernetes/</loc>
     <lastmod>2021-11-29T00:00:00+00:00</lastmod>
@@ -92,10 +76,29 @@
                 href="https://fjvela.github.io/es/tags/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/es/tags/xamarin/</loc>
+    <loc>https://fjvela.github.io/es/tags/wsl/</loc>
     <lastmod>2021-11-29T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://fjvela.github.io/es/tags/.net-maui/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://fjvela.github.io/tags/.net-maui/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://fjvela.github.io/es/tags/.net-maui/"
+                />
+  </url><url>
     <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-46/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/eventos/</loc>
+    <lastmod>2021-11-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/xamarin/</loc>
     <lastmod>2021-11-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/aks/</loc>
