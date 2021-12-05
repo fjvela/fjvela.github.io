@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://fjvela.github.io/es/tags/.net/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,14 +18,29 @@
                 href="https://fjvela.github.io/es/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-48/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-49/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/azure/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/azurechaos/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/azurecostmanagement/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/azurefunctions/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/azureloadtesting/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/azurenotificationhubs/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/dotnet/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -37,8 +52,11 @@
                 href="https://fjvela.github.io/es/tags/dotnet/"
                 />
   </url><url>
+    <loc>https://fjvela.github.io/es/tags/k8s/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://fjvela.github.io/es/tags/kubernetes/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -50,8 +68,14 @@
                 href="https://fjvela.github.io/es/tags/kubernetes/"
                 />
   </url><url>
+    <loc>https://fjvela.github.io/es/tags/openai/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/openapi/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://fjvela.github.io/es/posts/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -63,8 +87,11 @@
                 href="https://fjvela.github.io/es/posts/"
                 />
   </url><url>
+    <loc>https://fjvela.github.io/es/tags/razor/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://fjvela.github.io/es/tags/</loc>
-    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -75,6 +102,15 @@
                 hreflang="es"
                 href="https://fjvela.github.io/es/tags/"
                 />
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/visualstudio/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/tags/windowsforms/</loc>
+    <lastmod>2021-12-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-48/</loc>
+    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/wsl/</loc>
     <lastmod>2021-11-29T00:00:00+00:00</lastmod>

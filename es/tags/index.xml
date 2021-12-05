@@ -9,11 +9,11 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.NET</title>
       <link>https://fjvela.github.io/es/tags/.net/</link>
-      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/.net/</guid>
       <description></description>
@@ -22,27 +22,126 @@
     <item>
       <title>azure</title>
       <link>https://fjvela.github.io/es/tags/azure/</link>
-      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>AzureChaos</title>
+      <link>https://fjvela.github.io/es/tags/azurechaos/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/azurechaos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzureCostManagement</title>
+      <link>https://fjvela.github.io/es/tags/azurecostmanagement/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/azurecostmanagement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzureFunctions</title>
+      <link>https://fjvela.github.io/es/tags/azurefunctions/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/azurefunctions/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzureLoadTesting</title>
+      <link>https://fjvela.github.io/es/tags/azureloadtesting/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/azureloadtesting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzureNotificationHubs</title>
+      <link>https://fjvela.github.io/es/tags/azurenotificationhubs/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/azurenotificationhubs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>dotnet</title>
       <link>https://fjvela.github.io/es/tags/dotnet/</link>
-      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/dotnet/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>K8S</title>
+      <link>https://fjvela.github.io/es/tags/k8s/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>kubernetes</title>
       <link>https://fjvela.github.io/es/tags/kubernetes/</link>
-      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenAI</title>
+      <link>https://fjvela.github.io/es/tags/openai/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/openai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenAPI</title>
+      <link>https://fjvela.github.io/es/tags/openapi/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/openapi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Razor</title>
+      <link>https://fjvela.github.io/es/tags/razor/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/razor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VisualStudio</title>
+      <link>https://fjvela.github.io/es/tags/visualstudio/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/visualstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WindowsForms</title>
+      <link>https://fjvela.github.io/es/tags/windowsforms/</link>
+      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/windowsforms/</guid>
       <description></description>
     </item>
     
