@@ -20,7 +20,7 @@ https://alexyakunin.medium.com/net-6-vs-net-5-up-to-40-speedup-ceca9112d298
 https://devblogs.microsoft.com/dotnet/announcing-dotnet-monitor-in-net-6/
 <!-- #dotnet #microsoft #monitor -->
 
-**¿Sabes que puedes comprobar en C# 10 si un argumento es nulo con utilizando !!?** Revisa las diferentes maneras de como comprobar si el parámetro de un método es nulo. 
+**¿Sabes que puedes comprobar en C# 10 si un argumento es nulo utilizando !!?** Revisa las diferentes maneras de como comprobar si el parámetro de un método es nulo. 
 https://www.variablenotfound.com/2021/11/como-evitar-que-entren-argumentos-nulos.html
 <!-- #dotnet #microsoft #csharp #arguments -->
 
