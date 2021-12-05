@@ -5,7 +5,7 @@ summary: >
   Actualiza tu aplicacion de .NET 5 a .NET 6,  novedades Windows Forms y EF Core 6, Visual Studio: nuevo modelo para desarrollar extensiones, nuevo editor para Razor. Azure Chaos Studio, Azure Functions: OpenAPI y OpenAI. Azure Notification Hubs, Azure Load Testing, Azure Cost Managment, novedades K8S 1.23....
 date: "2021-12-06"
 description: "Algunas noticias de la semana 48 y anteriores"
-tags: [".NET", "dotnet", "Kubernetes", "Azure", "VisualStudio", "Razor", "WindowsForms", "AzureFunctions", "OpenAPI", "OpenAI", "AzureChaos", "AzureNotificationHubs", "AzureLoadTesting", "AzureCostManagement", "K8S"]] 
+tags: [".NET", "dotnet", "Kubernetes", "Azure", "VisualStudio", "Razor", "WindowsForms", "AzureFunctions", "OpenAPI", "OpenAI", "AzureChaos", "AzureNotificationHubs", "AzureLoadTesting", "AzureCostManagement", "K8S"]
 ShowToc: true
 draft: false
 ---
