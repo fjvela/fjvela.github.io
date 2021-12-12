@@ -9,22 +9,112 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.NET</title>
       <link>https://fjvela.github.io/es/tags/.net/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/.net/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>AppService</title>
+      <link>https://fjvela.github.io/es/tags/appservice/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/appservice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>asev3</title>
+      <link>https://fjvela.github.io/es/tags/asev3/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/asev3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>azure</title>
       <link>https://fjvela.github.io/es/tags/azure/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AzureIoTCentral</title>
+      <link>https://fjvela.github.io/es/tags/azureiotcentral/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/azureiotcentral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotnet</title>
+      <link>https://fjvela.github.io/es/tags/dotnet/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DotNetMAUI</title>
+      <link>https://fjvela.github.io/es/tags/dotnetmaui/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/dotnetmaui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helm</title>
+      <link>https://fjvela.github.io/es/tags/helm/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/helm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://fjvela.github.io/es/tags/java/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://fjvela.github.io/es/tags/kubernetes/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySql</title>
+      <link>https://fjvela.github.io/es/tags/mysql/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Steeltoe</title>
+      <link>https://fjvela.github.io/es/tags/steeltoe/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/steeltoe/</guid>
       <description></description>
     </item>
     
@@ -74,29 +164,11 @@
     </item>
     
     <item>
-      <title>dotnet</title>
-      <link>https://fjvela.github.io/es/tags/dotnet/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/es/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>K8S</title>
       <link>https://fjvela.github.io/es/tags/k8s/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/k8s/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://fjvela.github.io/es/tags/kubernetes/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/es/tags/kubernetes/</guid>
       <description></description>
     </item>
     
