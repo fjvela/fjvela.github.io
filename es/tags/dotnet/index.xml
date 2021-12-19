@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 51 y anteriores</title>
+      <link>https://fjvela.github.io/es/posts/2021/weekly/weekly-51/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/posts/2021/weekly/weekly-51/</guid>
+      <description>Roadmap para EF7, .NET 6.0.1, 5.0.13 y 3.1.22, productividad con Visual Studio 2022, Visual Studio 2022 Preview 4 para MAC, machine learning en Xamarin.Forms, rotación claves en Azure Key Vault, novedades en Azure Files, CVE-2021-44228 en servicios Microsoft.</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 50 y anteriores</title>
       <link>https://fjvela.github.io/es/posts/2021/weekly/weekly-50/</link>

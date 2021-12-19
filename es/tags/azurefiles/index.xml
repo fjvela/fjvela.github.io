@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AzureFiles on @jvela</title>
+    <link>https://fjvela.github.io/es/tags/azurefiles/</link>
+    <description>Recent content in AzureFiles on @jvela</description>
+    <image>
+      <url>https://fjvela.github.io/papermod-cover.png</url>
+      <link>https://fjvela.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/azurefiles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 51 y anteriores</title>
+      <link>https://fjvela.github.io/es/posts/2021/weekly/weekly-51/</link>
+      <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/posts/2021/weekly/weekly-51/</guid>
+      <description>Roadmap para EF7, .NET 6.0.1, 5.0.13 y 3.1.22, productividad con Visual Studio 2022, Visual Studio 2022 Preview 4 para MAC, machine learning en Xamarin.Forms, rotación claves en Azure Key Vault, novedades en Azure Files, CVE-2021-44228 en servicios Microsoft.</description>
+    </item>
+    
+  </channel>
+</rss>
