@@ -12,24 +12,24 @@ draft: false
 **Disponible nueva versión Oracle Data Provider (ODP.NET) para .NET 6 y Entity Framework Core 6.**
 https://medium.com/oracledevs/announcing-oracle-support-for-net-6-and-entity-framework-core-6-3edfe6f92c9a
 <br/>
-<!-- #dotnet #entityframework #ef #oracle-->
+<!-- #dotnet #entityframework #ef #oracle -->
 
 **Disponible Steeltoe 3.1.2:** incluye correciones de bugs y soporte para .NET 6.
 https://github.com/SteeltoeOSS/Steeltoe/releases/tag/3.1.2
 <br/>
-<!-- #dotnet #Steeltoe #microservices @SteeltoeOSS>
+<!-- #dotnet #Steeltoe #microservices @SteeltoeOSS -->
 
 ## .NET MAUI
 **Paso a paso de como comentar tu primera aplicación utilizando .NET MAUI.**
 https://www.msdevbuild.com/2021/11/First-Xamarin-MAUI-Mobile-App-Ios-android-windwos-visual-studio-2022.html
 <br/>
-<!-- #dotnet #xamarin #DotNetMAUI #ios #android-->
+<!-- #dotnet #xamarin #DotNetMAUI #ios #android -->
 
 ## Azure
 **Introducción a App Service Environment (ASE) v3.**
 https://www.youtube.com/watch?v=AoZAxwEvdJg
 <br/>
-<!-- #azure #appservice #asev3 #AzureFriday @azurefriday-->
+<!-- #azure #appservice #asev3 #AzureFriday @azurefriday -->
 
 **Azure blog Storage soporta el almacenamiento de información inmutable.**
 https://azure.microsoft.com/en-us/updates/immutable-storage-with-versioning-for-blob-storage-is-now-generally-available/
