@@ -3,10 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://fjvela.github.io/es/tags/.net/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -18,17 +18,17 @@
                 href="https://fjvela.github.io/es/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-51/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/es/posts/2022/weekly/weekly-2/</loc>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/azure/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/azurefiles/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/tags/dotnet/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -41,7 +41,7 @@
                 />
   </url><url>
     <loc>https://fjvela.github.io/es/posts/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -54,7 +54,7 @@
                 />
   </url><url>
     <loc>https://fjvela.github.io/es/tags/</loc>
-    <lastmod>2021-12-20T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -67,6 +67,9 @@
                 />
   </url><url>
     <loc>https://fjvela.github.io/es/tags/xamarin.forms/</loc>
+    <lastmod>2022-01-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-51/</loc>
     <lastmod>2021-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/es/posts/2021/weekly/weekly-50/</loc>
