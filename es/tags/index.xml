@@ -9,22 +9,40 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 17 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>.NET</title>
-      <link>https://fjvela.github.io/es/tags/.net/</link>
-      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
+      <title>.NET MAUI</title>
+      <link>https://fjvela.github.io/es/tags/.net-maui/</link>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/es/tags/.net/</guid>
+      <guid>https://fjvela.github.io/es/tags/.net-maui/</guid>
       <description></description>
     </item>
     
     <item>
       <title>azure</title>
       <link>https://fjvela.github.io/es/tags/azure/</link>
-      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visual studio</title>
+      <link>https://fjvela.github.io/es/tags/visual-studio/</link>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/visual-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>.NET</title>
+      <link>https://fjvela.github.io/es/tags/.net/</link>
+      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/tags/.net/</guid>
       <description></description>
     </item>
     
@@ -245,15 +263,6 @@
     </item>
     
     <item>
-      <title>.NET MAUI</title>
-      <link>https://fjvela.github.io/es/tags/.net-maui/</link>
-      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/es/tags/.net-maui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>eventos</title>
       <link>https://fjvela.github.io/es/tags/eventos/</link>
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
@@ -358,15 +367,6 @@
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/es/tags/testing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visual studio</title>
-      <link>https://fjvela.github.io/es/tags/visual-studio/</link>
-      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/es/tags/visual-studio/</guid>
       <description></description>
     </item>
     
