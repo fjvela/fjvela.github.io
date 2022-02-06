@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 30 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 5 y anteriores</title>
+      <link>https://fjvela.github.io/es/posts/2022/weekly/weekly-5/</link>
+      <pubDate>Mon, 07 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/posts/2022/weekly/weekly-5/</guid>
+      <description>Windows Forms: nuevo diseñador OOP, Visual Studio 2022 Preview 5 para MAC, Azure Key Vault, monitorización IoT Edge, Azzure Functions, Azzure Firewall, Aplication Gateway Ingress Controller, KEDA 2.6 Argo CD CVE-2022-24348,&amp;hellip;.</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 4 y anteriores</title>
       <link>https://fjvela.github.io/es/posts/2022/weekly/weekly-4/</link>
