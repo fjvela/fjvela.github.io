@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/.net-core/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/es/tags/.net-core/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 6 y anteriores</title>
+      <link>https://fjvela.github.io/es/posts/2022/weekly/weekly-6/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/es/posts/2022/weekly/weekly-6/</guid>
+      <description>20 aniversario de .NET, .NET 6.0.2 y 5.0.14, actualización seguridad en .NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2, roadmap Blazor .NET 7, Azure Functions Event Hubs, Azure Bastion, Azure Site Recovery, AKS backups para PV, &amp;hellip;</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 5 y anteriores</title>
       <link>https://fjvela.github.io/es/posts/2022/weekly/weekly-5/</link>
