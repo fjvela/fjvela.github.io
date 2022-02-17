@@ -27,7 +27,7 @@ Los contenedores efímeros tienen unas características especiales:
 
 Utilizando el comando _**kubectl debug**_ podemos crear contenedores efímeros (es necesario que el clúster permita el uso de _EphemeralContainers_):
 
-#### Crea un contenedor efímero y abre una consola remota en el nuevo contedor:
+#### Crea un contenedor efímero y abre una consola remota en el nuevo contenedor:
 ```
   kubectl debug mypod -it --image=busybox
 ```
@@ -45,7 +45,7 @@ Utilizando el comando _**kubectl debug**_ podemos crear contenedores efímeros (
 ### Pruebas
 Vamos a realizar varias pruebas con una aplicación Node.JS y una aplicación .NET. El código podéis encontrarlo en el siguiente repositorio: https://github.com/fjvela/poc-k8s/tree/main/ephemeral-containers
 
-Vamos a desplegarlas las aplicaciones utilizando [minikube](https://minikube.sigs.k8s.io/) y Kubernetes 1.23.1, para ello ejecutamos: **```minikube start  --kubernetes-version=v1.23.1```** (si utilizas una versión anterior deberás incluir el parámetro **```--feature-gates=EphemeralContainers=true```**).
+Vamos a desplegar las aplicaciones utilizando [minikube](https://minikube.sigs.k8s.io/) y Kubernetes 1.23.1, para ello ejecutamos: **```minikube start  --kubernetes-version=v1.23.1```** (si utilizas una versión anterior deberás incluir el parámetro **```--feature-gates=EphemeralContainers=true```**).
 
 #### Node.JS
 1. Desplegamos la aplicación Node.JS: **```kubectl apply -f .\nodejs\ -n demo```** desplegará un Service de tipo cluster IP y un pod controlado a tráves de un deployment
