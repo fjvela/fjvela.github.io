@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>eventos on @jvela</title>
+    <link>https://fjvela.github.io/tags/eventos/</link>
+    <description>Recent content in eventos on @jvela</description>
+    <image>
+      <url>https://fjvela.github.io/papermod-cover.png</url>
+      <link>https://fjvela.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 14 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/eventos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 46</title>
+      <link>https://fjvela.github.io/posts/2021/weekly/weekly-46/</link>
+      <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2021/weekly/weekly-46/</guid>
+      <description>Algunas noticias de la semana 46</description>
+    </item>
+    
+    <item>
+      <title>Algunas noticias de la semana 45</title>
+      <link>https://fjvela.github.io/posts/2021/weekly/weekly-45/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2021/weekly/weekly-45/</guid>
+      <description>Algunas noticias de la semana 45</description>
+    </item>
+    
+    <item>
+      <title>Algunas noticias de la semana 44</title>
+      <link>https://fjvela.github.io/posts/2021/weekly/weekly-44/</link>
+      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2021/weekly/weekly-44/</guid>
+      <description>Algunas noticias de la semana 44</description>
+    </item>
+    
+    <item>
+      <title>Algunas noticias de la semana 43</title>
+      <link>https://fjvela.github.io/posts/2021/weekly/weekly-43/</link>
+      <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2021/weekly/weekly-43/</guid>
+      <description>Algunas noticias de la semana 43</description>
+    </item>
+    
+  </channel>
+</rss>

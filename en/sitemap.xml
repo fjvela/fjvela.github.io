@@ -2,136 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fjvela.github.io/tags/.net-maui/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://fjvela.github.io/es/tags/.net-maui/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/tags/.net-maui/"
-                />
-  </url><url>
-    <loc>https://fjvela.github.io/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://fjvela.github.io/"
                 />
-  </url><url>
-    <loc>https://fjvela.github.io/tags/dotnet/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/tags/dotnet/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://fjvela.github.io/tags/dotnet/"
+                href="https://fjvela.github.io/en/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/tags/kubernetes/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://fjvela.github.io/es/tags/kubernetes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/tags/kubernetes/"
-                />
-  </url><url>
-    <loc>https://fjvela.github.io/tags/others/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/posts/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/posts/"
-                />
-  </url><url>
-    <loc>https://fjvela.github.io/posts/2021/weekly/weekly-42/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/</loc>
-    <lastmod>2021-10-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/tags/"
-                />
-  </url><url>
-    <loc>https://fjvela.github.io/archives/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://fjvela.github.io/archives/"
-                />
-  </url><url>
-    <loc>https://fjvela.github.io/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://fjvela.github.io/categories/"
                 />
-  </url><url>
-    <loc>https://fjvela.github.io/search/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://fjvela.github.io/es/search/"
-                />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://fjvela.github.io/search/"
+                href="https://fjvela.github.io/en/categories/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/series/</loc>
+    <loc>https://fjvela.github.io/en/series/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://fjvela.github.io/es/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
                 href="https://fjvela.github.io/series/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://fjvela.github.io/en/series/"
+                />
+  </url><url>
+    <loc>https://fjvela.github.io/en/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://fjvela.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://fjvela.github.io/en/tags/"
                 />
   </url>
 </urlset>

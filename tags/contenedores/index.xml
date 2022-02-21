@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>contenedores on @jvela</title>
+    <link>https://fjvela.github.io/tags/contenedores/</link>
+    <description>Recent content in contenedores on @jvela</description>
+    <image>
+      <url>https://fjvela.github.io/papermod-cover.png</url>
+      <link>https://fjvela.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 17 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/contenedores/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes: depurando aplicaciones con contenedores efímeros</title>
+      <link>https://fjvela.github.io/posts/2022/kubernetes/contenedores-efimeros/</link>
+      <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/kubernetes/contenedores-efimeros/</guid>
+      <description>Todos nos hemos enfrentado en alguna ocasión a depurar una aplicación que se ejecuta en un contenedor en un clúster Kubernetes. Normalmente (y siguiendo buenas prácticas) estos contenedores utilizan imágenes &lt;a href=&#34;https://github.com/GoogleContainerTools/distroless&#34;&gt;distroless&lt;/a&gt; (solo continen la aplicación y sus dependencias, no contienen ninguna shell u otros programas)</description>
+    </item>
+    
+  </channel>
+</rss>

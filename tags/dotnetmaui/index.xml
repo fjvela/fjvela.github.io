@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DotNetMAUI on @jvela</title>
+    <link>https://fjvela.github.io/tags/dotnetmaui/</link>
+    <description>Recent content in DotNetMAUI on @jvela</description>
+    <image>
+      <url>https://fjvela.github.io/papermod-cover.png</url>
+      <link>https://fjvela.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 13 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/dotnetmaui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 50 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2021/weekly/weekly-50/</link>
+      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2021/weekly/weekly-50/</guid>
+      <description>Oracle Data Provider para .NET 6 y EF Core 6, Steeltoe 3.1,2, crea tu primera aplicación .NET MAUI, App Service Environment (ASE) v3, Azure Database MySQL flexible server, transformación de datos en Azure IoT Central, Helm 3.1.2, vulnerabilidad CVE-2021-44228 en Log4j</description>
+    </item>
+    
+  </channel>
+</rss>
