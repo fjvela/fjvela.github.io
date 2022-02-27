@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 23 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 8 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-8/</link>
+      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-8/</guid>
+      <description>.NET y GitHub Actions, novedades en C# 11, configurando $filter para datos espaciales en ASP.NET Core OData 8, 2FA en NuGet.org, nueva interfaz KUDU para App Service en Linux, Azure backup, Azure Spring Cloud Enterprise, Azure NetAppFiles</description>
+    </item>
+    
     <item>
       <title>Eliminando imágenes en nuestros container registries</title>
       <link>https://fjvela.github.io/posts/2022/cicd/eliminando-imagenes-container-registries/</link>
