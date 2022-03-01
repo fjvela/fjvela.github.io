@@ -9,7 +9,34 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C#</title>
+      <link>https://fjvela.github.io/tags/c#/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dotnet</title>
+      <link>https://fjvela.github.io/tags/dotnet/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>preview</title>
+      <link>https://fjvela.github.io/tags/preview/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/preview/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>.NET</title>
       <link>https://fjvela.github.io/tags/.net/</link>
@@ -196,15 +223,6 @@
       <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/tags/azurefiles/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>dotnet</title>
-      <link>https://fjvela.github.io/tags/dotnet/</link>
-      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/dotnet/</guid>
       <description></description>
     </item>
     

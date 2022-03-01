@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>C# on @jvela</title>
+    <link>https://fjvela.github.io/tags/c#/</link>
+    <description>Recent content in C# on @jvela</description>
+    <image>
+      <url>https://fjvela.github.io/papermod-cover.png</url>
+      <link>https://fjvela.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 02 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Novedades en C# 11 (preview)</title>
+      <link>https://fjvela.github.io/posts/2022/dotnet/csharp-11-parte-1/</link>
+      <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/dotnet/csharp-11-parte-1/</guid>
+      <description>Echamos un vistazo a las novedades de C# 11: Raw strings, Simplified parameter null validation code (!!) y List pattens</description>
+    </item>
+    
+  </channel>
+</rss>
