@@ -5,6 +5,7 @@ summary: >
    En algunas ocasiones hemos necesitado obtener las información del tráfico de entrada y salida (HTTP request / HTTP response) de nuestras aplicaciones ASP.NET core. Hasta la versión 6 de .NET era necesario escribir nuestro propio middleware. En esta versión, Microsoft ha incluido un middleware para poder loguear esta información.
 date: "2021-11-02"
 tags: ["dotnet", "asp.net", "log", "logging", "response", "request", "HTTP", "HTTP logging"]
+aliases: [/es/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses]
 ShowToc: true
 ---
 
