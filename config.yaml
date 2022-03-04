@@ -10,7 +10,7 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 defaultContentLanguage: "es"
-googleAnalytics: G-K32LDDD32J
+# googleAnalytics: UA-123-45
 
 minify:
   disableXML: true
