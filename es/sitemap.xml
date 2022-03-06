@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://fjvela.github.io/tags/.net/</loc>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://fjvela.github.io/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,23 +18,23 @@
                 href="https://fjvela.github.io/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/tags/c#/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/posts/2022/weekly/weekly-9/</loc>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/tags/dotnet/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/tags/azure/</loc>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/posts/2022/dotnet/csharp-11-parte-1/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/tags/kubernetes/</loc>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/otros/</loc>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/posts/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/preview/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/tags/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,8 +46,17 @@
                 href="https://fjvela.github.io/tags/"
                 />
   </url><url>
-    <loc>https://fjvela.github.io/tags/.net/</loc>
-    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/tags/c#/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/dotnet/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2022/dotnet/csharp-11-parte-1/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/preview/</loc>
+    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/posts/2022/weekly/weekly-8/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
@@ -52,16 +64,10 @@
     <loc>https://fjvela.github.io/tags/asp.net/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/tags/azure/</loc>
-    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://fjvela.github.io/tags/eventos/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/tags/gpt-3/</loc>
-    <lastmod>2022-02-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/kubernetes/</loc>
     <lastmod>2022-02-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/tags/libros/</loc>
