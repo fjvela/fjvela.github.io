@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/otros/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/otros/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 10 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-10/</link>
+      <pubDate>Mon, 14 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-10/</guid>
+      <description>.NET 6.0.3, 5.0.15 y 3.1.23, Edge Developer tools, GitHub Copilot para Visual Studio, AKS 1.20 ya no estará disponible, disponibe Azure Key Vault CSI 1.1.0, disponible Azure Sphere 20.02, disponiible Azure Functions Host 3.5.2, disponible bloqueo acceso Azure Key Valut y Cloud Services en Azure Chaos Studio</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 9 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-9/</link>
