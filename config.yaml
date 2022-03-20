@@ -17,24 +17,6 @@ minify:
   # minifyOutput: true
 
 languages:
-  en:
-    languageName: "English"
-    languageAltTitle: English
-    weight: 1
-    menu:
-      main:
-        - name: Archive
-          url: archives
-          weight: 5
-        - name: Search
-          url: search/
-          weight: 10
-        - name: Tags
-          url: tags/
-          weight: 10
-        - name: Categories
-          url: categories/
-          weight: 10
   es:
     languageName: "Español"
     languageAltTitle: Español
