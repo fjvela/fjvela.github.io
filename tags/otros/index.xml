@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/otros/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/otros/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 12s y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-12/</link>
+      <pubDate>Mon, 28 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-12/</guid>
+      <description>.NET 5 fin soporte, novedades en Azure Functions Tables, Azure Cosmos DB actualización de certificados TLS, Azure Data Lake Analytics será eliminado, fin soporte .NET Core 3.1 en Azure App Service, Crossplane 1.7.0, Terraform Azure RM 3.0</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 11 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-11/</link>
