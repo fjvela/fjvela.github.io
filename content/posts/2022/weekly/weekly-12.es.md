@@ -1,6 +1,6 @@
 ---
 author: "Javi Vela"
-title: "Algunas noticias de la semana 12s y anteriores"
+title: "Algunas noticias de la semana 12 y anteriores"
 summary: >
     .NET 5 fin soporte, novedades en Azure Functions Tables, Azure Cosmos DB actualización de certificados TLS, Azure Data Lake Analytics será eliminado, fin soporte .NET Core 3.1 en Azure App Service, Crossplane 1.7.0, Terraform Azure RM 3.0
 date: "2022-03-28"
