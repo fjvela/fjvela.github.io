@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 13 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-13/</link>
+      <pubDate>Mon, 04 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-13/</guid>
+      <description>Visual Studio 2022 Preview 8 para Mac, GitHub Copilot disponible para Visual Studio 2022, AKS release 2022-03-27, AKS disponible reserva computación, AKS node auto-drain, Azure classic Storage será eliminado el 31 de agosto de 2024, Azure Functions Java Library 2.0.0, disponible Azure Front Door,</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 12 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-12/</link>
