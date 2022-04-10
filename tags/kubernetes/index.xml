@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 14 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-14/</link>
+      <pubDate>Mon, 11 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-14/</guid>
+      <description>26 de abril fin soporte para .NET Framework 4.5.2, 4.6 y 4.6.1, .NET Community Toolkit v8.0.0 Preview 3, Visual Studio CPU Usage Tool, máquinas virtuales con procesadores Ampere Altra Arm, Azure Data Explorer y Azure IoT soportan Azure private endpoints, Dapr 1.7</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 13 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-13/</link>
