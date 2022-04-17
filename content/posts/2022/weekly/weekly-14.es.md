@@ -9,7 +9,7 @@ ShowToc: true
 draft: false
 ---
 ## .NET
-**i**
+**26 de abril fin soporte para .NET Framework 4.5.2, 4.6 y 4.6.1**
 https://devblogs.microsoft.com/dotnet/dotnet-framework-45-46-461-end-of-support/
 <br/>
 <!-- #dotnet #fullframework #eol -->
