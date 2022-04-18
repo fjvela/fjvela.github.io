@@ -133,3 +133,9 @@ https://sysdig.com/blog/kubernetes-1-24-whats-new/
 https://github.com/helm/helm/releases/tag/v3.8.2
 <br/>
 <!-- #kubernetes #helm -->
+
+## Terraform
+**Terraform AzureRM 3.2.0**
+https://github.com/hashicorp/terraform-provider-azurerm/releases/tag/v3.2.0
+<br/>
+<!-- #terraform #azure #release -->
