@@ -2,7 +2,7 @@
 author: "Javi Vela"
 title: "Algunas noticias de la semana 17 y anteriores"
 summary: >
-    .NET Framework (3.5, 4.7.2 y 4.8) actualizaciones (abril 2022), disponible CoreWCF 1.0, WCF para .NET Core, .NET 5 y .NET 6, .NET MAUI Release candidate 2, disponible Visual Studio 2022 release candidate para MAC,Istio anuncia su intención de convertise en un projecto de la CNCF, AKS disponible Node pool snapshot,...
+    .NET Framework (3.5, 4.7.2 y 4.8) actualizaciones (abril 2022), disponible CoreWCF 1.0, WCF para .NET Core, .NET 5 y .NET 6, .NET MAUI Release candidate 2, disponible Visual Studio 2022 release candidate para MAC,Istio anuncia su intención de convertirse en un proyecto de la CNCF, AKS disponible Node pool snapshot,...
 date: "2022-05-02"
 tags: [".NET","Visual Studio", "Azure", "kubernetes", "Terraform"]
 ShowToc: true
@@ -32,7 +32,7 @@ https://devblogs.microsoft.com/visualstudio/visual-studio-2022-for-mac-release-c
 <!-- #visualstudio #mac #releasecandidate --> 
 
 ## Kubernetes
-**Istio anuncia su intención de convertise en un projecto de la CNCF**
+**Istio anuncia su intención de convertirse en un proyecto de la CNCF**
 https://istio.io/latest/blog/2022/istio-has-applied-to-join-the-cncf/
 <br/>
 <!-- #kubernetes #istio #CNCF -->
