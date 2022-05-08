@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 02 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 18 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-18/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-18/</guid>
+      <description>Disponible Yarp 1.1, Migración de Microsoft Graph&amp;rsquo;s a .NET 6, Ejemplo migración projecto WCF a CoreWCF (.NET 6), Disponible kubernetes 1.24: Stargazer, Kubernetes 1.24: expansión de volúmenes (GA), Flux: novedades abril 2022, Mejoras en Azure Web Application Firewall (WAF), Monitoriza VNet NAT desde Azure Service Health, Preview: Static Web Apps sporta entornos preview desde Azure DevOps, Terraform AzureRM 3.4.0</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 17 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-17/</link>
