@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 20 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-20/</link>
+      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-20/</guid>
+      <description>(Preview) AKS habilita / deshabilita drivers Container Storage Interface (CSI), (Preview) AKS HostProcess Containers (Windows), (Preview) AKS integración Key Managment System (KMS), (Preview) AKS sorporta la creación de Private Link Service (PLS), (Preview) Azure DNS Private Resolver, Abierta encuesta desarrolladores Stack Overflow 2022, Azure Arc: disponible extensión Open Service Mesh, Azure SDK Release (Mayo 2022), Consul 1.12, Disponible solución Microsoft Sentinel NIST SP 800-53, Github markdown soporta expresiones matemáticas, Microsoft Build 2022 (24-26 de mayo), Terraform AzureRM 3.7.0</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 18 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-18/</link>
