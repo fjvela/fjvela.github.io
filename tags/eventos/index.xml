@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 22 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/eventos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/eventos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 22 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-22/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-22/</guid>
+      <description>.NET Framework actualizaciones mayo 2022 (.NET 3.5, 4.7.2 y 4.8),  (Preview) AKS soporta agentes ARM64, (Preview) disponible Azure Disk CSI driver v2 en AKS,  (Preview) disponible extensión Draf para AKS,  (Preview) disponible extensión KEDA para AKS,  (Preview) disponible nodos Windows Server 2022 para AKS,  (Preview) Port tunneling en Visual Studio para proyectos ASP.NET Core,  8 de junio: Maui Fest 2022, AKS soporta una subnet diferente por node pool,  AKS: disponible CSI benchmark para nodos ubuntu,  Azure SQL: mejoras en el soporte del tipo de datos JSON,  Disponible .NET MAUI,  Disponible Azure Container Apps, Disponible el uso de extesiones en AKS: Dapr, ML, Gitops,  Disponible Ledger en Azure SQL,  Disponible TypeScript 4.7,  Disponible Visual Studio para Mac,  Disponible Windows Terminal Preview 1.14, EAP: Azure SQL permite la integración con servicios REST,  Herramienta para migrar de ASP.NET a ASP.NET Core,  Informe anual 2021,  PoweShellGet 3.0 Preview 14,  Versión estable Azure SDK para Go,</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 20 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-20/</link>
