@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://fjvela.github.io/</loc>
-    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/tags/.net/</loc>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/posts/2022/weekly/weekly-22/</loc>
-    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
+    <loc>https://fjvela.github.io/tags/.net-maui/</loc>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/</loc>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2022/weekly/weekly-23/</loc>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/tags/azure/</loc>
-    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/tags/eventos/</loc>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/</loc>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/</loc>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/visual-studio/</loc>
+    <lastmod>2022-06-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2022/weekly/weekly-22/</loc>
     <lastmod>2022-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/tags/kubernetes/</loc>
@@ -20,28 +38,13 @@
     <loc>https://fjvela.github.io/tags/otros/</loc>
     <lastmod>2022-06-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/posts/</loc>
-    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/</loc>
-    <lastmod>2022-06-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://fjvela.github.io/tags/terraform/</loc>
     <lastmod>2022-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/posts/2022/weekly/weekly-20/</loc>
     <lastmod>2022-05-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/tags/.net/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/.net-maui/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://fjvela.github.io/posts/2022/weekly/weekly-19/</loc>
-    <lastmod>2022-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/visual-studio/</loc>
     <lastmod>2022-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/posts/2022/weekly/weekly-18/</loc>
