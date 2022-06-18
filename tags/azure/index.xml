@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 24 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-24/</link>
+      <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-24/</guid>
+      <description>.NET 7 Preview 5, .NET actualizaciones junio 2022 (.NET 6.0.6 y .NET Core 3.1.26), .NET Framework actualizaciones de seguridad junio 2022 (.NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2 y 4.8), (Preview) Azure Virtual Network Manager disponible en nuevas regiones, (Preview) disponible private link para Azure Application Gateway, ASP.NET Core 7 Preview 5, Azure SDK Release (Junio 2022), Disponible conector Azure Data Explorer para Power Automate, Logic Apps, y Power Apps, Disponible en Azure Firewall Manager: Azure WAF policy y DDos management, Disponible Visual Studio 2022 17.3 Preview 2 para MAC, Disponible Visual Studio 2022 Preview 2 Arm64 para Windows 11, Entity Framework 7 Preview 5, OneService migración a .NET 6, Recursos para aprender .NET MAUI</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 23 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-23/</link>
