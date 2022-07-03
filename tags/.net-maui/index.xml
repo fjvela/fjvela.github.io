@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-maui/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-maui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 26 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-26/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-26/</guid>
+      <description>(Preview) AKS release tracker, (Preview) AKS: soporte para Kubernetes 1.24, (Preview) App Service soporta .NET 7, (Preview) Azure Cosmos DB mejoras en el servicio de backup continuo, (Preview) Azure Data Studio extensión para Azure Cosmos DB, (Preview) Soporte de Python 3.10 en Azure Functions, ASP.NET Migration Preview 2, Azure Arc enabled Kubernetes disponible extensión Azure Key Vault secrets, Azure Machine Learning: novedades junio 2022, Azure SQL: actualizaciones junio 2022, DevOps para .NET MAUI, HTTP proxy disponible para AKS, Mejoras en los mensajes de error en aplicaciones .NET hosted, Novedades en la extensión de PowerShell para Visual Studio Code, TypeScript 4.8 Beta, Visual Studio 17.3 preview 2: avisos sonoros</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 24 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-24/</link>
