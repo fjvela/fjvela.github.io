@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/otros/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/otros/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 27 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-27/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-27/</guid>
+      <description>(Preview) Container Insights soporta Windows Server 2022, (Preview) Soporte para Ephemeral OS disk para máquinas virtuales confidenciales, (Preview) Windows Terminal Preview 1.15, Application Insights soporta autenticación contra Azure Active Directory, Disponible CoreWCF 1.1.0, Disponible Dapr 1.8</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 26 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-26/</link>
