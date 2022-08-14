@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-maui/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-maui/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 32 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-32/</link>
+      <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-32/</guid>
+      <description>.NET 7 Preview 7 .NET actualizaciones agosto 2022 (.NET 6.0.8 y .NET Core 3.1.28) .NET Framework actualizaciones de seguridad agosto 2022 (.NET Framework 2.0, 3.0, 3.5, 3.5.1, 4.6.2, 4.7, 4.7.1, 4.7.2 y 4.8) (Preview) Serverless SQL para Azure Databricks AKS: disponible arranque y apagado de node pools ASP.NET 7 Core Preview 7 Azure App Service v3 soporta sufijos de dominios personalizados Cambios en Kubernetes 1.25 Dependencias transitivas en Visual Studio Disponible .NET Community Toolkit 8.0 Disponible .NET Framework 4.8.1 Disponible NuGet 6.3 Disponible SynapseML para .NET Disponible Visual Studio 17.3 para Mac Disponible Visual Studio 17.3 Entity Framework 7 Preview 7 Migrando aplicaciones de ASP.NET a ASP.NET Core en Visual Studio Productividad en .NET MAUI y Visual Studio 2022 TypeScript 4.8 RC Utilizando un memory profiler en Visual Studio Visual Studio una nueva manera de escribir extensiones</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 28 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-28/</link>
