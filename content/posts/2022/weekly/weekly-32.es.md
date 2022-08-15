@@ -13,6 +13,7 @@ summary: >
     Dependencias transitivas en Visual Studio
     Disponible .NET Community Toolkit 8.0
     Disponible .NET Framework 4.8.1
+    Disponible KEDA 2.8
     Disponible NuGet 6.3
     Disponible SynapseML para .NET
     Disponible Visual Studio 17.3 para Mac
@@ -132,6 +133,11 @@ https://azure.microsoft.com/en-us/updates/public-preview-serverless-sql-for-azur
 https://kubernetes.io/blog/2022/08/04/upcoming-changes-in-kubernetes-1-25/
 <br/>
 <!-- #kubernetes #release -->
+
+**Disponible KEDA 2.8**
+https://keda.sh/blog/2022-08-10-keda-2.8.0-release/
+<br/>
+<!-- #kubernetes #keda -->
 
 ## Otros
 **TypeScript 4.8 RC**
