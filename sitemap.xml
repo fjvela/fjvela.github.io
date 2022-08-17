@@ -2,13 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://fjvela.github.io/</loc>
+    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/contenedores/</loc>
+    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/k8s/</loc>
+    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/kubernetes/</loc>
+    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/2022/kubernetes/startup-probe/</loc>
+    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/posts/</loc>
+    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://fjvela.github.io/tags/</loc>
+    <lastmod>2022-08-18T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://fjvela.github.io/tags/.net/</loc>
     <lastmod>2022-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/tags/.net-maui/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/</loc>
     <lastmod>2022-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/posts/2022/weekly/weekly-32/</loc>
@@ -17,16 +35,7 @@
     <loc>https://fjvela.github.io/tags/azure/</loc>
     <lastmod>2022-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/tags/kubernetes/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://fjvela.github.io/tags/otros/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/posts/</loc>
-    <lastmod>2022-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/</loc>
     <lastmod>2022-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/tags/visual-studio/</loc>
@@ -146,13 +155,7 @@
     <loc>https://fjvela.github.io/tags/entity-framework/</loc>
     <lastmod>2022-02-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://fjvela.github.io/tags/contenedores/</loc>
-    <lastmod>2022-02-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://fjvela.github.io/tags/depurar/</loc>
-    <lastmod>2022-02-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://fjvela.github.io/tags/k8s/</loc>
     <lastmod>2022-02-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://fjvela.github.io/posts/2022/kubernetes/contenedores-efimeros/</loc>

@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes: Startup probe</title>
+      <link>https://fjvela.github.io/posts/2022/kubernetes/startup-probe/</link>
+      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/kubernetes/startup-probe/</guid>
+      <description>La probe &lt;code&gt;Startup probe&lt;/code&gt; permite gestionar de una manera mas eficiente el arranque de una aplicación mejorando la disponibilidad de la misma.</description>
+    </item>
+    
     <item>
       <title>Kubernetes: depurando aplicaciones con contenedores efímeros</title>
       <link>https://fjvela.github.io/posts/2022/kubernetes/contenedores-efimeros/</link>
