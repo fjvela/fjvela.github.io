@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 18 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/eventos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/eventos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 34 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-34/</link>
+      <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-34/</guid>
+      <description>(Preview) C# 11: generic math, required members&amp;hellip; Actualización Agosto .NET Framework 3.5, 4.7.2 y 4.8. Azure App Service: migración a Kestrel + YARP Disponible libro .NET MAUI - Enterprise Application Patterns Disponible TypeScript 4.8 Kubernetes 1.25: Combiner Kubernetes 1.25: CSI Inline Volumes have graduated to GA Kubernetes 1.25: Pod Security Admission Controller in Stable Netcoreconf 2022</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 28 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-28/</link>
