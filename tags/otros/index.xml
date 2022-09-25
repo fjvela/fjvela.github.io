@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/otros/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 26 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/otros/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 38 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-38/</link>
+      <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-38/</guid>
+      <description>.NET MAUI in .NET 7 Release Candidate 1 (Beta) TypeScript 4.9 (Preview) Actualización Septiembre .NET Framework 3.5, 4.7.2 y 4.8. Extensiones en Visual Studio soportan Arm64 Kubernetes 1.25: Validación reglas para CRD (Beta) Mejoras Web Application Firewall (WAF) WSL soporta systemd</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 37 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-37/</link>
