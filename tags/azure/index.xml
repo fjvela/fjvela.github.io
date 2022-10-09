@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 03 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 40 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-40/</link>
+      <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-40/</guid>
+      <description>(Preview) Azure Firewall Basic 10 años de Typescript 3 de diciembre 2022, fin soporte Azure Static Web Apps para .NET Core 3.1 30 de septiembre 2025, fin soporte Standard SKU public IP address Autenticación con MSAL.NET en aplicaciones .NET MAUI Disponible .NET MAUI Community Toolkit v1.3 Migrando Bing Ads Campaign Platform a .NET 6</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 39 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-39/</link>
