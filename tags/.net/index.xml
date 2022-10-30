@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 43 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-43/</link>
+      <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-43/</guid>
+      <description>(Preview) Actualización Septiembre .NET Framework 3.5, 4.8 y 4.8.1 (Preview) AKS disponible version 1.25 (Preview) AKS soporta Vertical Pod Autoscaler (Preview) AKS: disponible image cleaner (Preview) AKS: disponible Mariner container optimized OS (Preview) AKS: soporte IPVS load balancer (Preview) Azure Load Testing disponible en West Europe 11 septiembre de 2023, fin soporte Node 16 LTS AKS: disponible CSI API AKS: node pools soportan ubuntu 22.04 Disponible soporte SFTP sobre Azure Blob Storage Disponible Spring Cloud Azure 4.4.0 Disponibles discos premium SSD v2 para Azure Disk CSI driver</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 41 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-41/</link>
