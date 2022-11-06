@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 30 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 44 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-44/</link>
+      <pubDate>Mon, 07 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-44/</guid>
+      <description>.NET 7 mejoras rendimiento en .NET MAUI (Preview) .NET Community Toolkit v8.1.0 Preview 1 Azure Developer CLI (azd) 0.4.0-beta Detecta &amp;lsquo;zombie bugs&amp;rsquo; con Infer# v1.4 Máquinas virtuales confidenciales soportan Ephemeral OS disk Mejoras rendimiento ASP.NET Core 7 Novedades interesantes en Visual Studio 2022 Release Candidate Typescript 4.9</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 43 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-43/</link>
