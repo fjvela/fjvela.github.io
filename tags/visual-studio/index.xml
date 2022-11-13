@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/visual-studio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 45 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-45/</link>
+      <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-45/</guid>
+      <description>.NET actualizaciones noviembre 2022 (.NET 6.0.11 y .NET Core 3.1.31) .NET Framework actualizaciones de seguridad noviembre 2022 (.NET Framework 2.0, 3.0, 3.5, 3.5.1, 4.6.2, 4.7, 4.7.1, 4.7.2 y 4.8) (Preview) Azure Comos DB infra-account container copy jobs (Preview) Disponible Node 18 en Azure Static Web Apps (Preview) Integración managed identities con Azure Front Door (Preview) Rotación claves SSH en nodos AKS Asistente para migrar aplicaciones WCF a CoreWCF Azure Automation soporta la configuración de zonas de disponibilidad Azure Static Web Apps integración con Gitlab y Bitbucket C# 11 Diponible NuGet 6.4 Disponbile Static Web Apps soporta entornos preview con Azure DevOps Disponible .NET 7 en Azure Functions (isolated worker process) Disponible .NET 7 en Azure Static Web Apps Disponible .NET 7 Disponible .NET MAUI para .NET 7 Disponible ASP.NET 7 Disponible Default Rule Set 2.1 para Azure Web Application Firewall (WAF) Disponible Entity Framework 7 Disponible ML.NET 2.0 Disponible PowerShell 7.3 Disponible reserva software (3 años) Disponible Visual Studio 2022 17.4 para MAC Disponible Visual Studio 2022 17.4 Disponible Visual Studio para Arm64 F# 7 Novedades Orleans en .NET 7 Novedades WCF en .NET 7 Novedades Windows Forms en .NET 7 Nuevas recomendaciones de ahorro para Virtual Machine Scale Sets</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 44 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-44/</link>
