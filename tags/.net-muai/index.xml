@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 13 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-muai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-muai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 46 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-46/</link>
+      <pubDate>Sun, 20 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-46/</guid>
+      <description>(Preview) Dev tunnels en projectos ASP.NET Core en Visual Studio (Preview) Invoca Azure Functions desde Azure SQL trigger Azure SDK release (Noviembre 2022) Disponible Bot Manager Rule Set 1.0 on regional Web Application Firewall Disponible Per Rule Actions on regional Web Application Firewall Disponible TLS 1.3 en Application Gateway Kubernetes 1.26: Removals, deprecations and major changes TypeScript 4.9</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 45 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-45/</link>
