@@ -7,6 +7,7 @@ date: "2022-06-13"
 tags: ["Azure", "Eventos", ".NET", ".NET MAUI", "Visual Studio"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET 7 Preview 5 Generic Math**

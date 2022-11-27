@@ -7,6 +7,7 @@ date: "2022-03-28"
 tags: [".NET", "Azure", "Kubernetes", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET 5 fin soporte 8 de mayo de 2022**

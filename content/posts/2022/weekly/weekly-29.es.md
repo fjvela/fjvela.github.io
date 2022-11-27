@@ -20,6 +20,7 @@ date: "2022-07-25"
 tags: [".NET",  "Azure"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Disponible Windows comunity toolkit labs**

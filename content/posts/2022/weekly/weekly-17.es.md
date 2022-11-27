@@ -7,6 +7,7 @@ date: "2022-05-02"
 tags: [".NET","Visual Studio", "Azure", "kubernetes", "Terraform"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET Framework (3.5, 4.7.2 y 4.8) actualizaciones (abril 2022)**

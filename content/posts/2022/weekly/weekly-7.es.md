@@ -7,6 +7,7 @@ date: "2022-02-21"
 tags: [".NET Core", "Entity Framework", "ASP.NET", ".NET MAUI", "Visual Studio", "Azure", "Kubernetes"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET Core
 **.NET 7 Preview 1**

@@ -7,6 +7,7 @@ date: "2022-04-25"
 tags: [".NET","Visual Studio", "Azure", "Terraform"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **(Preview) Novedades en C# 11: Raw string literals, UTF-8...**

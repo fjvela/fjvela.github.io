@@ -11,6 +11,7 @@ date: "2022-10-03"
 tags: [".NET", ".NET MAUI", "Azure", "Kubernetes", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Migrar de ASP.NET a ASP.NET Core**

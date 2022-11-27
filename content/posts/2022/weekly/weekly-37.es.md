@@ -28,6 +28,7 @@ date: "2022-09-19"
 tags: [".NET", "Azure", "Kubernetes", "Eventos", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET 7 Release Candidate 1**

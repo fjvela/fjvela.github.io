@@ -7,6 +7,7 @@ date: "2022-04-04"
 tags: ["Visual Studio", "Azure", "Kubernetes", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## Visual Studio
 **Visual Studio 2022 for Mac Preview 8**

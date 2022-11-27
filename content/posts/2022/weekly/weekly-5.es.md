@@ -7,6 +7,7 @@ date: "2022-02-07"
 tags: [".NET Core", "Visual Studio", "Azure", "Kubernetes"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET Core
 **Databinding with the OOP Windows Forms Designer**

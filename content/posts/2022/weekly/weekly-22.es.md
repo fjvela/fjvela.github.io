@@ -7,6 +7,7 @@ date: "2022-06-06"
 tags: ["Azure", "Eventos", "Kubernetes", "Otros", "Terraform"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Herramienta para migrar de ASP.NET a ASP.NET Core**

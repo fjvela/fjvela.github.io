@@ -7,6 +7,7 @@ date: "2022-04-18"
 tags: [".NET","Visual Studio", "Azure", "Kubernetes"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Nuevas mejoras en .NET 6.0.4, .NET 5.0.16 y .NET Core 3.1.24**

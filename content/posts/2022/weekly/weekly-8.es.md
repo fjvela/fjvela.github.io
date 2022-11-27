@@ -7,6 +7,7 @@ date: "2022-02-28"
 tags: [".NET", "ASP.NET", "Azure", "Kubernetes", "Libros", "Eventos", "GPT-3"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET y GitHub Actions**

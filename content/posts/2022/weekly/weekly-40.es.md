@@ -13,6 +13,7 @@ date: "2022-10-10"
 tags: [".NET", ".NET MAUI", "Azure", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Migrando Bing Ads Campaign Platform a .NET 6** 

@@ -8,6 +8,7 @@ description: "Algunas noticias de la semana 44"
 tags: ["dotnet", "kubernetes", ".NET MAUI", "eventos", "testing", "github"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET MAUI
 ### .NET MAUI Community Toolkit acepta contribuciones de la comunidad

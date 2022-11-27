@@ -14,6 +14,7 @@ date: "2022-11-20"
 tags: [".NET", ".NET MUAI", "Visual Studio", "Azure", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## Visual Studio
 **(Preview) Dev tunnels en projectos ASP.NET Core en Visual Studio**

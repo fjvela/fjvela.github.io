@@ -8,6 +8,7 @@ description: "Algunas noticias de la semana 49 y anteriores"
 tags: [".NET", "dotnet", "Kubernetes", "Azure", "VisualStudio", "Razor", "WindowsForms", "AzureFunctions", "OpenAPI", "OpenAI", "AzureChaos", "AzureNotificationHubs", "AzureLoadTesting", "AzureCostManagement", "K8S"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET core
 **Andre Lock nos comparte las opciones que hay disponibles para actualizar nuestra aplicación en .NET 5 a .NET 6.**

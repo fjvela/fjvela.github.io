@@ -7,6 +7,7 @@ date: "2022-01-30"
 tags: [".NET Core", "Visual Studio", "Azure", "Kubernetes", "Xamarin"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET Core
 **Mejoras rendimiento en ASP.NET Core 6.**

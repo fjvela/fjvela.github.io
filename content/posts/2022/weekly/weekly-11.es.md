@@ -7,6 +7,7 @@ date: "2022-03-21"
 tags: [".NET", "Azure", "Kubernetes", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET Preview 2**

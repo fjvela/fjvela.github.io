@@ -32,6 +32,7 @@ date: "2022-10-17"
 tags: [".NET", ".NET MAUI", "Azure", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET 7 Release Candidate 2**

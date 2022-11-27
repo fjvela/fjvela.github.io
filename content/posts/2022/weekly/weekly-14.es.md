@@ -7,6 +7,7 @@ date: "2022-04-11"
 tags: [".NET","Visual Studio", "Azure", "Kubernetes", "Terraform", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **26 de abril fin soporte para .NET Framework 4.5.2, 4.6 y 4.6.1**

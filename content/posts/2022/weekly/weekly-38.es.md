@@ -13,6 +13,7 @@ date: "2022-09-26"
 tags: [".NET", ".NET MAUI", "Azure", "Kubernetes", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **(Preview) Actualización Septiembre .NET Framework 3.5, 4.7.2 y 4.8.**

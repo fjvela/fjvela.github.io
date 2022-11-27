@@ -7,6 +7,7 @@ date: "2022-02-14"
 tags: [".NET Core", "Visual Studio", "Azure", "Kubernetes"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET Core
 **20 aniversario de .NET**

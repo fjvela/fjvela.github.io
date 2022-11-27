@@ -7,6 +7,7 @@ date: "2022-05-09"
 tags: [".NET", "Azure", "kubernetes", "Terraform"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Disponible Yarp 1.1**

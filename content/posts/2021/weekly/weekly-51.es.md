@@ -7,6 +7,7 @@ date: "2021-12-20"
 tags: [".NET", "dotnet", "Azure", "Xamarin.Forms","AzureFiles"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET core
 **.NET 6 revisa las mejoras incluidas en los elementos de red**

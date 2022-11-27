@@ -15,6 +15,7 @@ date: "2022-08-29"
 tags: [".NET",  ".NET MAUI", "Azure", "Kubernetes", "Eventos", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Actualización Agosto .NET Framework 3.5, 4.7.2 y 4.8.**

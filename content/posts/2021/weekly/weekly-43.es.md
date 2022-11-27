@@ -7,6 +7,7 @@ description: "Algunas noticias de la semana 43"
 tags: ["dotnet", "kubernetes", ".NET MAUI", "eventos", "visual studio"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## dotnet
 ### Microsoft elimina hot reload en .NET SDK 6

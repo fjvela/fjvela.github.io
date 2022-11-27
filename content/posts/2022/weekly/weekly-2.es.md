@@ -7,6 +7,7 @@ date: "2022-01-17"
 tags: [".NET", "dotnet", "Azure", "Xamarin.Forms","AzureFiles"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET core
 **Como utilizar [protobuf](https://en.wikipedia.org/wiki/Protocol_Buffers) en C#.**

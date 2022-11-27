@@ -8,6 +8,7 @@ description: "Algunas noticias de la semana 48 y anteriores"
 tags: [".NET", "dotnet", "Kubernetes", "Azure", "WSL"] 
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET core
 **Comparativa de rendimiento** entre .NET 5 y .NET 6 en el proyecto [Fusion](https://github.com/servicetitan/Stl.Fusion).

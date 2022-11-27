@@ -20,6 +20,7 @@ date: "2022-08-22"
 tags: [".NET",  ".NET MAUI", "Azure", "Visual Studio"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Nuevo JSON writer en OData (7.12.2)**

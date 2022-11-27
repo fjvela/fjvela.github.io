@@ -14,6 +14,7 @@ date: "2022-11-07"
 tags: [".NET", ".NET MUAI", "Visual Studio", "Azure", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Mejoras rendimiento ASP.NET Core 7**

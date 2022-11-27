@@ -8,6 +8,7 @@ description: "Algunas noticias de la semana 46"
 tags: [".NET", "dotnet", "Kubernetes", ".NET MAUI", "eventos", "Xamarin", "Azure"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 
 ## dotnet

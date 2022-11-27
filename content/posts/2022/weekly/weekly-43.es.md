@@ -19,6 +19,7 @@ date: "2022-10-30"
 tags: [".NET", "Azure"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **(Preview) Actualización Septiembre .NET Framework 3.5, 4.8 y 4.8.1**

@@ -7,6 +7,7 @@ date: "2022-05-22"
 tags: ["Azure", "Eventos", "Kubernetes", "Otros", "Terraform"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## Azure
 **Azure SDK Release (Mayo 2022)**

@@ -7,6 +7,7 @@ date: "2022-03-14"
 tags: [".NET", "Azure", "Kubernetes", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET 6.0.3, 5.0.15 y 3.1.23, mejoras, correción de bugs, vulnerabilidades CVE-2020-8927, CVE-2022-24464 y CVE-2022-24512**

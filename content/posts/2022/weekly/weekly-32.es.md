@@ -28,6 +28,7 @@ date: "2022-08-15"
 tags: [".NET",  ".NET MAUI", "Azure", "Kubernetes", "Otros", "Visual Studio"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET 7 Preview 7**

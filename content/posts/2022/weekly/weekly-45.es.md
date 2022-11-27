@@ -36,6 +36,7 @@ date: "2022-11-13"
 tags: [".NET", ".NET MUAI", "Visual Studio", "Azure", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Disponible .NET 7**

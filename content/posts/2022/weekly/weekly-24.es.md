@@ -7,6 +7,7 @@ date: "2022-06-20"
 tags: [".NET", ".NET MAUI", "Azure", "Visual Studio"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET 7 Preview 5**

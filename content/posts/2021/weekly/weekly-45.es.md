@@ -8,6 +8,7 @@ date: "2021-11-08"
 tags: ["dotnet", "azure", "eventos", "AKS"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 
 ## dotnet

@@ -7,6 +7,7 @@ summary: >
 date: "2021-10-17"
 tags: ["dotnet", "kubernetes", ".NET MAUI", "others"]
 ShowToc: true
+robotsNoIndex: true
 ---
 ## dotnet
 - <b>Tune in for .NET Conf 2021 and the launch of.NET 6!</b> https://www.dotnetconf.net

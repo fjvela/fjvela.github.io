@@ -12,6 +12,7 @@ date: "2022-11-28"
 tags: [".NET", ".NET MUAI", "Visual Studio", "Azure", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET MAUI
 **Disponible .NET MAUI para Visual Studio 17.4 en MAC**

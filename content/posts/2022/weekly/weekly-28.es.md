@@ -19,6 +19,7 @@ date: "2022-07-18"
 tags: [".NET", ".NET MAUI", "Visual Studio", "Azure", "Kubernetes", "Eventos"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **.NET 7 Preview 6**

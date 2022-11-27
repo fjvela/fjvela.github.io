@@ -7,6 +7,7 @@ date: "2022-07-04"
 tags: [".NET", ".NET MAUI", "Azure", "Visual Studio", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **ASP.NET Migration Preview 2**

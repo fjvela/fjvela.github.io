@@ -7,6 +7,7 @@ date: "2021-12-13"
 tags: [".NET", "dotnet", "Kubernetes", "Azure", "Steeltoe","AppService", "DotNetMAUI","asev3","MySql","AzureIoTCentral","Helm","java"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET core
 **Disponible nueva versión Oracle Data Provider (ODP.NET) para .NET 6 y Entity Framework Core 6.**

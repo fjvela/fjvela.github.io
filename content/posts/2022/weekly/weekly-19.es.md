@@ -7,6 +7,7 @@ date: "2022-05-16"
 tags: [".NET", ".NET MAUI", "Visual Studio", "Azure", "Terraform", "Eventos"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Disponible .NET 7 Preview 4**

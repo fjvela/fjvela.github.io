@@ -7,6 +7,7 @@ date: "2022-07-11"
 tags: [".NET", "Azure", "Kubernetes", "Otros"]
 ShowToc: true
 draft: false
+robotsNoIndex: true
 ---
 ## .NET
 **Disponible CoreWCF 1.1.0**
