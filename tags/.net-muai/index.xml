@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-muai/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-muai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 47 y anteriores</title>
+      <link>https://fjvela.github.io/posts/2022/weekly/weekly-47/</link>
+      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/weekly/weekly-47/</guid>
+      <description>(Preview) Azure Bastion now support shareable links (Preview) Disponible Azure Quota Service API (Preview) IoT Hub soporta la configuración de endpoints para Azure Cosmos DB Disponible .NET MAUI para Visual Studio 17.4 en MAC Disponible WSL para Windows 10 y Windows 11 Mejoras rendimiento Visual Studio 2022 17.4</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 46 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-46/</link>
