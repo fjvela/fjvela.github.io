@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Visual Studio Code on @jvela</title>
+    <link>https://fjvela.github.io/tags/visual-studio-code/</link>
+    <description>Recent content in Visual Studio Code on @jvela</description>
+    <image>
+      <url>https://fjvela.github.io/papermod-cover.png</url>
+      <link>https://fjvela.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 30 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/visual-studio-code/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mejora la experiencia de desarrollo, desarrolla dentro de un contenedor</title>
+      <link>https://fjvela.github.io/posts/2022/devtools/desarrolla-en-un-contenedor/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/devtools/desarrolla-en-un-contenedor/</guid>
+      <description>En algunas ocasiones es algo tedioso instalar los SDKs o dependencias de un proyecto para poder trabajar con él. Visual Studio Code Dev Containers te permite definir y distribuir el entorno de desarrollo de tu proyecto.</description>
+    </item>
+    
+  </channel>
+</rss>

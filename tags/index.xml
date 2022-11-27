@@ -9,7 +9,34 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>contenedores</title>
+      <link>https://fjvela.github.io/tags/contenedores/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/contenedores/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dev tools</title>
+      <link>https://fjvela.github.io/tags/dev-tools/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/dev-tools/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual Studio Code</title>
+      <link>https://fjvela.github.io/tags/visual-studio-code/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/visual-studio-code/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>.NET</title>
       <link>https://fjvela.github.io/tags/.net/</link>
@@ -79,15 +106,6 @@
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/tags/eventos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>contenedores</title>
-      <link>https://fjvela.github.io/tags/contenedores/</link>
-      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/contenedores/</guid>
       <description></description>
     </item>
     

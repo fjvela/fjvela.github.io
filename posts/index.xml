@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 30 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mejora la experiencia de desarrollo, desarrolla dentro de un contenedor</title>
+      <link>https://fjvela.github.io/posts/2022/devtools/desarrolla-en-un-contenedor/</link>
+      <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/posts/2022/devtools/desarrolla-en-un-contenedor/</guid>
+      <description>En algunas ocasiones es algo tedioso instalar los SDKs o dependencias de un proyecto para poder trabajar con él. Visual Studio Code Dev Containers te permite definir y distribuir el entorno de desarrollo de tu proyecto.</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 47 y anteriores</title>
       <link>https://fjvela.github.io/posts/2022/weekly/weekly-47/</link>
