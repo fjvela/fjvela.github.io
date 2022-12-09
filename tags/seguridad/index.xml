@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>AKS on @jvela</title>
-    <link>https://fjvela.github.io/tags/aks/</link>
-    <description>Recent content in AKS on @jvela</description>
+    <title>seguridad on @jvela</title>
+    <link>https://fjvela.github.io/tags/seguridad/</link>
+    <description>Recent content in seguridad on @jvela</description>
     <image>
       <url>https://fjvela.github.io/papermod-cover.png</url>
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/aks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/seguridad/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Key Vault Provider for Secrets Store CSI Driver, leyendo y utilizando información de un Azure Key Vault desde AKS</title>
       <link>https://fjvela.github.io/posts/2022/kubernetes/azure-key-vault-secret-store-csi/</link>
@@ -19,15 +19,6 @@
       <description>Introducción En algunas ocasiones nuestras aplicaciones desplegadas en kubernetes necesitan información sensible y/o confidencial tales como una contraseña de una base de datos o un token para conectarse a otras aplicaciones.
 Desplegar y mantener esta información en nuestro cluster no es siempre trivial o sencilla y en determinados casos de uso es posible que el tipo de objecto Secret no sea el mas adecuado.
 A lo largo del post vamos a ver como instalar y configurar Azure Key Vault Provider for Secrets Store CSI Driver, este componente nos va a permitir leer información de un Azure Key Vault y proporcionarla a un Pod a través de un fichero o una variable de entorno.</description>
-    </item>
-    
-    <item>
-      <title>Algunas noticias de la semana 45</title>
-      <link>https://fjvela.github.io/posts/2021/weekly/weekly-45/</link>
-      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/posts/2021/weekly/weekly-45/</guid>
-      <description>Algunas noticias de la semana 45</description>
     </item>
     
   </channel>

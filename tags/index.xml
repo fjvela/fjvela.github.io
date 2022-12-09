@@ -9,7 +9,52 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AKS</title>
+      <link>https://fjvela.github.io/tags/aks/</link>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/aks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>K8S</title>
+      <link>https://fjvela.github.io/tags/k8s/</link>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://fjvela.github.io/tags/kubernetes/</link>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>secrets</title>
+      <link>https://fjvela.github.io/tags/secrets/</link>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/secrets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>seguridad</title>
+      <link>https://fjvela.github.io/tags/seguridad/</link>
+      <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/seguridad/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>contenedores</title>
       <link>https://fjvela.github.io/tags/contenedores/</link>
@@ -92,29 +137,11 @@
     </item>
     
     <item>
-      <title>kubernetes</title>
-      <link>https://fjvela.github.io/tags/kubernetes/</link>
-      <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>eventos</title>
       <link>https://fjvela.github.io/tags/eventos/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/tags/eventos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>K8S</title>
-      <link>https://fjvela.github.io/tags/k8s/</link>
-      <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/k8s/</guid>
       <description></description>
     </item>
     
@@ -448,15 +475,6 @@
       <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/tags/wsl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AKS</title>
-      <link>https://fjvela.github.io/tags/aks/</link>
-      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/aks/</guid>
       <description></description>
     </item>
     
