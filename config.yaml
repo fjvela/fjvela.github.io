@@ -91,7 +91,7 @@ params:
     - name: twitter
       url: "https://twitter.com/jvela"
     - name: linkedin
-      value: "https://www.linkedin.com/in/javiervelaaylon/"
+      url: "https://www.linkedin.com/in/javiervelaaylon/"
     - name: RsS
       url: "index.xml"
 
