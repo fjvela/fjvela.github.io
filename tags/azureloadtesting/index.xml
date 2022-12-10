@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>AzureLoadTesting on @jvela</title>
+    <title>AzureLoadTesting on Javi Vela Blog</title>
     <link>https://fjvela.github.io/tags/azureloadtesting/</link>
-    <description>Recent content in AzureLoadTesting on @jvela</description>
+    <description>Recent content in AzureLoadTesting on Javi Vela Blog</description>
     <image>
       <url>https://fjvela.github.io/papermod-cover.png</url>
       <link>https://fjvela.github.io/papermod-cover.png</link>
@@ -12,10 +12,10 @@
     <lastBuildDate>Mon, 06 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/azureloadtesting/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algunas noticias de la semana 49 y anteriores</title>
-      <link>https://fjvela.github.io/posts/2021/weekly/weekly-49/</link>
+      <link>https://fjvela.github.io/week-news/2021/weekly-49/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/posts/2021/weekly/weekly-49/</guid>
+      <guid>https://fjvela.github.io/week-news/2021/weekly-49/</guid>
       <description>Algunas noticias de la semana 49 y anteriores</description>
     </item>
     

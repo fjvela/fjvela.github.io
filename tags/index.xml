@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on @jvela</title>
+    <title>Tags on Javi Vela Blog</title>
     <link>https://fjvela.github.io/tags/</link>
-    <description>Recent content in Tags on @jvela</description>
+    <description>Recent content in Tags on Javi Vela Blog</description>
     <image>
       <url>https://fjvela.github.io/papermod-cover.png</url>
       <link>https://fjvela.github.io/papermod-cover.png</link>
@@ -11,7 +11,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>AKS</title>
+      <title>aks</title>
       <link>https://fjvela.github.io/tags/aks/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
@@ -20,7 +20,7 @@
     </item>
     
     <item>
-      <title>K8S</title>
+      <title>k8s</title>
       <link>https://fjvela.github.io/tags/k8s/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
@@ -29,7 +29,7 @@
     </item>
     
     <item>
-      <title>kubernetes</title>
+      <title>Kubernetes</title>
       <link>https://fjvela.github.io/tags/kubernetes/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
@@ -101,7 +101,7 @@
     </item>
     
     <item>
-      <title>azure</title>
+      <title>Azure</title>
       <link>https://fjvela.github.io/tags/azure/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       

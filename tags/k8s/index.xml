@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>K8S on @jvela</title>
+    <title>k8s on Javi Vela Blog</title>
     <link>https://fjvela.github.io/tags/k8s/</link>
-    <description>Recent content in K8S on @jvela</description>
+    <description>Recent content in k8s on Javi Vela Blog</description>
     <image>
       <url>https://fjvela.github.io/papermod-cover.png</url>
       <link>https://fjvela.github.io/papermod-cover.png</link>
@@ -41,10 +41,10 @@ A lo largo del post vamos a ver como instalar y configurar Azure Key Vault Provi
     
     <item>
       <title>Algunas noticias de la semana 49 y anteriores</title>
-      <link>https://fjvela.github.io/posts/2021/weekly/weekly-49/</link>
+      <link>https://fjvela.github.io/week-news/2021/weekly-49/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/posts/2021/weekly/weekly-49/</guid>
+      <guid>https://fjvela.github.io/week-news/2021/weekly-49/</guid>
       <description>Algunas noticias de la semana 49 y anteriores</description>
     </item>
     
