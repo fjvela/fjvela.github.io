@@ -56,6 +56,42 @@
     </item>
     
     <item>
+      <title>.NET</title>
+      <link>https://fjvela.github.io/tags/.net/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>.NET MUAI</title>
+      <link>https://fjvela.github.io/tags/.net-muai/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/.net-muai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>https://fjvela.github.io/tags/azure/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visual studio</title>
+      <link>https://fjvela.github.io/tags/visual-studio/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/tags/visual-studio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>contenedores</title>
       <link>https://fjvela.github.io/tags/contenedores/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
@@ -83,47 +119,11 @@
     </item>
     
     <item>
-      <title>.NET</title>
-      <link>https://fjvela.github.io/tags/.net/</link>
-      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/.net/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>.NET MUAI</title>
-      <link>https://fjvela.github.io/tags/.net-muai/</link>
-      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/.net-muai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure</title>
-      <link>https://fjvela.github.io/tags/azure/</link>
-      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Otros</title>
       <link>https://fjvela.github.io/tags/otros/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       
       <guid>https://fjvela.github.io/tags/otros/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visual studio</title>
-      <link>https://fjvela.github.io/tags/visual-studio/</link>
-      <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://fjvela.github.io/tags/visual-studio/</guid>
       <description></description>
     </item>
     

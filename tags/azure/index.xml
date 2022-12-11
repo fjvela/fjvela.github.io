@@ -9,7 +9,16 @@
       <link>https://fjvela.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 49 y anteriores</title>
+      <link>https://fjvela.github.io/week-news/2022/weekly-49/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://fjvela.github.io/week-news/2022/weekly-49/</guid>
+      <description>.NET 7 networking improvements (Preview) Disponible Azure SQL trigger para Azure Functions (Preview) Nuevas VM Memory Optimized: E96bsv5 y E112ibsv5 (Private preview) Azure Kubernetes Service Backup Disponible Azure Blob CSI driver para AKS Disponible integración Azure Blob Storage con Azure Cosmos DB para PostgreSQL Disponible KEDA 2.9.0 Disponible Kubernetes v1.26: Electrifying Disponible PostgreSQL 15 en Azure CosmosDB Elimina los componentes sin soporte de Visual Studio Mejoras en la productividad en Visual Studio Novedades en .NET MAUI Community Toolkit</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 47 y anteriores</title>
       <link>https://fjvela.github.io/week-news/2022/weekly-47/</link>
