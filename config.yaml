@@ -47,6 +47,10 @@ outputs:
     - JSON
 
 params:
+  umami:
+    src: https://aca-umami-westeurope-001.wonderfultree-e7691370.westeurope.azurecontainerapps.io/umami.js
+    id: c38ae0ab-51ac-4645-a0be-5964482f8309
+
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   # description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
   # author: Theme PaperMod
