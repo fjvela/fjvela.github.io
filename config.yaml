@@ -112,6 +112,8 @@ params:
   analytics:
     google:
       SiteVerificationTag: Z9k5TW79n5H64zWLwEcNkbNITNDDepKoE2udZjirxXM
+    bing:
+      SiteVerificationTag: 6A293DF736526A40A24D911811A73F7D
 
   # assets:
   #   favicon: "<link / abs url>"
