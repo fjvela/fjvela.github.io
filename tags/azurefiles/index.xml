@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>AzureFiles on Javi Vela Blog</title>
-    <link>https://fjvela.github.io/tags/azurefiles/</link>
+    <link>https://blog.javivela.dev/tags/azurefiles/</link>
     <description>Recent content in AzureFiles on Javi Vela Blog</description>
     <image>
-      <url>https://fjvela.github.io/papermod-cover.png</url>
-      <link>https://fjvela.github.io/papermod-cover.png</link>
+      <url>https://blog.javivela.dev/papermod-cover.png</url>
+      <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 17 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/azurefiles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/azurefiles/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algunas noticias de la semana 2 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-2/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-2/</link>
       <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-2/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-2/</guid>
       <description>Uso de protobuf en C#, $compute y $search en ASP.NET Core OData8, como migrar de EF6 a EF Core 6, CVE-2022-21911, Visual Studio 17.1 Preview 2, .NET MAUI Preview 11, Kubernetes 1.24, paginación en Azure Cosmos, Automatización en Azure Backup,&amp;hellip;</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 51 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2021/weekly-51/</link>
+      <link>https://blog.javivela.dev/week-news/2021/weekly-51/</link>
       <pubDate>Mon, 20 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2021/weekly-51/</guid>
+      <guid>https://blog.javivela.dev/week-news/2021/weekly-51/</guid>
       <description>Roadmap para EF7, .NET 6.0.1, 5.0.13 y 3.1.22, productividad con Visual Studio 2022, Visual Studio 2022 Preview 4 para MAC, machine learning en Xamarin.Forms, rotación claves en Azure Key Vault, novedades en Azure Files, CVE-2021-44228 en servicios Microsoft.</description>
     </item>
     

@@ -2,560 +2,560 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Javi Vela Blog</title>
-    <link>https://fjvela.github.io/tags/</link>
+    <link>https://blog.javivela.dev/tags/</link>
     <description>Recent content in Tags on Javi Vela Blog</description>
     <image>
-      <url>https://fjvela.github.io/papermod-cover.png</url>
-      <link>https://fjvela.github.io/papermod-cover.png</link>
+      <url>https://blog.javivela.dev/papermod-cover.png</url>
+      <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>aks</title>
-      <link>https://fjvela.github.io/tags/aks/</link>
+      <link>https://blog.javivela.dev/tags/aks/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/aks/</guid>
+      <guid>https://blog.javivela.dev/tags/aks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k8s</title>
-      <link>https://fjvela.github.io/tags/k8s/</link>
+      <link>https://blog.javivela.dev/tags/k8s/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/k8s/</guid>
+      <guid>https://blog.javivela.dev/tags/k8s/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://fjvela.github.io/tags/kubernetes/</link>
+      <link>https://blog.javivela.dev/tags/kubernetes/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/kubernetes/</guid>
+      <guid>https://blog.javivela.dev/tags/kubernetes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>secrets</title>
-      <link>https://fjvela.github.io/tags/secrets/</link>
+      <link>https://blog.javivela.dev/tags/secrets/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/secrets/</guid>
+      <guid>https://blog.javivela.dev/tags/secrets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>seguridad</title>
-      <link>https://fjvela.github.io/tags/seguridad/</link>
+      <link>https://blog.javivela.dev/tags/seguridad/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/seguridad/</guid>
+      <guid>https://blog.javivela.dev/tags/seguridad/</guid>
       <description></description>
     </item>
     
     <item>
       <title>.NET</title>
-      <link>https://fjvela.github.io/tags/.net/</link>
+      <link>https://blog.javivela.dev/tags/.net/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/.net/</guid>
+      <guid>https://blog.javivela.dev/tags/.net/</guid>
       <description></description>
     </item>
     
     <item>
       <title>.NET MUAI</title>
-      <link>https://fjvela.github.io/tags/.net-muai/</link>
+      <link>https://blog.javivela.dev/tags/.net-muai/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/.net-muai/</guid>
+      <guid>https://blog.javivela.dev/tags/.net-muai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Azure</title>
-      <link>https://fjvela.github.io/tags/azure/</link>
+      <link>https://blog.javivela.dev/tags/azure/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/azure/</guid>
+      <guid>https://blog.javivela.dev/tags/azure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>visual studio</title>
-      <link>https://fjvela.github.io/tags/visual-studio/</link>
+      <link>https://blog.javivela.dev/tags/visual-studio/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/visual-studio/</guid>
+      <guid>https://blog.javivela.dev/tags/visual-studio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>contenedores</title>
-      <link>https://fjvela.github.io/tags/contenedores/</link>
+      <link>https://blog.javivela.dev/tags/contenedores/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/contenedores/</guid>
+      <guid>https://blog.javivela.dev/tags/contenedores/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dev tools</title>
-      <link>https://fjvela.github.io/tags/dev-tools/</link>
+      <link>https://blog.javivela.dev/tags/dev-tools/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/dev-tools/</guid>
+      <guid>https://blog.javivela.dev/tags/dev-tools/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visual Studio Code</title>
-      <link>https://fjvela.github.io/tags/visual-studio-code/</link>
+      <link>https://blog.javivela.dev/tags/visual-studio-code/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/visual-studio-code/</guid>
+      <guid>https://blog.javivela.dev/tags/visual-studio-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Otros</title>
-      <link>https://fjvela.github.io/tags/otros/</link>
+      <link>https://blog.javivela.dev/tags/otros/</link>
       <pubDate>Mon, 28 Nov 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/otros/</guid>
+      <guid>https://blog.javivela.dev/tags/otros/</guid>
       <description></description>
     </item>
     
     <item>
       <title>.NET MAUI</title>
-      <link>https://fjvela.github.io/tags/.net-maui/</link>
+      <link>https://blog.javivela.dev/tags/.net-maui/</link>
       <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/.net-maui/</guid>
+      <guid>https://blog.javivela.dev/tags/.net-maui/</guid>
       <description></description>
     </item>
     
     <item>
       <title>eventos</title>
-      <link>https://fjvela.github.io/tags/eventos/</link>
+      <link>https://blog.javivela.dev/tags/eventos/</link>
       <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/eventos/</guid>
+      <guid>https://blog.javivela.dev/tags/eventos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Terraform</title>
-      <link>https://fjvela.github.io/tags/terraform/</link>
+      <link>https://blog.javivela.dev/tags/terraform/</link>
       <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/terraform/</guid>
+      <guid>https://blog.javivela.dev/tags/terraform/</guid>
       <description></description>
     </item>
     
     <item>
       <title>C#</title>
-      <link>https://fjvela.github.io/tags/c#/</link>
+      <link>https://blog.javivela.dev/tags/c#/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/c#/</guid>
+      <guid>https://blog.javivela.dev/tags/c#/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dotnet</title>
-      <link>https://fjvela.github.io/tags/dotnet/</link>
+      <link>https://blog.javivela.dev/tags/dotnet/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/dotnet/</guid>
+      <guid>https://blog.javivela.dev/tags/dotnet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>preview</title>
-      <link>https://fjvela.github.io/tags/preview/</link>
+      <link>https://blog.javivela.dev/tags/preview/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/preview/</guid>
+      <guid>https://blog.javivela.dev/tags/preview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>asp.net</title>
-      <link>https://fjvela.github.io/tags/asp.net/</link>
+      <link>https://blog.javivela.dev/tags/asp.net/</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/asp.net/</guid>
+      <guid>https://blog.javivela.dev/tags/asp.net/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GPT-3</title>
-      <link>https://fjvela.github.io/tags/gpt-3/</link>
+      <link>https://blog.javivela.dev/tags/gpt-3/</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/gpt-3/</guid>
+      <guid>https://blog.javivela.dev/tags/gpt-3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Libros</title>
-      <link>https://fjvela.github.io/tags/libros/</link>
+      <link>https://blog.javivela.dev/tags/libros/</link>
       <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/libros/</guid>
+      <guid>https://blog.javivela.dev/tags/libros/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ACR</title>
-      <link>https://fjvela.github.io/tags/acr/</link>
+      <link>https://blog.javivela.dev/tags/acr/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/acr/</guid>
+      <guid>https://blog.javivela.dev/tags/acr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Amazon</title>
-      <link>https://fjvela.github.io/tags/amazon/</link>
+      <link>https://blog.javivela.dev/tags/amazon/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/amazon/</guid>
+      <guid>https://blog.javivela.dev/tags/amazon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CI</title>
-      <link>https://fjvela.github.io/tags/ci/</link>
+      <link>https://blog.javivela.dev/tags/ci/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/ci/</guid>
+      <guid>https://blog.javivela.dev/tags/ci/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Container registries</title>
-      <link>https://fjvela.github.io/tags/container-registries/</link>
+      <link>https://blog.javivela.dev/tags/container-registries/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/container-registries/</guid>
+      <guid>https://blog.javivela.dev/tags/container-registries/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ECR</title>
-      <link>https://fjvela.github.io/tags/ecr/</link>
+      <link>https://blog.javivela.dev/tags/ecr/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/ecr/</guid>
+      <guid>https://blog.javivela.dev/tags/ecr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>.NET Core</title>
-      <link>https://fjvela.github.io/tags/.net-core/</link>
+      <link>https://blog.javivela.dev/tags/.net-core/</link>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/.net-core/</guid>
+      <guid>https://blog.javivela.dev/tags/.net-core/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Entity Framework</title>
-      <link>https://fjvela.github.io/tags/entity-framework/</link>
+      <link>https://blog.javivela.dev/tags/entity-framework/</link>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/entity-framework/</guid>
+      <guid>https://blog.javivela.dev/tags/entity-framework/</guid>
       <description></description>
     </item>
     
     <item>
       <title>depurar</title>
-      <link>https://fjvela.github.io/tags/depurar/</link>
+      <link>https://blog.javivela.dev/tags/depurar/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/depurar/</guid>
+      <guid>https://blog.javivela.dev/tags/depurar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xamarin</title>
-      <link>https://fjvela.github.io/tags/xamarin/</link>
+      <link>https://blog.javivela.dev/tags/xamarin/</link>
       <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/xamarin/</guid>
+      <guid>https://blog.javivela.dev/tags/xamarin/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AzureFiles</title>
-      <link>https://fjvela.github.io/tags/azurefiles/</link>
+      <link>https://blog.javivela.dev/tags/azurefiles/</link>
       <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/azurefiles/</guid>
+      <guid>https://blog.javivela.dev/tags/azurefiles/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Xamarin.Forms</title>
-      <link>https://fjvela.github.io/tags/xamarin.forms/</link>
+      <link>https://blog.javivela.dev/tags/xamarin.forms/</link>
       <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/xamarin.forms/</guid>
+      <guid>https://blog.javivela.dev/tags/xamarin.forms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AppService</title>
-      <link>https://fjvela.github.io/tags/appservice/</link>
+      <link>https://blog.javivela.dev/tags/appservice/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/appservice/</guid>
+      <guid>https://blog.javivela.dev/tags/appservice/</guid>
       <description></description>
     </item>
     
     <item>
       <title>asev3</title>
-      <link>https://fjvela.github.io/tags/asev3/</link>
+      <link>https://blog.javivela.dev/tags/asev3/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/asev3/</guid>
+      <guid>https://blog.javivela.dev/tags/asev3/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AzureIoTCentral</title>
-      <link>https://fjvela.github.io/tags/azureiotcentral/</link>
+      <link>https://blog.javivela.dev/tags/azureiotcentral/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/azureiotcentral/</guid>
+      <guid>https://blog.javivela.dev/tags/azureiotcentral/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DotNetMAUI</title>
-      <link>https://fjvela.github.io/tags/dotnetmaui/</link>
+      <link>https://blog.javivela.dev/tags/dotnetmaui/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/dotnetmaui/</guid>
+      <guid>https://blog.javivela.dev/tags/dotnetmaui/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Helm</title>
-      <link>https://fjvela.github.io/tags/helm/</link>
+      <link>https://blog.javivela.dev/tags/helm/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/helm/</guid>
+      <guid>https://blog.javivela.dev/tags/helm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java</title>
-      <link>https://fjvela.github.io/tags/java/</link>
+      <link>https://blog.javivela.dev/tags/java/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/java/</guid>
+      <guid>https://blog.javivela.dev/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MySql</title>
-      <link>https://fjvela.github.io/tags/mysql/</link>
+      <link>https://blog.javivela.dev/tags/mysql/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/mysql/</guid>
+      <guid>https://blog.javivela.dev/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Steeltoe</title>
-      <link>https://fjvela.github.io/tags/steeltoe/</link>
+      <link>https://blog.javivela.dev/tags/steeltoe/</link>
       <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/steeltoe/</guid>
+      <guid>https://blog.javivela.dev/tags/steeltoe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AzureChaos</title>
-      <link>https://fjvela.github.io/tags/azurechaos/</link>
+      <link>https://blog.javivela.dev/tags/azurechaos/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/azurechaos/</guid>
+      <guid>https://blog.javivela.dev/tags/azurechaos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AzureCostManagement</title>
-      <link>https://fjvela.github.io/tags/azurecostmanagement/</link>
+      <link>https://blog.javivela.dev/tags/azurecostmanagement/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/azurecostmanagement/</guid>
+      <guid>https://blog.javivela.dev/tags/azurecostmanagement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AzureFunctions</title>
-      <link>https://fjvela.github.io/tags/azurefunctions/</link>
+      <link>https://blog.javivela.dev/tags/azurefunctions/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/azurefunctions/</guid>
+      <guid>https://blog.javivela.dev/tags/azurefunctions/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AzureLoadTesting</title>
-      <link>https://fjvela.github.io/tags/azureloadtesting/</link>
+      <link>https://blog.javivela.dev/tags/azureloadtesting/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/azureloadtesting/</guid>
+      <guid>https://blog.javivela.dev/tags/azureloadtesting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AzureNotificationHubs</title>
-      <link>https://fjvela.github.io/tags/azurenotificationhubs/</link>
+      <link>https://blog.javivela.dev/tags/azurenotificationhubs/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/azurenotificationhubs/</guid>
+      <guid>https://blog.javivela.dev/tags/azurenotificationhubs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OpenAI</title>
-      <link>https://fjvela.github.io/tags/openai/</link>
+      <link>https://blog.javivela.dev/tags/openai/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/openai/</guid>
+      <guid>https://blog.javivela.dev/tags/openai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OpenAPI</title>
-      <link>https://fjvela.github.io/tags/openapi/</link>
+      <link>https://blog.javivela.dev/tags/openapi/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/openapi/</guid>
+      <guid>https://blog.javivela.dev/tags/openapi/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Razor</title>
-      <link>https://fjvela.github.io/tags/razor/</link>
+      <link>https://blog.javivela.dev/tags/razor/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/razor/</guid>
+      <guid>https://blog.javivela.dev/tags/razor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>VisualStudio</title>
-      <link>https://fjvela.github.io/tags/visualstudio/</link>
+      <link>https://blog.javivela.dev/tags/visualstudio/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/visualstudio/</guid>
+      <guid>https://blog.javivela.dev/tags/visualstudio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WindowsForms</title>
-      <link>https://fjvela.github.io/tags/windowsforms/</link>
+      <link>https://blog.javivela.dev/tags/windowsforms/</link>
       <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/windowsforms/</guid>
+      <guid>https://blog.javivela.dev/tags/windowsforms/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WSL</title>
-      <link>https://fjvela.github.io/tags/wsl/</link>
+      <link>https://blog.javivela.dev/tags/wsl/</link>
       <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/wsl/</guid>
+      <guid>https://blog.javivela.dev/tags/wsl/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTTP</title>
-      <link>https://fjvela.github.io/tags/http/</link>
+      <link>https://blog.javivela.dev/tags/http/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/http/</guid>
+      <guid>https://blog.javivela.dev/tags/http/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTTP logging</title>
-      <link>https://fjvela.github.io/tags/http-logging/</link>
+      <link>https://blog.javivela.dev/tags/http-logging/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/http-logging/</guid>
+      <guid>https://blog.javivela.dev/tags/http-logging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>log</title>
-      <link>https://fjvela.github.io/tags/log/</link>
+      <link>https://blog.javivela.dev/tags/log/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/log/</guid>
+      <guid>https://blog.javivela.dev/tags/log/</guid>
       <description></description>
     </item>
     
     <item>
       <title>logging</title>
-      <link>https://fjvela.github.io/tags/logging/</link>
+      <link>https://blog.javivela.dev/tags/logging/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/logging/</guid>
+      <guid>https://blog.javivela.dev/tags/logging/</guid>
       <description></description>
     </item>
     
     <item>
       <title>request</title>
-      <link>https://fjvela.github.io/tags/request/</link>
+      <link>https://blog.javivela.dev/tags/request/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/request/</guid>
+      <guid>https://blog.javivela.dev/tags/request/</guid>
       <description></description>
     </item>
     
     <item>
       <title>response</title>
-      <link>https://fjvela.github.io/tags/response/</link>
+      <link>https://blog.javivela.dev/tags/response/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/response/</guid>
+      <guid>https://blog.javivela.dev/tags/response/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>https://fjvela.github.io/tags/github/</link>
+      <link>https://blog.javivela.dev/tags/github/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/github/</guid>
+      <guid>https://blog.javivela.dev/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>testing</title>
-      <link>https://fjvela.github.io/tags/testing/</link>
+      <link>https://blog.javivela.dev/tags/testing/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/testing/</guid>
+      <guid>https://blog.javivela.dev/tags/testing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>others</title>
-      <link>https://fjvela.github.io/tags/others/</link>
+      <link>https://blog.javivela.dev/tags/others/</link>
       <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/tags/others/</guid>
+      <guid>https://blog.javivela.dev/tags/others/</guid>
       <description></description>
     </item>
     

@@ -2,173 +2,173 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>.NET MAUI on Javi Vela Blog</title>
-    <link>https://fjvela.github.io/tags/.net-maui/</link>
+    <link>https://blog.javivela.dev/tags/.net-maui/</link>
     <description>Recent content in .NET MAUI on Javi Vela Blog</description>
     <image>
-      <url>https://fjvela.github.io/papermod-cover.png</url>
-      <link>https://fjvela.github.io/papermod-cover.png</link>
+      <url>https://blog.javivela.dev/papermod-cover.png</url>
+      <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://fjvela.github.io/tags/.net-maui/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/.net-maui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Algunas noticias de la semana 41 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-41/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-41/</link>
       <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-41/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-41/</guid>
       <description>.NET 7 mejoras en el método Console.ReadKey .NET 7 mejoras en System.Text.Json .NET 7 Release Candidate 2 .NET actualizaciones octubre 2022 (.NET 6.0.10 y .NET Core 3.1.30) .NET Framework actualizaciones de seguridad octubre 2022 (.NET Framework 2.0, 3.0, 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2 y 4.8) .NET MAUI soporte para Xcode 14 e iOS 16 (Preview) AKS: Azure CNI Overlay (Preview) AKS: Habilita alertas recomendadas desde Azure Portal (Preview) AKS: Kubernetes apps en Azure Marketplace (Preview) AKS: soporte Azure Active Directory workload identity (Preview) Azure Container Apps integración con Azure Monitor (Preview) Azure DDoS Protection nuevo SKU: IP Protection (Preview) Azure Monitor managed service for Prometheus (Preview) Microsoft Azure Deployment Environments AKS Disponibles nodos AMD SEV-SNP confidenciales AKS soporta desplegar 5000 nodos ASP.NET Core 7 Release Candidate 2 Azure Container Apps: Dapr soporta managed identities Azure Container Apps: Dapr soporta secrets API Azure Cosmos DB for PostgreSQL cluster Dapr v1.9 Disponible Kusto Trender Disponibles máquinas virtuales confidenciales para SQL Server Entity Framework 7 Release Candidate 2 Private Endpoints permite configurar IP estáticas Service Bus Explorer integrado en Azure portal</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 40 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-40/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-40/</link>
       <pubDate>Mon, 10 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-40/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-40/</guid>
       <description>(Preview) Azure Firewall Basic 10 años de Typescript 3 de diciembre 2022, fin soporte Azure Static Web Apps para .NET Core 3.1 30 de septiembre 2025, fin soporte Standard SKU public IP address Autenticación con MSAL.NET en aplicaciones .NET MAUI Disponible .NET MAUI Community Toolkit v1.3 Migrando Bing Ads Campaign Platform a .NET 6</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 39 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-39/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-39/</link>
       <pubDate>Mon, 03 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-39/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-39/</guid>
       <description>(Preview) Policy Analytics en Azure Firewall Disponible Visual Studio para Mac 17.4 preview 2.1 Migrando Microsoft Commerce a .NET 6 Migrar de ASP.NET a ASP.NET Core Soporte experimental de HTTP/3 en Kestrel</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 38 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-38/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-38/</link>
       <pubDate>Mon, 26 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-38/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-38/</guid>
       <description>.NET MAUI in .NET 7 Release Candidate 1 (Beta) TypeScript 4.9 (Preview) Actualización Septiembre .NET Framework 3.5, 4.7.2 y 4.8. Extensiones en Visual Studio soportan Arm64 Kubernetes 1.25: Validación reglas para CRD (Beta) Mejoras Web Application Firewall (WAF) WSL soporta systemd</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 34 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-34/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-34/</link>
       <pubDate>Mon, 29 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-34/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-34/</guid>
       <description>(Preview) C# 11: generic math, required members&amp;hellip; Actualización Agosto .NET Framework 3.5, 4.7.2 y 4.8. Azure App Service: migración a Kestrel + YARP Disponible libro .NET MAUI - Enterprise Application Patterns Disponible TypeScript 4.8 Kubernetes 1.25: Combiner Kubernetes 1.25: CSI Inline Volumes have graduated to GA Kubernetes 1.25: Pod Security Admission Controller in Stable Netcoreconf 2022</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 33 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-33/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-33/</link>
       <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-33/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-33/</guid>
       <description>.NET 6 disponible en Ubuntu 22.04 .NET Conf Focus (Preview) Configuración de despligues en AKS (gitops) (Preview) Microsoft Azure Load Testing soporta private endpoints (Preview) Soporte Blob CSI en AKS Azure SDK Release (Agosto 2022) Diponible private endpoints en User-defined routes (UDRs) Disponible Dapr 1.8.3 en Azure Container Apps Disponible integración KMS en AKS Disponible Kubernetes 1.24 (AKS) Disponible private endpoints en Network Security groups (NSG) Live Shared: Enterprise Policies Novedades en Visual Studio 2022 17.4 Preview 1 Nuevo JSON writer en OData (7.12.2)</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 32 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-32/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-32/</link>
       <pubDate>Mon, 15 Aug 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-32/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-32/</guid>
       <description>.NET 7 Preview 7 .NET actualizaciones agosto 2022 (.NET 6.0.8 y .NET Core 3.1.28) .NET Framework actualizaciones de seguridad agosto 2022 (.NET Framework 2.0, 3.0, 3.5, 3.5.1, 4.6.2, 4.7, 4.7.1, 4.7.2 y 4.8) (Preview) Serverless SQL para Azure Databricks AKS: disponible arranque y apagado de node pools ASP.NET 7 Core Preview 7 Azure App Service v3 soporta sufijos de dominios personalizados Cambios en Kubernetes 1.25 Dependencias transitivas en Visual Studio Disponible .NET Community Toolkit 8.0 Disponible .NET Framework 4.8.1 Disponible KEDA 2.8 Disponible NuGet 6.3 Disponible SynapseML para .NET Disponible Visual Studio 17.3 para Mac Disponible Visual Studio 17.3 Entity Framework 7 Preview 7 Migrando aplicaciones de ASP.NET a ASP.NET Core en Visual Studio Productividad en .NET MAUI y Visual Studio 2022 TypeScript 4.8 RC Utilizando un memory profiler en Visual Studio Visual Studio una nueva manera de escribir extensiones</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 28 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-28/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-28/</link>
       <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-28/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-28/</guid>
       <description>.NET 7 Preview 6 .NET 7: Rate limiting .NET actualizaciones julio 2022 (.NET 6.0.7 y .NET Core 3.1.27) .NET Conf: Focus on MAUI .NET Framework actualizaciones de seguridad julio 2022 (.NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2 y 4.8) (Preview) IEnumerable Debugger Visualizer: añadido filtrado, exportación y temas 13 de diciembre de 2022: fin soporte .NET Core 3.1 ASP.NET Core 7 Preview 6 Disponible Azure Gateway Load Balancer Disponible Azure IoT Edge 1.3.0 Disponible Kubernetes Gateway API 0.5.0 (Beta) Entity Framework 7 Preview 6 Personalizando controles en .NET MAUI</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 26 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-26/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-26/</link>
       <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-26/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-26/</guid>
       <description>(Preview) AKS release tracker, (Preview) AKS: soporte para Kubernetes 1.24, (Preview) App Service soporta .NET 7, (Preview) Azure Cosmos DB mejoras en el servicio de backup continuo, (Preview) Azure Data Studio extensión para Azure Cosmos DB, (Preview) Soporte de Python 3.10 en Azure Functions, ASP.NET Migration Preview 2, Azure Arc enabled Kubernetes disponible extensión Azure Key Vault secrets, Azure Machine Learning: novedades junio 2022, Azure SQL: actualizaciones junio 2022, DevOps para .NET MAUI, HTTP proxy disponible para AKS, Mejoras en los mensajes de error en aplicaciones .NET hosted, Novedades en la extensión de PowerShell para Visual Studio Code, TypeScript 4.8 Beta, Visual Studio 17.3 preview 2: avisos sonoros</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 24 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-24/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-24/</link>
       <pubDate>Mon, 20 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-24/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-24/</guid>
       <description>.NET 7 Preview 5, .NET actualizaciones junio 2022 (.NET 6.0.6 y .NET Core 3.1.26), .NET Framework actualizaciones de seguridad junio 2022 (.NET Framework 3.5, 4.6.2, 4.7, 4.7.1, 4.7.2 y 4.8), (Preview) Azure Virtual Network Manager disponible en nuevas regiones, (Preview) disponible private link para Azure Application Gateway, ASP.NET Core 7 Preview 5, Azure SDK Release (Junio 2022), Disponible conector Azure Data Explorer para Power Automate, Logic Apps, y Power Apps, Disponible en Azure Firewall Manager: Azure WAF policy y DDos management, Disponible Visual Studio 2022 17.3 Preview 2 para MAC, Disponible Visual Studio 2022 Preview 2 Arm64 para Windows 11, Entity Framework 7 Preview 5, OneService migración a .NET 6, Recursos para aprender .NET MAUI</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 23 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-23/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-23/</link>
       <pubDate>Mon, 13 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-23/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-23/</guid>
       <description>.NET 7 Preview 5 Generic Math, (Preview) Azure container Apps permite el uso de Azure Files y ephemeral storage, Azure Container Apps soportan dominios propios y certificados TLS, Azure SQL - novedades junio 2022, Disponible nuevo profiler en Visual Studio 17.2, Exchange Only migración a .NET Core, GitOps Days (8 - 9 de junio), Mejoras en el rendimiento de .NET MAUI, Serial monitor y soporte Zephyr disponibles en Visual Studio, Static Web Apps dispone de su propia CLI</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 19 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-19/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-19/</link>
       <pubDate>Mon, 16 May 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-19/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-19/</guid>
       <description>.NET 7: disponible gRPC JSON transcoding, .NET 7: mejoras en el manejo de expresiones regulares, .NET Framework (2.0, 3.0, 3.5, 3.5.1, 4.6.2, 4.7, 4.7.1, 4.7.2 y 4.8) actualizaciones (abril 2022), .NET MAUI Release candidate 3, (Preview) Azure Container Apps soporta log streaming y console connect, (Preview) Azure Virtual Machines DCsv3 en Australia, Japon, US y Asia, Disponible .NET 7 Preview 4, Disponible ASP.NET Core 7 Preview 4, Disponible Entity Framework 7 Preview 4, Disponible poder migrar Azure Data Lake Storage Gen1 a Azure Data Lake Storage Gen2 utilizando el portal, Disponible private endpoints para Azure Arc-enabled server, Disponibles .NET 6.0.5, .NET 5.0.17 y .NET Core 3.1.25 (actualizaciones mayo 2022), dotNET 2022 28 de junio en Madrid, Migrando Azure Cosmos DB API Gateway a .NET 6, OCR soporta 164 idiomas (Cognitive Services), Release candidate: TypeScript 4.7, Terraform AzureRM 3.6.0, Visual Studio 2022 17.2, Visual Studio 2022 release candidate 2 para MAC</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 7 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-7/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-7/</link>
       <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-7/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-7/</guid>
       <description>.NET 7 Preview 1, Entity Framework (EF) 7 Preview 1, ASP.NET 7 Preview 1, Orleans 4 Preview 1, .NET MAUI Preview 1, Visual Studio 2022 para MAC Preview 6, recordatorio: cambios en Azure Storage TLS, Azure Kubernetes Service (AKS) 1.23, containerd 1.6.0, litmus 2.5.0</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 3 y anteriores</title>
-      <link>https://fjvela.github.io/week-news/2022/weekly-3/</link>
+      <link>https://blog.javivela.dev/week-news/2022/weekly-3/</link>
       <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2022/weekly-3/</guid>
+      <guid>https://blog.javivela.dev/week-news/2022/weekly-3/</guid>
       <description>Visual Studio 17.1 Preview 3, .NET MAUI Preview 12, AKS deprecation dockershim, Azure SKD release, Azure Purview, Azure API&amp;hellip;</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 46</title>
-      <link>https://fjvela.github.io/week-news/2021/weekly-46/</link>
+      <link>https://blog.javivela.dev/week-news/2021/weekly-46/</link>
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2021/weekly-46/</guid>
+      <guid>https://blog.javivela.dev/week-news/2021/weekly-46/</guid>
       <description>Algunas noticias de la semana 46</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 44</title>
-      <link>https://fjvela.github.io/week-news/2021/weekly-44/</link>
+      <link>https://blog.javivela.dev/week-news/2021/weekly-44/</link>
       <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2021/weekly-44/</guid>
+      <guid>https://blog.javivela.dev/week-news/2021/weekly-44/</guid>
       <description>Algunas noticias de la semana 44</description>
     </item>
     
     <item>
       <title>Algunas noticias de la semana 43</title>
-      <link>https://fjvela.github.io/week-news/2021/weekly-43/</link>
+      <link>https://blog.javivela.dev/week-news/2021/weekly-43/</link>
       <pubDate>Sat, 23 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2021/weekly-43/</guid>
+      <guid>https://blog.javivela.dev/week-news/2021/weekly-43/</guid>
       <description>Algunas noticias de la semana 43</description>
     </item>
     
     <item>
       <title>Some news of week 42</title>
-      <link>https://fjvela.github.io/week-news/2021/weekly-42/</link>
+      <link>https://blog.javivela.dev/week-news/2021/weekly-42/</link>
       <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://fjvela.github.io/week-news/2021/weekly-42/</guid>
+      <guid>https://blog.javivela.dev/week-news/2021/weekly-42/</guid>
       <description>Tune in for .NET Conf 2021 and the launch of.NET 6., announcing .NET 6 Release Candidate 2, ASP.NET Core updates in .NET 6 Release Candidate 2, New LINQ methods in .NET 6, announcing .NET MAUI Preview 9, KubeCon + CloudNativeCon North America 2021, Learn how to easily setup your Kubernetes limits and requests. dapr release 1.4.3, helm release 3.7.1</description>
     </item>
     
