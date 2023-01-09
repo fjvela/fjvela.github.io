@@ -9,7 +9,34 @@
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.NET</title>
+      <link>https://blog.javivela.dev/tags/.net/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/tags/.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>https://blog.javivela.dev/tags/azure/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/tags/azure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>visual studio</title>
+      <link>https://blog.javivela.dev/tags/visual-studio/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/tags/visual-studio/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>aks</title>
       <link>https://blog.javivela.dev/tags/aks/</link>
@@ -56,38 +83,11 @@
     </item>
     
     <item>
-      <title>.NET</title>
-      <link>https://blog.javivela.dev/tags/.net/</link>
-      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/.net/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>.NET MUAI</title>
       <link>https://blog.javivela.dev/tags/.net-muai/</link>
       <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.javivela.dev/tags/.net-muai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Azure</title>
-      <link>https://blog.javivela.dev/tags/azure/</link>
-      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visual studio</title>
-      <link>https://blog.javivela.dev/tags/visual-studio/</link>
-      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/visual-studio/</guid>
       <description></description>
     </item>
     

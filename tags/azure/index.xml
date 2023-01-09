@@ -9,7 +9,16 @@
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 2 y anteriores</title>
+      <link>https://blog.javivela.dev/week-news/2023/weekly-2/</link>
+      <pubDate>Mon, 09 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/week-news/2023/weekly-2/</guid>
+      <description>(Preview) Azure Comos DB nuevo conector para Power BI (Preview) Azure Cosmos DB para MongoDB v5 (Preview) Sticky scroll (Private preview) AI: detecta la ropa llevada por personas en video Accelerate ML.NET training with Intel oneDAL Azure DataBase para PostgreSQL (Flexible Server): disponible encriptación de datos en reposo con claves propias (CMK) Editor de ficheros Markdown en Visual Studio Soporte de operaciones bulk en OData Web API (7.x)</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 49 y anteriores</title>
       <link>https://blog.javivela.dev/week-news/2022/weekly-49/</link>
