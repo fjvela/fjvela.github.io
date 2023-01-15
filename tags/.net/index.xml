@@ -9,7 +9,16 @@
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 09 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 3 y anteriores</title>
+      <link>https://blog.javivela.dev/week-news/2023/weekly-3/</link>
+      <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/week-news/2023/weekly-3/</guid>
+      <description>.NET actualizaciones enero 2023 (.NET 7.0.2 / 6.0.13) (Preview) PowerShellGet 3.0 Preview 18 Azure Developer CLI (azd) release Enero (0.5.0-beta.1) Debugging Encoded Text</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 2 y anteriores</title>
       <link>https://blog.javivela.dev/week-news/2023/weekly-2/</link>
