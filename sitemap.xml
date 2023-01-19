@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blog.javivela.dev/tags/c#/</loc>
+    <lastmod>2023-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/tags/dotnet/</loc>
+    <lastmod>2023-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/</loc>
+    <lastmod>2023-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/posts/2023/dotnet/csharp-11/</loc>
+    <lastmod>2023-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/posts/</loc>
+    <lastmod>2023-01-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/tags/</loc>
+    <lastmod>2023-01-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blog.javivela.dev/tags/.net/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
   </url><url>
@@ -11,13 +29,7 @@
     <loc>https://blog.javivela.dev/tags/azure/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.javivela.dev/</loc>
-    <lastmod>2023-01-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.javivela.dev/tags/otros/</loc>
-    <lastmod>2023-01-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.javivela.dev/tags/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.javivela.dev/tags/visual-studio/</loc>
@@ -39,9 +51,6 @@
     <lastmod>2022-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.javivela.dev/tags/kubernetes/</loc>
-    <lastmod>2022-12-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.javivela.dev/posts/</loc>
     <lastmod>2022-12-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.javivela.dev/tags/secrets/</loc>
@@ -175,12 +184,6 @@
   </url><url>
     <loc>https://blog.javivela.dev/week-news/2022/weekly-9/</loc>
     <lastmod>2022-03-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.javivela.dev/tags/c#/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.javivela.dev/tags/dotnet/</loc>
-    <lastmod>2022-03-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.javivela.dev/posts/2022/dotnet/csharp-11-parte-1/</loc>
     <lastmod>2022-03-02T00:00:00+00:00</lastmod>

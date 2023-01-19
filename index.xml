@@ -9,7 +9,16 @@
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Novedades en C# 11</title>
+      <link>https://blog.javivela.dev/posts/2023/dotnet/csharp-11/</link>
+      <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/posts/2023/dotnet/csharp-11/</guid>
+      <description>Echamos un vistazo a las novedades de C# 11</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 3 y anteriores</title>
       <link>https://blog.javivela.dev/week-news/2023/weekly-3/</link>
