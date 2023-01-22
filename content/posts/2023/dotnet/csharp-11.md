@@ -14,7 +14,7 @@ En noviembre de 2022 se lanzó .NET 7 y desde ese momento tenemos disponibles to
 Puedes encontrar el código fuente de los ejemplos en repositorio: https://github.com/fjvela/csharp-11
 
 ## Raw strings
-Hasta ahora la manera de poder definir cadenas de texto multilínea en C# es utilizar el prefijo @. Uno de los problemas que presenta es que si se indenta el texto la salida del este se verá afectada o si se utilizan comillas es necesario escaparlas.
+Hasta ahora la manera de poder definir cadenas de texto multilínea en C# es utilizar el prefijo @. Uno de los problemas que presenta es que si se indenta el texto la salida de este se verá afectada o si se utilizan comillas dobles es necesario escaparlas.
 
 C# 11 incluirá una nueva manera de definir cadenas de texto, para ello deberemos utilizar como mínimo tres comillas ```"""```. Esto nos facilitará poder indentar cadenas de texto en nuestro código y evitar tener que escapar las comillas. En el caso de utilizar una cadena de texto interpolada (string interpolation - "Hello, I'm {{ name }}"), deberemos utilizar como mínimo dos dólares ```$$```.
 
@@ -61,7 +61,7 @@ A continuación puedes ver el código decompilado:
 
 - Leer más: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#raw-string-literals
 
-## List pattens
+## List patterns
 Nos permitirá comparar un patrón con un _array_ o _list_ de elementos, por lo que podríamos definir un método con los siguientes patrones:
 
 ```csharp
@@ -77,7 +77,7 @@ Nos permitirá comparar un patrón con un _array_ o _list_ de elementos, por lo 
         [_, ..] => 50
     };
 ```
-El resultado de la ejecución sería:
+Los resultados de la ejecución son:
 ```csharp
     Console.WriteLine(CheckSwitch(new[] { 1, 2, 10 }));                 // prints 1
     Console.WriteLine(CheckSwitch(new[] { 1, 2, 7, 3, 3, 10 }));        // prints 1
