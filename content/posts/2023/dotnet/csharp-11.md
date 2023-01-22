@@ -53,7 +53,11 @@ Resultado:
 {
     "name": "Javi Vela"
 }
-```	
+```
+
+#### Resultado binario decompilado
+A continuación puedes ver el código decompilado:
+![Resultado binario decompilado, raw strings](/2023/dotnet/csharp-11-raw-strings-decompiled.png)
 
 - Leer más: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#raw-string-literals
 
@@ -98,6 +102,9 @@ if (numbers is [1, var second, _])
     Console.WriteLine($"The second element of a three-item list is {second}.");
 }
 ```
+#### Resultado binario decompilado
+A continuación puedes ver el código decompilado:
+![Resultado binario decompilado, list patterns](/2023/dotnet/csharp-11-list-patterns-decompiled.png)
 
 - Leer más: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#list-patterns
 
@@ -118,6 +125,10 @@ Gracias al sufijo 'u8', simplificamos la conversión:
     byte[] data = "Javi Vela"u8.ToArray();
 ```
 
+#### Resultado binario decompilado
+A continuación puedes ver el código decompilado:
+![Resultado binario decompilado, UTF-8 string literals](/2023/dotnet/csharp-11-utf-8-string-literals-decompiled.png)
+
 - Leer más: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#utf-8-string-literals
 
 ## Newlines in string interpolation expressions
@@ -132,7 +143,10 @@ C# 11 nos permite añadir saldos de línea sin modificar el formato del texto:
 ```csharp
     Console.WriteLine($"Hello {name
         }!!, How are you?");
-``` 
+```
+
+#### Resultado binario decompilado
+A continuación puedes ver el código decompilado:
 ![C# 11, compilación y ejecución de la aplicación ](/2023/dotnet/csharp-11-newlines-string-interpolations-result.png)
 
 - Leer más: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#newlines-in-string-interpolations
@@ -180,7 +194,8 @@ Se incluye en C# 11 un nuevo modificador de clases, ```file```. Al indicar el  m
 
 ![C# 11 ejemplo clases modificador 'file'](/2023/dotnet/csharp-11-file-class-modifier.png)
 
-Si decompilamos la aplicación compilada podemos ver lo siguiente:
+#### Resultado binario decompilado
+A continuación puedes ver el código decompilado:
 
 ![C# 11 liberia decompilada, las clases con modificador 'file' no están](/2023/dotnet/csharp-11-file-class-modifier-dll-decompiled.png)
 
@@ -193,8 +208,8 @@ En la siguiente imagen podemos ver como automáticamente se ha inicializado la p
 
 ![C# 11, definición de un struct. La propiedad Y no está inicializada y el compilador la ha inicializado a cero](/2023/dotnet/csharp-11-auto-default-structs-init.png)
 
+#### Resultado binario decompilado
 A continuación podemos ver la librería decompilada y como el compilador ha añadido el código necesario para inicializar la propiedad por nosotros:
-
 ![C# 11, librería decompilada. Por defecto el valor de Y en el constructor es cero](/2023/dotnet/csharp-11-auto-default-structs-init-decompiled.png)
 
 - Leer más: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11#auto-default-struct
