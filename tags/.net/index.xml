@@ -9,7 +9,16 @@
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algunas noticias de la semana 4 y anteriores</title>
+      <link>https://blog.javivela.dev/week-news/2023/weekly-4/</link>
+      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/week-news/2023/weekly-4/</guid>
+      <description>(Preview) Actualización .NET Framework enero (Preview) Azure App Health Extension (Preview) Disponible integración de Azure Database para MySQL con Logic Apps y Power Automate (Preview) Disponible Visual Studio 2022 17.5 Preview 3 (Preview) Disponible Visual Studio Spell Checker Disponible .NET Community Toolkit 8.1 Mejor motor de búsqueda en Visual Studio</description>
+    </item>
+    
     <item>
       <title>Algunas noticias de la semana 3 y anteriores</title>
       <link>https://blog.javivela.dev/week-news/2023/weekly-3/</link>
