@@ -8,13 +8,12 @@ tags: ["kubernetes", "k8s", "dapr"]
 ShowToc: true
 draft: false
 ---
-Hace unas semanas se lanzaba la [versión 1.10 de Dapr](https://blog.dapr.io/posts/2023/02/16/dapr-v1.10-is-now-available/) (16 de febrero de 2023) e incluia una novedad muy interesantes, _pluggable components_.
+Hace unas semanas se lanzaba la [versión 1.10 de Dapr](https://blog.dapr.io/posts/2023/02/16/dapr-v1.10-is-now-available/) (16 de febrero de 2023) e incluía una novedad muy interesante, _pluggable components_.
 
 ## Pluggable components
 Dapr incluye una gran colección de componentes que podemos utilizar en nuestas aplicaciones, en el caso de que necesitaramos crear un componente privado seria algo complejo ya que deberiamos hacer un [fork](https://docs.github.com/es/get-started/quickstart/fork-a-repo) de los repositorios [dapr](https://github.com/dapr/dapr) y [components-contrib](https://github.com/dapr/components-contrib) y utilizando [Go](https://go.dev/) podriamos desarrollar nuestro componente a medida.
 
 [Dapr 1.10](https://blog.dapr.io/posts/2023/02/16/dapr-v1.10-is-now-available/) incluye la posibilidad de crear e integrar nuestros propios componentes sin necesidad de modificar el código de Dapr a tráves de _pluggable components_ (preview). Un componente pluggable es aquel que no está incluido en el runtime de Dapr. 
-
 
 La comunicación entre el componente y Dapr se realiza a tráves de [gRPC](https://grpc.io/) y [Unix Domain Sockets](https://en.wikipedia.org/wiki/Unix_domain_socket) por lo que podemos utilizar cualquier lenguaje de programación que soporte gRPC para desarrollar nuestro componente.
 
