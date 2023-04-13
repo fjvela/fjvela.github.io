@@ -1,12 +1,13 @@
 {
 	"name": "Hugo",
-	"image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image.
-	"forwardPorts": [1313],
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu", // Any generic, debian-based image.
+	"forwardPorts": [
+		1313
+	],
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {},
-        "ghcr.io/devcontainers/features/hugo:1": {}
+		"ghcr.io/devcontainers/features/hugo:1": {}
 	},
-
 	// Uncomment to connect as a non-root user. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }
