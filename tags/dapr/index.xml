@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>dapr on Javi Vela Blog</title>
+    <link>https://blog.javivela.dev/tags/dapr/</link>
+    <description>Recent content in dapr on Javi Vela Blog</description>
+    <image>
+      <url>https://blog.javivela.dev/papermod-cover.png</url>
+      <link>https://blog.javivela.dev/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 13 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/dapr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Novedades en Dapr - Pluggable components</title>
+      <link>https://blog.javivela.dev/posts/2023/kubernetes/dapr-pluggable-components/</link>
+      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/posts/2023/kubernetes/dapr-pluggable-components/</guid>
+      <description>Echamos un vistazo a cómo crear un Pluggable components en Dapr</description>
+    </item>
+    
+  </channel>
+</rss>
