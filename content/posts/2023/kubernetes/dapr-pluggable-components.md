@@ -11,7 +11,7 @@ draft: false
 Hace unas semanas se lanzaba la [versión 1.10 de Dapr](https://blog.dapr.io/posts/2023/02/16/dapr-v1.10-is-now-available/) (16 de febrero de 2023) e incluía una novedad muy interesante, _pluggable components_.
 
 ## Pluggable components
-Dapr incluye una gran colección de componentes que podemos utilizar en nuestas aplicaciones, en el caso de que necesitaramos crear un componente privado seria algo complejo ya que deberiamos hacer un [fork](https://docs.github.com/es/get-started/quickstart/fork-a-repo) de los repositorios [dapr](https://github.com/dapr/dapr) y [components-contrib](https://github.com/dapr/components-contrib) y utilizando [Go](https://go.dev/) podriamos desarrollar nuestro componente a medida.
+Dapr incluye una gran colección de componentes que podemos utilizar en nuestras aplicaciones, en el caso de que necesitaramos crear un componente privado seria algo complejo ya que deberiamos hacer un [fork](https://docs.github.com/es/get-started/quickstart/fork-a-repo) de los repositorios [dapr](https://github.com/dapr/dapr) y [components-contrib](https://github.com/dapr/components-contrib) y utilizando [Go](https://go.dev/) podríamos desarrollar nuestro componente a medida.
 
 [Dapr 1.10](https://blog.dapr.io/posts/2023/02/16/dapr-v1.10-is-now-available/) incluye la posibilidad de crear e integrar nuestros propios componentes sin necesidad de modificar el código de Dapr a tráves de _pluggable components_ (preview). Un componente pluggable es aquel que no está incluido en el runtime de Dapr. 
 
@@ -20,17 +20,17 @@ La comunicación entre el componente y Dapr se realiza a tráves de [gRPC](https
 ![Arquitectura registro y comunicación Dapr y un componente pluggable](/2023/kubernetes/dapr-pluggable-components-register-component.png)
 
 A día de hoy podemos implementar 3 tipos de componentes. Dependiendo del tipo de componente, tendremos que implementar diferentes métodos:
-- [State Store](https://docs.dapr.io/reference/components-reference/supported-state-stores/): Permiten leer, almacenar y consultar elementos clave / valor en los [almacenamientos implmentados](https://docs.dapr.io/reference/components-reference/supported-state-stores/)
+- [State Store](https://docs.dapr.io/reference/components-reference/supported-state-stores/): Permiten leer, almacenar y consultar elementos clave / valor en los [almacenamientos implementados](https://docs.dapr.io/reference/components-reference/supported-state-stores/)
 - [Pub/sub](https://docs.dapr.io/reference/components-reference/supported-pubsub/): Permiten la comunicación a tráves de eventos
 - [Bindings (Input / Ouput)](https://docs.dapr.io/reference/components-reference/supported-bindings/): Permiten [invocar](https://docs.dapr.io/developing-applications/building-blocks/bindings/howto-bindings/) servicios externos y [recibir](https://docs.dapr.io/developing-applications/building-blocks/bindings/howto-triggers/) eventos externos
 
 ### Desarrollo
-Para desarrollar el componente vamos a usar .NET 7 ya que que soporta gRPC. Dapr ofrece una plantilla para .NET en el siguiente repositorio https://github.com/dapr/samples/tree/master/pluggable-components-dotnet-template. 
+Para desarrollar el componente vamos a usar .NET 7 ya que soporta gRPC. Dapr ofrece una plantilla para .NET en el siguiente repositorio https://github.com/dapr/samples/tree/master/pluggable-components-dotnet-template. 
 
 El tipo de componente que vamos a desarrollar será de tipo Binding (output) por lo que la interfaz a implementar será la siguiente:
 
 - 1 método para la inicialización del componente initialization 
-- 1 método para indicar que el componente está funcionando correctamente (health-ness or liveness check -Ping-)
+- 1 método para indicar que el componente está funcionando correctamente (liveness check -Ping-)
 - 1 método para ejecutar la lógica del componente
 - 1 método para indicar la lista de acciones disponibles en el componente
 
@@ -43,11 +43,82 @@ Una vez actualizada la plantilla a .NET 7 y actualizadas las referencias del pro
     - [ListOperations](https://github.com/fjvela/dapr-CustomPluggableComponent/blob/main/DaprPluggableComponent/Services/Services.cs#L129)
     - [Ping](https://github.com/fjvela/dapr-CustomPluggableComponent/blob/main/DaprPluggableComponent/Services/Services.cs#L147)
 
-![Implementación - Init](/2023/kubernetes/dapr-pluggable-components-init.png)
-![Implementación - Invoke](/2023/kubernetes/dapr-pluggable-components-invoke.png)
-![Implementación - List operations](/2023/kubernetes/dapr-pluggable-components-list-operations.png)
-![Implementación - Ping](/2023/kubernetes/dapr-pluggable-components-ping.png)
+#### Implementación - Init
+``` c#
+    public override Task<OutputBindingInitResponse> Init(OutputBindingInitRequest request, ServerCallContext context)
+    {
+        logger.LogTrace("Init");
 
+        LogMetadata(request.Metadata.Properties);
+
+        var result = new OutputBindingInitResponse();
+
+        return Task.FromResult(result);
+    }
+```
+
+#### Implementación - Invoke
+``` c#
+    /// <summary>
+    /// Invoke remote systems with optional payloads.
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public override Task<InvokeResponse> Invoke(InvokeRequest request, ServerCallContext context)
+    {
+        logger.LogTrace("Invoke");
+
+
+        LogMetadata(request.Metadata);
+        logger.LogTrace(request.Data.ToString());
+
+        var result = new InvokeResponse()
+        {
+            ContentType = "application/json",
+            Data = request.Data,
+        };
+
+        return Task.FromResult(result);
+    }
+```
+
+#### Implementación - List operations
+``` c#
+    /// ListOperations list system supported operations.
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public override Task<ListOperationsResponse> ListOperations(ListOperationsRequest request, ServerCallContext context)
+    {
+        logger.LogTrace("List");
+
+        var operations = new RepeatedField<string> { "read", "write" };
+        var result = new ListOperationsResponse();
+        result.Operations.AddRange(operations);
+
+        return Task.FromResult(result);
+
+    }
+```
+
+#### Implementación - Ping
+``` c#
+    /// <summary>
+    /// Ping the OutputBinding. Used for liveness porpuses.
+    /// </summary>
+    /// <param name="request">The request received from the client.</param>
+    /// <param name="context">The context of the server-side call handler being invoked.</param>
+    /// <returns>The response to send back to the client (wrapped by a task).</returns>
+    public override Task<PingResponse> Ping(PingRequest request, ServerCallContext context)
+    {
+        logger.LogTrace("Ping");
+        return Task.FromResult(new PingResponse());
+    }
+```
+``` c#
+```
 
 Compilamos y generamos la imagen Docker correspondiente, es importante que cuando generemos la imagen añadamos un usuario non-root:
 
@@ -65,7 +136,7 @@ dapr.io/app-id: "my-app"
 dapr.io/enabled: "true"
 ```
 
-Automaticamente [Dapr Sidecar Injector](https://docs.dapr.io/concepts/dapr-services/sidecar-injector/) creará otro contenedor para ejecutar el servicio de Dapr ([SideCard pattern](https://docs.dapr.io/concepts/dapr-services/sidecar/)) y modificará el deployment para compartir el carpeta `/tmp/dapr-components-sockets` entre los dos contenedores a traves de un `volumeMounts`.
+Automaticamente [Dapr Sidecar Injector](https://docs.dapr.io/concepts/dapr-services/sidecar-injector/) creará otro contenedor para ejecutar el servicio de Dapr ([Sidecar pattern](https://docs.dapr.io/concepts/dapr-services/sidecar/)) y modificará el deployment para compartir la carpeta `/tmp/dapr-components-sockets` entre los dos contenedores a traves de un `volumeMounts`.
 
 ![Volume mounts entre containers](/2023/kubernetes/dapr-pluggable-components-volume-mounts.png)
 
@@ -84,6 +155,8 @@ curl -X POST -H 'Content-Type: application/json' http://localhost:3500/v1.0/bind
 ```
 
 ![Dapr pluggable component resultado ejecución](/2023/kubernetes/dapr-pluggable-components-execution-test.png)
+
+Creo que esta funcionalidad facilita en gran medida el poder desarrollar e integrar componentes privados,  actualmente el único incoveniente es que es necesario desplegar el componente varias veces en el caso de que haya varias aplicaciones que lo utilicen.
 
 # References
 - https://docs.dapr.io/operations/components/pluggable-components-registration/
