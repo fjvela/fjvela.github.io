@@ -12,10 +12,10 @@
     <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Novedades en C# 12 (.NET 8 preview 3)</title>
-      <link>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8preview-3/</link>
+      <link>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8-preview-3/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8preview-3/</guid>
+      <guid>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8-preview-3/</guid>
       <description>Echamos un vistazo a las novedades de C# 12 (.NET 8 preview 3)
 - Primary constructors for classes and structs
 - Using directives for additional types
