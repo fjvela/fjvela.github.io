@@ -9,7 +9,34 @@
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>autoscaler</title>
+      <link>https://blog.javivela.dev/tags/autoscaler/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/tags/autoscaler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>k8s</title>
+      <link>https://blog.javivela.dev/tags/k8s/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/tags/k8s/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>https://blog.javivela.dev/tags/kubernetes/</link>
+      <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>C#</title>
       <link>https://blog.javivela.dev/tags/c#/</link>
@@ -34,24 +61,6 @@
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.javivela.dev/tags/dapr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>k8s</title>
-      <link>https://blog.javivela.dev/tags/k8s/</link>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/k8s/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://blog.javivela.dev/tags/kubernetes/</link>
-      <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/kubernetes/</guid>
       <description></description>
     </item>
     
