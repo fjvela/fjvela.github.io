@@ -16,7 +16,7 @@
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
       
       <guid>https://blog.javivela.dev/posts/2023/kubernetes/vertical-pod-autoscaler/</guid>
-      <description>Como funciona Vertical Pod Autoscaler en Kubernetes</description>
+      <description>La &lt;strong&gt;escalabilidad vertical&lt;/strong&gt; permite &lt;strong&gt;aumentar la memoria y CPU&lt;/strong&gt; de las réplicas dinámicamente dependiendo del uso de memoria y CPU de la aplicación. El componente VPA (Vertical Pod Autoscaler) permite realizar estos cambios automáticamente en nuestro clúster Kubernetes.</description>
     </item>
     
     <item>
