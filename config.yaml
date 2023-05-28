@@ -21,18 +21,11 @@ languages:
     languageName: "Español"
     languageAltTitle: Español
     weight: 2
-    homeInfoParams:
-      Title: "Hola a todos, ¡Soy Javi! 👋"
-      Content: >
-        Soy arquitecto de soluciones y un apasionado de las tecnologías cloud y tecnologías microsoft.  Este es mi sitio web para hablar sobre Devops, Azure, AWS, CI/CD, K8S, contenedores y  arquitectura.
     menu:
       main:
         - name: Posts
           url: posts/
           weight: 1
-        - name: Noticias de la semana
-          url: week-news/
-          weight: 5
         - name: Buscar
           url: search/
           weight: 10
@@ -72,22 +65,18 @@ params:
   profileMode:
     enabled: true
     title: Javi Vela Blog
-
     subtitle: "Soy arquitecto de soluciones y un apasionado de las tecnologías cloud y tecnologías microsoft. Este es mi sitio web para hablar sobre Devops, Azure, AWS, CI/CD, K8S, contenedores y arquitectura."
     imageUrl: "JavierVela.jpg"
     imageTitle: "Javi Vela fotografía"
-    # imageWidth: 120
-    # imageHeight: 120
+    imageWidth: 120
+    imageHeight: 120
     buttons:
       - name: Posts
         url: posts/
-      - name: Noticias de la semana
-        url: week-news/
 
   homeInfoParams:
-    Title: Hi everyone, I'm Javi! 👋
-    Content: >
-      I'm Solutions architect and passionate about cloud and microsoft technologies. This is my  site to talk about .NET, Devops, Azure, AWS, CI/CD, K8S, containers, arquitecture
+    Title: Javi Vela Blog
+    Content: "Soy arquitecto de soluciones y un apasionado de las tecnologías cloud y tecnologías microsoft. Este es mi sitio web para hablar sobre Devops, Azure, AWS, CI/CD, K8S, contenedores y arquitectura."
 
   socialIcons:
     - name: github
