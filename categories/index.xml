@@ -8,6 +8,7 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://blog.javivela.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language><atom:link href="https://blog.javivela.dev/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

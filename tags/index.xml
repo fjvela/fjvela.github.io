@@ -9,6 +9,7 @@
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
     <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>autoscaler</title>
@@ -65,42 +66,6 @@
     </item>
     
     <item>
-      <title>Azure</title>
-      <link>https://blog.javivela.dev/tags/azure/</link>
-      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Otros</title>
-      <link>https://blog.javivela.dev/tags/otros/</link>
-      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/otros/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>visual studio</title>
-      <link>https://blog.javivela.dev/tags/visual-studio/</link>
-      <pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/visual-studio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>.NET</title>
-      <link>https://blog.javivela.dev/tags/.net/</link>
-      <pubDate>Mon, 23 Jan 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/.net/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>aks</title>
       <link>https://blog.javivela.dev/tags/aks/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
@@ -124,15 +89,6 @@
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.javivela.dev/tags/seguridad/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>.NET MUAI</title>
-      <link>https://blog.javivela.dev/tags/.net-muai/</link>
-      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/.net-muai/</guid>
       <description></description>
     </item>
     
@@ -164,65 +120,11 @@
     </item>
     
     <item>
-      <title>.NET MAUI</title>
-      <link>https://blog.javivela.dev/tags/.net-maui/</link>
-      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/.net-maui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>eventos</title>
-      <link>https://blog.javivela.dev/tags/eventos/</link>
-      <pubDate>Mon, 19 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/eventos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Terraform</title>
-      <link>https://blog.javivela.dev/tags/terraform/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/terraform/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>preview</title>
       <link>https://blog.javivela.dev/tags/preview/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.javivela.dev/tags/preview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>asp.net</title>
-      <link>https://blog.javivela.dev/tags/asp.net/</link>
-      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/asp.net/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GPT-3</title>
-      <link>https://blog.javivela.dev/tags/gpt-3/</link>
-      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/gpt-3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Libros</title>
-      <link>https://blog.javivela.dev/tags/libros/</link>
-      <pubDate>Mon, 28 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/libros/</guid>
       <description></description>
     </item>
     
@@ -241,6 +143,15 @@
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
       <guid>https://blog.javivela.dev/tags/amazon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Azure</title>
+      <link>https://blog.javivela.dev/tags/azure/</link>
+      <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/tags/azure/</guid>
       <description></description>
     </item>
     
@@ -272,24 +183,6 @@
     </item>
     
     <item>
-      <title>.NET Core</title>
-      <link>https://blog.javivela.dev/tags/.net-core/</link>
-      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/.net-core/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Entity Framework</title>
-      <link>https://blog.javivela.dev/tags/entity-framework/</link>
-      <pubDate>Mon, 21 Feb 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/entity-framework/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>depurar</title>
       <link>https://blog.javivela.dev/tags/depurar/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
@@ -299,200 +192,11 @@
     </item>
     
     <item>
-      <title>Xamarin</title>
-      <link>https://blog.javivela.dev/tags/xamarin/</link>
-      <pubDate>Sun, 30 Jan 2022 00:00:00 +0000</pubDate>
+      <title>asp.net</title>
+      <link>https://blog.javivela.dev/tags/asp.net/</link>
+      <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.javivela.dev/tags/xamarin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AzureFiles</title>
-      <link>https://blog.javivela.dev/tags/azurefiles/</link>
-      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azurefiles/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Xamarin.Forms</title>
-      <link>https://blog.javivela.dev/tags/xamarin.forms/</link>
-      <pubDate>Mon, 17 Jan 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/xamarin.forms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AppService</title>
-      <link>https://blog.javivela.dev/tags/appservice/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/appservice/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>asev3</title>
-      <link>https://blog.javivela.dev/tags/asev3/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/asev3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AzureIoTCentral</title>
-      <link>https://blog.javivela.dev/tags/azureiotcentral/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azureiotcentral/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DotNetMAUI</title>
-      <link>https://blog.javivela.dev/tags/dotnetmaui/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/dotnetmaui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Helm</title>
-      <link>https://blog.javivela.dev/tags/helm/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/helm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://blog.javivela.dev/tags/java/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MySql</title>
-      <link>https://blog.javivela.dev/tags/mysql/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Steeltoe</title>
-      <link>https://blog.javivela.dev/tags/steeltoe/</link>
-      <pubDate>Mon, 13 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/steeltoe/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AzureChaos</title>
-      <link>https://blog.javivela.dev/tags/azurechaos/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azurechaos/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AzureCostManagement</title>
-      <link>https://blog.javivela.dev/tags/azurecostmanagement/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azurecostmanagement/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AzureFunctions</title>
-      <link>https://blog.javivela.dev/tags/azurefunctions/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azurefunctions/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AzureLoadTesting</title>
-      <link>https://blog.javivela.dev/tags/azureloadtesting/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azureloadtesting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AzureNotificationHubs</title>
-      <link>https://blog.javivela.dev/tags/azurenotificationhubs/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/azurenotificationhubs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenAI</title>
-      <link>https://blog.javivela.dev/tags/openai/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/openai/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OpenAPI</title>
-      <link>https://blog.javivela.dev/tags/openapi/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/openapi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Razor</title>
-      <link>https://blog.javivela.dev/tags/razor/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/razor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>VisualStudio</title>
-      <link>https://blog.javivela.dev/tags/visualstudio/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/visualstudio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WindowsForms</title>
-      <link>https://blog.javivela.dev/tags/windowsforms/</link>
-      <pubDate>Mon, 06 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/windowsforms/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WSL</title>
-      <link>https://blog.javivela.dev/tags/wsl/</link>
-      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/wsl/</guid>
+      <guid>https://blog.javivela.dev/tags/asp.net/</guid>
       <description></description>
     </item>
     
@@ -547,33 +251,6 @@
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.javivela.dev/tags/response/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github</title>
-      <link>https://blog.javivela.dev/tags/github/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>testing</title>
-      <link>https://blog.javivela.dev/tags/testing/</link>
-      <pubDate>Mon, 01 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/testing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>others</title>
-      <link>https://blog.javivela.dev/tags/others/</link>
-      <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.javivela.dev/tags/others/</guid>
       <description></description>
     </item>
     
