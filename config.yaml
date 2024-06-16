@@ -16,23 +16,6 @@ minify:
   disableXML: true
   # minifyOutput: true
 
-languages:
-  es:
-    languageName: "Español"
-    languageAltTitle: Español
-    weight: 2
-    menu:
-      main:
-        - name: Posts
-          url: posts/
-          weight: 1
-        - name: Buscar
-          url: search/
-          weight: 10
-        - name: Etiquetas
-          url: tags/
-          weight: 10
-
 outputs:
   home:
     - HTML
@@ -40,6 +23,23 @@ outputs:
     - JSON
 
 params:
+  languages:
+    es:
+      languageName: "Español"
+      languageAltTitle: Español
+      weight: 2
+      menu:
+        main:
+          - name: Posts
+            url: posts/
+            weight: 1
+          - name: Buscar
+            url: search/
+            weight: 10
+          - name: Etiquetas
+            url: tags/
+            weight: 10
+
   umami:
     src: https://aca-umami-westeurope-001.wonderfultree-e7691370.westeurope.azurecontainerapps.io/umami.js
     id: c38ae0ab-51ac-4645-a0be-5964482f8309
