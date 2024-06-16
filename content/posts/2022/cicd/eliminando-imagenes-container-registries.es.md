@@ -14,7 +14,7 @@ draft: false
 
 Nos guste o no nos guste **el almacenamiento no es infinito**, el límite puede ser físico o económico y con la parte económica seguro que más de uno nos hemos llevado una sorpresa revisando la factura de nuestro cloud provider. 
 
-{{< twitter 1436768351053885445 >}}
+{{< twitter user="hectorarley" id="1436768351053885445" >}}
 
 Uno de los elementos a los que **no solemos prestar atención es al almacenamiento de nuestros container registries**, pudiendo llegar a almacenar cientos o miles de imágenes generadas en nuestros procesos de CI y que pasados unos días normalmente ya no son necesarias. A continuación vamos a mostrar como podemos limpiar nuestro [Amazon Elastic Container Registry (Amazon ECR)](https://aws.amazon.com/ecr/) o [Microsoft Container Registry (Azure ACR)](https://azure.microsoft.com/services/container-registry/).
 <br/>
