@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>dev tools on Javi Vela Blog</title>
+    <title>Dev Tools on Javi Vela Blog</title>
     <link>https://blog.javivela.dev/tags/dev-tools/</link>
-    <description>Recent content in dev tools on Javi Vela Blog</description>
+    <description>Recent content in Dev Tools on Javi Vela Blog</description>
     <image>
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>

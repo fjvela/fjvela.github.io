@@ -12,7 +12,7 @@
     <language>es</language>
     <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>autoscaler</title>
+      <title>Autoscaler</title>
       <link>https://blog.javivela.dev/tags/autoscaler/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
       
@@ -21,7 +21,7 @@
     </item>
     
     <item>
-      <title>k8s</title>
+      <title>K8s</title>
       <link>https://blog.javivela.dev/tags/k8s/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
       
@@ -40,15 +40,15 @@
     
     <item>
       <title>C#</title>
-      <link>https://blog.javivela.dev/tags/c#/</link>
+      <link>https://blog.javivela.dev/tags/c%23/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.javivela.dev/tags/c#/</guid>
+      <guid>https://blog.javivela.dev/tags/c%23/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>dotnet</title>
+      <title>Dotnet</title>
       <link>https://blog.javivela.dev/tags/dotnet/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
       
@@ -57,7 +57,7 @@
     </item>
     
     <item>
-      <title>dapr</title>
+      <title>Dapr</title>
       <link>https://blog.javivela.dev/tags/dapr/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
       
@@ -66,7 +66,7 @@
     </item>
     
     <item>
-      <title>aks</title>
+      <title>Aks</title>
       <link>https://blog.javivela.dev/tags/aks/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
@@ -75,7 +75,7 @@
     </item>
     
     <item>
-      <title>secrets</title>
+      <title>Secrets</title>
       <link>https://blog.javivela.dev/tags/secrets/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
@@ -84,7 +84,7 @@
     </item>
     
     <item>
-      <title>seguridad</title>
+      <title>Seguridad</title>
       <link>https://blog.javivela.dev/tags/seguridad/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       
@@ -93,7 +93,7 @@
     </item>
     
     <item>
-      <title>contenedores</title>
+      <title>Contenedores</title>
       <link>https://blog.javivela.dev/tags/contenedores/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       
@@ -102,7 +102,7 @@
     </item>
     
     <item>
-      <title>dev tools</title>
+      <title>Dev Tools</title>
       <link>https://blog.javivela.dev/tags/dev-tools/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
       
@@ -120,7 +120,7 @@
     </item>
     
     <item>
-      <title>preview</title>
+      <title>Preview</title>
       <link>https://blog.javivela.dev/tags/preview/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
       
@@ -165,7 +165,7 @@
     </item>
     
     <item>
-      <title>Container registries</title>
+      <title>Container Registries</title>
       <link>https://blog.javivela.dev/tags/container-registries/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
       
@@ -183,7 +183,7 @@
     </item>
     
     <item>
-      <title>depurar</title>
+      <title>Depurar</title>
       <link>https://blog.javivela.dev/tags/depurar/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
       
@@ -192,7 +192,7 @@
     </item>
     
     <item>
-      <title>asp.net</title>
+      <title>Asp.net</title>
       <link>https://blog.javivela.dev/tags/asp.net/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -210,7 +210,7 @@
     </item>
     
     <item>
-      <title>HTTP logging</title>
+      <title>HTTP Logging</title>
       <link>https://blog.javivela.dev/tags/http-logging/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -219,7 +219,7 @@
     </item>
     
     <item>
-      <title>log</title>
+      <title>Log</title>
       <link>https://blog.javivela.dev/tags/log/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -228,7 +228,7 @@
     </item>
     
     <item>
-      <title>logging</title>
+      <title>Logging</title>
       <link>https://blog.javivela.dev/tags/logging/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -237,7 +237,7 @@
     </item>
     
     <item>
-      <title>request</title>
+      <title>Request</title>
       <link>https://blog.javivela.dev/tags/request/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
@@ -246,11 +246,20 @@
     </item>
     
     <item>
-      <title>response</title>
+      <title>Response</title>
       <link>https://blog.javivela.dev/tags/response/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://blog.javivela.dev/tags/response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PaperMod</title>
+      <link>https://blog.javivela.dev/tags/papermod/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.javivela.dev/tags/papermod/</guid>
       <description></description>
     </item>
     

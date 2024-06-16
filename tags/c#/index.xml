@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>C# on Javi Vela Blog</title>
-    <link>https://blog.javivela.dev/tags/c#/</link>
+    <link>https://blog.javivela.dev/tags/c%23/</link>
     <description>Recent content in C# on Javi Vela Blog</description>
     <image>
       <url>https://blog.javivela.dev/papermod-cover.png</url>
@@ -10,7 +10,7 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/c%23/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Novedades en C# 12 (.NET 8 preview 3)</title>
       <link>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8-preview-3/</link>
