@@ -256,7 +256,7 @@ I0515 17:17:00.846076       1 reflector.go:559] k8s.io/autoscaler/vertical-pod-a
 
 Comprobamos las anotaciones de los Pods con el comando `kubectl get pods -o=jsonpath='{.items[0].metadata.annotations}' | jq`:
 
-[![Pod annotations tras asignar los nuevos recursos](/2023/kubernetes/vertical-pod-autoscaler-pod-annotations.png)](/2023/kubernetes/vertical-pod-autoscaler-pod-annotations.png.png)
+[![Pod annotations tras asignar los nuevos recursos](/2023/kubernetes/vertical-pod-autoscaler-pod-annotations.png)](/2023/kubernetes/vertical-pod-autoscaler-pod-annotations.png)
 
 Comprobamos los nuevos recursos asignados con el comando `kubectl get pods -o=jsonpath='{.items[0].spec.containers[0].resources}' | jq`:
 
