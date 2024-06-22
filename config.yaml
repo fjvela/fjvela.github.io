@@ -40,9 +40,6 @@ params:
             url: tags/
             weight: 10
 
-  umami:
-    src: https://aca-umami-westeurope-001.wonderfultree-e7691370.westeurope.azurecontainerapps.io/umami.js
-    id: c38ae0ab-51ac-4645-a0be-5964482f8309
   librecounter:
     enabled: true
 
