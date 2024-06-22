@@ -9,112 +9,91 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.javivela.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes - Vertical Pod Autoscaler</title>
       <link>https://blog.javivela.dev/posts/2023/kubernetes/vertical-pod-autoscaler/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2023/kubernetes/vertical-pod-autoscaler/</guid>
       <description>La &lt;strong&gt;escalabilidad vertical&lt;/strong&gt; permite &lt;strong&gt;aumentar la memoria y CPU&lt;/strong&gt; de las réplicas dinámicamente dependiendo del uso de memoria y CPU de la aplicación. El componente VPA (Vertical Pod Autoscaler) permite realizar estos cambios automáticamente en nuestro clúster Kubernetes.</description>
     </item>
-    
     <item>
       <title>Novedades en C# 12 (.NET 8 preview 3)</title>
       <link>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8-preview-3/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8-preview-3/</guid>
       <description>Echamos un vistazo a las novedades de C# 12 (.NET 8 preview 3)
 - Primary constructors for classes and structs
 - Using directives for additional types
 - Default values for lambda expressions</description>
     </item>
-    
     <item>
       <title>Novedades en Dapr - Pluggable components</title>
       <link>https://blog.javivela.dev/posts/2023/kubernetes/dapr-pluggable-components/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2023/kubernetes/dapr-pluggable-components/</guid>
       <description>Echamos un vistazo a cómo crear un Pluggable components en Dapr</description>
     </item>
-    
     <item>
       <title>Novedades en C# 11</title>
       <link>https://blog.javivela.dev/posts/2023/dotnet/csharp-11/</link>
       <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2023/dotnet/csharp-11/</guid>
       <description>Echamos un vistazo a las novedades de C# 11</description>
     </item>
-    
     <item>
       <title>Azure Key Vault Provider for Secrets Store CSI Driver, leyendo y utilizando información de un Azure Key Vault desde AKS</title>
       <link>https://blog.javivela.dev/posts/2022/kubernetes/azure-key-vault-secret-store-csi/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/kubernetes/azure-key-vault-secret-store-csi/</guid>
       <description>Introducción En algunas ocasiones nuestras aplicaciones desplegadas en kubernetes necesitan información sensible y/o confidencial tales como una contraseña de una base de datos o un token para conectarse a otras aplicaciones.
 Desplegar y mantener esta información en nuestro cluster no es siempre trivial o sencilla y en determinados casos de uso es posible que el tipo de objecto Secret no sea el mas adecuado.
 A lo largo del post vamos a ver como instalar y configurar Azure Key Vault Provider for Secrets Store CSI Driver, este componente nos va a permitir leer información de un Azure Key Vault y proporcionarla a un Pod a través de un fichero o una variable de entorno.</description>
     </item>
-    
     <item>
       <title>Mejora la experiencia de desarrollo, desarrolla dentro de un contenedor</title>
       <link>https://blog.javivela.dev/posts/2022/devtools/desarrolla-en-un-contenedor/</link>
       <pubDate>Wed, 30 Nov 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/devtools/desarrolla-en-un-contenedor/</guid>
       <description>En algunas ocasiones es algo tedioso instalar los SDKs o dependencias de un proyecto para poder trabajar con él. Visual Studio Code Dev Containers te permite definir y distribuir el entorno de desarrollo de tu proyecto.</description>
     </item>
-    
     <item>
       <title>Kubernetes: Startup probe</title>
       <link>https://blog.javivela.dev/posts/2022/kubernetes/startup-probe/</link>
       <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/kubernetes/startup-probe/</guid>
       <description>La probe &lt;code&gt;Startup probe&lt;/code&gt; permite gestionar de una manera mas eficiente el arranque de una aplicación mejorando la disponibilidad de la misma.</description>
     </item>
-    
     <item>
       <title>Novedades en C# 11 (preview)</title>
       <link>https://blog.javivela.dev/posts/2022/dotnet/csharp-11-parte-1/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/dotnet/csharp-11-parte-1/</guid>
       <description>Echamos un vistazo a las novedades de C# 11: Raw strings, Simplified parameter null validation code (!!) y List pattens</description>
     </item>
-    
     <item>
       <title>Eliminando imágenes en nuestros container registries</title>
       <link>https://blog.javivela.dev/posts/2022/cicd/eliminando-imagenes-container-registries/</link>
       <pubDate>Wed, 23 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/cicd/eliminando-imagenes-container-registries/</guid>
       <description>Nos guste o no nos guste &lt;strong&gt;el almacenamiento no es infinito&lt;/strong&gt;, el límite puede ser físico o económico y con la parte económica seguro que más de uno nos hemos llevado una sorpresa revisando la factura de nuestro cloud provider.</description>
     </item>
-    
     <item>
       <title>Kubernetes: depurando aplicaciones con contenedores efímeros</title>
       <link>https://blog.javivela.dev/posts/2022/kubernetes/contenedores-efimeros/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/kubernetes/contenedores-efimeros/</guid>
       <description>Todos nos hemos enfrentado en alguna ocasión a depurar una aplicación que se ejecuta en un contenedor en un clúster Kubernetes. Normalmente (y siguiendo buenas prácticas) estos contenedores utilizan imágenes &lt;a href=&#34;https://github.com/GoogleContainerTools/distroless&#34;&gt;distroless&lt;/a&gt; (solo continen la aplicación y sus dependencias, no contienen ninguna shell u otros programas)</description>
     </item>
-    
     <item>
       <title>ASP.NET Core 6 - HttpLogging (log request/responses)</title>
       <link>https://blog.javivela.dev/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</guid>
       <description>En algunas ocasiones hemos necesitado obtener las información del tráfico de entrada y salida (HTTP request / HTTP response) de nuestras aplicaciones ASP.NET core. Hasta la versión 6 de .NET era necesario escribir nuestro propio middleware. En esta versión, Microsoft ha incluido un middleware para poder loguear esta información.</description>
     </item>
-    
   </channel>
 </rss>

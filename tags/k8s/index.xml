@@ -9,55 +9,46 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.javivela.dev/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes - Vertical Pod Autoscaler</title>
       <link>https://blog.javivela.dev/posts/2023/kubernetes/vertical-pod-autoscaler/</link>
       <pubDate>Thu, 18 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2023/kubernetes/vertical-pod-autoscaler/</guid>
       <description>La &lt;strong&gt;escalabilidad vertical&lt;/strong&gt; permite &lt;strong&gt;aumentar la memoria y CPU&lt;/strong&gt; de las réplicas dinámicamente dependiendo del uso de memoria y CPU de la aplicación. El componente VPA (Vertical Pod Autoscaler) permite realizar estos cambios automáticamente en nuestro clúster Kubernetes.</description>
     </item>
-    
     <item>
       <title>Novedades en Dapr - Pluggable components</title>
       <link>https://blog.javivela.dev/posts/2023/kubernetes/dapr-pluggable-components/</link>
       <pubDate>Thu, 13 Apr 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2023/kubernetes/dapr-pluggable-components/</guid>
       <description>Echamos un vistazo a cómo crear un Pluggable components en Dapr</description>
     </item>
-    
     <item>
       <title>Azure Key Vault Provider for Secrets Store CSI Driver, leyendo y utilizando información de un Azure Key Vault desde AKS</title>
       <link>https://blog.javivela.dev/posts/2022/kubernetes/azure-key-vault-secret-store-csi/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/kubernetes/azure-key-vault-secret-store-csi/</guid>
       <description>Introducción En algunas ocasiones nuestras aplicaciones desplegadas en kubernetes necesitan información sensible y/o confidencial tales como una contraseña de una base de datos o un token para conectarse a otras aplicaciones.
 Desplegar y mantener esta información en nuestro cluster no es siempre trivial o sencilla y en determinados casos de uso es posible que el tipo de objecto Secret no sea el mas adecuado.
 A lo largo del post vamos a ver como instalar y configurar Azure Key Vault Provider for Secrets Store CSI Driver, este componente nos va a permitir leer información de un Azure Key Vault y proporcionarla a un Pod a través de un fichero o una variable de entorno.</description>
     </item>
-    
     <item>
       <title>Kubernetes: Startup probe</title>
       <link>https://blog.javivela.dev/posts/2022/kubernetes/startup-probe/</link>
       <pubDate>Thu, 18 Aug 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/kubernetes/startup-probe/</guid>
       <description>La probe &lt;code&gt;Startup probe&lt;/code&gt; permite gestionar de una manera mas eficiente el arranque de una aplicación mejorando la disponibilidad de la misma.</description>
     </item>
-    
     <item>
       <title>Kubernetes: depurando aplicaciones con contenedores efímeros</title>
       <link>https://blog.javivela.dev/posts/2022/kubernetes/contenedores-efimeros/</link>
       <pubDate>Thu, 17 Feb 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/kubernetes/contenedores-efimeros/</guid>
       <description>Todos nos hemos enfrentado en alguna ocasión a depurar una aplicación que se ejecuta en un contenedor en un clúster Kubernetes. Normalmente (y siguiendo buenas prácticas) estos contenedores utilizan imágenes &lt;a href=&#34;https://github.com/GoogleContainerTools/distroless&#34;&gt;distroless&lt;/a&gt; (solo continen la aplicación y sus dependencias, no contienen ninguna shell u otros programas)</description>
     </item>
-    
   </channel>
 </rss>

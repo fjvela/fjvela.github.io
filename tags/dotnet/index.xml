@@ -9,47 +9,40 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.127.0</generator>
     <language>es</language>
-    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://blog.javivela.dev/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.javivela.dev/tags/dotnet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Novedades en C# 12 (.NET 8 preview 3)</title>
       <link>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8-preview-3/</link>
       <pubDate>Wed, 03 May 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2023/dotnet/csharp-12-net-8-preview-3/</guid>
       <description>Echamos un vistazo a las novedades de C# 12 (.NET 8 preview 3)
 - Primary constructors for classes and structs
 - Using directives for additional types
 - Default values for lambda expressions</description>
     </item>
-    
     <item>
       <title>Novedades en C# 11</title>
       <link>https://blog.javivela.dev/posts/2023/dotnet/csharp-11/</link>
       <pubDate>Fri, 20 Jan 2023 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2023/dotnet/csharp-11/</guid>
       <description>Echamos un vistazo a las novedades de C# 11</description>
     </item>
-    
     <item>
       <title>Novedades en C# 11 (preview)</title>
       <link>https://blog.javivela.dev/posts/2022/dotnet/csharp-11-parte-1/</link>
       <pubDate>Wed, 02 Mar 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2022/dotnet/csharp-11-parte-1/</guid>
       <description>Echamos un vistazo a las novedades de C# 11: Raw strings, Simplified parameter null validation code (!!) y List pattens</description>
     </item>
-    
     <item>
       <title>ASP.NET Core 6 - HttpLogging (log request/responses)</title>
       <link>https://blog.javivela.dev/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://blog.javivela.dev/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</guid>
       <description>En algunas ocasiones hemos necesitado obtener las información del tráfico de entrada y salida (HTTP request / HTTP response) de nuestras aplicaciones ASP.NET core. Hasta la versión 6 de .NET era necesario escribir nuestro propio middleware. En esta versión, Microsoft ha incluido un middleware para poder loguear esta información.</description>
     </item>
-    
   </channel>
 </rss>
