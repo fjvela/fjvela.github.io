@@ -22,8 +22,8 @@ outputs:
     - RSS
     - JSON
 
-  languages:
-   es:
+languages:
+  es:
     params:
       languageAltTitle: Español
     languageName: "Español"
