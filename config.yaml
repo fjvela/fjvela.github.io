@@ -22,24 +22,25 @@ outputs:
     - RSS
     - JSON
 
-params:
   languages:
-    es:
-      languageName: "Español"
+   es:
+    params:
       languageAltTitle: Español
-      weight: 2
-      menu:
-        main:
-          - name: Posts
-            url: posts/
-            weight: 1
-          - name: Buscar
-            url: search/
-            weight: 10
-          - name: Etiquetas
-            url: tags/
-            weight: 10
+    languageName: "Español"
+    weight: 2
+    menu:
+      main:
+        - name: Posts
+          url: posts/
+          weight: 1
+        - name: Buscar
+          url: search/
+          weight: 10
+        - name: Etiquetas
+          url: tags/
+          weight: 10
 
+params:
   librecounter:
     enabled: true
 
