@@ -6,21 +6,21 @@ tags: ["Kubernetes", "aks", "k8s","secrets", "seguridad"]
 ShowToc: true
 draft: false
 ---
-# Introducción
+## Introducción
 En algunas ocasiones nuestras aplicaciones desplegadas en kubernetes necesitan información sensible y/o confidencial tales como una contraseña de una base de datos o un token para conectarse a otras aplicaciones.
 
 Desplegar y mantener esta información en nuestro cluster no es siempre trivial o sencilla y en determinados casos de uso es posible que el tipo de objecto [_Secret_](https://kubernetes.io/docs/concepts/configuration/secret/) no sea el mas adecuado.
 
 A lo largo del post vamos a ver como instalar y configurar **Azure Key Vault Provider for Secrets Store CSI Driver**, este componente nos va a permitir leer información de un **Azure Key Vault** y proporcionarla a un Pod a través de un fichero o una variable de entorno.
 
-# Azure Key Vault Provider for Secrets Store CSI Driver
+## Azure Key Vault Provider for Secrets Store CSI Driver
 **Container Store Driver (CSI)** es una interfaz que implementan los cloud provider para que los orquestadores de contenedores ([Kubernetes](https://kubernetes-csi.github.io/docs/), [Mesos](https://mesos.apache.org/documentation/latest/csi/), [Nomad](https://developer.hashicorp.com/nomad/docs/concepts/plugins/csi),...)  puedan hacer uso de sus sistemas de almacenamiento a través de una interfaz agnostica a la tecnologia subyacente.
  
 **Secrets Store CSI Driver Provider** Permite leer información sensible o confidencial (secretos, certificados,...) de un origen (ej. Azure Key Vault, Amazon Secrets o Google Secret Manager...) montarlos en un Pod utilizando la interfaz Container Store Driver (CSI) o crear automáticamente un secreto con esta información únicamente cuando exista algún Pod que requiera esta información.
  
 **Azure Key Vault Provider Secret Store CSI Driver**, nos permite leer información almacenada en un **Azure Key Vault** y montarla en un Pod utilizando la interfaz CSI. Puede utilizarse en cualquier orquestador de contenedores.
  
-## Instalación
+### Instalación
 > Si no tienes desplegado un cluster de kubernetes en Azure puedes utilizar el código de terraform de este [repositorio](https://github.com/fjvela/poc-k8s/tree/main/terraform/azure-aks) para desplegar uno. Para facilitar la prueba, el cluster es público - ¡No uses este código para desplegar un clúster en un entorno productivo! Recuerda borrarlo una vez finalizadas las pruebas para evitar problemas y/o costes innecesarios.
  
 Para seguir el post, deberás tener instaladas las siguientes herramientas:
@@ -36,7 +36,7 @@ Para empezar con la instalación debemos decidir qué método de autenticación 
 
 Vamos a utilizar **Service Principal**. Dependiendo de nuestro caso de uso quizá no sea el más recomendable ya que deberemos crear un secreto para almacenar la información de autenticación, pero es el método de autenticación más rápido y sencillo de configurar.
 
-### Crear service principal (SP)
+#### Crear service principal (SP)
 Creamos un service principal (SP) ejecutando el siguiente comando:
 
 ```bash
@@ -50,7 +50,7 @@ kubectl create secret generic secrets-store-creds --from-literal clientid=<AZURE
 
 kubectl label secret secrets-store-creds secrets-store.csi.k8s.io/used=true -n myapp
 ```
-### Crear Azure Key Vault
+#### Crear Azure Key Vault
 Creamos el Azure Key Vault donde almacenaremos nuestros secretos y añadimos un secreto:
 ```bash
 az keyvault create --name "kv-secret-store-csi-001" --resource-group "rg-secret-store-westeu" --location "westeurope"
@@ -62,7 +62,7 @@ Asignamos permisos de lectura para que el `service principal` que hemos creado a
 ```bash
 az keyvault set-policy -n "kv-secret-store-csi-001" --secret-permissions list get  --spn  <SERVICE_PRINCIPAL_ID>
 ```
-### Instalación Azure Key Vault Provider Secret Store CSI Driver
+#### Instalación Azure Key Vault Provider Secret Store CSI Driver
 Podemos instalar Azure Key Vault Provider Secret Store CSI Driver de varias maneras:
 - Helm 3
 - Deployment yamls
@@ -83,7 +83,7 @@ kubectl get pods -l app=csi-secrets-store-provider-azure -n kube-system
 ```
 ![Resultado ejecución 'kubectl get Pods -l app=csi-secrets-store-provider-azure -n kube-system'. Dos Pods en estado running](/2022/kubernetes/secrets-store-csi-driver-provider-azure-running-pods.png)
 
-## Caso de uso: montar la información de un secreto a través de un fichero
+### Caso de uso: montar la información de un secreto a través de un fichero
 A continuación creamos un objeto de tipo `SecretProviderClass`. Este objeto nos permite configurar el Azure Key Vault del que vamos a leer. Puedes encontrar una descripción de todos los parámetros de configuración [aquí](https://azure.github.io/secrets-store-csi-driver-provider-azure/docs/getting-started/usage/#create-your-own-secretproviderclass-object).
 
 ```yaml
@@ -140,7 +140,7 @@ kubectl exec busybox-secrets-store-mount-file -n myapp -- cat  /mnt/secrets-stor
 
 ![Resultado ejecución 'kubectl exec busybox-secrets-store-mount-file -n myapp -- cat  /mnt/secrets-store/mysupersecret'. Muestra 'MyVaultValueSecret'](/2022/kubernetes/secrets-store-csi-driver-provider-azure-result-mount-file.png)
 
-## Caso de uso: montar la información de un secreto a través de una variable de entorno
+### Caso de uso: montar la información de un secreto a través de una variable de entorno
 > El valor del parámetro **syncSecret.enabled** debe estar configurado a **'true'**
  
 La configuración para crear un secreto automáticamente, es muy similar. Tan solo tenemos que agregar el bloque de configuración `secretObjects`:
@@ -221,12 +221,12 @@ kubectl exec busybox-secrets-store-mount-env-var -n myapp -- env | grep SECRET_C
 
 ![Resultado ejecución 'kubectl exec busybox-secrets-store-mount-env-var -n myapp -- env | grep SECRET_CREDENTIALS'. Muestra 'MyVaultValueSecret'](/2022/kubernetes/secrets-store-csi-driver-provider-azure-result-mount-env-var.png)
 
-## Rotación de secretos
+### Rotación de secretos
 **Azure Key Vault Provider Secret Store CSI Driver** puede actualizar el valor de un secreto en el caso de que haya sido actualizado en el Azure Key Vault. Actualmente es una funcionalidad en estado alpha, para poder hacer uso de ella debemos habilitarla a través del parámetro `secrets-store-csi-driver.enableSecretRotation`.
 
 Esta funcionalidad tiene algunas limitaciones como por ejemplo que no actualiza correctamente el valor de los secretos en Kubernetes (https://github.com/Azure/secrets-store-csi-driver-provider-azure/issues/1007).
 
-## Métricas
+### Métricas
 **Azure Key Vault Provider for Secrets Store CSI Driver** nos ofrece diferentes métricas que podemos integrar con [Prometheus](https://prometheus.io/).
  
 Para Poder consultar las métricas del componente **`Azure Key Vault Provider`** ejecuta el siguiente comando:
@@ -245,7 +245,7 @@ Puedes encontrar una descripción completa de todas las metricas en el siguiente
  
 > Los nombres de los daemon set y puertos pueden variar dependiendo de los parámetros de configuración.
 
-# Referencias
+## Referencias
 - https://github.com/container-storage-interface
 - https://kubernetes-csi.github.io/docs/
 - https://azure.github.io/secrets-store-csi-driver-provider-azure/docs/

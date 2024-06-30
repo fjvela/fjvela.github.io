@@ -8,7 +8,7 @@ tags: ["dev tools", "Visual Studio Code", "contenedores"]
 ShowToc: false
 draft: false
 ---
-# Introducción
+## Introducción
 Al comenzar un nuevo proyecto es necesario instalar SDKs o otras dependencias necesarias para desarrollar y ejecutar el proyecto, al principio es muy fácil recordar todos los pasos necesarios pero con el paso del tiempo seguramente ya no estén tan claros los pasos a seguir o qué dependencias son necesarias. Los _Readme_ son muy útiles pero no automatizan el proceso de instalación y seguramente no se hayan actualizado correctamente.
  
 Otro escenario bastante común en nuestro día a día es trabajar en varios proyectos a la vez y con diferentes SDKs y dependencias entre ellos.
@@ -17,7 +17,7 @@ Otro escenario bastante común en nuestro día a día es trabajar en varios proy
 <br/>
 Si, es posible. [Visual Studio Code](https://code.visualstudio.com/) y el plugin [Visual Studio Code Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) te permite crear y utilizar un contenedor docker para instalar los requisitos necesarios para desarrollar, ejecutar y depurar tu aplicación.
 
-# Dev Container
+## Dev Container
 La configuración del contendor de desarrollo se define en el fichero devcontainer.json dentro de la carpeta .devcontainer (no olvides el punto 😄) en el fichero puedes definir:
  
 - Imagen docker a utilizar, fichero docker a construir o fichero docker compose a utilizar
@@ -91,7 +91,7 @@ Podemos encontrar el script necesario en el siguiente enlace https://github.com/
 
 Puedes encontrar todo la configuración necesaria en el siguiente enlace: https://github.com/fjvela/terraform-provider-confluent/commit/f12fc48d89cf3ceea77a2f7b8d7e791f59d255df
 
-# Dev Container Features
+## Dev Container Features
 El 15 de septiembre de 2022 se lanzó [Custom Dev Container Features](https://code.visualstudio.com/blogs/2022/09/15/dev-container-features), esta funcionalidad simplifica enormemente la configuración de nuestros contenedores de desarrollo permitiéndonos habilitar y deshabilitar Features desde el archivo devcontainer.json sin necesidad de añadir o eliminar scripts a nuestro contenedor.
  
 Por ejemplo para habilitar la funcionalidad docker in docker tan solo es necesario habilitar la funcionalidad _**docker-in-docker**_, anteriormente hemos necesitado incluir y adaptar varios ficheros de configuración:

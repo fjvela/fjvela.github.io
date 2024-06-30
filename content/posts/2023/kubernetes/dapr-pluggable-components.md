@@ -158,6 +158,6 @@ curl -X POST -H 'Content-Type: application/json' http://localhost:3500/v1.0/bind
 
 Creo que esta funcionalidad facilita en gran medida el poder desarrollar e integrar componentes privados,  actualmente el único incoveniente es que es necesario desplegar el componente varias veces en el caso de que haya varias aplicaciones que lo utilicen.
 
-# References
+## References
 - https://docs.dapr.io/operations/components/pluggable-components-registration/
 - https://blog.dapr.io/posts/2023/02/16/dapr-v1.10-is-now-available/
