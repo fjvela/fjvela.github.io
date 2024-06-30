@@ -134,9 +134,5 @@
     <loc>https://blog.javivela.dev/archives/</loc>
   </url><url>
     <loc>https://blog.javivela.dev/search/</loc>
-  </url><url>
-    <loc>https://blog.javivela.dev/categories/</loc>
-  </url><url>
-    <loc>https://blog.javivela.dev/series/</loc>
   </url>
 </urlset>
