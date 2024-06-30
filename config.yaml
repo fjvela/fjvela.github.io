@@ -36,8 +36,8 @@ languages:
         - name: Buscar
           url: search/
           weight: 10
-        - name: Etiquetas
-          url: tags/
+        - name: Archivos
+          url: archives/
           weight: 10
 
 params:
@@ -126,9 +126,7 @@ params:
   #   keys: ["title", "permalink", "summary", "content"]
 
 taxonomies:
-  category: categories
   tag: tags
-  series: series
 
 markup:
   goldmark:
