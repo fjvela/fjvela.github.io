@@ -9,9 +9,9 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.128.0</generator>
+    <generator>Hugo -- 0.132.0</generator>
     <language>es</language>
-    <lastBuildDate>Thu, 18 May 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.javivela.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Features</title>
@@ -19,6 +19,16 @@
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://blog.javivela.dev/posts/papermod/papermod-features/</guid>
       <description>Learn About All Features in PaperMod</description>
+    </item>
+    <item>
+      <title>Novedades en C# 13 (.NET 9 preview 6)</title>
+      <link>https://blog.javivela.dev/posts/2024/dotnet/csharp-13-net-9-preview-6/</link>
+      <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.javivela.dev/posts/2024/dotnet/csharp-13-net-9-preview-6/</guid>
+      <description>Echamos un vistazo a las novedades de C# 13 (.NET 9 preview 6)
+- params collections
+- New lock type and semantics
+- New escape sequence - \e.</description>
     </item>
     <item>
       <title>Kubernetes - Vertical Pod Autoscaler</title>
