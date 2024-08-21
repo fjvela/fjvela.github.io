@@ -123,7 +123,7 @@ Cuando integramos el framework _.NET Aspire_ en la solución tenemos acceso a un
 ### Azure Container Apps
 [_Azure Container Apps_](https://learn.microsoft.com/azure/container-apps/overview) es una plataforma serverless auto gestionada por Azure. Permite ejecutar aplicaciones contenerizadas sin necesidad de preocuparnos de su configuración o su mantenimiento, ya que Azure se encarga de estas tareas.
 
-Para desplegar la solución en _Azure Container Apps_ utilizamos la línea de comandos [`azd (Azure Developer CLI)`](https://learn.microsoft.com/azure/developer/azure-developer-cli/overview). Una vez instalada, ejecutamos los siguientes comandos desde la carpeta de nuestro proyecto _AppHost_:
+Para desplegar la solución en _Azure Container Apps_ utilizamos la linea de comandos [`azd (Azure Developer CLI)`](https://learn.microsoft.com/azure/developer/azure-developer-cli/overview). Una vez instalada, ejecutamos los siguientes comandos desde la carpeta de nuestro proyecto _AppHost_:
 
 1. `azd init`: inicializa y configura la solución para ser desplegada. 
 2. `azd up`: analiza, genera los fichero con la infrastructura necesaria (bicep), compila y publica las images Docker de las aplicaciones y por último realiza el despliegue completo de la solucion.
@@ -141,7 +141,7 @@ Tras el despliegue, podemos acceder tanto a la aplicación como al dashboard de 
 ### Kubernetes
 A través del proyecto open source [_Aspir8_](https://prom3theu5.github.io/aspirational-manifests/getting-started.html) generamos los recursos necesarios para desplegar la solución en un clúster Kubernetes.
 
-Una vez instalada la herramienta _Aspir8_, ejecutamos los siguientes comandos desde la carpeta de nuestro proyecto _AppHost_: 
+Un vez instalada la herramienta _Aspir8_, ejecutamos los siguientes comandos desde la carpeta de nuestro proyecto _AppHost_: 
 1. `aspirate init`: inicializa el proyecto
 2. `aspirate build`: genera los recusos necesario para desplegar la solucion en un clúster Kubernetes en diferentes formatos como Helm Chart o kustomize.
 
