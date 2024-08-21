@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>.NET on Javi Vela Blog</title>
+    <link>https://blog.javivela.dev/tags/.net/</link>
+    <description>Recent content in .NET on Javi Vela Blog</description>
+    <image>
+      <title>Javi Vela Blog</title>
+      <url>https://blog.javivela.dev/papermod-cover.png</url>
+      <link>https://blog.javivela.dev/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.133.0</generator>
+    <language>es</language>
+    <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.javivela.dev/tags/.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Desarrolla aplicaciones distribuidas con .NET Aspire</title>
+      <link>https://blog.javivela.dev/posts/2024/dotnet/desarrolla-aplicaciones-distribuida-dotnet-aspire/</link>
+      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.javivela.dev/posts/2024/dotnet/desarrolla-aplicaciones-distribuida-dotnet-aspire/</guid>
+      <description>.NET Aspire un framework que agiliza el desarrollo de aplicaciones distribuidas, observables y listas para ser desplegadas en producción.</description>
+    </item>
+  </channel>
+</rss>
