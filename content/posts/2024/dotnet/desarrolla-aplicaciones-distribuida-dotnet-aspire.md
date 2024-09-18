@@ -8,6 +8,8 @@ tags: [".NET", "cloud", "Aspire"]
 ShowToc: true
 draft: false
 ---
+> Post actualizado a .NET Aspire 8.2
+
 ## Introducción
 Actualmente, gran parte de las aplicaciones que desarrollamos son distribuidas o están diseñadas para desplegarse en la nube.
 
@@ -62,17 +64,17 @@ El tipo de proyecto _.NET Aspire service defaults_ nos permite aplicar una confi
 
 Al centralizar las configuraciones en un único lugar, ahorramos tiempo y garantizamos una mayor coherencia en toda la solución.
 
-## Componentes
-Los componentes .NET Aspire facilitan la integración de servicios y plataformas como [Apache Kafka](https://learn.microsoft.com/en-us/dotnet/aspire/messaging/kafka-component), [Azure Service Bus](https://learn.microsoft.com/en-us/dotnet/aspire/messaging/azure-service-bus-component) o [PostgreSQL](https://learn.microsoft.com/en-us/dotnet/aspire/database/postgresql-component) en cualquier aplicación .NET. Sin necesidad de una configuración compleja, estos componentes se integran de forma sencilla, permitiendo conectar con una amplia variedad de servicios externos.
+## Integrations
+.NET Aspire integrations facilitan la integración de servicios y plataformas como [Apache Kafka](https://learn.microsoft.com/en-us/dotnet/aspire/messaging/kafka-integration), [Azure Service Bus](https://learn.microsoft.com/en-us/dotnet/aspire/messaging/azure-service-bus-integration) o [PostgreSQL](https://learn.microsoft.com/en-us/dotnet/aspire/database/postgresql-integration) en cualquier aplicación .NET. Sin necesidad de una configuración compleja, estas librerías se integran de forma sencilla, permitiendo conectar con una amplia variedad de servicios externos.
 
-> Podemos hacer uso de estos componentes sin necesidad de añadir un proyecto App Host o Service Defaults a la solución.
+> Podemos hacer uso de .NET Aspire integrations sin necesidad de añadir un proyecto App Host o Service Defaults a la solución.
 
-Para hacer uso de un componente:
+Para ello:
 
 1. Añadir la referencia del paquete NuGet: `dotnet add Aspire.StackExchange.Redis.OutputCaching`
 2. Registrar el componente como servicio de la aplicación: `builder.AddRedisOutputCache("cache");`
 
-La configuración de los componentes se puede realizar a través de fichero `appsettings.json` o utilizando código .NET:
+La configuración de los componentes se puede realizar a través del fichero `appsettings.json` o utilizando código .NET:
 
 ```JSON
 {
@@ -97,7 +99,7 @@ builder.AddRedisOutputCache(
     static settings => settings.DisableHealthChecks  = true);
 ```
 
-Por defecto, los componentes:
+Por defecto:
 - **Proporcionan información sobre su estado de salud (_health checks_)**: Esto permite detectar y solucionar problemas de forma proactiva.
 - **Implementan mecanismos de resiliencia (_resiliency_)**: Como reintentos y timeouts, para garantizar la disponibilidad de los servicios.
 - **Ofrecen observabilidad y telemetría (_telemetry_)**: Facilitando la monitorización y el diagnóstico de problemas.
