@@ -9,7 +9,7 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.133.0</generator>
+    <generator>Hugo -- 0.134.2</generator>
     <language>es</language>
     <lastBuildDate>Thu, 29 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.javivela.dev/index.xml" rel="self" type="application/rss+xml" />
@@ -73,9 +73,10 @@
       <link>https://blog.javivela.dev/posts/2022/kubernetes/azure-key-vault-secret-store-csi/</link>
       <pubDate>Tue, 13 Dec 2022 00:00:00 +0000</pubDate>
       <guid>https://blog.javivela.dev/posts/2022/kubernetes/azure-key-vault-secret-store-csi/</guid>
-      <description>Introducción En algunas ocasiones nuestras aplicaciones desplegadas en kubernetes necesitan información sensible y/o confidencial tales como una contraseña de una base de datos o un token para conectarse a otras aplicaciones.
-Desplegar y mantener esta información en nuestro cluster no es siempre trivial o sencilla y en determinados casos de uso es posible que el tipo de objecto Secret no sea el mas adecuado.
-A lo largo del post vamos a ver como instalar y configurar Azure Key Vault Provider for Secrets Store CSI Driver, este componente nos va a permitir leer información de un Azure Key Vault y proporcionarla a un Pod a través de un fichero o una variable de entorno.</description>
+      <description>&lt;h2 id=&#34;introducción&#34;&gt;Introducción&lt;/h2&gt;
+&lt;p&gt;En algunas ocasiones nuestras aplicaciones desplegadas en kubernetes necesitan información sensible y/o confidencial tales como una contraseña de una base de datos o un token para conectarse a otras aplicaciones.&lt;/p&gt;
+&lt;p&gt;Desplegar y mantener esta información en nuestro cluster no es siempre trivial o sencilla y en determinados casos de uso es posible que el tipo de objecto &lt;a href=&#34;https://kubernetes.io/docs/concepts/configuration/secret/&#34;&gt;&lt;em&gt;Secret&lt;/em&gt;&lt;/a&gt; no sea el mas adecuado.&lt;/p&gt;
+&lt;p&gt;A lo largo del post vamos a ver como instalar y configurar &lt;strong&gt;Azure Key Vault Provider for Secrets Store CSI Driver&lt;/strong&gt;, este componente nos va a permitir leer información de un &lt;strong&gt;Azure Key Vault&lt;/strong&gt; y proporcionarla a un Pod a través de un fichero o una variable de entorno.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Mejora la experiencia de desarrollo, desarrolla dentro de un contenedor</title>
