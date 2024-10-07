@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Identity on Javi Vela Blog</title>
-    <link>https://blog.javivela.dev/tags/identity/</link>
-    <description>Recent content in Identity on Javi Vela Blog</description>
+    <title>GitHub on Javi Vela Blog</title>
+    <link>https://blog.javivela.dev/tags/github/</link>
+    <description>Recent content in GitHub on Javi Vela Blog</description>
     <image>
       <title>Javi Vela Blog</title>
       <url>https://blog.javivela.dev/papermod-cover.png</url>
@@ -12,20 +12,13 @@
     <generator>Hugo -- 0.135.0</generator>
     <language>es</language>
     <lastBuildDate>Thu, 10 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blog.javivela.dev/tags/identity/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.javivela.dev/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Azure Federated Identity Credentials</title>
       <link>https://blog.javivela.dev/posts/2024/azure/federated-identity-credential/</link>
       <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://blog.javivela.dev/posts/2024/azure/federated-identity-credential/</guid>
       <description>Azure Federated Identity Credentials simplifican la gestión de credenciales y la autenticación para aplicaciones que no se ejecutan en Azure. Las aplicaciones pueden acceder de forma segura a otros recursos de Azure sin necesidad de gestionar credenciales de forma manual.</description>
-    </item>
-    <item>
-      <title>Azure Managed Identities</title>
-      <link>https://blog.javivela.dev/posts/2024/azure/managed-identities/</link>
-      <pubDate>Thu, 03 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://blog.javivela.dev/posts/2024/azure/managed-identities/</guid>
-      <description>Managed Identities simplifican la gestión de credenciales y la autenticación en Azure. Las aplicaciones pueden acceder de forma segura a otros recursos de Azure sin necesidad de gestionar credenciales de forma manual.</description>
     </item>
   </channel>
 </rss>
