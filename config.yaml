@@ -1,6 +1,5 @@
 baseURL: "https://blog.javivela.dev/"
 title: "Javi Vela Blog"
-paginate: 8
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -39,6 +38,9 @@ languages:
         - name: Archivos
           url: archives/
           weight: 10
+
+pagination:
+  pagerSize: 8
 
 params:
   librecounter:
