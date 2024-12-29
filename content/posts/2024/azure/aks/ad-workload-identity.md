@@ -13,7 +13,7 @@ draft: false
 ## Introducción
 En el siguiente post voy a explicar cómo puedes utilizar _Azure Managed Identities_ y _Azure Federated Identity Credentials_ desde un cluster Kubernetes desplegado en Azure. Esto permitirá a las aplicaciones que se ejecutan en el cluster acceder a servicios desplegados en Azure sin necesidad de utilizar credenciales. 
 
-Antes de continuar leyendo el post, te recomiendo que leas los posts sobre [Azure Managed Identities](/posts/2024/azure/managed-identities) y [Azure Federated Identity Credentials](/posts/2024/azure/federated-identity-credential). 
+Antes de continuar leyendo el post, te recomiendo que leas los posts sobre [Azure Managed Identities](/posts/2024/azure/aks/managed-identities) y [Azure Federated Identity Credentials](/posts/2024/azure/aks/federated-identity-credential). 
 
 En los posts mencionados, explico cómo acceder a los recursos desplegados en Azure sin necesidad de gestionar secretos y/o certificados:
 - **Azure Managed Identities**: Se usan en aplicaciones que se ejecutan en servicios de Azure (ej. máquinas virtuales).
@@ -34,17 +34,17 @@ Para aplicaciones desplegadas en un cluster de Kubernetes, se requiere la siguie
 
 **Nota**: La combinación de namespace y service account debe ser única en la _user managed identity_.
 
-![Diagrama de funcionamiento federated identity credential](/2024/azure/ad-workload-identity-como-funciona.png "Diagrama de funcionamiento federated identity credential")
+![Diagrama de funcionamiento federated identity credential](/2024/azure/aks/ad-workload-identity-como-funciona.png "Diagrama de funcionamiento federated identity credential")
 
-1. Cuando Kubernetes inicia un nuevo pod, _AD Workload Identity_ crea un token en un path determinado.
+1. Cuando Kubernetes inicia un nuevo POD, _AD Workload Identity_ crea un token en un path determinado.
 2. La aplicación solicita un token a Microsoft identity platform, utilizando el token generado en el paso 1.
 3. Microsoft identity platform valida el token incluido en la petición contra el servicio de validación externo que se ha registrado previamente (OIDC del cluster). Si el token es válido, se genera un token de autenticación para autenticarse contra otros servicios desplegados en Azure (hay que asignar los permisos necesarios en el servicio).
 4. La aplicación utiliza el token generado para acceder a los recursos desplegados en Azure.
 
 ## Configurar federated identity credentials (Kubernetes)
-Para comenzar, necesitamos un proveedor de identidad externo para crear la relación de confianza entre nuestro cluster y las managed identites utilizadas por las aplicaciones que se ejecutan en nuestro cluster. 
+Para comenzar, necesitamos un proveedor de identidad externo para crear la relación de confianza entre nuestro cluster y las managed identities utilizadas por las aplicaciones que se ejecutan en nuestro cluster. 
 
-Azure nos proporciona el servicio OpenID Connect (OIDC). Para activarlo podemos hacer uso del siguiente comando:
+Azure nos proporciona el servicio OpenID Connect (OIDC). Para activarlo podemos usar el siguiente comando:
 
 ```shell
 az aks update --resource-group myResourceGroup --name myAKScluster --enable-oidc-issuer
@@ -58,7 +58,7 @@ A continuación, vamos a configurar una _federated identity credential_ para per
 
 Desde el menú "Managed Identities" podemos crear una _User Managed Identity_.
 
-![Cómo crear una User Managed Identity](/2024/azure/managed-identities-crear-user-managed-identity.png "Cómo crear una User Managed Identity")
+![Cómo crear una User Managed Identity](/2024/azure/aks/managed-identities-crear-user-managed-identity.png "Cómo crear una User Managed Identity")
 
 Una vez creada, añadimos una _federated identity credential_:
 
@@ -68,13 +68,13 @@ Una vez creada, añadimos una _federated identity credential_:
   - Service Account (SA) que utiliza la aplicación.
   - URL del emisor de OIDC de nuestro cluster, puedes consultarla en el portal o través del comando: ```az aks show --name myAKScluster --resource-group myResourceGroup --query "oidcIssuerProfile.issuerUrl" -o tsv```.
 
-![Cómo añadir federated identity credential](/2024/azure/ad-workload-credential-crear.png "Cómo añadir federated identity credential")
+![Cómo añadir federated identity credential](/2024/azure/aks/ad-workload-credential-crear.png "Cómo añadir federated identity credential")
 
-![Cómo configurar GitHub federated identity credential](/2024/azure/ad-workload-k8s-configurar.png "Cómo configurar GitHub federated identity credential")
+![Cómo configurar GitHub federated identity credential](/2024/azure/aks/ad-workload-k8s-configurar.png "Cómo configurar GitHub federated identity credential")
 
 > Después de crear la _user managed identity_ y configurados los federated identity credentials, debemos asignar los permisos correspondientes de acceso.
 
-![Asignar un rol a la user _Managed Identity_](/2024/azure/ad-workload-credential-asignar-role.png "Asignar un rol a la user _Managed Identity_")
+![Asignar un rol a la user Managed Identity](/2024/azure/aks/ad-workload-credential-asignar-role.png "Asignar un rol a la user Managed Identity")
 
 ### Como acceder a un recurso en Azure utilizando una _Managed Identity_ utilizando .NET
 Podemos hacer uso de las _Managed Identities_ creadas en Azure a través de los diferentes SDKs disponibles.
@@ -87,7 +87,7 @@ Vamos a describir cómo podemos acceder a un _Azure Key Vault_ utilizando códig
 Azure.Identity proporciona varias clases que encapsulan la lógica necesaria para poder obtener un token de autenticación de Microsoft Entra ID haciendo uso de la _Managed Identity_ configurada:
 
 **_DefaultAzureCredential:_** Intenta realizar la autenticación a través de diferentes mecanismos hasta que consigue conectarse con uno de ellos.
-![Diagrama funcionamiento DefaultAzureCredential](/2024/azure/managed-identities-DefaultAzureCredential.png "Diagrama funcionamiento DefaultAzureCredential")
+![Diagrama funcionamiento DefaultAzureCredential](/2024/azure/aks/managed-identities-DefaultAzureCredential.png "Diagrama funcionamiento DefaultAzureCredential")
 
 ```csharp
 var credential = new DefaultAzureCredential();
@@ -218,11 +218,11 @@ spec:
 
 Una vez desplegada la aplicación podemos comprobar como _Azure AD Workload Identity_ ha modificado la configuración del POD para que la aplicación pueda acceder a los servicios desplegados en Azure haciendo uso de la _Managed Identity_ configurada:
 
-![POD valores inyectados por _Azure AD Workload Identity_](/2024/azure/ad-workload-result-inject-env-vars.png "Resultado contenido secreto")
+![POD valores inyectados por _Azure AD Workload Identity_](/2024/azure/aks/ad-workload-result-inject-env-vars.png "Resultado contenido secreto")
 
 Realizando una llamada GET para consultar la información del secreto `secret-sauce`, podemos comprobar que la _Managed Identity_ ha sido configurada correctamente:
 
-![Resultado contenido secreto](/2024/azure/ad-workload-result.png "Resultado contenido secreto")
+![Resultado contenido secreto](/2024/azure/aks/ad-workload-result.png "Resultado contenido secreto")
 
 ## Conclusión
 La implementación de _Azure Managed Identities_ junto con _Azure Federated Identity Credentials_ y _Azure AD Workload Identity_ proporciona una solución robusta y segura para gestionar el acceso a servicios de Azure a aplicaciones que se ejecutan en un cluster de Kubernetes.
@@ -237,6 +237,6 @@ Las ventajas principales de esta solución son:
 
 ## Referencias
 - https://azure.github.io/azure-workload-identity/docs/
-- https://learn.microsoft.com/en-us/azure/aks/use-oidc-issuer
+- https://learn.microsoft.com/en-us/azure/aks/aks/use-oidc-issuer
 - https://docs.aws.amazon.com/eks/latest/userguide/enable-iam-roles-for-service-accounts.html
 - https://cloud.google.com/kubernetes-engine/enterprise/identity/setup/per-cluster
