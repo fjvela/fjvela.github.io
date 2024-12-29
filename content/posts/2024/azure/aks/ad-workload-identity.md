@@ -36,15 +36,15 @@ Para aplicaciones desplegadas en un cluster de Kubernetes, se requiere la siguie
 
 ![Diagrama de funcionamiento federated identity credential](/2024/azure/ad-workload-identity-como-funciona.png "Diagrama de funcionamiento federated identity credential")
 
-1. Cuando Kubernetes inicia un nuevo pod, _AD Workload Identity_ crea un token en un path determinado.
+1. Cuando Kubernetes inicia un nuevo POD, _AD Workload Identity_ crea un token en un path determinado.
 2. La aplicación solicita un token a Microsoft identity platform, utilizando el token generado en el paso 1.
 3. Microsoft identity platform valida el token incluido en la petición contra el servicio de validación externo que se ha registrado previamente (OIDC del cluster). Si el token es válido, se genera un token de autenticación para autenticarse contra otros servicios desplegados en Azure (hay que asignar los permisos necesarios en el servicio).
 4. La aplicación utiliza el token generado para acceder a los recursos desplegados en Azure.
 
 ## Configurar federated identity credentials (Kubernetes)
-Para comenzar, necesitamos un proveedor de identidad externo para crear la relación de confianza entre nuestro cluster y las managed identites utilizadas por las aplicaciones que se ejecutan en nuestro cluster. 
+Para comenzar, necesitamos un proveedor de identidad externo para crear la relación de confianza entre nuestro cluster y las managed identities utilizadas por las aplicaciones que se ejecutan en nuestro cluster. 
 
-Azure nos proporciona el servicio OpenID Connect (OIDC). Para activarlo podemos hacer uso del siguiente comando:
+Azure nos proporciona el servicio OpenID Connect (OIDC). Para activarlo podemos usar el siguiente comando:
 
 ```shell
 az aks update --resource-group myResourceGroup --name myAKScluster --enable-oidc-issuer
