@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.javivela.dev/posts/papermod/papermod-features/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.javivela.dev/tags/aks/</loc>
     <lastmod>2024-12-29T00:00:00+00:00</lastmod>
   </url><url>
@@ -163,9 +160,6 @@
   </url><url>
     <loc>https://blog.javivela.dev/tags/response/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.javivela.dev/tags/papermod/</loc>
-    <lastmod>2021-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.javivela.dev/archives/</loc>
   </url><url>
