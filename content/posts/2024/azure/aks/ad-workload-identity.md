@@ -11,9 +11,9 @@ draft: false
 > Puedes encontrar el código fuente del post en el siguiente enlace: https://github.com/fjvela/blog-demo-azure-ad-workload-identity
 
 ## Introducción
-En el siguiente post voy a explicar cómo puedes utilizar _Azure Managed Identities_ y _Azure Federated Identity Credentials_ desde un cluster Kubernetes desplegado en Azure. Esto permitirá a las aplicaciones que se ejecutan en el cluster acceder a servicios desplegados en Azure sin necesidad de utilizar credenciales. 
+En el siguiente post voy a explicar cómo puedes utilizar _Azure Managed Identities_ y _Azure Federated Identity Credentials_ desde un cluster Kubernetes desplegado en Azure. Esto permitirá a las aplicaciones que se ejecutan en el cluster acceder a servicisos desplegados en Azure sin necesidad de utilizar credenciales. 
 
-Antes de continuar leyendo el post, te recomiendo que leas los posts sobre [Azure Managed Identities](/posts/2024/azure/aks/managed-identities) y [Azure Federated Identity Credentials](/posts/2024/azure/aks/federated-identity-credential). 
+Antes de continuar leyendo el post, te recomiendo que leas los posts sobre [Azure Managed Identities](/posts/2024/azure/managed-identities) y [Azure Federated Identity Credentials](/posts/2024/azure/federated-identity-credential). 
 
 En los posts mencionados, explico cómo acceder a los recursos desplegados en Azure sin necesidad de gestionar secretos y/o certificados:
 - **Azure Managed Identities**: Se usan en aplicaciones que se ejecutan en servicios de Azure (ej. máquinas virtuales).
