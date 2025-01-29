@@ -9,10 +9,17 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.140.2</generator>
+    <generator>Hugo -- 0.142.0</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 29 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.javivela.dev/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cosign, Trivy y Kyverno en acción</title>
+      <link>https://blog.javivela.dev/posts/2025/k8s/cosign-trivy-kyverno-en-accion/</link>
+      <pubDate>Wed, 29 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.javivela.dev/posts/2025/k8s/cosign-trivy-kyverno-en-accion/</guid>
+      <description>En el artículo explico como utilizar Cosign para firmar imágenes Docker mediante Keyless signing, generar información de vulnerabilidades con Trivy, atestar la información con Cosign y, finalmente, mostrar como Kyverno verifica la integridad de la imagen y sus metadatos antes de ejecutarla en un cluster de Kubernetes.</description>
+    </item>
     <item>
       <title>Azure AD Workload Identity</title>
       <link>https://blog.javivela.dev/posts/2024/azure/aks/ad-workload-identity/</link>
