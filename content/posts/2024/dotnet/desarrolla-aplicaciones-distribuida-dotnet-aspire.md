@@ -3,12 +3,14 @@ author: "Javi Vela"
 title: "Desarrolla aplicaciones distribuidas con .NET Aspire"
 summary: >
     .NET Aspire un framework que agiliza el desarrollo de aplicaciones distribuidas, observables y listas para ser desplegadas en producción.
-date: "2024-08-29"
+date: "2024-04-15"
 tags: [".NET", "cloud", "Aspire"]
 ShowToc: true
 draft: false
 ---
-> Post actualizado a .NET Aspire 8.2
+> Post actualizado a .NET Aspire 9.2
+
+> Puedes encontrar el código fuente de los ejemplos en repositorio: https://github.com/fjvela/letslearn-dotnet-aspire
 
 ## Introducción
 Actualmente, gran parte de las aplicaciones que desarrollamos son distribuidas o están diseñadas para desplegarse en la nube.
@@ -106,6 +108,10 @@ Por defecto:
 
 ## Dashboard
 Cuando integramos el framework _.NET Aspire_ en la solución tenemos acceso a un dashboard cuando ejecutamos la solución. Este dashboard nos va a proporcionar la siguiente información:
+
+- **Recusos**: Muestra los diferentes recursos que componen nuestra solución.
+![.NET Aspire Dasboard - tabla recursos](/2024/dotnet/dotnet-aspire-dashboad-resources.png)
+![.NET Aspire Dasboard - grapth recursos](/2024/dotnet/dotnet-aspire-dashboad-graph.png)
 
 - **Logs (console logs)**: Muestra los logs que escriben nuestras aplicaciones en consola.
 ![.NET Aspire Dasboard - console logs](/2024/dotnet/dotnet-aspire-dashboard-console-logs.png)
