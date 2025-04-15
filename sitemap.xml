@@ -50,18 +50,6 @@
     <loc>https://blog.javivela.dev/tags/microsoft-entra/</loc>
     <lastmod>2024-10-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.javivela.dev/tags/.net/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.javivela.dev/tags/aspire/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.javivela.dev/tags/cloud/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blog.javivela.dev/posts/2024/dotnet/desarrolla-aplicaciones-distribuida-dotnet-aspire/</loc>
-    <lastmod>2024-08-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.javivela.dev/tags/c%23/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
   </url><url>
@@ -70,6 +58,18 @@
   </url><url>
     <loc>https://blog.javivela.dev/posts/2024/dotnet/csharp-13-net-9-preview-6/</loc>
     <lastmod>2024-08-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/tags/.net/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/tags/aspire/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/tags/cloud/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/posts/2024/dotnet/desarrolla-aplicaciones-distribuida-dotnet-aspire/</loc>
+    <lastmod>2024-04-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.javivela.dev/tags/autoscaler/</loc>
     <lastmod>2023-05-18T00:00:00+00:00</lastmod>
@@ -146,7 +146,7 @@
     <loc>https://blog.javivela.dev/tags/asp.net/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.javivela.dev/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</loc>
+    <loc>https://blog.javivela.dev/posts/2021/net-core-6/es/asp/</loc>
     <lastmod>2021-11-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.javivela.dev/tags/http/</loc>

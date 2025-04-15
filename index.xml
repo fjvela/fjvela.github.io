@@ -9,7 +9,7 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.142.0</generator>
+    <generator>Hugo -- 0.146.4</generator>
     <language>es</language>
     <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.javivela.dev/index.xml" rel="self" type="application/rss+xml" />
@@ -42,13 +42,6 @@
       <description>Managed Identities simplifican la gestión de credenciales y la autenticación en Azure. Las aplicaciones pueden acceder de forma segura a otros recursos de Azure sin necesidad de gestionar credenciales de forma manual.</description>
     </item>
     <item>
-      <title>Desarrolla aplicaciones distribuidas con .NET Aspire</title>
-      <link>https://blog.javivela.dev/posts/2024/dotnet/desarrolla-aplicaciones-distribuida-dotnet-aspire/</link>
-      <pubDate>Thu, 29 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>https://blog.javivela.dev/posts/2024/dotnet/desarrolla-aplicaciones-distribuida-dotnet-aspire/</guid>
-      <description>.NET Aspire un framework que agiliza el desarrollo de aplicaciones distribuidas, observables y listas para ser desplegadas en producción.</description>
-    </item>
-    <item>
       <title>Novedades en C# 13 (.NET 9 preview 6)</title>
       <link>https://blog.javivela.dev/posts/2024/dotnet/csharp-13-net-9-preview-6/</link>
       <pubDate>Thu, 15 Aug 2024 00:00:00 +0000</pubDate>
@@ -57,6 +50,13 @@
 - params collections
 - New lock type and semantics
 - New escape sequence - \e.</description>
+    </item>
+    <item>
+      <title>Desarrolla aplicaciones distribuidas con .NET Aspire</title>
+      <link>https://blog.javivela.dev/posts/2024/dotnet/desarrolla-aplicaciones-distribuida-dotnet-aspire/</link>
+      <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.javivela.dev/posts/2024/dotnet/desarrolla-aplicaciones-distribuida-dotnet-aspire/</guid>
+      <description>.NET Aspire un framework que agiliza el desarrollo de aplicaciones distribuidas, observables y listas para ser desplegadas en producción.</description>
     </item>
     <item>
       <title>Kubernetes - Vertical Pod Autoscaler</title>
@@ -136,9 +136,9 @@
     </item>
     <item>
       <title>ASP.NET Core 6 - HttpLogging (log request/responses)</title>
-      <link>https://blog.javivela.dev/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</link>
+      <link>https://blog.javivela.dev/posts/2021/net-core-6/es/asp/</link>
       <pubDate>Tue, 02 Nov 2021 00:00:00 +0000</pubDate>
-      <guid>https://blog.javivela.dev/posts/2021/net-core-6/es/asp.net-core-6-httploggin-logrequests-logresponses/</guid>
+      <guid>https://blog.javivela.dev/posts/2021/net-core-6/es/asp/</guid>
       <description>En algunas ocasiones hemos necesitado obtener las información del tráfico de entrada y salida (HTTP request / HTTP response) de nuestras aplicaciones ASP.NET core. Hasta la versión 6 de .NET era necesario escribir nuestro propio middleware. En esta versión, Microsoft ha incluido un middleware para poder loguear esta información.</description>
     </item>
   </channel>
