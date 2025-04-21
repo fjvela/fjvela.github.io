@@ -58,7 +58,7 @@ A continuación, vamos a configurar una _federated identity credential_ para per
 
 Desde el menú "Managed Identities" podemos crear una _User Managed Identity_.
 
-![Cómo crear una User Managed Identity](/2024/azure/aks/managed-identities-crear-user-managed-identity.png "Cómo crear una User Managed Identity")
+![Cómo crear una User Managed Identity](/2024/azure/managed-identities-crear-user-managed-identity.png "Cómo crear una User Managed Identity")
 
 Una vez creada, añadimos una _federated identity credential_:
 
@@ -87,7 +87,7 @@ Vamos a describir cómo podemos acceder a un _Azure Key Vault_ utilizando códig
 Azure.Identity proporciona varias clases que encapsulan la lógica necesaria para poder obtener un token de autenticación de Microsoft Entra ID haciendo uso de la _Managed Identity_ configurada:
 
 **_DefaultAzureCredential:_** Intenta realizar la autenticación a través de diferentes mecanismos hasta que consigue conectarse con uno de ellos.
-![Diagrama funcionamiento DefaultAzureCredential](/2024/azure/aks/managed-identities-DefaultAzureCredential.png "Diagrama funcionamiento DefaultAzureCredential")
+![Diagrama funcionamiento DefaultAzureCredential](/2024/azure/managed-identities-DefaultAzureCredential.png "Diagrama funcionamiento DefaultAzureCredential")
 
 ```csharp
 var credential = new DefaultAzureCredential();
