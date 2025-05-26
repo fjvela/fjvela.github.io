@@ -9,10 +9,17 @@
       <url>https://blog.javivela.dev/papermod-cover.png</url>
       <link>https://blog.javivela.dev/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- 0.147.2</generator>
+    <generator>Hugo -- 0.147.5</generator>
     <language>es</language>
-    <lastBuildDate>Wed, 29 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.javivela.dev/tags/k8s/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Image Volumes</title>
+      <link>https://blog.javivela.dev/posts/2025/k8s/image-volumes/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.javivela.dev/posts/2025/k8s/image-volumes/</guid>
+      <description>Image Volumes en Kubernetes permite montar imágenes como volúmenes en un Pod, separando lógicamente las aplicaciones de sus datos estáticos. Esta funcionalidad, introducida en la versión 1.31 y mejorada a estado beta en la 1.33, proporciona mayor flexibilidad y granularidad al configurar nuestras aplicaciones a traves de las propiedades &lt;code&gt;subPath&lt;/code&gt; y &lt;code&gt;subPathExpr&lt;/code&gt;.</description>
+    </item>
     <item>
       <title>Cosign, Trivy y Kyverno en acción</title>
       <link>https://blog.javivela.dev/posts/2025/k8s/cosign-trivy-kyverno-en-accion/</link>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Storage on Javi Vela Blog</title>
+    <link>https://blog.javivela.dev/tags/storage/</link>
+    <description>Recent content in Storage on Javi Vela Blog</description>
+    <image>
+      <title>Javi Vela Blog</title>
+      <url>https://blog.javivela.dev/papermod-cover.png</url>
+      <link>https://blog.javivela.dev/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- 0.147.5</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 26 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.javivela.dev/tags/storage/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes Image Volumes</title>
+      <link>https://blog.javivela.dev/posts/2025/k8s/image-volumes/</link>
+      <pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.javivela.dev/posts/2025/k8s/image-volumes/</guid>
+      <description>Image Volumes en Kubernetes permite montar imágenes como volúmenes en un Pod, separando lógicamente las aplicaciones de sus datos estáticos. Esta funcionalidad, introducida en la versión 1.31 y mejorada a estado beta en la 1.33, proporciona mayor flexibilidad y granularidad al configurar nuestras aplicaciones a traves de las propiedades &lt;code&gt;subPath&lt;/code&gt; y &lt;code&gt;subPathExpr&lt;/code&gt;.</description>
+    </item>
+  </channel>
+</rss>
