@@ -18,7 +18,7 @@
       <link>https://blog.javivela.dev/posts/2025/k8s/sidecar-containers/</link>
       <pubDate>Mon, 09 Jun 2025 00:00:00 +0000</pubDate>
       <guid>https://blog.javivela.dev/posts/2025/k8s/sidecar-containers/</guid>
-      <description>Kubernetes soporta nativamente el patrón Sidecar containers desde la versión 1.33, ayudando así a resolver problemas de orquestación y ciclo de vida entre contenedores</description>
+      <description>Kubernetes soporta nativamente el patrón Sidecar containers desde la versión 1.33, ayudando así a resolver problemas de orquestación y ciclo de vida entre contenedores.</description>
     </item>
     <item>
       <title>Kubernetes Image Volumes</title>
