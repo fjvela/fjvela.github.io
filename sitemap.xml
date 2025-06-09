@@ -17,16 +17,16 @@
     <loc>https://blog.javivela.dev/posts/2025/k8s/sidecar-containers/</loc>
     <lastmod>2025-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.javivela.dev/tags/storage/</loc>
-    <lastmod>2025-06-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.javivela.dev/tags/</loc>
     <lastmod>2025-06-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blog.javivela.dev/tags/volume/</loc>
-    <lastmod>2025-06-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blog.javivela.dev/posts/2025/k8s/image-volumes/</loc>
+    <lastmod>2025-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/tags/storage/</loc>
+    <lastmod>2025-05-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blog.javivela.dev/tags/volume/</loc>
     <lastmod>2025-05-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blog.javivela.dev/posts/2025/k8s/cosign-trivy-kyverno-en-accion/</loc>
