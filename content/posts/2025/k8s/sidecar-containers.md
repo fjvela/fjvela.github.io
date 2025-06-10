@@ -70,7 +70,7 @@ Esta manera de utilizar `sidecar containers` en Kubernetes presenta algunos prob
 
 - **Jobs**: el Pod no termina hasta que todos los contenedores finalizan.
 - Los contenedores que procesan logs y métricas necesitan un orden específico de ejecución para evitar la pérdida de datos.
-- **Service mesh**: necesitan arrancar y estar en funcionamiento antes de que el resto de contenedores.
+- **Service mesh**: necesitan arrancar y estar en funcionamiento antes que el resto de los contenedores para ejecutar tareas relacionadas con el enrutamiento o la seguridad.
 
 ## ¿Cómo crear un sidecar container de manera nativa en Kubernetes?
 La implementación nativa de `sidecar containers` se ha realizado utilizando la funcionalidad `initContainers`. Para ello, debemos especificar el valor `Always` en la propiedad `restartPolicy` del contenedor (si utilizamos otro valor, Kubernetes no ejecuta los contenedores como `sidecar containers`).
