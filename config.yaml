@@ -25,7 +25,22 @@ languages:
   es:
     params:
       languageAltTitle: Español
+      profileMode:
+        imageHeight: 120
+        imageTitle: "Javi Vela fotografía"
+        imageUrl: "JavierVela.jpg"
+        imageWidth: 120
+        subtitle: > 
+          <br/>
+          Mi viaje profesional comenzó hace más de 20 años como desarrollador .NET, durante este tiempo he trabajado como desarrollador, arquitecto de soluciones y líder técnico en diversas empresas. He tenido la oportunidad de trabajar en proyectos internacionales, donde he adquirido experiencia en el desarrollo de aplicaciones y la implementación de arquitecturas escalables.
+          <br/>
+          <br/>
+          En los últimos años, me he especializado en tecnologías cloud y metodologías Devops, lo que me ha permitido adquirir un profundo conocimiento en la creación de infraestructuras como código y la automatización de procesos.
+          <br/>
+          <br/>
+          Este blog es mi manera de compartir el conocimiento adquirido a lo largo de estos años. Aquí encontrarás artículos sobre Devops, Azure, AWS, CI/CD, K8S, contenedores y arquitectura.
     languageName: "Español"
+  
     weight: 2
     menu:
       main:
@@ -39,6 +54,38 @@ languages:
           url: archives/
           weight: 10
 
+  en:
+    contentDir: content/en
+    disabled: false
+    languageCode: en
+    languageName: English
+    params:
+      profileMode: 
+        imageHeight: 120
+        imageTitle: "Javi Vela photography"
+        imageUrl: "JavierVela.jpg"
+        imageWidth: 120
+        subtitle: >
+          <br/>
+          My professional journey began more than 20 years ago as a .NET developer. During this time, I have worked as a developer, solutions architect, and technical leader in various companies. I've had the opportunity to work on international projects, where I've gained experience in application development and implementing scalable architectures. 
+          <br/>
+          <br/>
+          In recent years, I have specialized in cloud technologies and DevOps methodologies, which has allowed me to acquire deep knowledge in creating infrastructure as code and process automation. 
+          <br/>
+          <br/>
+          This blog is my way of sharing the knowledge acquired throughout these years. Here you will find articles about DevOps, Azure, AWS, CI/CD, K8S, containers, and architecture.
+    weight: 2
+    menu:
+      main:
+        - name: Posts
+          url: en/posts/
+          weight: 1
+        - name: Buscar
+          url: search/
+          weight: 10
+        - name: Archivos
+          url: archives/
+          weight: 10
 pagination:
   pagerSize: 8
 
@@ -53,7 +100,7 @@ params:
 
   defaultTheme: auto
   # disableThemeToggle: true
-  ShowShareButtons: ["twitter", "linkedin"]
+  ShowShareButtons: ["x", "linkedin"]
   ShowReadingTime: true
   # disableSpecial1stPost: true
   displayFullLangName: true
@@ -67,24 +114,20 @@ params:
   profileMode:
     enabled: true
     title: Javi Vela Blog
-    subtitle: "Soy arquitecto de soluciones y un apasionado de las tecnologías cloud y tecnologías microsoft. Este es mi sitio web para hablar sobre Devops, Azure, AWS, CI/CD, K8S, contenedores y arquitectura."
-    imageUrl: "JavierVela.jpg"
-    imageTitle: "Javi Vela fotografía"
-    imageWidth: 120
-    imageHeight: 120
+
     buttons:
       - name: Posts
         url: posts/
 
-  homeInfoParams:
-    Title: Javi Vela Blog
-    Content: "Soy arquitecto de soluciones y un apasionado de las tecnologías cloud y tecnologías microsoft. Este es mi sitio web para hablar sobre Devops, Azure, AWS, CI/CD, K8S, contenedores y arquitectura."
+  # homeInfoParams:
+  #   Title: Javi Vela Blog
+  #   Content: "Soy arquitecto de soluciones y un apasionado de las tecnologías cloud y tecnologías microsoft. Este es mi sitio web para hablar sobre DevOps, Azure, AWS, CI/CD, K8S, contenedores y arquitectura."
 
   socialIcons:
     - name: github
       url: "https://github.com/fjvela"
-    - name: twitter
-      url: "https://twitter.com/jvela"
+    - name: x
+      url: "https://x.com/jvela"
     - name: linkedin
       url: "https://www.linkedin.com/in/javiervelaaylon/"
     - name: RsS
@@ -147,7 +190,7 @@ privacy:
     disabled: false
     simple: true
 
-  twitter:
+  x:
     disabled: false
     enableDNT: true
     simple: true
@@ -163,5 +206,5 @@ privacy:
 services:
   instagram:
     disableInlineCSS: true
-  twitter:
+  x:
     disableInlineCSS: true
