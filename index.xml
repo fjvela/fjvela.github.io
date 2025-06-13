@@ -11,8 +11,15 @@
     </image>
     <generator>Hugo -- 0.147.8</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 09 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jun 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.javivela.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contenedores: Desde el kernel hasta la orquestación - namespaces y control groups (cgroups)</title>
+      <link>https://blog.javivela.dev/posts/2025/k8s/contenedores-desde-el-kernel-hasta-la-orquestacion-parte-1-cgroups-namespaces/</link>
+      <pubDate>Mon, 23 Jun 2025 00:00:00 +0000</pubDate>
+      <guid>https://blog.javivela.dev/posts/2025/k8s/contenedores-desde-el-kernel-hasta-la-orquestacion-parte-1-cgroups-namespaces/</guid>
+      <description>En este artículo explicamos cómo los namespaces y cgroups del kernel de Linux permiten aislar y limitar recursos para la ejecución de contenedores, formando la base tecnológica de la virtualización y orquestación en sistemas como Kubernetes. Ambos mecanismos trabajan juntos para ofrecer entornos seguros, aislados y eficientes.</description>
+    </item>
     <item>
       <title>Sidecar Containers</title>
       <link>https://blog.javivela.dev/posts/2025/k8s/sidecar-containers/</link>
