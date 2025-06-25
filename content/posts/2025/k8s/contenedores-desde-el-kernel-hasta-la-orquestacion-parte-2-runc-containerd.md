@@ -591,7 +591,7 @@ De este modo, cada contenedor tiene su propio proceso shim, lo que mejora la res
 
 ## Ejemplo práctico
 
-En este primer ejemplo vamos a comprobar la evolución desde comandos del Kernel de Linux hasta las herramientas de alto nivel `runc` y `containerd`.
+Vamos a comprobar la evolución desde comandos del Kernel de Linux hasta las herramientas de alto nivel `runc` y `containerd`.
 
 ```bash
 sudo unshare --pid --mount --uts --fork /bin/bash
@@ -630,7 +630,6 @@ echo $(
 ) > config.json
 
 sudo runc run $CONTAINER_NAME
-
 ```
 
 1. Creamos un directorio para alojar el sistema de archivos `rootfs` y la configuración del contenedor (`config.json`).
@@ -654,11 +653,7 @@ La orquestación y ejecución de contenedores no es una tarea trivial. Los `name
 
 Gracias a la estandarización impulsada por la comunidad y organizaciones como la OCI y la CNCF, hoy disponemos de un ecosistema diverso de herramientas (como gVisor, Kata Containers o CRI-O) que permiten adaptar la ejecución de contenedores a diferentes necesidades y escenarios, desde laboratorios hasta entornos de producción y orquestación con Kubernetes.
 
-Con estas bases sólidas, estamos preparados para el siguiente paso: **Kubernetes**. En el próximo artículo exploraremos:
-- **Container Runtime Interface (CRI)**: Cómo Kubernetes se comunica con containerd.
-- **kubelet**: El agente que orquesta contenedores en cada nodo.
-- **Pod lifecycle**: Desde la definición hasta la ejecución distribuida.
-- **Networking y storage**: Los componentes que completan el ecosistema.
+Con estas bases sólidas, estamos preparados para el siguiente paso: **Kubernetes**. 
 
 ## Referencias
 

@@ -33,7 +33,7 @@ Existen dos tipos de _Managed Identities_:
     - Automáticamente se crea un Service Principal en _Microsoft Entra ID_ (directorio activo), su ciclo de vida no está asociado al ciclo de vida de la aplicación que lo utiliza
 
 ## ¿Cómo funciona?
-Antes de explicar como funciona el proceso de creación y funcionamiento de una _managed identity_, debemos conocer qué es _Azure Instance Metadata Service identity (IMSI)_:
+Antes de explicar como funciona el proceso de creación y funcionamiento de una _managed identity_, debemos conocer qué es _Azure Instance Metadata Service identity (IMDS)_:
 
 - Es un servicio REST interno disponible en la dirección IP: 169.254.169.254
 - Proporciona información sobre las instancias de VM en ejecución: Sistema operativo, mantenimientos programados, ...
@@ -42,9 +42,9 @@ Antes de explicar como funciona el proceso de creación y funcionamiento de una 
 ![Diagrama funcionamiento managed identities](/2024/azure/managed-identities-como-funciona.png "Diagrama funcionamiento managed identities")
 
 1. _Azure Resource Manager_ crea un _service principal_ en _Microsoft Entra ID_ asociado a la _Managed Identity_ creada
-2. A continuación _Azure Resource Manager_, actualiza _Azure Instance Metadata Service identity (IMSI)_ proporcionando el ID el service principal y los certificados creados por _Microsoft Entra ID_. Más tarde serán necesarios para poder autenticarse contra _Microsoft Entra ID_ 
+2. A continuación _Azure Resource Manager_, actualiza _Azure Instance Metadata Service identity (IMDS)_ proporcionando el ID el service principal y los certificados creados por _Microsoft Entra ID_. Más tarde serán necesarios para poder autenticarse contra _Microsoft Entra ID_ 
 3. En este paso, _Azure Resource Manager_ habilita los permisos necesarios para acceder a otros recursos de Azure (Azure RBAC). Por ejemplo, asignar el rol _Key Vault Secrets User_ para poder leer secretos de un _Azure Key Vault_
-4. Cuando nuestra aplicación necesita acceder al recurso, se comunica con el _IMSI_, el cual solicita un token de autenticación a Microsoft Entra ID (utilizando el service principal y certificados creados en el paso 2) que será utilizado por la aplicación para poder acceder a otros recursos desplegados en Azure.
+4. Cuando nuestra aplicación necesita acceder al recurso, se comunica con el _IMDS_, el cual solicita un token de autenticación a Microsoft Entra ID (utilizando el service principal y certificados creados en el paso 2) que será utilizado por la aplicación para poder acceder a otros recursos desplegados en Azure.
 
 ## Habilitar una Managed Identity en Azure
 Como hemos comentado, exiten dos tipos de _Managed Identites_: **_System managed identities_** y **_User managed identities_**. Vamos a ver como crear y habilitarlas en Azure.
@@ -70,14 +70,14 @@ Desde el apartado "Managed Identities" podemos crear _User Managed Identites_, u
 
 
 ## Como acceder a un recurso en Azure utilizando una Managed Identity utilizando .NET
-Podemos hacer uso de las _Managed Identities_ creadas en Azure a través de los diferentes SDKs disponibles o implementando el código necesario para poder interactuar con el API REST proporcionado por la IMSI y así obtener los tokens de autenticación para acceder a otros recursos de Azure. 
+Podemos hacer uso de las _Managed Identities_ creadas en Azure a través de los diferentes SDKs disponibles o implementando el código necesario para poder interactuar con el API REST proporcionado por la IMDS y así obtener los tokens de autenticación para acceder a otros recursos de Azure. 
 
 Vamos a describir cómo podemos acceder a un _Azure Key Vault_ utilizando código .NET y la librería [Azure.Identity](https://learn.microsoft.com/en-us/dotnet/api/azure.identity):
 
 1. Crea una proyecto .NET, en este caso hemos creado un proyecto tipo Azure Functions para facilitar su despliegue en Azure 
 2. Añade la referencia a la librería Azure.Identity ```dotnet add package Azure.Identity```
 
-Azure.Identity proporciona varias clases que encapsulan la lógica necesaria para poder obtener un token de autenticación de Microsoft Entra ID haciendo uso de la _Managed Identity_ configurada a través de la IMSI:
+Azure.Identity proporciona varias clases que encapsulan la lógica necesaria para poder obtener un token de autenticación de Microsoft Entra ID haciendo uso de la _Managed Identity_ configurada a través de la IMDS:
 
 **_DefaultAzureCredential:_** Intenta realizar la autenticación a través de diferentes mecanismos hasta que consigue conectarse con uno de ellos.
 ![Diagrama funcionamiento DefaultAzureCredential](/2024/azure/managed-identities-DefaultAzureCredential.png "Diagrama funcionamiento DefaultAzureCredential")
