@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javier Vela — Platform Engineer y autor de Kubernetes en español</title>
+  <meta name="description"
+    content="Platform Engineer con +20 años de experiencia en Azure y Kubernetes. Autor de la serie de libros de Kubernetes en español.">
+  <link rel="canonical" href="https://www.javivela.dev/">
+  <meta property="og:title" content="Javier Vela — Platform Engineer">
+  <meta property="og:description"
+    content="Platform Engineer con +20 años de experiencia en Azure y Kubernetes. Blog sobre DevOps, CI/CD y cloud en español.">
+  <meta property="og:url" content="https://www.javivela.dev/">
+  <meta property="og:type" content="profile">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@jvela">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Javier Vela Aylón",
+    "jobTitle": "Platform Engineer",
+    "url": "https://www.javivela.dev",
+    "sameAs": [
+      "https://www.linkedin.com/in/fjvela/",
+      "https://github.com/fjvela",
+      "https://x.com/jvela",
+      "https://blog.javivela.dev"
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #292524;
+      --sf: #332F2C;
+      --sf2: #3D3835;
+      --bd: #4A4440;
+      --ac: #65a30d;
+      --achi: #84cc16;
+      --acdim: rgba(101, 163, 13, 0.13);
+      --tx: #F2E8DA;
+      --mu: #9C958E;
+      --dp: 'Playfair Display', Georgia, serif;
+      --bo: 'Source Serif 4', Georgia, serif;
+      --mo: 'JetBrains Mono', monospace;
+      --r: 8px;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--tx);
+      font-family: var(--bo);
+      font-size: 1rem;
+      line-height: 1.75;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .card {
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--mo);
+      font-size: 0.72rem;
+      color: var(--ac);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--ac);
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0.35;
+      }
+    }
+
+    h1.name {
+      font-family: var(--dp);
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.08;
+      margin-bottom: 0.5rem;
+    }
+
+    .role {
+      font-family: var(--mo);
+      font-size: 0.85rem;
+      color: var(--mu);
+      margin-bottom: 1.5rem;
+    }
+
+    .bio {
+      color: var(--mu);
+      font-size: 1rem;
+      max-width: 44ch;
+      margin: 0 auto 2.5rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .btn-blog {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--ac);
+      color: #131a04;
+      font-family: var(--mo);
+      font-size: 0.85rem;
+      padding: 0.7rem 1.4rem;
+      border-radius: var(--r);
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-blog:hover {
+      background: var(--achi);
+      transform: translateY(-1px);
+    }
+
+    .link-ghost {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid var(--bd);
+      color: var(--mu);
+      font-family: var(--mo);
+      font-size: 0.82rem;
+      padding: 0.68rem 1.2rem;
+      border-radius: var(--r);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .link-ghost:hover {
+      border-color: var(--ac);
+      color: var(--tx);
+    }
+
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      border-top: 1px solid var(--bd);
+    }
+
+    .foot-copy {
+      font-family: var(--mo);
+      font-size: 0.7rem;
+      color: var(--mu);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .status-dot {
+        animation: none;
+      }
+
+      * {
+        transition: none !important;
+      }
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--ac);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <div class="card">
+
+      <div class="status">
+        <span class="status-dot"></span>
+        Sitio en construcción
+      </div>
+
+      <h1 class="name">Javier Vela</h1>
+      <p class="role">Software Engineer · Platform Engineer · +20 años</p>
+
+      <p class="bio">
+        Desde desarrollador .NET a Senior Platform Engineer. Comparto conocimiento sobre Devops, Azure, AWS, CI/CD, K8S,
+        contenedores y arquitectura. 🏆 9x certified (Azure & K8s) 🗣️ DotNetters Speaker
+      </p>
+
+      <div class="links">
+        <a href="https://blog.javivela.dev" target="_blank" rel="noopener" class="btn-blog">
+          Leer el blog →
+        </a>
+        <a href="https://www.linkedin.com/in/fjvela/" target="_blank" rel="noopener" class="link-ghost">LinkedIn</a>
+        <a href="https://github.com/fjvela" target="_blank" rel="noopener" class="link-ghost">GitHub</a>
+        <a href="https://x.com/jvela" target="_blank" rel="noopener" class="link-ghost">@jvela</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <span class="foot-copy">© 2026 Javier Vela Aylón · www.javivela.dev</span>
+  </footer>
+
+</body>
+
+</html>
