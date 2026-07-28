@@ -1,38 +1,42 @@
 <!DOCTYPE html>
+<!-- REGLA PERMANENTE: cualquier página que se cree bajo
+     /libros/kubernetes-101/practica/ debe llevar estas mismas etiquetas
+     robots. No se enlaza desde ninguna otra página del sitio: solo se
+     llega por la URL impresa en el libro. -->
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Javier Vela Aylón — Senior Platform Engineer y autor de Kubernetes 101</title>
-<meta name="description" content="Senior Platform Engineer con más de 20 años de experiencia en DevOps, Azure, AWS, CI/CD y Kubernetes. Autor de Kubernetes 101, la guía en español para entender Kubernetes desde cero.">
-<link rel="canonical" href="https://www.javivela.dev/">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<title>Parte práctica de Kubernetes 101 — 48 laboratorios en 13 módulos</title>
+<meta name="description" content="Cómo funciona la parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con un clúster real en el navegador y verificación automática.">
+<link rel="canonical" href="https://www.javivela.dev/libros/kubernetes-101/practica/">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, max-snippet:0, max-image-preview:none">
+<meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="author" content="Javier Vela Aylón">
 <meta name="theme-color" content="#0a0e1a">
 <meta name="color-scheme" content="dark">
 <meta property="og:site_name" content="Javier Vela Aylón · javivela.dev">
 <meta property="og:locale" content="es_ES">
-<meta property="og:type" content="profile">
-<meta property="og:title" content="Javier Vela Aylón — Senior Platform Engineer y autor de Kubernetes 101">
-<meta property="og:description" content="Senior Platform Engineer con más de 20 años de experiencia en DevOps, Azure, AWS, CI/CD y Kubernetes. Autor de Kubernetes 101, la guía en español para entender Kubernetes desde cero.">
-<meta property="og:url" content="https://www.javivela.dev/">
-<meta property="og:image" content="https://www.javivela.dev/media/og-home.png">
-<meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-home.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Parte práctica de Kubernetes 101 — 48 laboratorios en 13 módulos">
+<meta property="og:description" content="Cómo funciona la parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con un clúster real en el navegador y verificación automática.">
+<meta property="og:url" content="https://www.javivela.dev/libros/kubernetes-101/practica/">
+<meta property="og:image" content="https://www.javivela.dev/media/og-practica.png">
+<meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-practica.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Javier Vela Aylón, Senior Platform Engineer y autor de Kubernetes 101">
+<meta property="og:image:alt" content="Parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con clúster real en el navegador">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@jvela">
 <meta name="twitter:creator" content="@jvela">
-<meta name="twitter:title" content="Javier Vela Aylón — Senior Platform Engineer y autor de Kubernetes 101">
-<meta name="twitter:description" content="Senior Platform Engineer con más de 20 años de experiencia en DevOps, Azure, AWS, CI/CD y Kubernetes. Autor de Kubernetes 101, la guía en español para entender Kubernetes desde cero.">
-<meta name="twitter:image" content="https://www.javivela.dev/media/og-home.png">
-<meta name="twitter:image:alt" content="Javier Vela Aylón, Senior Platform Engineer y autor de Kubernetes 101">
-<link rel="icon" href="favicon.ico" sizes="32x32">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" as="image" href="media/portada-kubernetes-101.png" fetchpriority="high">
+<meta name="twitter:title" content="Parte práctica de Kubernetes 101 — 48 laboratorios en 13 módulos">
+<meta name="twitter:description" content="Cómo funciona la parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con un clúster real en el navegador y verificación automática.">
+<meta name="twitter:image" content="https://www.javivela.dev/media/og-practica.png">
+<meta name="twitter:image:alt" content="Parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con clúster real en el navegador">
+<link rel="icon" href="../../../favicon.ico" sizes="32x32">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap">
@@ -134,69 +138,83 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 @media print{body{background:#fff;color:#111}.nav,.carrusel-ctrl,.saltar{display:none}a{color:#111}}
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Javier Vela Aylón","alternateName":"Javier Vela","jobTitle":"Senior Platform Engineer","url":"https://www.javivela.dev/","image":"https://www.javivela.dev/media/og-home.png","knowsAbout":["Kubernetes","DevOps","Microsoft Azure","AWS","CI/CD","Contenedores","Arquitectura de software"],"knowsLanguage":["es","en"],"sameAs":["https://www.linkedin.com/in/fjvela/","https://github.com/fjvela","https://x.com/jvela","https://blog.javivela.dev"]}
-</script>
 <script>document.documentElement.className="js";</script>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 <nav class="nav" aria-label="Navegación principal">
 <div class="nav-int">
-<a class="nav-marca m" href="./">javivela.dev</a>
+<a class="nav-marca m" href="../../../">javivela.dev</a>
 <ul class="nav-lista">
-<li><a href="libros/kubernetes-101/">El libro</a></li>
-<li><a href="kubernetes/glosario/">Glosario</a></li>
+<li><a href="../../../libros/kubernetes-101/" aria-current="page">El libro</a></li>
+<li><a href="../../../kubernetes/glosario/">Glosario</a></li>
 <li><a href="https://blog.javivela.dev" rel="me noopener">Blog</a></li>
 <li><a href="https://github.com/fjvela" rel="me noopener">GitHub</a></li>
 </ul>
 </div>
 </nav>
 <main id="contenido">
-<div class="contenedor">
-<div style="padding:80px 0 24px">
-<p class="eyebrow">Senior Platform Engineer · Autor</p>
-<h1>Javier Vela Aylón</h1>
-<p class="dato" style="margin:14px 0 26px">Software Engineer · Senior Platform Engineer · +20 años</p>
-<p class="estrecho" style="font-size:1.12rem">Escribo y comparto lo que aprendo sobre <strong>DevOps</strong>, <strong>Azure</strong>, <strong>AWS</strong>, <strong>CI/CD</strong>, <strong>Kubernetes</strong>, contenedores y arquitectura. Nueve veces certificado en Azure y Kubernetes, y speaker en DotNetters.</p>
-</div>
+<div class="contenedor" style="max-width:820px">
+
+<nav aria-label="Migas de pan" class="dato" style="padding:18px 0 0"><a href="../" style="border:0;color:var(--texto-suave)">Kubernetes 101</a> <span aria-hidden="true">/</span> Parte práctica</nav>
+
+<div class="nota" style="margin:24px 0 0;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between">
+<p style="margin:0;max-width:52ch;color:var(--texto)">¿Aún no tienes el libro? Los labs funcionan solos, pero cobran sentido con el capítulo delante.</p>
+<a class="btn btn-min" href="../">Ver el libro</a>
 </div>
 
-<section class="seccion" aria-labelledby="t-libro">
-<div class="contenedor">
-<p class="eyebrow">Mi primer libro · 1 de septiembre de 2026</p>
-<div class="tarjeta" style="display:grid;grid-template-columns:150px 1fr;gap:32px;align-items:center">
-<img src="media/portada-kubernetes-101.png" alt="Portada de Kubernetes 101: fondo azul casi negro con el título en blanco y el 101 en azul Kubernetes, y el nombre del autor abajo." width="1600" height="2400" fetchpriority="high" decoding="async" class="portada">
-<div>
-<h2 id="t-libro" style="font-size:1.6rem">Kubernetes 101</h2>
-<p class="suave" style="margin:10px 0 14px">La guía en español para entender Kubernetes desde cero: 14 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real. 306 páginas, edición 2026 · Kubernetes 1.36.</p>
-<p style="margin:0"><a class="btn" href="libros/kubernetes-101/">Ver el libro</a></p>
+<div style="padding:44px 0 0">
+<p class="eyebrow">Parte práctica</p>
+<h1>Bienvenido a la parte práctica de Kubernetes 101</h1>
+<p style="margin:22px 0 28px;font-size:1.08rem"><strong>48 laboratorios en 13 módulos</strong>, con 5 <em>challenges</em>. El curso avanza en paralelo al libro y los módulos siguen el mismo orden que el índice.</p>
+<p style="margin:0"><a class="btn" href="https://labs.iximiuz.com/courses/kubernetes-101-1bdca3e4" rel="noopener">Ir a los laboratorios →</a></p>
 </div>
-</div>
+
+<section class="seccion" aria-labelledby="t-como" style="margin-top:56px">
+<h2 id="t-como">Cómo funciona</h2>
+<div style="margin-top:18px">
+<p>El curso combina dos formatos. Los <strong>tutoriales</strong> te guían paso a paso con el YAML explicado en preguntas y respuestas. Los <strong>challenges</strong> te entregan un clúster con algo roto y te piden arreglarlo, que es donde de verdad se aprende.</p>
+<p>Cada lección arranca un clúster de Kubernetes real en tu navegador, sin instalar nada en tu máquina.</p>
+<p>La verificación es automática: el curso registra tu progreso a medida que superas las tareas.</p>
+<p style="margin:0">Avanza a tu ritmo y retómalo donde lo dejaste desde tu dashboard.</p>
 </div>
 </section>
 
-<section class="seccion" aria-labelledby="t-autor">
-<div class="contenedor">
-<p class="eyebrow">Sobre el autor</p>
-<h2 id="t-autor">Javier Vela Aylón</h2>
-<div class="estrecho" style="margin-top:20px">
-<p>Software Engineer devenido <strong>Senior Platform Engineer</strong>, con más de 20 años construyendo y manteniendo plataformas. Nueve veces certificado en Azure y Kubernetes, y speaker en DotNetters.</p>
-<p style="margin:0 0 20px">Escribo sobre DevOps, Azure, AWS, CI/CD, Kubernetes, contenedores y arquitectura en <a href="https://blog.javivela.dev" rel="me noopener">blog.javivela.dev</a>.</p>
-</div>
-<div class="botonera" style="margin:0">
-<a class="btn btn-sec btn-min" href="https://www.linkedin.com/in/fjvela/" rel="me noopener">LinkedIn</a>
-<a class="btn btn-sec btn-min" href="https://github.com/fjvela" rel="me noopener">GitHub</a>
-<a class="btn btn-sec btn-min" href="https://x.com/jvela" rel="me noopener">@jvela</a>
-</div>
-</div>
+<section class="seccion" aria-labelledby="t-programa">
+<h2 id="t-programa">El programa</h2>
+<ul style="list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:14px">
+<li class="tarjeta" style="padding:18px 20px"><strong>Fundamentos</strong> — los componentes del clúster, tu primer Pod, tu primer Pod roto, y labels, selectors y annotations.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Workloads</strong> — probes, requests, limits y QoS, Deployments con rollout y rollback, StatefulSets, DaemonSets, init containers y sidecars, Jobs y CronJobs.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Escalado</strong> — Horizontal Pod Autoscaler y Vertical Pod Autoscaler.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Red</strong> — Services con DNS interno, Ingress con Traefik, Gateway API, NetworkPolicies y CoreDNS.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Configuración</strong> — ConfigMaps y Secrets.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Almacenamiento</strong> — emptyDir, PersistentVolumeClaims y StorageClasses.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Seguridad</strong> — Namespaces, RBAC, ServiceAccounts y Pod Security Admission.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Policies</strong> — ResourceQuotas y LimitRanges.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Scheduling</strong> — afinidades, taints y tolerations, prioridad y preemption, PodDisruptionBudgets y drenado de nodos.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Trabajando con el clúster</strong> — depuración imperativa en formato misión, el flujo declarativo con Kustomize, Helm y los comandos que no salen en los manuales.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Observabilidad</strong> — los Events del clúster, métricas con Prometheus, logs y trazas.</li>
+<li class="tarjeta" style="padding:18px 20px;border-color:#2f4d8f"><strong>Extensibilidad</strong> — CRD y operador en Go con controller-runtime. <span class="m" style="font-size:12.5px;color:var(--alerta)">Solo laboratorio: no tiene capítulo en el libro.</span></li>
+<li class="tarjeta" style="padding:18px 20px;border-color:#2f4d8f"><strong>Reto final</strong> — apaga el scheduler y diagnostica el clúster a corazón abierto.</li>
+</ul>
 </section>
 
+<section class="seccion" aria-labelledby="t-necesitas">
+<h2 id="t-necesitas">Qué necesitas</h2>
+<p style="margin:18px 0 0">Una cuenta en iximiuz Labs y un navegador. El clúster, kubectl y el editor de código ya están preparados en cada lección. Empieza por el módulo Fundamentos.</p>
+</section>
+
+<section class="seccion" aria-label="Aviso legal">
+<p class="suave" style="font-size:14px">Este libro incluye una parte práctica alojada en la plataforma <strong>iximiuz Labs</strong> (labs.iximiuz.com). El autor no tiene ningún tipo de afiliación con dicha plataforma. La parte práctica es de acceso público y gratuito.</p>
+<p class="suave" style="font-size:14px">Se ofrece tal cual, sin garantía de funcionamiento futuro. Los cambios que introduzcan Kubernetes u otras herramientas pueden afectar a los escenarios. El autor se compromete a hacer todo lo posible por mantenerlos actualizados y al día, pero no puede garantizar su disponibilidad ni su funcionamiento permanente.</p>
+<p class="suave" style="font-size:14px;margin:0">El funcionamiento, la disponibilidad y el tratamiento de datos de la plataforma son responsabilidad de iximiuz Labs, no del autor.</p>
+</section>
+</div>
 </main>
 <footer class="pie">
 <div class="pie-int">
 <span class="m">© 2026 Javier Vela Aylón · www.javivela.dev</span>
-<span class="m"><a href="libros/kubernetes-101/">Kubernetes 101</a> · <a href="kubernetes/glosario/">Glosario</a> · <a href="libros/kubernetes-101/erratas/">Erratas</a> · <a href="https://x.com/jvela" rel="me noopener">@jvela</a></span>
+<span class="m"><a href="../../../libros/kubernetes-101/">Kubernetes 101</a> · <a href="../../../kubernetes/glosario/">Glosario</a> · <a href="../../../libros/kubernetes-101/erratas/">Erratas</a> · <a href="https://x.com/jvela" rel="me noopener">@jvela</a></span>
 </div>
 </footer>
 </body>

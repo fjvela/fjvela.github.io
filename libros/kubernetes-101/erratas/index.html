@@ -3,36 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Javier Vela Aylón — Senior Platform Engineer y autor de Kubernetes 101</title>
-<meta name="description" content="Senior Platform Engineer con más de 20 años de experiencia en DevOps, Azure, AWS, CI/CD y Kubernetes. Autor de Kubernetes 101, la guía en español para entender Kubernetes desde cero.">
-<link rel="canonical" href="https://www.javivela.dev/">
+<title>Erratas de Kubernetes 101</title>
+<meta name="description" content="Erratas detectadas en el libro Kubernetes 101, con la página afectada, el texto publicado, la corrección y la edición en la que queda corregido.">
+<link rel="canonical" href="https://www.javivela.dev/libros/kubernetes-101/erratas/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Javier Vela Aylón">
 <meta name="theme-color" content="#0a0e1a">
 <meta name="color-scheme" content="dark">
 <meta property="og:site_name" content="Javier Vela Aylón · javivela.dev">
 <meta property="og:locale" content="es_ES">
-<meta property="og:type" content="profile">
-<meta property="og:title" content="Javier Vela Aylón — Senior Platform Engineer y autor de Kubernetes 101">
-<meta property="og:description" content="Senior Platform Engineer con más de 20 años de experiencia en DevOps, Azure, AWS, CI/CD y Kubernetes. Autor de Kubernetes 101, la guía en español para entender Kubernetes desde cero.">
-<meta property="og:url" content="https://www.javivela.dev/">
-<meta property="og:image" content="https://www.javivela.dev/media/og-home.png">
-<meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-home.png">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Erratas de Kubernetes 101">
+<meta property="og:description" content="Erratas detectadas en el libro Kubernetes 101, con la página afectada, el texto publicado, la corrección y la edición en la que queda corregido.">
+<meta property="og:url" content="https://www.javivela.dev/libros/kubernetes-101/erratas/">
+<meta property="og:image" content="https://www.javivela.dev/media/og-erratas.png">
+<meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-erratas.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Javier Vela Aylón, Senior Platform Engineer y autor de Kubernetes 101">
+<meta property="og:image:alt" content="Erratas de Kubernetes 101: tabla de correcciones del libro">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@jvela">
 <meta name="twitter:creator" content="@jvela">
-<meta name="twitter:title" content="Javier Vela Aylón — Senior Platform Engineer y autor de Kubernetes 101">
-<meta name="twitter:description" content="Senior Platform Engineer con más de 20 años de experiencia en DevOps, Azure, AWS, CI/CD y Kubernetes. Autor de Kubernetes 101, la guía en español para entender Kubernetes desde cero.">
-<meta name="twitter:image" content="https://www.javivela.dev/media/og-home.png">
-<meta name="twitter:image:alt" content="Javier Vela Aylón, Senior Platform Engineer y autor de Kubernetes 101">
-<link rel="icon" href="favicon.ico" sizes="32x32">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preload" as="image" href="media/portada-kubernetes-101.png" fetchpriority="high">
+<meta name="twitter:title" content="Erratas de Kubernetes 101">
+<meta name="twitter:description" content="Erratas detectadas en el libro Kubernetes 101, con la página afectada, el texto publicado, la corrección y la edición en la que queda corregido.">
+<meta name="twitter:image" content="https://www.javivela.dev/media/og-erratas.png">
+<meta name="twitter:image:alt" content="Erratas de Kubernetes 101: tabla de correcciones del libro">
+<link rel="icon" href="../../../favicon.ico" sizes="32x32">
+<link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap">
@@ -134,69 +133,92 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 @media print{body{background:#fff;color:#111}.nav,.carrusel-ctrl,.saltar{display:none}a{color:#111}}
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Javier Vela Aylón","alternateName":"Javier Vela","jobTitle":"Senior Platform Engineer","url":"https://www.javivela.dev/","image":"https://www.javivela.dev/media/og-home.png","knowsAbout":["Kubernetes","DevOps","Microsoft Azure","AWS","CI/CD","Contenedores","Arquitectura de software"],"knowsLanguage":["es","en"],"sameAs":["https://www.linkedin.com/in/fjvela/","https://github.com/fjvela","https://x.com/jvela","https://blog.javivela.dev"]}
-</script>
 <script>document.documentElement.className="js";</script>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
 <nav class="nav" aria-label="Navegación principal">
 <div class="nav-int">
-<a class="nav-marca m" href="./">javivela.dev</a>
+<a class="nav-marca m" href="../../../">javivela.dev</a>
 <ul class="nav-lista">
-<li><a href="libros/kubernetes-101/">El libro</a></li>
-<li><a href="kubernetes/glosario/">Glosario</a></li>
+<li><a href="../../../libros/kubernetes-101/" aria-current="page">El libro</a></li>
+<li><a href="../../../kubernetes/glosario/">Glosario</a></li>
 <li><a href="https://blog.javivela.dev" rel="me noopener">Blog</a></li>
 <li><a href="https://github.com/fjvela" rel="me noopener">GitHub</a></li>
 </ul>
 </div>
 </nav>
 <main id="contenido">
-<div class="contenedor">
-<div style="padding:80px 0 24px">
-<p class="eyebrow">Senior Platform Engineer · Autor</p>
-<h1>Javier Vela Aylón</h1>
-<p class="dato" style="margin:14px 0 26px">Software Engineer · Senior Platform Engineer · +20 años</p>
-<p class="estrecho" style="font-size:1.12rem">Escribo y comparto lo que aprendo sobre <strong>DevOps</strong>, <strong>Azure</strong>, <strong>AWS</strong>, <strong>CI/CD</strong>, <strong>Kubernetes</strong>, contenedores y arquitectura. Nueve veces certificado en Azure y Kubernetes, y speaker en DotNetters.</p>
-</div>
+<div class="contenedor" style="max-width:900px">
+<nav aria-label="Migas de pan" class="dato" style="padding:18px 0 0"><a href="../" style="border:0;color:var(--texto-suave)">Kubernetes 101</a> <span aria-hidden="true">/</span> Erratas</nav>
+
+<div style="padding:44px 0 0">
+<p class="eyebrow">Kubernetes 101 · Fe de erratas</p>
+<h1>Erratas del libro</h1>
+<p class="estrecho" style="margin:22px 0 0">Aquí se publican las erratas detectadas en el libro y su corrección. Esta página está citada dentro del libro impreso, así que se mantiene en esta misma URL de forma permanente.</p>
 </div>
 
-<section class="seccion" aria-labelledby="t-libro">
-<div class="contenedor">
-<p class="eyebrow">Mi primer libro · 1 de septiembre de 2026</p>
-<div class="tarjeta" style="display:grid;grid-template-columns:150px 1fr;gap:32px;align-items:center">
-<img src="media/portada-kubernetes-101.png" alt="Portada de Kubernetes 101: fondo azul casi negro con el título en blanco y el 101 en azul Kubernetes, y el nombre del autor abajo." width="1600" height="2400" fetchpriority="high" decoding="async" class="portada">
-<div>
-<h2 id="t-libro" style="font-size:1.6rem">Kubernetes 101</h2>
-<p class="suave" style="margin:10px 0 14px">La guía en español para entender Kubernetes desde cero: 14 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real. 306 páginas, edición 2026 · Kubernetes 1.36.</p>
-<p style="margin:0"><a class="btn" href="libros/kubernetes-101/">Ver el libro</a></p>
+<section class="seccion" aria-labelledby="t-tabla" style="margin-top:44px">
+<h2 id="t-tabla">Erratas publicadas</h2>
+
+<!-- Cuando no haya erratas, deja este aviso visible y la tabla comentada.
+     Cuando aparezca la primera, borra el aviso y descomenta la tabla. -->
+<div class="aviso" style="margin-top:22px">
+<p style="margin:0"><strong>Aún no hay erratas reportadas.</strong> Si encuentras algo —una errata, un comando que no funciona, un diagrama con una etiqueta mal puesta— cuéntamelo y lo publico aquí con tu nombre si quieres.</p>
 </div>
+
+<!-- Plantilla de la tabla: descomentar al publicar la primera errata.
+<div class="tabla-scroll" style="margin-top:22px">
+<table>
+<caption>Erratas de Kubernetes 101, ordenadas por página.</caption>
+<thead>
+<tr><th scope="col">Página</th><th scope="col">Dice</th><th scope="col">Debería decir</th><th scope="col">Corregido en</th></tr>
+</thead>
+<tbody>
+<tr>
+<td class="m">142</td>
+<td>kubectl get pods -A</td>
+<td>kubectl get pods --all-namespaces</td>
+<td class="m">2.ª edición Kindle · PENDIENTE papel</td>
+</tr>
+</tbody>
+</table>
 </div>
-</div>
+-->
 </section>
 
-<section class="seccion" aria-labelledby="t-autor">
-<div class="contenedor">
-<p class="eyebrow">Sobre el autor</p>
-<h2 id="t-autor">Javier Vela Aylón</h2>
-<div class="estrecho" style="margin-top:20px">
-<p>Software Engineer devenido <strong>Senior Platform Engineer</strong>, con más de 20 años construyendo y manteniendo plataformas. Nueve veces certificado en Azure y Kubernetes, y speaker en DotNetters.</p>
-<p style="margin:0 0 20px">Escribo sobre DevOps, Azure, AWS, CI/CD, Kubernetes, contenedores y arquitectura en <a href="https://blog.javivela.dev" rel="me noopener">blog.javivela.dev</a>.</p>
+<section class="seccion" aria-labelledby="t-reportar">
+<h2 id="t-reportar">Reportar una errata</h2>
+<p class="estrecho" style="margin:18px 0 24px">Indícame la <strong>página</strong>, qué dice y qué debería decir. Si es un comando o un manifiesto, pega el fragmento tal cual aparece impreso.</p>
+<div class="rejilla">
+<div class="tarjeta">
+<span class="num">Opción 1 · Correo</span>
+<h3>Escríbeme un correo</h3>
+<p class="suave" style="margin:10px 0 16px;font-size:15px">La vía más rápida. Asunto sugerido: «Errata Kubernetes 101, página NN».</p>
+<!-- PENDIENTE-EMAIL-ERRATAS: al tener dirección, ponla aquí como enlace mailto: y sustituye el texto de abajo -->
+<p class="suave" style="margin:0;font-size:15px">La dirección se publica aquí en cuanto esté lista. Mientras tanto, GitHub o X.</p>
 </div>
-<div class="botonera" style="margin:0">
-<a class="btn btn-sec btn-min" href="https://www.linkedin.com/in/fjvela/" rel="me noopener">LinkedIn</a>
-<a class="btn btn-sec btn-min" href="https://github.com/fjvela" rel="me noopener">GitHub</a>
-<a class="btn btn-sec btn-min" href="https://x.com/jvela" rel="me noopener">@jvela</a>
+<div class="tarjeta">
+<span class="num">Opción 2 · GitHub</span>
+<h3>Abre una issue</h3>
+<p class="suave" style="margin:10px 0 16px;font-size:15px">Si ya estás en GitHub, una issue en el repositorio del libro deja la traza pública.</p>
+<p style="margin:0"><a class="btn btn-sec btn-min" href="https://github.com/fjvela/kubernetes-101/issues" rel="noopener">Ir a GitHub</a></p>
+</div>
+<div class="tarjeta">
+<span class="num">Opción 3 · X</span>
+<h3>Mándame un mensaje</h3>
+<p class="suave" style="margin:10px 0 16px;font-size:15px">Para cosas pequeñas o si prefieres hacerlo en público.</p>
+<p style="margin:0"><a class="btn btn-sec btn-min" href="https://x.com/jvela" rel="me noopener">@jvela</a></p>
 </div>
 </div>
+<p class="dato" style="margin:26px 0 0">Cada errata se revisa y, si procede, se corrige en la siguiente actualización del Kindle y en la siguiente tirada en papel.</p>
 </section>
-
+</div>
 </main>
 <footer class="pie">
 <div class="pie-int">
 <span class="m">© 2026 Javier Vela Aylón · www.javivela.dev</span>
-<span class="m"><a href="libros/kubernetes-101/">Kubernetes 101</a> · <a href="kubernetes/glosario/">Glosario</a> · <a href="libros/kubernetes-101/erratas/">Erratas</a> · <a href="https://x.com/jvela" rel="me noopener">@jvela</a></span>
+<span class="m"><a href="../../../libros/kubernetes-101/">Kubernetes 101</a> · <a href="../../../kubernetes/glosario/">Glosario</a> · <a href="../../../libros/kubernetes-101/erratas/">Erratas</a> · <a href="https://x.com/jvela" rel="me noopener">@jvela</a></span>
 </div>
 </footer>
 </body>
