@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kubernetes 101 — la guía en español para entender Kubernetes desde cero</title>
+<title>Kubernetes 101 · Libro en español, de cero a producción</title>
 <meta name="description" content="Aprende Kubernetes desde cero en español: 13 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real, sin instalar nada. 330 páginas, edición 2026 · Kubernetes 1.37, en Kindle y en papel.">
 <link rel="canonical" href="https://www.javivela.dev/libros/kubernetes-101/">
 <meta name="robots" content="index, follow, max-image-preview:large">
@@ -141,6 +141,18 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 
 .rejilla-2{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 @media (max-width:900px){.rejilla-2{grid-template-columns:minmax(0,1fr)}}
+.compra{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-family:var(--mono);font-size:12.5px;color:var(--texto-suave);margin:0}
+.compra a{color:var(--texto-suave);border-bottom:1px solid rgba(139,149,171,.35)}
+.compra a:hover{color:var(--acento-claro);border-bottom-color:var(--acento-claro)}
+.prologo{border-left:3px solid var(--acento);background:var(--superficie);border-radius:0 12px 12px 0;padding:26px 30px;margin-top:24px}
+.prologo blockquote{margin:0;font-size:1.12rem;line-height:1.7;max-width:62ch}
+.cierre-caja{background:var(--superficie);border:1px solid var(--borde);border-radius:14px;padding:34px}
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;gap:12px;align-items:center;justify-content:space-between;padding:10px 16px;background:rgba(10,14,26,.97);border-top:1px solid var(--borde)}
+.barra .m{font-size:12.5px;color:var(--texto-suave)}
+.barra.visible{display:flex}
+body.con-barra{padding-bottom:66px}
+@media (min-width:761px){.barra{display:none!important}body.con-barra{padding-bottom:0}}
+@media (max-width:600px){.cierre-caja{padding:24px 20px}.prologo{padding:20px 22px}}
 </style>
 <!-- Al publicar el papel: añadir "isbn" a la entrada Paperback del
      workExample, y cambiar availability de PreOrder a InStock en las DOS
@@ -155,6 +167,41 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Necesito saber Docker o contenedores para empezar?","acceptedAnswer":{"@type":"Answer","text":"No. El libro empieza por los fundamentos de contenedores y orquestación antes de tocar Kubernetes, y no da nada por supuesto."}},{"@type":"Question","name":"¿Tengo que instalar algo para hacer los laboratorios?","acceptedAnswer":{"@type":"Answer","text":"Nada. Cada laboratorio arranca un clúster de Kubernetes real en el navegador; solo necesitas conexión y una cuenta en iximiuz Labs."}},{"@type":"Question","name":"Ya trabajo con Kubernetes, ¿me sirve?","acceptedAnswer":{"@type":"Answer","text":"Sí. Está pensado también para quien usa la tecnología a diario y quiere entender de verdad qué pasa por debajo, con los diagramas y los challenges como red de seguridad."}},{"@type":"Question","name":"¿En papel o en digital?","acceptedAnswer":{"@type":"Answer","text":"Los dos. El acceso a la parte práctica se entrega dentro del libro, en cualquiera de los dos formatos."}},{"@type":"Question","name":"¿Los laboratorios son de pago aparte?","acceptedAnswer":{"@type":"Answer","text":"No. La parte práctica es de acceso público y gratuito, y no requiere ninguna compra adicional. Está alojada en iximiuz Labs, plataforma con la que el autor no tiene afiliación."}},{"@type":"Question","name":"¿Está todo el temario en el libro?","acceptedAnswer":{"@type":"Answer","text":"Los 13 capítulos y los 3 apéndices, sí. Hay dos bloques que existen solo como laboratorio y no tienen capítulo: la extensibilidad con CRD y operador en Go, y el reto final. Están marcados en el temario."}},{"@type":"Question","name":"¿Qué versión de Kubernetes usa el libro?","acceptedAnswer":{"@type":"Answer","text":"El libro es la edición 1.37. Kubernetes publica tres versiones al año, así que ningún libro va a estar nunca en la última: por eso incluye el Apéndice C, que recoge capítulo a capítulo el estado de cada funcionalidad y desde qué versión existe, para que puedas comprobar de un vistazo si lo que estás leyendo sigue vigente en tu clúster. Las correcciones posteriores se publican en la página de erratas."}}]}
 </script>
 <script>document.documentElement.className="js";</script>
+<!-- ================== ANALÍTICA ==================
+     Pega aquí el script de tu proveedor. Recomendados (gratis, sin cookies,
+     sin banner de consentimiento):
+       Cloudflare Web Analytics -> https://dash.cloudflare.com  (Analytics > Web Analytics)
+       Umami Cloud   <script defer src="https://cloud.umami.is/script.js" data-website-id="TU-ID"></script>
+       Plausible     <script defer data-domain="javivela.dev" src="https://plausible.io/js/script.outbound-links.js"></script>
+     Hasta que no pegues uno, el registro de eventos de más abajo no envía
+     nada y falla en silencio: no rompe la página.
+     ================================================= -->
+<script>
+/* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
+   Si no hay ninguno cargado, no hace nada. Marca cualquier enlace o botón
+   con data-evento="nombre" y se registrará el clic. */
+(function () {
+  function ev(nombre, props) {
+    try {
+      if (typeof window.plausible === "function") { window.plausible(nombre, { props: props || {} }); return; }
+      if (window.umami && typeof window.umami.track === "function") { window.umami.track(nombre, props || {}); return; }
+      if (typeof window.gtag === "function") { window.gtag("event", nombre, props || {}); return; }
+    } catch (e) {}
+  }
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    var a = t && t.closest ? t.closest("[data-evento]") : null;
+    if (a) ev(a.getAttribute("data-evento"), { destino: a.getAttribute("href") || "" });
+  }, { passive: true });
+})();
+</script>
+<!-- Cloudflare Web Analytics.
+     Sustituye 50d9f6beac8b4fb39fb24b63102848ce por el token que te da Cloudflare en
+     Analytics > Web Analytics > tu sitio > Manage site > JS snippet.
+     Si en su lugar activaste la configuracion AUTOMATICA (el dominio pasa
+     proxied por Cloudflare, nube naranja), Cloudflare inyecta el beacon solo
+     y este bloque sobra: borralo entero. -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "50d9f6beac8b4fb39fb24b63102848ce"}'></script>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
@@ -180,15 +227,18 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <h1>Kubernetes 101 — la guía en español para entender Kubernetes desde cero</h1>
 <p class="suave" style="margin:20px 0 8px;font-size:1.1rem;max-width:56ch">13 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real, sin instalar nada. Lees el concepto y lo pruebas al momento.</p>
 <p class="dato" style="margin:0 0 24px">330 páginas · Edición 2026 · Kubernetes 1.37 · Kindle y papel</p>
-<!-- Kindle en preventa · ASIN B0H8VY2WRT.
-     El papel no tiene ASIN todavía: botón deshabilitado, nunca un enlace roto.
-     Pendientes al publicar: PENDIENTE-URL-AMAZON-KINDLE-COM / -MX ·
-     PENDIENTE-URL-AMAZON-PAPEL-ES / -COM / -MX · el ISBN del papel (va en el JSON-LD) -->
+<!-- Kindle en preventa · ASIN B0H8VY2WRT. El mismo ASIN sirve en .es, .com y .com.mx.
+     El papel no tiene ASIN todavía: en vez de un botón muerto, captura de email.
+     Pendientes al publicar (1 de septiembre):
+       - sustituir el enlace #suscripcion de "Avísame" por la URL del papel
+       - añadir el ISBN del papel al JSON-LD y cambiar PreOrder -> InStock en las DOS ofertas
+       - poner la URL real de Amazon en la oferta Paperback del JSON-LD -->
 <div class="botonera" style="margin:0 0 12px">
-<a class="btn" href="https://www.amazon.es/dp/B0H8VY2WRT" target="_blank" rel="noopener">Comprar en Kindle · 12,99 €</a>
-<button class="btn btn-sec btn-apagado" type="button" disabled>Papel · 24,99 € · disponible el 1 de septiembre</button>
+<a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-hero">Reservar en Kindle · 12,99 €</a>
+<a class="btn btn-sec" href="#suscripcion" data-evento="capitulo-gratis-hero">Leer gratis el capítulo de Arquitectura</a>
 </div>
-<p class="dato" style="margin:0">También en Amazon.com y Amazon.com.mx</p>
+<p class="compra" style="margin-bottom:10px"><span>Papel · 24,99 € · desde el 1 de septiembre</span><a href="#suscripcion" data-evento="aviso-papel-hero">Avísame cuando salga</a></p>
+<p class="compra"><span>Comprar desde:</span><a href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-es-hero">España</a><a href="/ir/kindle-com/" target="_blank" rel="noopener" data-evento="compra-com-hero">EE. UU. y Latinoamérica</a><a href="/ir/kindle-mx/" target="_blank" rel="noopener" data-evento="compra-mx-hero">México</a></p>
 </div>
 </div>
 
@@ -201,6 +251,17 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <div class="estrecho" style="margin-top:20px">
 <p>Para cualquier persona que quiera aprender Kubernetes de verdad, venga o no del mundo IT. También —y sobre todo— para quien ya trabaja con la tecnología a diario y no termina de entender qué ocurre por debajo.</p>
 <p style="margin:0">Es el libro que me habría gustado leer hace unos años: en español, con diagramas que explican quién hace qué, y con una parte práctica donde romper cosas sin miedo.</p>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-prologo">
+<div class="contenedor">
+<p class="eyebrow">El prólogo</p>
+<h2 id="t-prologo">Lo escribe alguien que estuvo al otro lado</h2>
+<div class="prologo">
+<blockquote>«Una diferencia de Kubernetes con otras tecnologías es que no basta con memorizar unos cuantos pasos o comandos. Espero que este libro ayude a sus lectores de la misma manera que a nosotros en su día: proporcionando una base sólida, aclarando conceptos que inicialmente dan miedo y ofreciendo las herramientas necesarias para manejarse operativamente ante un clúster real.»</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)">Eric Trigo, Software Engineer · del prólogo del libro</p>
 </div>
 </div>
 </section>
@@ -315,7 +376,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <article class="tarjeta">
 <span class="num">Apéndice B</span>
 <h3>El sistema completo</h3>
-<p class="suave" style="margin:10px 0 0;font-size:15px">Todo lo construido capítulo a capítulo, junto y en orden de aplicación: más de seiscientas líneas de YAML que no se teclean desde una hoja de papel, sino que viven en el <a href="https://github.com/fjvela/kubernetes-101" rel="noopener">repositorio de código</a>.</p>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Todo lo construido capítulo a capítulo, junto y en orden de aplicación: más de seiscientas líneas de YAML que no se teclean desde una hoja de papel, sino que viven en el <a href="/ir/github/" rel="noopener">repositorio de código</a>.</p>
 </article>
 <article class="tarjeta">
 <span class="num">Apéndice C</span>
@@ -481,7 +542,8 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <h2 id="t-suscripcion">Descarga el capítulo de arquitectura</h2>
 <div style="display:grid;grid-template-columns:1fr minmax(280px,460px);gap:40px;align-items:start;margin-top:24px" class="susc">
 <div>
-<p>Suscríbete al blog y recibes el <strong>capítulo de arquitectura del clúster</strong> completo.</p>
+<p>Suscríbete al blog y recibes el <strong>capítulo de Arquitectura de Kubernetes</strong> completo: 19 páginas y sus ocho diagramas, tal cual están en el libro.</p>
+<p style="margin:0">Es la forma más honesta de saber si el libro te sirve antes de pagar nada. Y te aviso el día que salga <strong>la edición en papel</strong>.</p>
 </div>
 <div>
 <iframe src="https://blog.javivela.dev/embed" title="Formulario de suscripción al blog de Javier Vela" width="480" height="320" frameborder="0" scrolling="no" loading="lazy" style="border:1px solid #EEE;background:white;max-width:100%"></iframe>
@@ -552,8 +614,22 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <p>El repositorio reúne los YAML, los ejemplos y el operador en Go tal y como aparecen en los capítulos y en los laboratorios. Clónalo, rómpelo y manda un pull request si encuentras algo que mejorar.</p>
 </div>
 <div class="botonera" style="margin:20px 0 0">
-<a class="btn" href="https://github.com/fjvela/kubernetes-101" rel="noopener">Ver el repositorio en GitHub</a>
+<a class="btn" href="/ir/github/" rel="noopener">Ver el repositorio en GitHub</a>
 <a class="btn btn-sec" href="erratas/">Erratas del libro</a>
+</div>
+</div>
+</section>
+<section class="seccion" id="cierre" aria-labelledby="t-cierre">
+<div class="contenedor">
+<div class="cierre-caja">
+<p class="eyebrow">Kubernetes 101</p>
+<h2 id="t-cierre">De un Pod suelto a un sistema que entiendes</h2>
+<p class="estrecho" style="margin:16px 0 24px">330 páginas, 13 capítulos, 3 apéndices y 48 laboratorios en un clúster real. En español, y con Kubernetes 1.37, que se publica seis días antes que el libro.</p>
+<div class="botonera" style="margin:0 0 14px">
+<a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-cierre">Reservar en Kindle · 12,99 €</a>
+<a class="btn btn-sec" href="#suscripcion" data-evento="capitulo-gratis-cierre">Leer gratis un capítulo</a>
+</div>
+<p class="compra"><span>Comprar desde:</span><a href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-es-cierre">España</a><a href="/ir/kindle-com/" target="_blank" rel="noopener" data-evento="compra-com-cierre">EE. UU. y Latinoamérica</a><a href="/ir/kindle-mx/" target="_blank" rel="noopener" data-evento="compra-mx-cierre">México</a></p>
 </div>
 </div>
 </section>
@@ -651,5 +727,29 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <span class="m"><a href="../../libros/kubernetes-101/">Kubernetes 101</a> · <a href="../../kubernetes/glosario/">Glosario</a> · <a href="../../libros/kubernetes-101/erratas/">Erratas</a> · <a href="https://x.com/jvela" rel="me noopener">@jvela</a></span>
 </div>
 </footer>
+<div class="barra" id="barra-compra" aria-hidden="true">
+<span class="m">Kindle 12,99 € · papel 24,99 €</span>
+<a class="btn btn-min" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-barra">Reservar</a>
+</div>
+<script>
+/* Barra de compra fija en movil: aparece al pasar el hero y desaparece
+   cuando el CTA de cierre ya esta en pantalla, para no duplicar el boton. */
+(function () {
+  var b = document.getElementById("barra-compra");
+  var cierre = document.getElementById("cierre");
+  if (!b) return;
+  function upd() {
+    var pasado = window.scrollY > 640;
+    var finVisible = cierre && cierre.getBoundingClientRect().top < window.innerHeight;
+    var ver = pasado && !finVisible;
+    b.classList.toggle("visible", ver);
+    b.setAttribute("aria-hidden", ver ? "false" : "true");
+    document.body.classList.toggle("con-barra", ver);
+  }
+  window.addEventListener("scroll", upd, { passive: true });
+  window.addEventListener("resize", upd, { passive: true });
+  upd();
+})();
+</script>
 </body>
 </html>

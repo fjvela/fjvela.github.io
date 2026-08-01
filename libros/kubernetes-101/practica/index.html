@@ -139,6 +139,41 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 @media print{body{background:#fff;color:#111}.nav,.carrusel-ctrl,.saltar{display:none}a{color:#111}}
 </style>
 <script>document.documentElement.className="js";</script>
+<!-- ================== ANALÍTICA ==================
+     Pega aquí el script de tu proveedor. Recomendados (gratis, sin cookies,
+     sin banner de consentimiento):
+       Cloudflare Web Analytics -> https://dash.cloudflare.com  (Analytics > Web Analytics)
+       Umami Cloud   <script defer src="https://cloud.umami.is/script.js" data-website-id="TU-ID"></script>
+       Plausible     <script defer data-domain="javivela.dev" src="https://plausible.io/js/script.outbound-links.js"></script>
+     Hasta que no pegues uno, el registro de eventos de más abajo no envía
+     nada y falla en silencio: no rompe la página.
+     ================================================= -->
+<script>
+/* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
+   Si no hay ninguno cargado, no hace nada. Marca cualquier enlace o botón
+   con data-evento="nombre" y se registrará el clic. */
+(function () {
+  function ev(nombre, props) {
+    try {
+      if (typeof window.plausible === "function") { window.plausible(nombre, { props: props || {} }); return; }
+      if (window.umami && typeof window.umami.track === "function") { window.umami.track(nombre, props || {}); return; }
+      if (typeof window.gtag === "function") { window.gtag("event", nombre, props || {}); return; }
+    } catch (e) {}
+  }
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    var a = t && t.closest ? t.closest("[data-evento]") : null;
+    if (a) ev(a.getAttribute("data-evento"), { destino: a.getAttribute("href") || "" });
+  }, { passive: true });
+})();
+</script>
+<!-- Cloudflare Web Analytics.
+     Sustituye 50d9f6beac8b4fb39fb24b63102848ce por el token que te da Cloudflare en
+     Analytics > Web Analytics > tu sitio > Manage site > JS snippet.
+     Si en su lugar activaste la configuracion AUTOMATICA (el dominio pasa
+     proxied por Cloudflare, nube naranja), Cloudflare inyecta el beacon solo
+     y este bloque sobra: borralo entero. -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "50d9f6beac8b4fb39fb24b63102848ce"}'></script>
 </head>
 <body>
 <a class="saltar" href="#contenido">Saltar al contenido</a>
