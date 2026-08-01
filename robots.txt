@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /libros/kubernetes-101/practica
+Disallow: /libros/kubernetes-101/capitulo-arquitectura
 
 Sitemap: https://www.javivela.dev/sitemap.xml
