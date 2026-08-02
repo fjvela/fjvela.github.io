@@ -167,18 +167,14 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
       if (typeof window.gtag === "function") { window.gtag("event", nombre, props || {}); return; }
     } catch (e) {}
   }
-  document.addEventListener("click", fKubernetes 1.36   var t = e.target;
+  document.addEventListener("click", function (e) {
+    var t = e.target;
     var a = t && t.closest ? t.closest("[data-evento]") : null;
     if (a) ev(a.getAttribute("data-evento"), { destino: a.getAttribute("href") || "" });
   }, { passive: true });
 })();
 </script>
-<!-- Cloudflare Web Analytics.
-     Sustituye PEGA-AQUI-TU-TOKEN por el token que te da Cloudflare en
-     Analytics > Web Analytics > tu sitio > Manage site > JS snippet.
-     Si en su lugar activaste la configuracion AUTOMATICA (el dominio pasa
-     proxied por Cloudflare, nube naranja), Cloudflare inyecta el beacon solo
-     y este bloque sobra: borralo entero. -->
+
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "PEGA-AQUI-TU-TOKEN"}'></script>
 </head>
 <body>

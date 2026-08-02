@@ -195,12 +195,6 @@ body.con-barra{padding-bottom:66px}
   }, { passive: true });
 })();
 </script>
-<!-- Cloudflare Web Analytics.
-     Sustituye 50d9f6beac8b4fb39fb24b63102848ce por el token que te da Cloudflare en
-     Analytics > Web Analytics > tu sitio > Manage site > JS snippet.
-     Si en su lugar activaste la configuracion AUTOMATICA (el dominio pasa
-     proxied por Cloudflare, nube naranja), Cloudflare inyecta el beacon solo
-     y este bloque sobra: borralo entero. -->
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "50d9f6beac8b4fb39fb24b63102848ce"}'></script>
 </head>
 <body>
@@ -265,6 +259,29 @@ body.con-barra{padding-bottom:66px}
 </div>
 </div>
 </section>
+
+<!-- ==================================================================
+     RESEÑAS DE LECTORES · descomentar al recibir las primeras (1 sept).
+     Va AQUI, alto y pegado al prologo: es prueba social de verdad y tiene
+     que verse antes que nada. La seccion de citas de los componentes,
+     mas abajo, es una broma y NO ocupa este sitio.
+     Pide permiso antes de publicar nombre y cargo.
+<section class="seccion" aria-labelledby="t-lectores">
+<div class="contenedor">
+<p class="eyebrow">Lectores</p>
+<h2 id="t-lectores">Lo que dicen quienes ya lo han leído</h2>
+<div class="prologo" style="margin-top:24px">
+<blockquote>«Cita del lector, tres o cuatro líneas como máximo.»</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)">Nombre y apellidos, cargo · empresa</p>
+</div>
+<div class="prologo" style="margin-top:16px">
+<blockquote>«Segunda cita.»</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)">Nombre y apellidos, cargo · empresa</p>
+</div>
+</div>
+</section>
+     ================================================================== -->
+
 
 <section class="seccion" aria-labelledby="t-temario">
 <div class="contenedor">
@@ -481,9 +498,9 @@ body.con-barra{padding-bottom:66px}
 
 <section class="seccion" aria-labelledby="t-componentes">
 <div class="contenedor">
-<p class="eyebrow">Opiniones</p>
+<p class="eyebrow">Un respiro</p>
 <h2 id="t-componentes">Lo que dicen los componentes del clúster</h2>
-<p class="estrecho suave" style="margin:16px 0 28px">Estas citas son una broma: las firman los componentes de Kubernetes, no personas. Ninguna es una reseña.</p>
+<p class="estrecho suave" style="margin:16px 0 28px">Aquí no hay reseñas: las firman los componentes de Kubernetes, que llevan años aguantando lo suyo. Es una broma, pero cada queja es cierta.</p>
 <div data-carrusel="carrusel de citas" role="group" aria-roledescription="carrusel" aria-label="Citas de los componentes del clúster">
 <ul class="carrusel carrusel-citas" tabindex="0" aria-label="Citas de los componentes del clúster. Usa las flechas izquierda y derecha para cambiar de cita.">
 <li>
@@ -525,14 +542,6 @@ body.con-barra{padding-bottom:66px}
 <span class="puntos"><button class="punto" type="button" aria-label="Ir a la cita 1" aria-current="true"></button><button class="punto" type="button" aria-label="Ir a la cita 2"></button><button class="punto" type="button" aria-label="Ir a la cita 3"></button><button class="punto" type="button" aria-label="Ir a la cita 4"></button><button class="punto" type="button" aria-label="Ir a la cita 5"></button></span>
 </div>
 </div>
-<!-- PENDIENTE-TESTIMONIOS-REALES: aquí van las reseñas de lectores de verdad, con nombre y cargo. -->
-<!-- PENDIENTE-TESTIMONIOS-REALES · oculto hasta tener reseñas.
-     Al recibir las primeras, descomenta este bloque (o duplica el carrusel de arriba) y rellénalo.
-<div class="nota" style="margin-top:28px">
-<p class="m" style="margin:0 0 8px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--acento-claro)">Lo que dicen los lectores</p>
-<p style="margin:0">Reseñas de personas, con nombre y apellidos.</p>
-</div>
--->
 </div>
 </section>
 
