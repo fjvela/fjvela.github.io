@@ -50,7 +50,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 .nav-lista{display:flex;flex-wrap:wrap;gap:20px;margin:0;padding:0;list-style:none}
 .nav-lista li{margin:0}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:14.5px;line-height:1.2;padding:14px 22px;border-radius:8px;background:var(--acento);color:#fff;border:1px solid var(--acento);border-bottom:1px solid var(--acento)}
-.btn:hover{background:var(--acento-claro);border-color:var(--acento-claro);color:#fff}
+.btn:hover{background:#2558bd;border-color:#2558bd;color:#fff}
 .btn-sec{background:transparent;color:var(--texto);border-color:var(--borde);border-bottom-color:var(--borde)}
 .btn-sec:hover{background:var(--superficie);border-color:var(--acento-claro);color:var(--texto)}
 .botonera{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 16px}
@@ -78,15 +78,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 @media print{body{background:#fff;color:#111}.nav,.saltar{display:none}a{color:#111}}
 </style>
-<!-- ================== ANALÍTICA ==================
-     Pega aquí el script de tu proveedor. Recomendados (gratis, sin cookies,
-     sin banner de consentimiento):
-       Cloudflare Web Analytics -> https://dash.cloudflare.com  (Analytics > Web Analytics)
-       Umami Cloud   <script defer src="https://cloud.umami.is/script.js" data-website-id="TU-ID"></script>
-       Plausible     <script defer data-domain="javivela.dev" src="https://plausible.io/js/script.outbound-links.js"></script>
-     Hasta que no pegues uno, el registro de eventos de más abajo no envía
-     nada y falla en silencio: no rompe la página.
-     ================================================= -->
+<!-- Analítica: Cloudflare Web Analytics (beacon al final del head). -->
 <script>
 /* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
    Si no hay ninguno cargado, no hace nada. Marca cualquier enlace o botón
@@ -116,6 +108,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 <ul class="nav-lista">
 <li><a href="/libros/kubernetes-101/">El libro</a></li>
 <li><a href="/kubernetes/glosario/">Glosario</a></li>
+<li><a href="/kubernetes/novedades-1-37/">Kubernetes 1.37</a></li>
 <li><a href="https://blog.javivela.dev" rel="me noopener">Blog</a></li>
 <li><a href="https://github.com/fjvela" rel="me noopener">GitHub</a></li>
 </ul>
@@ -133,11 +126,12 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 <pre><span class="prompt">$</span> <span class="cmd">kubectl get page <span id="ruta">/la-ruta-que-buscabas</span> -n javivela.dev</span>
 <span class="err">Error from server (NotFound): pages "<span id="ruta2">la-ruta-que-buscabas</span>" not found</span>
 <span class="prompt">$</span> <span class="cmd">kubectl get pages -n javivela.dev</span>
-NAME                       STATUS    AGE
-home                       Running   2026
-kubernetes-101             Running   2026
-kubernetes-101/erratas     Running   2026
-kubernetes/glosario        Running   2026</pre>
+NAME                          STATUS    AGE
+home                          Running   2026
+kubernetes-101                Running   2026
+kubernetes-101/erratas        Running   2026
+kubernetes/glosario           Running   2026
+kubernetes/novedades-1-37     Running   2026</pre>
 </div>
 
 <h2 style="font-size:1.15rem;margin:0 0 14px">Dónde ir ahora</h2>
@@ -145,6 +139,7 @@ kubernetes/glosario        Running   2026</pre>
 <li><a href="/"><strong>Inicio</strong><span>javivela.dev</span></a></li>
 <li><a href="/libros/kubernetes-101/"><strong>Kubernetes 101</strong><span>La landing del libro</span></a></li>
 <li><a href="/kubernetes/glosario/"><strong>Glosario</strong><span>158 términos en español</span></a></li>
+<li><a href="/kubernetes/novedades-1-37/"><strong>Kubernetes 1.37</strong><span>Qué cambia en la nueva versión</span></a></li>
 <li><a href="/libros/kubernetes-101/erratas/"><strong>Fe de erratas</strong><span>Correcciones de la edición 2026</span></a></li>
 </ul>
 

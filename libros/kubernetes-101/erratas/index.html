@@ -70,7 +70,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 .nav-lista{display:flex;flex-wrap:wrap;gap:20px;margin:0;padding:0;list-style:none}
 .nav-lista li{margin:0}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:14.5px;line-height:1.2;padding:14px 22px;border-radius:8px;background:var(--acento);color:#fff;border:1px solid var(--acento);border-bottom:1px solid var(--acento)}
-.btn:hover{background:var(--acento-claro);border-color:var(--acento-claro);color:#fff}
+.btn:hover{background:#2558bd;border-color:#2558bd;color:#fff}
 .btn-sec{background:transparent;color:var(--texto);border-color:var(--borde);border-bottom-color:var(--borde)}
 .btn-sec:hover{background:var(--superficie);border-color:var(--acento-claro);color:var(--texto)}
 .btn-min{padding:10px 16px;font-size:13px}
@@ -133,16 +133,11 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 @media print{body{background:#fff;color:#111}.nav,.carrusel-ctrl,.saltar{display:none}a{color:#111}}
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.javivela.dev/"},{"@type":"ListItem","position":2,"name":"Kubernetes 101","item":"https://www.javivela.dev/libros/kubernetes-101/"},{"@type":"ListItem","position":3,"name":"Erratas","item":"https://www.javivela.dev/libros/kubernetes-101/erratas/"}]}
+</script>
 <script>document.documentElement.className="js";</script>
-<!-- ================== ANALÍTICA ==================
-     Pega aquí el script de tu proveedor. Recomendados (gratis, sin cookies,
-     sin banner de consentimiento):
-       Cloudflare Web Analytics -> https://dash.cloudflare.com  (Analytics > Web Analytics)
-       Umami Cloud   <script defer src="https://cloud.umami.is/script.js" data-website-id="TU-ID"></script>
-       Plausible     <script defer data-domain="javivela.dev" src="https://plausible.io/js/script.outbound-links.js"></script>
-     Hasta que no pegues uno, el registro de eventos de más abajo no envía
-     nada y falla en silencio: no rompe la página.
-     ================================================= -->
+<!-- Analítica: Cloudflare Web Analytics (beacon al final del head). -->
 <script>
 /* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
    Si no hay ninguno cargado, no hace nada. Marca cualquier enlace o botón
@@ -171,8 +166,9 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <div class="nav-int">
 <a class="nav-marca m" href="../../../">javivela.dev</a>
 <ul class="nav-lista">
-<li><a href="../../../libros/kubernetes-101/" aria-current="page">El libro</a></li>
+<li><a href="../../../libros/kubernetes-101/">El libro</a></li>
 <li><a href="../../../kubernetes/glosario/">Glosario</a></li>
+<li><a href="../../../kubernetes/novedades-1-37/">Kubernetes 1.37</a></li>
 <li><a href="https://blog.javivela.dev" rel="me noopener">Blog</a></li>
 <li><a href="https://github.com/fjvela" rel="me noopener">GitHub</a></li>
 </ul>
@@ -180,7 +176,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 </nav>
 <main id="contenido">
 <div class="contenedor" style="max-width:900px">
-<nav aria-label="Migas de pan" class="dato" style="padding:18px 0 0"><a href="../" style="border:0;color:var(--texto-suave)">Kubernetes 101</a> <span aria-hidden="true">/</span> Erratas</nav>
+<nav aria-label="Migas de pan" class="dato" style="padding:18px 0 0"><a href="../../../" style="border:0;color:var(--texto-suave)">Inicio</a> <span aria-hidden="true">/</span> <a href="../" style="border:0;color:var(--texto-suave)">Kubernetes 101</a> <span aria-hidden="true">/</span> Erratas</nav>
 
 <div style="padding:44px 0 0">
 <p class="eyebrow">Kubernetes 101 · Fe de erratas</p>
@@ -191,13 +187,11 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <section class="seccion" aria-labelledby="t-tabla" style="margin-top:44px">
 <h2 id="t-tabla">Erratas publicadas</h2>
 
-<!-- Cuando no haya erratas, deja este aviso visible y la tabla comentada.
-     Cuando aparezca la primera, borra el aviso y descomenta la tabla. -->
 <div class="aviso" style="margin-top:22px">
 <p style="margin:0"><strong>Aún no hay erratas reportadas.</strong> Si encuentras algo —una errata, un comando que no funciona, un diagrama con una etiqueta mal puesta— cuéntamelo y lo publico aquí con tu nombre si quieres.</p>
 </div>
 
-<!-- Plantilla de la tabla: descomentar al publicar la primera errata.
+<!-- Plantilla de la tabla · ver NOTAS-PUBLICACION.md
 <div class="tabla-scroll" style="margin-top:22px">
 <table>
 <caption>Erratas de Kubernetes 101, ordenadas por página.</caption>
@@ -222,21 +216,15 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <p class="estrecho" style="margin:18px 0 24px">Indícame la <strong>página</strong>, qué dice y qué debería decir. Si es un comando o un manifiesto, pega el fragmento tal cual aparece impreso.</p>
 <div class="rejilla">
 <div class="tarjeta">
-<span class="num">Opción 1 · Correo</span>
-<h3>Escríbeme un correo</h3>
-<p class="suave" style="margin:10px 0 16px;font-size:15px">La vía más rápida. Asunto sugerido: «Errata Kubernetes 101, página NN».</p>
-<p class="suave" style="margin:0;font-size:15px">La dirección se publica aquí en cuanto esté lista. Mientras tanto, GitHub o X.</p>
-</div>
-<div class="tarjeta">
-<span class="num">Opción 2 · GitHub</span>
+<span class="num">Opción 1 · GitHub</span>
 <h3>Abre una issue</h3>
-<p class="suave" style="margin:10px 0 16px;font-size:15px">Si ya estás en GitHub, una issue en el repositorio del libro deja la traza pública.</p>
+<p class="suave" style="margin:10px 0 16px;font-size:15px">La vía más rápida, y la que deja traza pública: una issue en el repositorio del libro. Título sugerido: «Errata, página NN».</p>
 <p style="margin:0"><a class="btn btn-sec btn-min" href="https://github.com/fjvela/kubernetes-101/issues" rel="noopener">Ir a GitHub</a></p>
 </div>
 <div class="tarjeta">
-<span class="num">Opción 3 · X</span>
+<span class="num">Opción 2 · X</span>
 <h3>Mándame un mensaje</h3>
-<p class="suave" style="margin:10px 0 16px;font-size:15px">Para cosas pequeñas o si prefieres hacerlo en público.</p>
+<p class="suave" style="margin:10px 0 16px;font-size:15px">Para cosas pequeñas, o si no tienes cuenta de GitHub y prefieres hacerlo en público.</p>
 <p style="margin:0"><a class="btn btn-sec btn-min" href="https://x.com/jvela" rel="me noopener">@jvela</a></p>
 </div>
 </div>

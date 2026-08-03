@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Novedades de Kubernetes 1.37 · en español</title>
-<meta name="description" content="Qué cambia en Kubernetes 1.37 y qué te toca hacer: SELinuxMount llega a GA, cgroup v1 impide arrancar el kubelet, la Metrics API se estabiliza, DRA con recursos extendidos y el kubelet rootless en beta.">
+<meta name="description" content="Qué cambia en Kubernetes 1.37 y qué te toca hacer: SELinuxMount llega a GA, cgroup v1 tumba el kubelet, la Metrics API se estabiliza y DRA simplifica las GPU.">
 <link rel="canonical" href="https://www.javivela.dev/kubernetes/novedades-1-37/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Javier Vela Aylón">
@@ -14,9 +14,11 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Novedades de Kubernetes 1.37, en español">
-<meta property="og:description" content="Qué cambia en Kubernetes 1.37 y qué te toca hacer: SELinuxMount llega a GA, cgroup v1 impide arrancar el kubelet, la Metrics API se estabiliza, DRA con recursos extendidos y el kubelet rootless en beta.">
+<meta property="og:description" content="Qué cambia en Kubernetes 1.37 y qué te toca hacer: SELinuxMount llega a GA, cgroup v1 tumba el kubelet, la Metrics API se estabiliza y DRA simplifica las GPU.">
 <meta property="og:url" content="https://www.javivela.dev/kubernetes/novedades-1-37/">
 <meta property="og:image" content="https://www.javivela.dev/media/og-1-37.png">
+<meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-1-37.png">
+<meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Novedades de Kubernetes 1.37 explicadas en español">
@@ -24,8 +26,9 @@
 <meta name="twitter:site" content="@jvela">
 <meta name="twitter:creator" content="@jvela">
 <meta name="twitter:title" content="Novedades de Kubernetes 1.37, en español">
-<meta name="twitter:description" content="Qué cambia en Kubernetes 1.37 y qué te toca hacer: SELinuxMount llega a GA, cgroup v1 impide arrancar el kubelet, la Metrics API se estabiliza, DRA con recursos extendidos y el kubelet rootless en beta.">
+<meta name="twitter:description" content="Qué cambia en Kubernetes 1.37 y qué te toca hacer: SELinuxMount llega a GA, cgroup v1 tumba el kubelet, la Metrics API se estabiliza y DRA simplifica las GPU.">
 <meta name="twitter:image" content="https://www.javivela.dev/media/og-1-37.png">
+<meta name="twitter:image:alt" content="Novedades de Kubernetes 1.37 explicadas en español">
 <link rel="icon" href="../../favicon.ico" sizes="32x32">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
@@ -68,7 +71,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 .nav-lista{display:flex;flex-wrap:wrap;gap:20px;margin:0;padding:0;list-style:none}
 .nav-lista li{margin:0}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:14.5px;line-height:1.2;padding:14px 22px;border-radius:8px;background:var(--acento);color:#fff;border:1px solid var(--acento);border-bottom:1px solid var(--acento)}
-.btn:hover{background:var(--acento-claro);border-color:var(--acento-claro);color:#fff}
+.btn:hover{background:#2558bd;border-color:#2558bd;color:#fff}
 .btn-sec{background:transparent;color:var(--texto);border-color:var(--borde);border-bottom-color:var(--borde)}
 .btn-sec:hover{background:var(--superficie);border-color:var(--acento-claro);color:var(--texto)}
 .btn-min{padding:10px 16px;font-size:13px}
@@ -160,9 +163,8 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
-{"@type":"ListItem","position":1,"name":"javivela.dev","item":"https://www.javivela.dev/"},
-{"@type":"ListItem","position":2,"name":"Kubernetes","item":"https://www.javivela.dev/kubernetes/"},
-{"@type":"ListItem","position":3,"name":"Novedades de Kubernetes 1.37","item":"https://www.javivela.dev/kubernetes/novedades-1-37/"}]}
+{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.javivela.dev/"},
+{"@type":"ListItem","position":2,"name":"Novedades de Kubernetes 1.37","item":"https://www.javivela.dev/kubernetes/novedades-1-37/"}]}
 </script>
 <script>
 /* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
@@ -194,6 +196,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <ul class="nav-lista">
 <li><a href="../../libros/kubernetes-101/">El libro</a></li>
 <li><a href="../../kubernetes/glosario/">Glosario</a></li>
+<li><a href="../../kubernetes/novedades-1-37/" aria-current="page">Kubernetes 1.37</a></li>
 <li><a href="https://blog.javivela.dev" rel="me noopener">Blog</a></li>
 <li><a href="https://github.com/fjvela" rel="me noopener">GitHub</a></li>
 </ul>
@@ -201,7 +204,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 </nav>
 <main id="contenido">
 <div class="contenedor" style="max-width:900px">
-<nav aria-label="Migas de pan" class="dato" style="padding:18px 0 0"><a href="../../" style="border:0;color:var(--texto-suave)">javivela.dev</a> <span aria-hidden="true">/</span> Novedades de Kubernetes 1.37</nav>
+<nav aria-label="Migas de pan" class="dato" style="padding:18px 0 0"><a href="../../" style="border:0;color:var(--texto-suave)">Inicio</a> <span aria-hidden="true">/</span> Novedades de Kubernetes 1.37</nav>
 
 <div style="padding:44px 0 0">
 <p class="eyebrow">Kubernetes 1.37 · 26 de agosto de 2026</p>
@@ -308,10 +311,10 @@ kubectl -n kube-system get configmap kube-proxy \
 <h2 id="t-libro">Este es el nivel de detalle del libro</h2>
 <p class="estrecho" style="margin:18px 0 0"><strong>Kubernetes 101</strong> es la guía en español para entender Kubernetes desde cero, y sale con esta misma versión: la 1.37 se publica el 26 de agosto y el libro el 1 de septiembre. El apéndice C recoge, capítulo a capítulo, en qué estado está cada funcionalidad y desde qué versión, para que puedas comprobar de un vistazo si lo que lees sigue vigente en tu clúster.</p>
 <div class="botonera" style="margin:24px 0 12px">
-<a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-1-37">Reservar en Kindle · 12,99 €</a>
+<a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-1-37">Reservar en Kindle · 12,99 €</a>
 <a class="btn btn-sec" href="../../libros/kubernetes-101/#suscripcion" data-evento="capitulo-gratis-1-37">Leer gratis un capítulo</a>
 </div>
-<p class="dato" style="margin:0">330 páginas · 13 capítulos · 48 laboratorios en un clúster real</p>
+<p class="dato" style="margin:0">330 páginas · 13 capítulos · 48 laboratorios en un clúster real</p>
 </section>
 
 <section class="seccion" aria-labelledby="t-fuentes">
@@ -327,8 +330,9 @@ kubectl -n kube-system get configmap kube-proxy \
 </div>
 </main>
 <footer class="pie">
-<div class="contenedor" style="max-width:900px">
-<p class="dato" style="margin:0">© 2026 Javier Vela Aylón · <a href="../../libros/kubernetes-101/">Kubernetes 101</a> · <a href="../../kubernetes/glosario/">Glosario de Kubernetes</a></p>
+<div class="pie-int">
+<span class="m">© 2026 Javier Vela Aylón · www.javivela.dev</span>
+<span class="m"><a href="../../libros/kubernetes-101/">Kubernetes 101</a> · <a href="../../kubernetes/glosario/">Glosario</a> · <a href="../../libros/kubernetes-101/erratas/">Erratas</a> · <a href="https://x.com/jvela" rel="me noopener">@jvela</a></span>
 </div>
 </footer>
 </body>

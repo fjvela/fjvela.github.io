@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kubernetes 101 · Libro en español, de cero a producción</title>
-<meta name="description" content="Aprende Kubernetes desde cero en español: 13 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real, sin instalar nada. 330 páginas, edición 2026 · Kubernetes 1.37, en Kindle y en papel.">
+<meta name="description" content="Aprende Kubernetes desde cero en español: 13 capítulos y 48 laboratorios en un clúster real, sin instalar nada. 330 páginas, edición 2026 · Kubernetes 1.37.">
 <link rel="canonical" href="https://www.javivela.dev/libros/kubernetes-101/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Javier Vela Aylón">
@@ -14,7 +14,7 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:type" content="book">
 <meta property="og:title" content="Kubernetes 101 — la guía en español para entender Kubernetes desde cero">
-<meta property="og:description" content="Aprende Kubernetes desde cero en español: 13 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real, sin instalar nada. 330 páginas, edición 2026 · Kubernetes 1.37, en Kindle y en papel.">
+<meta property="og:description" content="Aprende Kubernetes desde cero en español: 13 capítulos y 48 laboratorios en un clúster real, sin instalar nada. 330 páginas, edición 2026 · Kubernetes 1.37.">
 <meta property="og:url" content="https://www.javivela.dev/libros/kubernetes-101/">
 <meta property="og:image" content="https://www.javivela.dev/media/og-kubernetes-101.png">
 <meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-kubernetes-101.png">
@@ -26,7 +26,7 @@
 <meta name="twitter:site" content="@jvela">
 <meta name="twitter:creator" content="@jvela">
 <meta name="twitter:title" content="Kubernetes 101 — la guía en español para entender Kubernetes desde cero">
-<meta name="twitter:description" content="Aprende Kubernetes desde cero en español: 13 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real, sin instalar nada. 330 páginas, edición 2026 · Kubernetes 1.37, en Kindle y en papel.">
+<meta name="twitter:description" content="Aprende Kubernetes desde cero en español: 13 capítulos y 48 laboratorios en un clúster real, sin instalar nada. 330 páginas, edición 2026 · Kubernetes 1.37.">
 <meta name="twitter:image" content="https://www.javivela.dev/media/og-kubernetes-101.png">
 <meta name="twitter:image:alt" content="Portada de Kubernetes 101, la guía en español para entender Kubernetes desde cero, de Javier Vela Aylón">
 <link rel="icon" href="../../favicon.ico" sizes="32x32">
@@ -71,7 +71,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 .nav-lista{display:flex;flex-wrap:wrap;gap:20px;margin:0;padding:0;list-style:none}
 .nav-lista li{margin:0}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:14.5px;line-height:1.2;padding:14px 22px;border-radius:8px;background:var(--acento);color:#fff;border:1px solid var(--acento);border-bottom:1px solid var(--acento)}
-.btn:hover{background:var(--acento-claro);border-color:var(--acento-claro);color:#fff}
+.btn:hover{background:#2558bd;border-color:#2558bd;color:#fff}
 .btn-sec{background:transparent;color:var(--texto);border-color:var(--borde);border-bottom-color:var(--borde)}
 .btn-sec:hover{background:var(--superficie);border-color:var(--acento-claro);color:var(--texto)}
 .btn-min{padding:10px 16px;font-size:13px}
@@ -154,28 +154,17 @@ body.con-barra{padding-bottom:66px}
 @media (min-width:761px){.barra{display:none!important}body.con-barra{padding-bottom:0}}
 @media (max-width:600px){.cierre-caja{padding:24px 20px}.prologo{padding:20px 22px}}
 </style>
-<!-- Al publicar el papel: añadir "isbn" a la entrada Paperback del
-     workExample, y cambiar availability de PreOrder a InStock en las DOS
-     ofertas. Confirmar numberOfPages contra KDP (aparece 3 veces). -->
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Book","name":"Kubernetes 101","alternativeHeadline":"La guía en español para entender Kubernetes desde cero","url":"https://www.javivela.dev/libros/kubernetes-101/","image":"https://www.javivela.dev/media/portada-kubernetes-101.png","inLanguage":"es","bookEdition":"Edición 2026 · Kubernetes 1.37","numberOfPages":330,"datePublished":"2026-09-01","genre":"Informática","about":["Kubernetes","Contenedores","DevOps"],"author":{"@type":"Person","name":"Javier Vela Aylón","url":"https://www.javivela.dev/","sameAs":["https://www.linkedin.com/in/javiervelaaylon/","https://github.com/fjvela","https://x.com/jvela","https://blog.javivela.dev"]},"publisher":{"@type":"Person","name":"Javier Vela Aylón"},"description":"Guía en español para aprender Kubernetes desde cero, con 13 capítulos, 3 apéndices y una parte práctica de 48 laboratorios en 13 módulos, alojada en iximiuz Labs.","workExample":[{"@type":"Book","@id":"https://www.javivela.dev/libros/kubernetes-101/#kindle","bookFormat":"https://schema.org/EBook","name":"Kubernetes 101 · Edición Kindle","inLanguage":"es","bookEdition":"Edición 2026 · Kubernetes 1.37","numberOfPages":330,"identifier":{"@type":"PropertyValue","propertyID":"ASIN","value":"B0H8VY2WRT"},"offers":{"@type":"Offer","price":"12.99","priceCurrency":"EUR","availability":"https://schema.org/PreOrder","url":"https://www.amazon.es/dp/B0H8VY2WRT","seller":{"@type":"Organization","name":"Amazon.es"}}},{"@type":"Book","@id":"https://www.javivela.dev/libros/kubernetes-101/#papel","bookFormat":"https://schema.org/Paperback","name":"Kubernetes 101 · Edición en papel","inLanguage":"es","bookEdition":"Edición 2026 · Kubernetes 1.37","numberOfPages":330,"offers":{"@type":"Offer","price":"24.99","priceCurrency":"EUR","availability":"https://schema.org/PreOrder","url":"https://www.javivela.dev/libros/kubernetes-101/"}}]}
+{"@context":"https://schema.org","@type":"Book","name":"Kubernetes 101","alternativeHeadline":"La guía en español para entender Kubernetes desde cero","url":"https://www.javivela.dev/libros/kubernetes-101/","image":"https://www.javivela.dev/media/portada-kubernetes-101.png","inLanguage":"es","bookEdition":"Edición 2026 · Kubernetes 1.37","numberOfPages":330,"datePublished":"2026-09-01","genre":"Informática","about":["Kubernetes","Contenedores","DevOps"],"author":{"@type":"Person","name":"Javier Vela Aylón","url":"https://www.javivela.dev/","sameAs":["https://www.linkedin.com/in/javiervelaaylon/","https://github.com/fjvela","https://x.com/jvela","https://blog.javivela.dev"]},"publisher":{"@type":"Person","name":"Javier Vela Aylón"},"description":"Guía en español para aprender Kubernetes desde cero, con 13 capítulos, 3 apéndices y una parte práctica de 48 laboratorios en 13 módulos, alojada en iximiuz Labs.","workExample":[{"@type":"Book","@id":"https://www.javivela.dev/libros/kubernetes-101/#kindle","bookFormat":"https://schema.org/EBook","name":"Kubernetes 101 · Edición Kindle","inLanguage":"es","bookEdition":"Edición 2026 · Kubernetes 1.37","numberOfPages":330,"identifier":{"@type":"PropertyValue","propertyID":"ASIN","value":"B0H8VY2WRT"},"offers":{"@type":"Offer","price":"12.99","priceCurrency":"EUR","priceValidUntil":"2026-12-31","availability":"https://schema.org/PreOrder","url":"https://www.amazon.es/dp/B0H8VY2WRT","seller":{"@type":"Organization","name":"Amazon.es"}}},{"@type":"Book","@id":"https://www.javivela.dev/libros/kubernetes-101/#papel","bookFormat":"https://schema.org/Paperback","name":"Kubernetes 101 · Edición en papel","inLanguage":"es","bookEdition":"Edición 2026 · Kubernetes 1.37","numberOfPages":330,"offers":{"@type":"Offer","price":"24.99","priceCurrency":"EUR","priceValidUntil":"2026-12-31","availability":"https://schema.org/PreOrder","url":"https://www.javivela.dev/libros/kubernetes-101/"}}]}
 </script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.javivela.dev/"},{"@type":"ListItem","position":2,"name":"Kubernetes 101","item":"https://www.javivela.dev/libros/kubernetes-101/"}]}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Necesito saber Docker o contenedores para empezar?","acceptedAnswer":{"@type":"Answer","text":"No. El libro empieza por los fundamentos de contenedores y orquestación antes de tocar Kubernetes, y no da nada por supuesto."}},{"@type":"Question","name":"¿Tengo que instalar algo para hacer los laboratorios?","acceptedAnswer":{"@type":"Answer","text":"Nada. Cada laboratorio arranca un clúster de Kubernetes real en el navegador; solo necesitas conexión y una cuenta en iximiuz Labs."}},{"@type":"Question","name":"Ya trabajo con Kubernetes, ¿me sirve?","acceptedAnswer":{"@type":"Answer","text":"Sí. Está pensado también para quien usa la tecnología a diario y quiere entender de verdad qué pasa por debajo, con los diagramas y los challenges como red de seguridad."}},{"@type":"Question","name":"¿En papel o en digital?","acceptedAnswer":{"@type":"Answer","text":"Los dos. El acceso a la parte práctica se entrega dentro del libro, en cualquiera de los dos formatos."}},{"@type":"Question","name":"¿Los laboratorios son de pago aparte?","acceptedAnswer":{"@type":"Answer","text":"No. La parte práctica es de acceso público y gratuito, y no requiere ninguna compra adicional. Está alojada en iximiuz Labs, plataforma con la que el autor no tiene afiliación."}},{"@type":"Question","name":"¿Está todo el temario en el libro?","acceptedAnswer":{"@type":"Answer","text":"Los 13 capítulos y los 3 apéndices, sí. Hay dos bloques que existen solo como laboratorio y no tienen capítulo: la extensibilidad con CRD y operador en Go, y el reto final. Están marcados en el temario."}},{"@type":"Question","name":"¿Qué versión de Kubernetes usa el libro?","acceptedAnswer":{"@type":"Answer","text":"El libro es la edición 1.37. Kubernetes publica tres versiones al año, así que ningún libro va a estar nunca en la última: por eso incluye el Apéndice C, que recoge capítulo a capítulo el estado de cada funcionalidad y desde qué versión existe, para que puedas comprobar de un vistazo si lo que estás leyendo sigue vigente en tu clúster. Las correcciones posteriores se publican en la página de erratas."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Necesito saber Docker o contenedores para empezar?","acceptedAnswer":{"@type":"Answer","text":"No. El libro empieza por los fundamentos de contenedores y orquestación antes de tocar Kubernetes, y no da nada por supuesto."}},{"@type":"Question","name":"¿Tengo que instalar algo para hacer los laboratorios?","acceptedAnswer":{"@type":"Answer","text":"Nada. Cada laboratorio arranca un clúster de Kubernetes real en el navegador; solo necesitas conexión y una cuenta en iximiuz Labs."}},{"@type":"Question","name":"Ya trabajo con Kubernetes, ¿me sirve?","acceptedAnswer":{"@type":"Answer","text":"Sí. Está pensado también para quien usa la tecnología a diario y quiere entender de verdad qué pasa por debajo, con los diagramas y los challenges como red de seguridad."}},{"@type":"Question","name":"¿En papel o en digital?","acceptedAnswer":{"@type":"Answer","text":"Los dos. El acceso a la parte práctica se entrega dentro del libro, en cualquiera de los dos formatos."}},{"@type":"Question","name":"¿Los laboratorios son de pago aparte?","acceptedAnswer":{"@type":"Answer","text":"No. La parte práctica es de acceso público y gratuito, y no requiere ninguna compra adicional. Está alojada en iximiuz Labs, plataforma con la que el autor no tiene afiliación."}},{"@type":"Question","name":"¿Está todo el temario en el libro?","acceptedAnswer":{"@type":"Answer","text":"Los 13 capítulos y los 3 apéndices, sí. Hay dos bloques que existen solo como laboratorio y no tienen capítulo: la extensibilidad con CRD y operador en Go, y el reto final. Están marcados en el temario."}},{"@type":"Question","name":"¿Qué versión de Kubernetes usa el libro?","acceptedAnswer":{"@type":"Answer","text":"El libro es la edición 1.37. Kubernetes publica tres versiones al año, así que ningún libro va a estar nunca en la última: por eso incluye el Apéndice C, que recoge capítulo a capítulo el estado de cada funcionalidad y desde qué versión existe, para que puedas comprobar de un vistazo si lo que estás leyendo sigue vigente en tu clúster. Lo que trae la 1.37 está resumido en novedades de Kubernetes 1.37, y las correcciones posteriores se publican en la página de erratas."}}]}
 </script>
 <script>document.documentElement.className="js";</script>
-<!-- ================== ANALÍTICA ==================
-     Pega aquí el script de tu proveedor. Recomendados (gratis, sin cookies,
-     sin banner de consentimiento):
-       Cloudflare Web Analytics -> https://dash.cloudflare.com  (Analytics > Web Analytics)
-       Umami Cloud   <script defer src="https://cloud.umami.is/script.js" data-website-id="TU-ID"></script>
-       Plausible     <script defer data-domain="javivela.dev" src="https://plausible.io/js/script.outbound-links.js"></script>
-     Hasta que no pegues uno, el registro de eventos de más abajo no envía
-     nada y falla en silencio: no rompe la página.
-     ================================================= -->
+<!-- Analítica: Cloudflare Web Analytics (beacon al final del head). -->
 <script>
 /* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
    Si no hay ninguno cargado, no hace nada. Marca cualquier enlace o botón
@@ -205,6 +194,7 @@ body.con-barra{padding-bottom:66px}
 <ul class="nav-lista">
 <li><a href="../../libros/kubernetes-101/" aria-current="page">El libro</a></li>
 <li><a href="../../kubernetes/glosario/">Glosario</a></li>
+<li><a href="../../kubernetes/novedades-1-37/">Kubernetes 1.37</a></li>
 <li><a href="https://blog.javivela.dev" rel="me noopener">Blog</a></li>
 <li><a href="https://github.com/fjvela" rel="me noopener">GitHub</a></li>
 </ul>
@@ -219,19 +209,13 @@ body.con-barra{padding-bottom:66px}
 <div>
 <p class="eyebrow">Libro · Español · Publicación 1 de septiembre de 2026</p>
 <h1>Kubernetes 101 — la guía en español para entender Kubernetes desde cero</h1>
-<p class="suave" style="margin:20px 0 8px;font-size:1.1rem;max-width:56ch">13 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real, sin instalar nada. Lees el concepto y lo pruebas al momento.</p>
-<p class="dato" style="margin:0 0 24px">330 páginas · Edición 2026 · Kubernetes 1.37 · Kindle y papel</p>
-<!-- Kindle en preventa · ASIN B0H8VY2WRT. El mismo ASIN sirve en .es, .com y .com.mx.
-     El papel no tiene ASIN todavía: en vez de un botón muerto, captura de email.
-     Pendientes al publicar (1 de septiembre):
-       - sustituir el enlace #suscripcion de "Avísame" por la URL del papel
-       - añadir el ISBN del papel al JSON-LD y cambiar PreOrder -> InStock en las DOS ofertas
-       - poner la URL real de Amazon en la oferta Paperback del JSON-LD -->
+<p class="suave" style="margin:20px 0 8px;font-size:1.1rem;max-width:56ch">13 capítulos, 3 apéndices y una parte práctica con 48 laboratorios en un clúster real, sin instalar nada. Lees el concepto y lo pruebas al momento.</p>
+<p class="dato" style="margin:0 0 24px">330 páginas · Edición 2026 · Kubernetes 1.37 · Kindle y papel</p>
 <div class="botonera" style="margin:0 0 12px">
-<a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-hero">Reservar en Kindle · 12,99 €</a>
+<a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-hero">Reservar en Kindle · 12,99 €</a>
 <a class="btn btn-sec" href="#suscripcion" data-evento="capitulo-gratis-hero">Leer gratis el capítulo de Arquitectura</a>
 </div>
-<p class="compra" style="margin-bottom:10px"><span>Papel · 24,99 € · desde el 1 de septiembre</span><a href="#suscripcion" data-evento="aviso-papel-hero">Avísame cuando salga</a></p>
+<p class="compra" style="margin-bottom:10px"><span>Papel · 24,99 € · desde el 1 de septiembre</span><a href="#suscripcion" data-evento="aviso-papel-hero">Avísame cuando salga</a></p>
 <p class="compra"><span>Comprar desde:</span><a href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-es-hero">España</a><a href="/ir/kindle-com/" target="_blank" rel="noopener" data-evento="compra-com-hero">EE. UU. y Latinoamérica</a><a href="/ir/kindle-mx/" target="_blank" rel="noopener" data-evento="compra-mx-hero">México</a></p>
 </div>
 </div>
@@ -260,12 +244,7 @@ body.con-barra{padding-bottom:66px}
 </div>
 </section>
 
-<!-- ==================================================================
-     RESEÑAS DE LECTORES · descomentar al recibir las primeras (1 sept).
-     Va AQUI, alto y pegado al prologo: es prueba social de verdad y tiene
-     que verse antes que nada. La seccion de citas de los componentes,
-     mas abajo, es una broma y NO ocupa este sitio.
-     Pide permiso antes de publicar nombre y cargo.
+<!-- Reseñas de lectores · ver NOTAS-PUBLICACION.md
 <section class="seccion" aria-labelledby="t-lectores">
 <div class="contenedor">
 <p class="eyebrow">Lectores</p>
@@ -292,7 +271,7 @@ body.con-barra{padding-bottom:66px}
 <div class="rejilla rejilla-2">
 <article class="tarjeta">
 <span class="num">Capítulo 01</span>
-<h3>Introducción a los Contenedores y Orquestación</h3>
+<h3>Introducción a los contenedores y la orquestación</h3>
 <p class="suave" style="margin:10px 0 0;font-size:15px">Imagen, contenedor, controller, lease y nodo explicados antes de nombrar Kubernetes. Ventajas y desventajas reales de los contenedores, qué se complica al orquestarlos a escala y cómo se ejecutan de verdad: la interfaz CRI, la historia de dockershim y su eliminación en la 1.24, y RuntimeClass para elegir por Pod entre runc, Kata Containers o gVisor.</p>
 <ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo en el libro</span></li></ul>
 </article>
@@ -300,13 +279,13 @@ body.con-barra{padding-bottom:66px}
 <span class="num">Capítulo 02</span>
 <h3>Arquitectura de Kubernetes</h3>
 <p class="suave" style="margin:10px 0 0;font-size:15px">Los componentes clave —etcd, kube-apiserver, kube-scheduler, controller-manager, kubelet, kube-proxy— y la comunicación hub-and-spoke: por qué todo pasa por el API server y solo él habla con etcd.</p>
-<p class="dato" style="margin:8px 0 0;font-size:12.5px">Comparten el laboratorio de Fundamentos.</p><ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo en el libro</span></li><li><span class="etq etq-lab">Laboratorio práctico</span></li></ul>
+<p class="dato" style="margin:8px 0 0;font-size:12.5px">Comparte laboratorio con el capítulo 03, en el módulo de Fundamentos.</p><ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo en el libro</span></li><li><span class="etq etq-lab">Laboratorio práctico</span></li></ul>
 </article>
 <article class="tarjeta">
 <span class="num">Capítulo 03</span>
 <h3>Objetos de Kubernetes</h3>
 <p class="suave" style="margin:10px 0 0;font-size:15px">El primer Pod, Namespaces, labels y selectors, annotations y CRDs: cómo se nombra, se agrupa y se extiende lo que vive en el clúster.</p>
-<p class="dato" style="margin:8px 0 0;font-size:12.5px">Comparten el laboratorio de Fundamentos.</p><ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo en el libro</span></li><li><span class="etq etq-lab">Laboratorio práctico</span></li></ul>
+<p class="dato" style="margin:8px 0 0;font-size:12.5px">Comparte laboratorio con el capítulo 02, en el módulo de Fundamentos.</p><ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo en el libro</span></li><li><span class="etq etq-lab">Laboratorio práctico</span></li></ul>
 </article>
 <article class="tarjeta">
 <span class="num">Capítulo 04</span>
@@ -388,7 +367,7 @@ body.con-barra{padding-bottom:66px}
 <article class="tarjeta">
 <span class="num">Apéndice A</span>
 <h3>Glosario de siglas</h3>
-<p class="suave" style="margin:10px 0 0;font-size:15px">Las 100 siglas que aparecen en el libro, reunidas en una tabla para consultarlas de un vistazo. Publicado completo en el <a href="../../kubernetes/glosario/">glosario de la web</a>.</p>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Las 100 siglas que aparecen en el libro, reunidas en una tabla para consultarlas de un vistazo. Publicado completo en el <a href="../../kubernetes/glosario/">glosario de la web</a>.</p>
 </article>
 <article class="tarjeta">
 <span class="num">Apéndice B</span>
@@ -407,9 +386,9 @@ body.con-barra{padding-bottom:66px}
 <section class="seccion" aria-labelledby="t-incluido">
 <div class="contenedor">
 <p class="eyebrow">Incluido con el libro</p>
-<h2 id="t-incluido">La parte práctica: 48 laboratorios en 13 módulos</h2>
+<h2 id="t-incluido">La parte práctica: 48 laboratorios en 13 módulos</h2>
 <div class="estrecho" style="margin-top:20px">
-<p><strong>13 módulos, 48 unidades y 5 <em>challenges</em></strong>: tutoriales paso a paso con el YAML explicado, y <em>challenges</em> donde te entregan un clúster con algo roto y tienes que arreglarlo.</p>
+<p><strong>13 módulos, 48 unidades y 5 <em>challenges</em></strong>: tutoriales paso a paso con el YAML explicado, y <em>challenges</em> donde te entregan un clúster con algo roto y tienes que arreglarlo.</p>
 <p style="margin:0">Un <strong>clúster de Kubernetes real en el navegador</strong>, listo en segundos. Sin instalar nada, sin configurar nada y sin coste adicional. <strong>El acceso se entrega dentro del libro</strong>, en cualquiera de los dos formatos, y no se publica en esta web.</p>
 </div>
 </div>
@@ -551,7 +530,7 @@ body.con-barra{padding-bottom:66px}
 <h2 id="t-suscripcion">Descarga el capítulo de arquitectura</h2>
 <div style="display:grid;grid-template-columns:1fr minmax(280px,460px);gap:40px;align-items:start;margin-top:24px" class="susc">
 <div>
-<p>Suscríbete al blog y recibes el <strong>capítulo de Arquitectura de Kubernetes</strong> completo: 19 páginas y sus ocho diagramas, tal cual están en el libro.</p>
+<p>Suscríbete al blog y recibes el <strong>capítulo de Arquitectura de Kubernetes</strong> completo: 21 páginas y sus ocho diagramas, tal cual están en el libro.</p>
 <p style="margin:0">Es la forma más honesta de saber si el libro te sirve antes de pagar nada. Y te aviso el día que salga <strong>la edición en papel</strong>.</p>
 </div>
 <div>
@@ -589,11 +568,11 @@ body.con-barra{padding-bottom:66px}
 </div>
 <div class="faq-item" data-faq>
 <h3 style="margin:0"><button class="faq-b" type="button" id="faq-b5" aria-expanded="true" aria-controls="faq-p5"><span>¿Está todo el temario en el libro?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
-<p class="faq-p" id="faq-p5" role="region" aria-labelledby="faq-b5">Los 13 capítulos y los 3 apéndices, sí. Hay dos bloques que existen solo como laboratorio y no tienen capítulo: la extensibilidad con CRD y operador en Go, y el reto final. Están marcados en el temario.</p>
+<p class="faq-p" id="faq-p5" role="region" aria-labelledby="faq-b5">Los 13 capítulos y los 3 apéndices, sí. Hay dos bloques que existen solo como laboratorio y no tienen capítulo: la extensibilidad con CRD y operador en Go, y el reto final. Están marcados en el temario.</p>
 </div>
 <div class="faq-item" data-faq>
 <h3 style="margin:0"><button class="faq-b" type="button" id="faq-b6" aria-expanded="true" aria-controls="faq-p6"><span>¿Qué versión de Kubernetes usa el libro?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
-<p class="faq-p" id="faq-p6" role="region" aria-labelledby="faq-b6">El libro es la edición 1.37. Kubernetes publica tres versiones al año, así que ningún libro va a estar nunca en la última: por eso incluye el Apéndice C, que recoge capítulo a capítulo el estado de cada funcionalidad y desde qué versión existe, para que puedas comprobar de un vistazo si lo que estás leyendo sigue vigente en tu clúster. Las correcciones posteriores se publican en la <a href="erratas/">página de erratas</a>.</p>
+<p class="faq-p" id="faq-p6" role="region" aria-labelledby="faq-b6">El libro es la edición 1.37. Kubernetes publica tres versiones al año, así que ningún libro va a estar nunca en la última: por eso incluye el Apéndice C, que recoge capítulo a capítulo el estado de cada funcionalidad y desde qué versión existe, para que puedas comprobar de un vistazo si lo que estás leyendo sigue vigente en tu clúster. Lo que trae la 1.37 está resumido en <a href="../../kubernetes/novedades-1-37/">novedades de Kubernetes 1.37</a>, y las correcciones posteriores se publican en la <a href="erratas/">página de erratas</a>.</p>
 </div>
 </div>
 </div>
@@ -604,7 +583,7 @@ body.con-barra{padding-bottom:66px}
 <p class="eyebrow">Sobre el autor</p>
 <h2 id="t-autor">Javier Vela Aylón</h2>
 <div class="estrecho" style="margin-top:20px">
-<p>Desarrollador .NET devenido <strong>Senior Software &amp; Platform Engineer</strong>, con más de 20 años construyendo y manteniendo plataformas. Nueve veces certificado en Azure y Kubernetes, y speaker en DotNetters.</p>
+<p>Desarrollador .NET devenido <strong>Senior Software &amp; Platform Engineer</strong>, con más de 20 años construyendo y manteniendo plataformas. Nueve veces certificado en Azure y Kubernetes, y speaker en DotNetters.</p>
 <p style="margin:0 0 20px">Escribo sobre DevOps, Azure, AWS, CI/CD, Kubernetes, contenedores y arquitectura en <a href="https://blog.javivela.dev" rel="me noopener">blog.javivela.dev</a>.</p>
 </div>
 <div class="botonera" style="margin:0">
@@ -633,9 +612,9 @@ body.con-barra{padding-bottom:66px}
 <div class="cierre-caja">
 <p class="eyebrow">Kubernetes 101</p>
 <h2 id="t-cierre">De un Pod suelto a un sistema que entiendes</h2>
-<p class="estrecho" style="margin:16px 0 24px">330 páginas, 13 capítulos, 3 apéndices y 48 laboratorios en un clúster real. En español, y con Kubernetes 1.37, que se publica seis días antes que el libro.</p>
+<p class="estrecho" style="margin:16px 0 24px">330 páginas, 13 capítulos, 3 apéndices y 48 laboratorios en un clúster real. En español, y con Kubernetes 1.37, que se publica seis días antes que el libro.</p>
 <div class="botonera" style="margin:0 0 14px">
-<a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-cierre">Reservar en Kindle · 12,99 €</a>
+<a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-cierre">Reservar en Kindle · 12,99 €</a>
 <a class="btn btn-sec" href="#suscripcion" data-evento="capitulo-gratis-cierre">Leer gratis un capítulo</a>
 </div>
 <p class="compra"><span>Comprar desde:</span><a href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-es-cierre">España</a><a href="/ir/kindle-com/" target="_blank" rel="noopener" data-evento="compra-com-cierre">EE. UU. y Latinoamérica</a><a href="/ir/kindle-mx/" target="_blank" rel="noopener" data-evento="compra-mx-cierre">México</a></p>
@@ -737,7 +716,7 @@ body.con-barra{padding-bottom:66px}
 </div>
 </footer>
 <div class="barra" id="barra-compra" aria-hidden="true">
-<span class="m">Kindle 12,99 € · papel 24,99 €</span>
+<span class="m">Kindle 12,99 € · papel 24,99 €</span>
 <a class="btn btn-min" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-barra">Reservar</a>
 </div>
 <script>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Glosario de Kubernetes en español — siglas y términos explicados</title>
-<meta name="description" content="Glosario de Kubernetes en español: 158 entradas con las 100 siglas del apéndice de Kubernetes 101 y 58 conceptos del ecosistema, explicados uno a uno. Gratis, sin registro.">
+<title>Glosario de Kubernetes en español — siglas y términos</title>
+<meta name="description" content="Glosario de Kubernetes en español: 158 entradas con las 100 siglas del apéndice de Kubernetes 101 y 58 conceptos del ecosistema. Gratis, sin registro.">
 <link rel="canonical" href="https://www.javivela.dev/kubernetes/glosario/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Javier Vela Aylón">
@@ -14,7 +14,7 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Glosario de Kubernetes en español — siglas y términos explicados">
-<meta property="og:description" content="Glosario de Kubernetes en español: 158 entradas con las 100 siglas del apéndice de Kubernetes 101 y 58 conceptos del ecosistema, explicados uno a uno. Gratis, sin registro.">
+<meta property="og:description" content="Glosario de Kubernetes en español: 158 entradas con las 100 siglas del apéndice de Kubernetes 101 y 58 conceptos del ecosistema. Gratis, sin registro.">
 <meta property="og:url" content="https://www.javivela.dev/kubernetes/glosario/">
 <meta property="og:image" content="https://www.javivela.dev/media/og-glosario.png">
 <meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-glosario.png">
@@ -26,7 +26,7 @@
 <meta name="twitter:site" content="@jvela">
 <meta name="twitter:creator" content="@jvela">
 <meta name="twitter:title" content="Glosario de Kubernetes en español — siglas y términos explicados">
-<meta name="twitter:description" content="Glosario de Kubernetes en español: 158 entradas con las 100 siglas del apéndice de Kubernetes 101 y 58 conceptos del ecosistema, explicados uno a uno. Gratis, sin registro.">
+<meta name="twitter:description" content="Glosario de Kubernetes en español: 158 entradas con las 100 siglas del apéndice de Kubernetes 101 y 58 conceptos del ecosistema. Gratis, sin registro.">
 <meta name="twitter:image" content="https://www.javivela.dev/media/og-glosario.png">
 <meta name="twitter:image:alt" content="Glosario de Kubernetes en español: siglas y términos del clúster explicados uno por uno">
 <link rel="icon" href="../../favicon.ico" sizes="32x32">
@@ -70,7 +70,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 .nav-lista{display:flex;flex-wrap:wrap;gap:20px;margin:0;padding:0;list-style:none}
 .nav-lista li{margin:0}
 .btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:14.5px;line-height:1.2;padding:14px 22px;border-radius:8px;background:var(--acento);color:#fff;border:1px solid var(--acento);border-bottom:1px solid var(--acento)}
-.btn:hover{background:var(--acento-claro);border-color:var(--acento-claro);color:#fff}
+.btn:hover{background:#2558bd;border-color:#2558bd;color:#fff}
 .btn-sec{background:transparent;color:var(--texto);border-color:var(--borde);border-bottom-color:var(--borde)}
 .btn-sec:hover{background:var(--superficie);border-color:var(--acento-claro);color:var(--texto)}
 .btn-min{padding:10px 16px;font-size:13px}
@@ -146,15 +146,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.javivela.dev/"},{"@type":"ListItem","position":2,"name":"Glosario de Kubernetes","item":"https://www.javivela.dev/kubernetes/glosario/"}]}
 </script>
 <script>document.documentElement.className="js";</script>
-<!-- ================== ANALÍTICA ==================
-     Pega aquí el script de tu proveedor. Recomendados (gratis, sin cookies,
-     sin banner de consentimiento):
-       Cloudflare Web Analytics -> https://dash.cloudflare.com  (Analytics > Web Analytics)
-       Umami Cloud   <script defer src="https://cloud.umami.is/script.js" data-website-id="TU-ID"></script>
-       Plausible     <script defer data-domain="javivela.dev" src="https://plausible.io/js/script.outbound-links.js"></script>
-     Hasta que no pegues uno, el registro de eventos de más abajo no envía
-     nada y falla en silencio: no rompe la página.
-     ================================================= -->
+<!-- Analítica: Cloudflare Web Analytics (beacon al final del head). -->
 <script>
 /* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
    Si no hay ninguno cargado, no hace nada. Marca cualquier enlace o botón
@@ -185,6 +177,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <ul class="nav-lista">
 <li><a href="../../libros/kubernetes-101/">El libro</a></li>
 <li><a href="../../kubernetes/glosario/" aria-current="page">Glosario</a></li>
+<li><a href="../../kubernetes/novedades-1-37/">Kubernetes 1.37</a></li>
 <li><a href="https://blog.javivela.dev" rel="me noopener">Blog</a></li>
 <li><a href="https://github.com/fjvela" rel="me noopener">GitHub</a></li>
 </ul>
@@ -197,9 +190,9 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <div style="padding:44px 0 0">
 <p class="eyebrow">Glosario · Gratis y sin registro</p>
 <h1>Glosario de Kubernetes en español</h1>
-<p class="estrecho" style="margin:22px 0 14px;font-size:1.08rem">Las 100 siglas del apéndice de <a href="../../libros/kubernetes-101/">Kubernetes 101</a>, publicadas aquí completas, más los conceptos del ecosistema que hacen falta para entenderlas.</p>
-<p class="dato" style="margin:0 0 6px">158 entradas · 100 siglas y 58 conceptos</p>
-<p class="dato" style="margin:0">Última revisión: septiembre de 2026 · Kubernetes 1.37</p>
+<p class="estrecho" style="margin:22px 0 14px;font-size:1.08rem">Las 100 siglas del apéndice de <a href="../../libros/kubernetes-101/">Kubernetes 101</a>, publicadas aquí completas, más los conceptos del ecosistema que hacen falta para entenderlas.</p>
+<p class="dato" style="margin:0 0 6px">158 entradas · 100 siglas y 58 conceptos</p>
+<p class="dato" style="margin:0">Última revisión: agosto de 2026 · Kubernetes 1.37 · <a href="../../kubernetes/novedades-1-37/">qué cambia en la 1.37</a></p>
 </div>
 
 <nav aria-labelledby="indice" style="padding:36px 0 0" id="indice-nav">
@@ -211,7 +204,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <div class="buscador">
 <label class="eyebrow" for="q" style="display:block;margin:0 0 10px">Buscar</label>
 <input id="q" type="search" autocomplete="off" spellcheck="false" placeholder="cidr, sigla, kubelet, almacenamiento…" aria-describedby="q-res">
-<p class="dato" id="q-res" role="status" style="margin:10px 0 0">158 entradas</p>
+<p class="dato" id="q-res" role="status" style="margin:10px 0 0">158 entradas</p>
 </div>
 
 <div style="padding:8px 0 40px" id="lista">
@@ -329,7 +322,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <p class="dato" style="margin-top:8px">Ver también: <a href="#cri">CRI</a> · <a href="#oci">OCI</a> · <a href="#kubelet">kubelet</a></p>
 </article>
 <article class="termino" id="control-plane">
-<h3>Control plane <span class="m">· Plano de control</span> <span class="etq etq-lab">concepto</span></h3>
+<h3>Control plane <span class="m">· control plane</span> <span class="etq etq-lab">concepto</span></h3>
 <p>El conjunto de componentes que deciden y guardan el estado del clúster: kube-apiserver, etcd, kube-scheduler y kube-controller-manager.</p>
 <p class="dato" style="margin-top:8px">Ver también: <a href="#kube-apiserver">kube-apiserver</a> · <a href="#etcd">etcd</a></p>
 </article>
@@ -1021,7 +1014,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <section class="seccion" aria-labelledby="t-libro">
 <p class="eyebrow">Si quieres el resto</p>
 <h2 id="t-libro">Los términos, con su capítulo detrás</h2>
-<p class="estrecho" style="margin:18px 0 22px">Este glosario define; el libro explica. <strong>Kubernetes 101</strong> son 13 capítulos con diagramas y una parte práctica de 48 laboratorios, en un clúster real dentro del navegador. 330 páginas, en Kindle y en papel.</p>
+<p class="estrecho" style="margin:18px 0 22px">Este glosario define; el libro explica. <strong>Kubernetes 101</strong> son 13 capítulos con diagramas y una parte práctica de 48 laboratorios, en un clúster real dentro del navegador. 330 páginas, en Kindle y en papel.</p>
 <div class="botonera" style="margin:0">
 <a class="btn btn-sec" href="../../libros/kubernetes-101/">Ver el libro</a>
 </div>
