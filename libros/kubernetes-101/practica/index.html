@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Parte práctica de Kubernetes 101 — 48 laboratorios en 13 módulos</title>
-<meta name="description" content="Cómo funciona la parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con un clúster real en el navegador y verificación automática.">
+<title>Parte práctica de Kubernetes 101 — 52 laboratorios en 15 módulos</title>
+<meta name="description" content="Cómo funciona la parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
 <link rel="canonical" href="https://www.javivela.dev/libros/kubernetes-101/practica/">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, max-snippet:0, max-image-preview:none">
 <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
@@ -15,22 +15,22 @@
 <meta property="og:site_name" content="Javier Vela Aylón · javivela.dev">
 <meta property="og:locale" content="es_ES">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Parte práctica de Kubernetes 101 — 48 laboratorios en 13 módulos">
-<meta property="og:description" content="Cómo funciona la parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con un clúster real en el navegador y verificación automática.">
+<meta property="og:title" content="Parte práctica de Kubernetes 101 — 52 laboratorios en 15 módulos">
+<meta property="og:description" content="Cómo funciona la parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
 <meta property="og:url" content="https://www.javivela.dev/libros/kubernetes-101/practica/">
 <meta property="og:image" content="https://www.javivela.dev/media/og-practica.png">
 <meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-practica.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con clúster real en el navegador">
+<meta property="og:image:alt" content="Parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con clúster real en el navegador">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@jvela">
 <meta name="twitter:creator" content="@jvela">
-<meta name="twitter:title" content="Parte práctica de Kubernetes 101 — 48 laboratorios en 13 módulos">
-<meta name="twitter:description" content="Cómo funciona la parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con un clúster real en el navegador y verificación automática.">
+<meta name="twitter:title" content="Parte práctica de Kubernetes 101 — 52 laboratorios en 15 módulos">
+<meta name="twitter:description" content="Cómo funciona la parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
 <meta name="twitter:image" content="https://www.javivela.dev/media/og-practica.png">
-<meta name="twitter:image:alt" content="Parte práctica de Kubernetes 101: 48 laboratorios en 13 módulos, con clúster real en el navegador">
+<meta name="twitter:image:alt" content="Parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con clúster real en el navegador">
 <link rel="icon" href="../../../favicon.ico" sizes="32x32">
 <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
@@ -186,7 +186,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <div style="padding:44px 0 0">
 <p class="eyebrow">Parte práctica</p>
 <h1>Bienvenido a la parte práctica de Kubernetes 101</h1>
-<p style="margin:22px 0 28px;font-size:1.08rem"><strong>48 laboratorios en 13 módulos</strong>, con 5 <em>challenges</em>. El curso avanza en paralelo al libro y los módulos siguen el mismo orden que el índice.</p>
+<p style="margin:22px 0 28px;font-size:1.08rem"><strong>52 laboratorios en 15 módulos</strong>, con 7 <em>challenges</em>. El curso avanza en paralelo al libro y los módulos siguen el mismo orden que el índice.</p>
 <p style="margin:0"><a class="btn" href="https://labs.iximiuz.com/courses/kubernetes-101-1bdca3e4" rel="noopener">Ir a los laboratorios →</a></p>
 </div>
 
@@ -203,19 +203,21 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <section class="seccion" aria-labelledby="t-programa">
 <h2 id="t-programa">El programa</h2>
 <ul style="list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:14px">
-<li class="tarjeta" style="padding:18px 20px"><strong>Fundamentos</strong> — los componentes del clúster, tu primer Pod, tu primer Pod roto, y labels, selectors y annotations.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Contenedores</strong> — cómo se apila una imagen en capas, y construyes la <code>tienda/api</code> que se despliega en todo el curso.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Fundamentos</strong> — tu primer Pod en la primera pantalla, tu primer Pod roto, y labels, selectors y annotations.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Workloads</strong> — probes, requests, limits y QoS, Deployments con rollout y rollback, StatefulSets, DaemonSets, init containers y sidecars, Jobs y CronJobs.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Escalado</strong> — Horizontal Pod Autoscaler y Vertical Pod Autoscaler.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Red</strong> — Services con DNS interno, Ingress con Traefik, Gateway API, NetworkPolicies y CoreDNS.</li>
-<li class="tarjeta" style="padding:18px 20px"><strong>Configuración</strong> — ConfigMaps y Secrets.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Configuración</strong> — ConfigMaps y Secrets, las credenciales de un registro privado y la Downward API.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Almacenamiento</strong> — emptyDir, PersistentVolumeClaims y StorageClasses.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Seguridad</strong> — Namespaces, RBAC, ServiceAccounts y Pod Security Admission.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Policies</strong> — ResourceQuotas y LimitRanges.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Scheduling</strong> — afinidades, taints y tolerations, prioridad y preemption, PodDisruptionBudgets y drenado de nodos.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Trabajando con el clúster</strong> — depuración imperativa en formato misión, el flujo declarativo con Kustomize, Helm y los comandos que no salen en los manuales.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Extensibilidad</strong> — CRD y operador en Go con controller-runtime. <span class="m" style="font-size:12.5px">El capítulo 13 del libro llega hasta la mitad; aquí escribes el operador entero.</span></li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Observabilidad</strong> — los Events del clúster, métricas con Prometheus, logs y trazas.</li>
-<li class="tarjeta" style="padding:18px 20px;border-color:#2f4d8f"><strong>Extensibilidad</strong> — CRD y operador en Go con controller-runtime. <span class="m" style="font-size:12.5px;color:var(--alerta)">Solo laboratorio: no tiene capítulo en el libro.</span></li>
-<li class="tarjeta" style="padding:18px 20px;border-color:#2f4d8f"><strong>Reto final</strong> — apaga el scheduler y diagnostica el clúster a corazón abierto.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>El clúster por dentro</strong> — el laboratorio del Apéndice D: un recorrido componente a componente sobre un clúster kubeadm de verdad, no k3s.</li>
+<li class="tarjeta" style="padding:18px 20px;border-color:#2f4d8f"><strong>Reto final</strong> — apaga el scheduler y diagnostica el clúster a corazón abierto. <span class="m" style="font-size:12.5px;color:var(--alerta)">Solo laboratorio: no tiene capítulo en el libro.</span></li>
 </ul>
 </section>
 
