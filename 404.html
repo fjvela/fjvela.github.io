@@ -78,11 +78,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 @media print{body{background:#fff;color:#111}.nav,.saltar{display:none}a{color:#111}}
 </style>
-<!-- Analítica: Cloudflare Web Analytics (beacon al final del head). -->
 <script>
-/* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
-   Si no hay ninguno cargado, no hace nada. Marca cualquier enlace o botón
-   con data-evento="nombre" y se registrará el clic. */
 (function () {
   function ev(nombre, props) {
     try {
@@ -129,6 +125,7 @@ code{font-family:var(--mono);font-size:.92em;background:var(--superficie);border
 NAME                          STATUS    AGE
 home                          Running   2026
 kubernetes-101                Running   2026
+kubernetes-101/bibliografia   Running   2026
 kubernetes-101/erratas        Running   2026
 kubernetes/glosario           Running   2026
 kubernetes/novedades-1-37     Running   2026</pre>
@@ -136,14 +133,15 @@ kubernetes/novedades-1-37     Running   2026</pre>
 
 <h2 style="font-size:1.15rem;margin:0 0 14px">Dónde ir ahora</h2>
 <ul class="destinos rejilla">
-<li><a href="/"><strong>Inicio</strong><span>javivela.dev</span></a></li>
-<li><a href="/libros/kubernetes-101/"><strong>Kubernetes 101</strong><span>La landing del libro</span></a></li>
-<li><a href="/kubernetes/glosario/"><strong>Glosario</strong><span>158 términos en español</span></a></li>
-<li><a href="/kubernetes/novedades-1-37/"><strong>Kubernetes 1.37</strong><span>Qué cambia en la nueva versión</span></a></li>
-<li><a href="/libros/kubernetes-101/erratas/"><strong>Fe de erratas</strong><span>Correcciones de la edición 2026</span></a></li>
+<li><a href="/" data-evento="404-inicio"><strong>Inicio</strong><span>javivela.dev</span></a></li>
+<li><a href="/libros/kubernetes-101/" data-evento="404-libro"><strong>Kubernetes 101</strong><span>La landing del libro</span></a></li>
+<li><a href="/kubernetes/glosario/" data-evento="404-glosario"><strong>Glosario</strong><span>158 términos en español</span></a></li>
+<li><a href="/kubernetes/novedades-1-37/" data-evento="404-novedades"><strong>Kubernetes 1.37</strong><span>Qué cambia en la nueva versión</span></a></li>
+<li><a href="/libros/kubernetes-101/erratas/" data-evento="404-erratas"><strong>Fe de erratas</strong><span>Correcciones de la edición 2026</span></a></li>
+<li><a href="/libros/kubernetes-101/bibliografia/" data-evento="404-bibliografia"><strong>Bibliografía</strong><span>Las fuentes citadas en el libro</span></a></li>
 </ul>
 
-<p class="dato" style="margin:26px 0 0">¿Has llegado desde una URL impresa en el libro? Escríbeme y la arreglo.</p>
+<p class="dato" style="margin:26px 0 0">¿Has llegado desde una URL impresa en el libro? Dímelo en <a href="https://github.com/fjvela/kubernetes-101/issues" rel="noopener">GitHub</a> o en <a href="https://x.com/jvela" rel="me noopener">@jvela</a> y la arreglo.</p>
 </div>
 </main>
 <script>
@@ -159,7 +157,7 @@ kubernetes/novedades-1-37     Running   2026</pre>
 <footer class="pie">
 <div class="pie-int">
 <span class="m">© 2026 Javier Vela Aylón · www.javivela.dev</span>
-<span class="m"><a href="/libros/kubernetes-101/">Kubernetes 101</a> · <a href="/kubernetes/glosario/">Glosario</a> · <a href="/libros/kubernetes-101/erratas/">Erratas</a> · <a href="https://x.com/jvela" rel="me noopener">@jvela</a></span>
+<span class="m"><a href="/libros/kubernetes-101/">Kubernetes 101</a> · <a href="/kubernetes/glosario/">Glosario</a> · <a href="/libros/kubernetes-101/erratas/">Erratas</a> · <a href="/libros/kubernetes-101/bibliografia/">Bibliografía</a> · <a href="https://x.com/jvela" rel="me noopener">@jvela</a></span>
 </div>
 </footer>
 </body>

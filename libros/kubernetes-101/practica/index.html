@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Parte práctica de Kubernetes 101 — 52 laboratorios en 15 módulos</title>
-<meta name="description" content="Cómo funciona la parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
+<title>Parte práctica de Kubernetes 101 — 53 laboratorios en 15 módulos</title>
+<meta name="description" content="Cómo funciona la parte práctica de Kubernetes 101: 53 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
 <link rel="canonical" href="https://www.javivela.dev/libros/kubernetes-101/practica/">
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, max-snippet:0, max-image-preview:none">
 <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
@@ -15,22 +15,22 @@
 <meta property="og:site_name" content="Javier Vela Aylón · javivela.dev">
 <meta property="og:locale" content="es_ES">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Parte práctica de Kubernetes 101 — 52 laboratorios en 15 módulos">
-<meta property="og:description" content="Cómo funciona la parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
+<meta property="og:title" content="Parte práctica de Kubernetes 101 — 53 laboratorios en 15 módulos">
+<meta property="og:description" content="Cómo funciona la parte práctica de Kubernetes 101: 53 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
 <meta property="og:url" content="https://www.javivela.dev/libros/kubernetes-101/practica/">
 <meta property="og:image" content="https://www.javivela.dev/media/og-practica.png">
 <meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-practica.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con clúster real en el navegador">
+<meta property="og:image:alt" content="Parte práctica de Kubernetes 101: 53 laboratorios en 15 módulos, con clúster real en el navegador">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@jvela">
 <meta name="twitter:creator" content="@jvela">
-<meta name="twitter:title" content="Parte práctica de Kubernetes 101 — 52 laboratorios en 15 módulos">
-<meta name="twitter:description" content="Cómo funciona la parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
+<meta name="twitter:title" content="Parte práctica de Kubernetes 101 — 53 laboratorios en 15 módulos">
+<meta name="twitter:description" content="Cómo funciona la parte práctica de Kubernetes 101: 53 laboratorios en 15 módulos, con un clúster real en el navegador y verificación automática.">
 <meta name="twitter:image" content="https://www.javivela.dev/media/og-practica.png">
-<meta name="twitter:image:alt" content="Parte práctica de Kubernetes 101: 52 laboratorios en 15 módulos, con clúster real en el navegador">
+<meta name="twitter:image:alt" content="Parte práctica de Kubernetes 101: 53 laboratorios en 15 módulos, con clúster real en el navegador">
 <link rel="icon" href="../../../favicon.ico" sizes="32x32">
 <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../../apple-touch-icon.png">
@@ -136,11 +136,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 @media print{body{background:#fff;color:#111}.nav,.carrusel-ctrl,.saltar{display:none}a{color:#111}}
 </style>
 <script>document.documentElement.className="js";</script>
-<!-- Analítica: Cloudflare Web Analytics (beacon al final del head). -->
 <script>
-/* Registro de eventos agnóstico: funciona con Plausible, Umami o gtag.
-   Si no hay ninguno cargado, no hace nada. Marca cualquier enlace o botón
-   con data-evento="nombre" y se registrará el clic. */
 (function () {
   function ev(nombre, props) {
     try {
@@ -186,8 +182,8 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <div style="padding:44px 0 0">
 <p class="eyebrow">Parte práctica</p>
 <h1>Bienvenido a la parte práctica de Kubernetes 101</h1>
-<p style="margin:22px 0 28px;font-size:1.08rem"><strong>52 laboratorios en 15 módulos</strong>, con 7 <em>challenges</em>. El curso avanza en paralelo al libro y los módulos siguen el mismo orden que el índice.</p>
-<p style="margin:0"><a class="btn" href="https://labs.iximiuz.com/courses/kubernetes-101-1bdca3e4" rel="noopener">Ir a los laboratorios →</a></p>
+<p style="margin:22px 0 28px;font-size:1.08rem"><strong>53 laboratorios en 15 módulos</strong>, con 7 <em>challenges</em>. El curso avanza en paralelo al libro y los módulos siguen el mismo orden que el índice.</p>
+<div class="botonera" style="margin:0"><a class="btn" href="https://labs.iximiuz.com/courses/kubernetes-101-1bdca3e4" rel="noopener" data-evento="labs-curso-cta">Ir a los laboratorios →</a><a class="btn btn-sec" href="../../../ir/labs/" data-evento="referral-labs-cta">Crear cuenta gratis</a></div>
 </div>
 
 <section class="seccion" aria-labelledby="t-como" style="margin-top:56px">
@@ -212,10 +208,10 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <li class="tarjeta" style="padding:18px 20px"><strong>Almacenamiento</strong> — emptyDir, PersistentVolumeClaims y StorageClasses.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Seguridad</strong> — Namespaces, RBAC, ServiceAccounts y Pod Security Admission.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Policies</strong> — ResourceQuotas y LimitRanges.</li>
-<li class="tarjeta" style="padding:18px 20px"><strong>Scheduling</strong> — afinidades, taints y tolerations, prioridad y preemption, PodDisruptionBudgets y drenado de nodos.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Scheduling</strong> — afinidades, taints y tolerations, prioridad y preemption, PodDisruptionBudgets y drenado de nodos, y los dispositivos con Dynamic Resource Allocation. <span class="m" style="font-size:12.5px">Aquí publicas un dispositivo a mano y ves al selector descartarlo; el libro no llega tan lejos.</span></li>
 <li class="tarjeta" style="padding:18px 20px"><strong>Trabajando con el clúster</strong> — depuración imperativa en formato misión, el flujo declarativo con Kustomize, Helm y los comandos que no salen en los manuales.</li>
-<li class="tarjeta" style="padding:18px 20px"><strong>Extensibilidad</strong> — CRD y operador en Go con controller-runtime. <span class="m" style="font-size:12.5px">El capítulo 13 del libro llega hasta la mitad; aquí escribes el operador entero.</span></li>
-<li class="tarjeta" style="padding:18px 20px"><strong>Observabilidad</strong> — los Events del clúster, métricas con Prometheus, logs y trazas.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Extensibilidad</strong> — CRD y operador en Go con controller-runtime. <span class="m" style="font-size:12.5px">El capítulo 14 del libro llega hasta la mitad; aquí escribes el operador entero.</span></li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Observabilidad</strong> — los Events del clúster, métricas con <code>kubectl top</code>, y un stack real con Prometheus, Grafana, Loki y VictoriaMetrics.</li>
 <li class="tarjeta" style="padding:18px 20px"><strong>El clúster por dentro</strong> — el laboratorio del Apéndice D: un recorrido componente a componente sobre un clúster kubeadm de verdad, no k3s.</li>
 <li class="tarjeta" style="padding:18px 20px;border-color:#2f4d8f"><strong>Reto final</strong> — apaga el scheduler y diagnostica el clúster a corazón abierto. <span class="m" style="font-size:12.5px;color:var(--alerta)">Solo laboratorio: no tiene capítulo en el libro.</span></li>
 </ul>
@@ -223,11 +219,11 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 
 <section class="seccion" aria-labelledby="t-necesitas">
 <h2 id="t-necesitas">Qué necesitas</h2>
-<p style="margin:18px 0 0">Una cuenta en iximiuz Labs y un navegador. El clúster, kubectl y el editor de código ya están preparados en cada lección. Empieza por el módulo Fundamentos.</p>
+<p style="margin:18px 0 0"><a href="../../../ir/labs/" data-evento="referral-labs-necesitas">Una cuenta en iximiuz Labs</a> y un navegador. El clúster, kubectl y el editor de código ya están preparados en cada lección. Empieza por el módulo Fundamentos.</p>
 </section>
 
 <section class="seccion" aria-label="Aviso legal">
-<p class="suave" style="font-size:14px">Este libro incluye una parte práctica alojada en la plataforma <strong>iximiuz Labs</strong> (labs.iximiuz.com). El autor no tiene ningún tipo de afiliación con dicha plataforma. La parte práctica es de acceso público y gratuito.</p>
+<p class="suave" style="font-size:14px">Este libro incluye una parte práctica alojada en la plataforma <strong>iximiuz Labs</strong> (labs.iximiuz.com). El autor no participa en la plataforma ni en su gestión. El enlace de alta de esta página es un <strong>enlace de referido</strong>: si te registras a través de él, el autor puede recibir una contrapartida de la plataforma. No cambia nada para ti — la parte práctica es de acceso público y gratuito, y no requiere ninguna compra.</p>
 <p class="suave" style="font-size:14px">Se ofrece tal cual, sin garantía de funcionamiento futuro. Los cambios que introduzcan Kubernetes u otras herramientas pueden afectar a los escenarios. El autor se compromete a hacer todo lo posible por mantenerlos actualizados y al día, pero no puede garantizar su disponibilidad ni su funcionamiento permanente.</p>
 <p class="suave" style="font-size:14px;margin:0">El funcionamiento, la disponibilidad y el tratamiento de datos de la plataforma son responsabilidad de iximiuz Labs, no del autor.</p>
 </section>

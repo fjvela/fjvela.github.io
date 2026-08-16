@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bibliografía de Kubernetes 101</title>
-<meta name="description" content="Las 233 referencias del libro Kubernetes 101, con enlace a cada una: papers, especificaciones, guías de seguridad, documentación oficial por temas, proyectos del ecosistema y las fuentes de los datos fechados.">
+<meta name="description" content="Las 256 referencias del libro Kubernetes 101, con enlace a cada una: papers, especificaciones, guías de seguridad, documentación oficial por temas, proyectos del ecosistema y las fuentes de los datos fechados.">
 <link rel="canonical" href="https://www.javivela.dev/libros/kubernetes-101/bibliografia/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Javier Vela Aylón">
@@ -14,7 +14,7 @@
 <meta property="og:locale" content="es_ES">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Bibliografía de Kubernetes 101">
-<meta property="og:description" content="Las 233 referencias del libro Kubernetes 101, con enlace a cada una: papers, especificaciones, guías de seguridad, documentación oficial por temas, proyectos del ecosistema y las fuentes de los datos fechados.">
+<meta property="og:description" content="Las 256 referencias del libro Kubernetes 101, con enlace a cada una: papers, especificaciones, guías de seguridad, documentación oficial por temas, proyectos del ecosistema y las fuentes de los datos fechados.">
 <meta property="og:url" content="https://www.javivela.dev/libros/kubernetes-101/bibliografia/">
 <meta property="og:image" content="https://www.javivela.dev/media/og-kubernetes-101.png">
 <meta property="og:image:secure_url" content="https://www.javivela.dev/media/og-kubernetes-101.png">
@@ -26,7 +26,7 @@
 <meta name="twitter:site" content="@jvela">
 <meta name="twitter:creator" content="@jvela">
 <meta name="twitter:title" content="Bibliografía de Kubernetes 101">
-<meta name="twitter:description" content="Las 233 referencias del libro Kubernetes 101, con enlace a cada una: papers, especificaciones, guías de seguridad, documentación oficial por temas, proyectos del ecosistema y las fuentes de los datos fechados.">
+<meta name="twitter:description" content="Las 256 referencias del libro Kubernetes 101, con enlace a cada una: papers, especificaciones, guías de seguridad, documentación oficial por temas, proyectos del ecosistema y las fuentes de los datos fechados.">
 <meta name="twitter:image" content="https://www.javivela.dev/media/og-kubernetes-101.png">
 <meta name="twitter:image:alt" content="Bibliografía de Kubernetes 101">
 <link rel="icon" href="../../../favicon.ico" sizes="32x32">
@@ -162,7 +162,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <header class="seccion" style="border-top:0;padding-bottom:24px">
 <p class="eyebrow">Kubernetes 101</p>
 <h1>Bibliografía</h1>
-<p class="estrecho suave">Las <strong>233 referencias</strong> del libro, todas con su enlace. La edición en papel imprime los papers, las especificaciones, las guías de seguridad, los artículos del proyecto y las fuentes de los datos fechados; los enlaces a la documentación oficial por temas y a las webs de los proyectos viven aquí y en la edición electrónica, porque una dirección impresa no se puede pulsar.</p>
+<p class="estrecho suave">Las <strong>256 referencias</strong> del libro, todas con su enlace. La edición en papel imprime los papers, las especificaciones, las guías de seguridad, los artículos del proyecto y las fuentes de los datos fechados; los enlaces a la documentación oficial por temas y a las webs de los proyectos viven aquí y en la edición electrónica, porque una dirección impresa no se puede pulsar.</p>
 <p class="dato">Última revisión: agosto de 2026 · Kubernetes 1.37</p>
 <div class="botonera">
 <a class="btn btn-sec btn-min" href="../">El libro</a>
@@ -207,10 +207,13 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li><code>metrics-server</code>. kubernetes-sigs. <a href="https://github.com/kubernetes-sigs/metrics-server" rel="noopener">https://github.com/kubernetes-sigs/metrics-server</a></li>
   <li>cAdvisor (métricas de contenedor que expone el <code>kubelet</code>). Google. <a href="https://github.com/google/cadvisor" rel="noopener">https://github.com/google/cadvisor</a></li>
   <li>kube-state-metrics. kubernetes. <a href="https://github.com/kubernetes/kube-state-metrics" rel="noopener">https://github.com/kubernetes/kube-state-metrics</a></li>
+  <li>node-exporter (las métricas del sistema operativo del nodo: el tercer exporter del trío, junto a cAdvisor y kube-state-metrics). Prometheus (CNCF). <a href="https://github.com/prometheus/node_exporter" rel="noopener">https://github.com/prometheus/node_exporter</a></li>
   <li>Descheduler (reequilibrar Pods ya programados). kubernetes-sigs. <a href="https://github.com/kubernetes-sigs/descheduler" rel="noopener">https://github.com/kubernetes-sigs/descheduler</a></li>
   <li>DRA Example Driver (driver de referencia para probar DRA sin hardware real). kubernetes-sigs. <a href="https://github.com/kubernetes-sigs/dra-example-driver" rel="noopener">https://github.com/kubernetes-sigs/dra-example-driver</a></li>
   <li>NVIDIA DRA Driver for GPUs. NVIDIA. <a href="https://github.com/NVIDIA/k8s-dra-driver-gpu" rel="noopener">https://github.com/NVIDIA/k8s-dra-driver-gpu</a></li>
   <li>Argo CD (la herramienta de GitOps, con su interfaz y su automatización de imágenes). Argo Project (CNCF). <a href="https://argo-cd.readthedocs.io/en/stable/" rel="noopener">https://argo-cd.readthedocs.io/en/stable/</a></li>
+  <li>Argo Rollouts (mover el <code>weight</code> de un canary según lo que digan las métricas, que es justo lo que Gateway API no hace por su cuenta). Argo Project (CNCF). <a href="https://argoproj.github.io/argo-rollouts/" rel="noopener">https://argoproj.github.io/argo-rollouts/</a></li>
+  <li>Flagger (la otra herramienta de entrega progresiva, del proyecto Flux). Flux (CNCF). <a href="https://flagger.app/" rel="noopener">https://flagger.app/</a></li>
   <li>Anchore Grype (escáner de vulnerabilidades en imágenes). Anchore. <a href="https://github.com/anchore/grype" rel="noopener">https://github.com/anchore/grype</a></li>
   <li>Calico. Tigera. <a href="https://docs.tigera.io/calico/latest/" rel="noopener">https://docs.tigera.io/calico/latest/</a></li>
   <li>Cilium. Cilium (CNCF). <a href="https://docs.cilium.io/" rel="noopener">https://docs.cilium.io/</a></li>
@@ -218,8 +221,15 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li>Docker. Docker Inc. <a href="https://docs.docker.com/" rel="noopener">https://docs.docker.com/</a></li>
   <li>Podman. Containers. <a href="https://podman.io/" rel="noopener">https://podman.io/</a></li>
   <li>Buildah (construcción de imágenes OCI sin daemon). Containers. <a href="https://buildah.io/" rel="noopener">https://buildah.io/</a></li>
+  <li>kind (un clúster de Kubernetes dentro de contenedores Docker o Podman; es lo que levanta los tres nodos del <code>kind.yaml</code> del repositorio). kubernetes-sigs. <a href="https://kind.sigs.k8s.io/" rel="noopener">https://kind.sigs.k8s.io/</a></li>
+  <li>k3d (k3s dentro de Docker). k3d. <a href="https://k3d.io/" rel="noopener">https://k3d.io/</a></li>
+  <li>k3s (la distribución ligera de Kubernetes sobre la que corre k3d). k3s (CNCF). <a href="https://k3s.io/" rel="noopener">https://k3s.io/</a></li>
+  <li>minikube. kubernetes. <a href="https://minikube.sigs.k8s.io/docs/" rel="noopener">https://minikube.sigs.k8s.io/docs/</a></li>
+  <li>Rancher Desktop (motor de contenedores y clúster local, la alternativa a Docker Desktop cuando su licencia es un problema). SUSE. <a href="https://rancherdesktop.io/" rel="noopener">https://rancherdesktop.io/</a></li>
   <li><code>cri-dockerd</code> (el adaptador que permite seguir usando Docker como runtime tras la eliminación de <code>dockershim</code>). Mirantis. <a href="https://github.com/Mirantis/cri-dockerd" rel="noopener">https://github.com/Mirantis/cri-dockerd</a></li>
   <li>Elastic Stack (Elasticsearch, Logstash, Kibana). Elastic. <a href="https://www.elastic.co/" rel="noopener">https://www.elastic.co/</a></li>
+  <li>PostgreSQL: <code>pg_dump</code> (la imagen de la <code>db</code>; aquí se ve por qué un volcado lógico no es lo mismo que un snapshot del disco). PostgreSQL Global Development Group. <a href="https://www.postgresql.org/docs/current/app-pgdump.html" rel="noopener">https://www.postgresql.org/docs/current/app-pgdump.html</a></li>
+  <li>Redis (la imagen de la <code>cache</code>). Redis. <a href="https://redis.io/docs/latest/" rel="noopener">https://redis.io/docs/latest/</a></li>
   <li>external-snapshotter (las CRDs de <code>VolumeSnapshot</code> y el <code>snapshot-controller</code>). kubernetes-csi. <a href="https://github.com/kubernetes-csi/external-snapshotter" rel="noopener">https://github.com/kubernetes-csi/external-snapshotter</a></li>
   <li>External Secrets Operator. <a href="https://external-secrets.io/" rel="noopener">https://external-secrets.io/</a></li>
   <li>Flannel. flannel-io. <a href="https://github.com/flannel-io/flannel" rel="noopener">https://github.com/flannel-io/flannel</a></li>
@@ -259,6 +269,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li>gVisor. Google. <a href="https://gvisor.dev/docs/" rel="noopener">https://gvisor.dev/docs/</a></li>
   <li>Hubble (observabilidad de red para Cilium). Cilium (CNCF). <a href="https://docs.cilium.io/en/stable/overview/intro/" rel="noopener">https://docs.cilium.io/en/stable/overview/intro/</a></li>
   <li>ingress-nginx. kubernetes. <a href="https://kubernetes.github.io/ingress-nginx/" rel="noopener">https://kubernetes.github.io/ingress-nginx/</a></li>
+  <li>NGINX Ingress Controller (el controlador homónimo de F5, distinto del comunitario <code>ingress-nginx</code> y con sus propias anotaciones). F5 NGINX. <a href="https://docs.nginx.com/nginx-ingress-controller/" rel="noopener">https://docs.nginx.com/nginx-ingress-controller/</a></li>
   <li>Contour. Project Contour (CNCF). <a href="https://projectcontour.io/docs/" rel="noopener">https://projectcontour.io/docs/</a></li>
   <li>Jaeger. Jaeger (CNCF). <a href="https://www.jaegertracing.io/docs/" rel="noopener">https://www.jaegertracing.io/docs/</a></li>
   <li>Kubernetes Dashboard. kubernetes. <a href="https://github.com/kubernetes/dashboard" rel="noopener">https://github.com/kubernetes/dashboard</a></li>
@@ -289,12 +300,15 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li>Operating etcd clusters for Kubernetes (los backups con <code>etcdctl</code> y la restauración tras un fallo catastrófico). <a href="https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/" rel="noopener">https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/</a></li>
   <li>Namespaces. <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/" rel="noopener">https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</a></li>
   <li>Labels and Selectors. <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/" rel="noopener">https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/</a></li>
+  <li>Recommended Labels (las seis etiquetas <code>app.kubernetes.io/</code> que el ecosistema da por acordadas). <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/" rel="noopener">https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/</a></li>
   <li>Annotations. <a href="https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/" rel="noopener">https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/</a></li>
   <li>Leases. <a href="https://kubernetes.io/docs/concepts/architecture/leases/" rel="noopener">https://kubernetes.io/docs/concepts/architecture/leases/</a></li>
   <li>Server-Side Apply. <a href="https://kubernetes.io/docs/reference/using-api/server-side-apply/" rel="noopener">https://kubernetes.io/docs/reference/using-api/server-side-apply/</a></li>
   <li>Well-Known Labels, Annotations and Taints (el catálogo de todas las etiquetas y taints que Kubernetes pone por su cuenta). <a href="https://kubernetes.io/docs/reference/labels-annotations-taints/" rel="noopener">https://kubernetes.io/docs/reference/labels-annotations-taints/</a></li>
   <li>Kubernetes API Reference (la referencia campo a campo de todos los objetos). <a href="https://kubernetes.io/docs/reference/kubernetes-api/" rel="noopener">https://kubernetes.io/docs/reference/kubernetes-api/</a></li>
   <li>Kubernetes Glossary (el glosario oficial del proyecto, complemento del Apéndice A). <a href="https://kubernetes.io/docs/reference/glossary/" rel="noopener">https://kubernetes.io/docs/reference/glossary/</a></li>
+  <li><code>kube-apiserver</code> (la referencia de sus flags, incluidos <code>--event-ttl</code>, <code>--encryption-provider-config</code> y <code>--kubelet-certificate-authority</code>). <a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/" rel="noopener">https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/</a></li>
+  <li>Kubelet Configuration (<code>v1beta1</code>): el fichero que sustituye a los flags del <code>kubelet</code>, con los umbrales de desalojo y los recursos reservados que explican la diferencia entre <code>Capacity</code> y <code>Allocatable</code>. <a href="https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/" rel="noopener">https://kubernetes.io/docs/reference/config-api/kubelet-config.v1beta1/</a></li>
 </ul>
 <h3 id="pods-y-cargas-de-trabajo">Pods y cargas de trabajo</h3>
 <ul>
@@ -313,12 +327,14 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li>Pod Quality of Service Classes. <a href="https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/" rel="noopener">https://kubernetes.io/docs/concepts/workloads/pods/pod-qos/</a></li>
   <li>Downward API. <a href="https://kubernetes.io/docs/concepts/workloads/pods/downward-api/" rel="noopener">https://kubernetes.io/docs/concepts/workloads/pods/downward-api/</a></li>
   <li>Disruptions (Pod Disruption Budget). <a href="https://kubernetes.io/docs/concepts/workloads/pods/disruptions/" rel="noopener">https://kubernetes.io/docs/concepts/workloads/pods/disruptions/</a></li>
+  <li>Static Pods (los que el <code>kubelet</code> arranca leyendo el disco del nodo, sin pasar por el API server: así corren los componentes del control plane con <code>kubeadm</code>, y en algunas distribuciones el <code>kube-proxy</code>). <a href="https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/" rel="noopener">https://kubernetes.io/docs/tasks/configure-pod-container/static-pod/</a></li>
 </ul>
 <h3 id="configuraci-n-del-pod">Configuración del Pod</h3>
 <ul>
   <li>ConfigMaps. <a href="https://kubernetes.io/docs/concepts/configuration/configmap/" rel="noopener">https://kubernetes.io/docs/concepts/configuration/configmap/</a></li>
   <li>Secrets. <a href="https://kubernetes.io/docs/concepts/configuration/secret/" rel="noopener">https://kubernetes.io/docs/concepts/configuration/secret/</a></li>
   <li>Pull an Image from a Private Registry (el Secret de tipo <code>kubernetes.io/dockerconfigjson</code> que hay detrás de <code>imagePullSecrets</code>). <a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/" rel="noopener">https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/</a></li>
+  <li>Configure a kubelet image credential provider (la otra vía: que el nodo se autentique solo, sin ningún <code>imagePullSecrets</code>, que es lo que traen de fábrica EKS, AKS y GKE). <a href="https://kubernetes.io/docs/tasks/administer-cluster/kubelet-credential-provider/" rel="noopener">https://kubernetes.io/docs/tasks/administer-cluster/kubelet-credential-provider/</a></li>
   <li>Resource Management for Pods and Containers. <a href="https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/" rel="noopener">https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/</a></li>
   <li>Configure Liveness, Readiness and Startup Probes. <a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/" rel="noopener">https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/</a></li>
 </ul>
@@ -357,6 +373,8 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li>Pod Topology Spread Constraints. <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/" rel="noopener">https://kubernetes.io/docs/concepts/scheduling-eviction/topology-spread-constraints/</a></li>
   <li>Pod Priority and Preemption. <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/" rel="noopener">https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/</a></li>
   <li>Dynamic Resource Allocation (DRA). <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/" rel="noopener">https://kubernetes.io/docs/concepts/scheduling-eviction/dynamic-resource-allocation/</a></li>
+  <li>Device Plugins (los <em>extended resources</em> clásicos, el <code>nvidia.com/gpu: 1</code> que sigue siendo la opción sencilla cuando cualquier dispositivo sirve). <a href="https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/" rel="noopener">https://kubernetes.io/docs/concepts/extend-kubernetes/compute-storage-net/device-plugins/</a></li>
+  <li>Schedule GPUs. <a href="https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/" rel="noopener">https://kubernetes.io/docs/tasks/manage-gpus/scheduling-gpus/</a></li>
   <li>Node-pressure Eviction. <a href="https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/" rel="noopener">https://kubernetes.io/docs/concepts/scheduling-eviction/node-pressure-eviction/</a></li>
 </ul>
 <h3 id="seguridad-y-control-de-acceso">Seguridad y control de acceso</h3>
@@ -368,14 +386,17 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li>Admission Controllers Reference. <a href="https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/" rel="noopener">https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/</a></li>
   <li>Configure a Security Context for a Pod or Container (incluye <code>seLinuxChangePolicy</code> y el detalle de las feature gates de SELinux). <a href="https://kubernetes.io/docs/tasks/configure-pod-container/security-context/" rel="noopener">https://kubernetes.io/docs/tasks/configure-pod-container/security-context/</a></li>
   <li>Validating Admission Policy. <a href="https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/" rel="noopener">https://kubernetes.io/docs/reference/access-authn-authz/validating-admission-policy/</a></li>
+  <li>Mutating Admission Policy (la mitad que muta, también estable, y que evita mantener un webhook que se pueda caer). <a href="https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/" rel="noopener">https://kubernetes.io/docs/reference/access-authn-authz/mutating-admission-policy/</a></li>
   <li>Dynamic Admission Control (los webhooks de mutación y validación, y las políticas de admisión basadas en CEL). <a href="https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/" rel="noopener">https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-controllers/</a></li>
   <li>Pod Security Standards. <a href="https://kubernetes.io/docs/concepts/security/pod-security-standards/" rel="noopener">https://kubernetes.io/docs/concepts/security/pod-security-standards/</a></li>
   <li>Pod Security Admission. <a href="https://kubernetes.io/docs/concepts/security/pod-security-admission/" rel="noopener">https://kubernetes.io/docs/concepts/security/pod-security-admission/</a></li>
+  <li>User Namespaces (el <code>hostUsers: false</code> que mapea el root del contenedor a un usuario sin privilegios del nodo). <a href="https://kubernetes.io/docs/concepts/workloads/pods/user-namespaces/" rel="noopener">https://kubernetes.io/docs/concepts/workloads/pods/user-namespaces/</a></li>
   <li>Restrict a Container’s Syscalls with seccomp (qué hace de verdad <code>seccompProfile: RuntimeDefault</code> y cómo se instala un perfil <code>Localhost</code>). <a href="https://kubernetes.io/docs/tutorials/security/seccomp/" rel="noopener">https://kubernetes.io/docs/tutorials/security/seccomp/</a></li>
   <li>Restrict a Container’s Access to Resources with AppArmor (el campo <code>appArmorProfile</code> y qué exige del nodo). <a href="https://kubernetes.io/docs/tutorials/security/apparmor/" rel="noopener">https://kubernetes.io/docs/tutorials/security/apparmor/</a></li>
   <li>Encrypting Confidential Data at Rest. <a href="https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/" rel="noopener">https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/</a></li>
   <li>PKI Certificates and Requirements (los certificados X.509 del clúster). <a href="https://kubernetes.io/docs/setup/best-practices/certificates/" rel="noopener">https://kubernetes.io/docs/setup/best-practices/certificates/</a></li>
   <li>Certificate Signing Requests. <a href="https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/" rel="noopener">https://kubernetes.io/docs/reference/access-authn-authz/certificate-signing-requests/</a></li>
+  <li>Auditing (el registro de quién pidió qué al API server: lo que los Events no son y mucha gente cree que sí). <a href="https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/" rel="noopener">https://kubernetes.io/docs/tasks/debug/debug-cluster/audit/</a></li>
 </ul>
 <h3 id="pol-ticas">Políticas</h3>
 <ul>
@@ -390,7 +411,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <h3 id="autoescalado">Autoescalado</h3>
 <ul>
   <li>Horizontal Pod Autoscaling. <a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/" rel="noopener">https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/</a></li>
-  <li>Karpenter. <a href="https://github.com/kubernetes-sigs/karpenter" rel="noopener">https://github.com/kubernetes-sigs/karpenter</a></li>
+  <li>Karpenter (el aprovisionamiento de nodos a medida, con la consolidación y el <em>drift</em> que se comentan en el capítulo). kubernetes-sigs. <a href="https://karpenter.sh/" rel="noopener">https://karpenter.sh/</a></li>
   <li>Node Autoscaling. <a href="https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/" rel="noopener">https://kubernetes.io/docs/concepts/cluster-administration/node-autoscaling/</a></li>
   <li>Vertical Pod Autoscaling. <a href="https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/" rel="noopener">https://kubernetes.io/docs/concepts/workloads/autoscaling/vertical-pod-autoscale/</a></li>
 </ul>
@@ -401,16 +422,18 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li>Resource Metrics Pipeline. <a href="https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/" rel="noopener">https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-metrics-pipeline/</a></li>
   <li>Troubleshooting Applications. <a href="https://kubernetes.io/docs/tasks/debug/debug-application/" rel="noopener">https://kubernetes.io/docs/tasks/debug/debug-application/</a></li>
   <li>Debug Running Pods. <a href="https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/" rel="noopener">https://kubernetes.io/docs/tasks/debug/debug-application/debug-running-pod/</a></li>
+  <li>Ephemeral Containers (el contenedor que inyecta <code>kubectl debug</code> en un Pod vivo, y la única salida cuando la imagen no tiene ni shell). <a href="https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/" rel="noopener">https://kubernetes.io/docs/concepts/workloads/pods/ephemeral-containers/</a></li>
   <li>Event (referencia de la API). <a href="https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/" rel="noopener">https://kubernetes.io/docs/reference/kubernetes-api/cluster-resources/event-v1/</a></li>
 </ul>
 <h3 id="herramientas">Herramientas</h3>
 <ul>
   <li><code>kubectl</code> Reference. <a href="https://kubernetes.io/docs/reference/kubectl/" rel="noopener">https://kubernetes.io/docs/reference/kubectl/</a></li>
-  <li>JSONPath Support (la sintaxis de <code>-o jsonpath</code> que se usa a lo largo del Apéndice F). <a href="https://kubernetes.io/docs/reference/kubectl/jsonpath/" rel="noopener">https://kubernetes.io/docs/reference/kubectl/jsonpath/</a></li>
+  <li>JSONPath Support (la sintaxis de <code>-o jsonpath</code> que se usa a lo largo del Apéndice E). <a href="https://kubernetes.io/docs/reference/kubectl/jsonpath/" rel="noopener">https://kubernetes.io/docs/reference/kubectl/jsonpath/</a></li>
   <li>Configure Access to Multiple Clusters (el kubeconfig, los contextos y cómo cambiar de clúster sin equivocarse). <a href="https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/" rel="noopener">https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/</a></li>
   <li>krew (gestor de plugins de <code>kubectl</code>). kubernetes-sigs. <a href="https://krew.sigs.k8s.io/" rel="noopener">https://krew.sigs.k8s.io/</a></li>
-  <li>kubectl-resource-capacity (el plugin de krew que se usa en el Apéndice F). robscott. <a href="https://github.com/robscott/kube-capacity" rel="noopener">https://github.com/robscott/kube-capacity</a></li>
+  <li>kubectl-resource-capacity (el plugin de krew que se usa en el Apéndice E). robscott. <a href="https://github.com/robscott/kube-capacity" rel="noopener">https://github.com/robscott/kube-capacity</a></li>
   <li>stern (logs de varios Pods a la vez). stern. <a href="https://github.com/stern/stern" rel="noopener">https://github.com/stern/stern</a></li>
+  <li>kubectx y kubens (los plugins <code>ctx</code> y <code>ns</code> de krew: cambiar de contexto y de Namespace con un solo comando). ahmetb. <a href="https://github.com/ahmetb/kubectx" rel="noopener">https://github.com/ahmetb/kubectx</a></li>
   <li>kubeadm (la herramienta que levanta un clúster componente a componente). <a href="https://kubernetes.io/docs/reference/setup-tools/kubeadm/" rel="noopener">https://kubernetes.io/docs/reference/setup-tools/kubeadm/</a></li>
   <li>Declarative Management of Kubernetes Objects Using Configuration Files (el <code>apply --prune</code> y su sustituto basado en ApplySet). <a href="https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/" rel="noopener">https://kubernetes.io/docs/tasks/manage-kubernetes-objects/declarative-config/</a></li>
   <li><code>kubectl</code> Quick Reference (cheat sheet). <a href="https://kubernetes.io/docs/reference/kubectl/quick-reference/" rel="noopener">https://kubernetes.io/docs/reference/kubectl/quick-reference/</a></li>
@@ -426,6 +449,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li><em>OpenGitOps 1.0 is finally here and why you should care</em>. OpenGitOps Blog (2021). <a href="https://opengitops.dev/blog/1.0-announcement/" rel="noopener">https://opengitops.dev/blog/1.0-announcement/</a></li>
   <li><em>Kubernetes Release Notes</em> (notas de cada versión menor, con la lista de feature gates y su estado). <a href="https://kubernetes.io/releases/" rel="noopener">https://kubernetes.io/releases/</a></li>
   <li><em>Kubernetes Deprecation Policy</em>. <a href="https://kubernetes.io/docs/reference/using-api/deprecation-policy/" rel="noopener">https://kubernetes.io/docs/reference/using-api/deprecation-policy/</a></li>
+  <li><em>Kubernetes Version Skew Policy</em> (cuánto pueden separarse el API server, los <code>kubelets</code> y tu <code>kubectl</code>, y por qué una actualización se hace de una en una). <a href="https://kubernetes.io/releases/version-skew-policy/" rel="noopener">https://kubernetes.io/releases/version-skew-policy/</a></li>
   <li><em>Deprecated API Migration Guide</em>. <a href="https://kubernetes.io/docs/reference/using-api/deprecation-guide/" rel="noopener">https://kubernetes.io/docs/reference/using-api/deprecation-guide/</a></li>
   <li><em>Feature Gates</em>. <a href="https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/" rel="noopener">https://kubernetes.io/docs/reference/command-line-tools-reference/feature-gates/</a></li>
   <li><em>Kubernetes Enhancement Proposals</em> (los KEP: la discusión de diseño detrás de cada funcionalidad). <a href="https://github.com/kubernetes/enhancements" rel="noopener">https://github.com/kubernetes/enhancements</a></li>
@@ -452,7 +476,6 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li>KEP-4951: <em>Configurable tolerance for HPA</em> (la tolerancia por HPA que sustituye al 10 % global, estable en 1.37). SIG Autoscaling. <a href="https://github.com/kubernetes/enhancements/issues/4951" rel="noopener">https://github.com/kubernetes/enhancements/issues/4951</a></li>
   <li>KEP-4762: <em>Allow setting any FQDN as the Pod’s hostname</em> (el campo <code>hostnameOverride</code>, estable en 1.37). SIG Network. <a href="https://github.com/kubernetes/enhancements/issues/4762" rel="noopener">https://github.com/kubernetes/enhancements/issues/4762</a></li>
   <li>KEP-4381: <em>DRA: structured parameters</em> (el diseño de DRA que graduó a estable en 1.34). SIG Node. <a href="https://github.com/kubernetes/enhancements/issues/4381" rel="noopener">https://github.com/kubernetes/enhancements/issues/4381</a></li>
-  <li>KEP-5055: <em>DRA: device taints and tolerations</em> (los taints de dispositivo, estables en 1.37). SIG Scheduling. <a href="https://github.com/kubernetes/enhancements/issues/5055" rel="noopener">https://github.com/kubernetes/enhancements/issues/5055</a></li>
   <li><em>CHANGELOG de cada versión menor</em> (la fuente primaria: qué entró de verdad en la release, con el número de PR. Es donde se confirma o se desmiente cualquier fecha de este apéndice). kubernetes/kubernetes. <a href="https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG" rel="noopener">https://github.com/kubernetes/kubernetes/tree/master/CHANGELOG</a></li>
   <li>KEP-5573: <em>Remove cgroup v1 support</em> (el calendario de retirada de cgroup v1). SIG Node. <a href="https://github.com/kubernetes/enhancements/issues/5573" rel="noopener">https://github.com/kubernetes/enhancements/issues/5573</a></li>
   <li><em>CNCF Curriculum</em> (el temario oficial de CKA y CKAD; ahí se comprueba desde qué revisión entra Gateway API). CNCF. <a href="https://github.com/cncf/curriculum" rel="noopener">https://github.com/cncf/curriculum</a></li>
@@ -460,7 +483,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
   <li><em>Ingress NGINX Retirement: What You Need to Know</em> (el anuncio formal de la retirada). Kubernetes Blog (2025). <a href="https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/" rel="noopener">https://kubernetes.io/blog/2025/11/11/ingress-nginx-retirement/</a></li>
   <li><em>Ingress NGINX: Statement from the Kubernetes Steering and Security Response Committees</em> (2026). <a href="https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/" rel="noopener">https://kubernetes.io/blog/2026/01/29/ingress-nginx-statement/</a></li>
   <li>ingress-nginx (el repositorio del proyecto, con el aviso de retirada). kubernetes. <a href="https://github.com/kubernetes/ingress-nginx" rel="noopener">https://github.com/kubernetes/ingress-nginx</a></li>
-  <li><em>Upcoming changes to the Bitnami catalog (effective August 28th, 2025)</em> (el anuncio del cambio de catálogo que se menciona en la sección de Helm del Apéndice F). bitnami/charts, issue 35164. <a href="https://github.com/bitnami/charts/issues/35164" rel="noopener">https://github.com/bitnami/charts/issues/35164</a></li>
+  <li><em>Upcoming changes to the Bitnami catalog (effective August 28th, 2025)</em> (el anuncio del cambio de catálogo que se menciona en la sección de Helm del Apéndice E). bitnami/charts, issue 35164. <a href="https://github.com/bitnami/charts/issues/35164" rel="noopener">https://github.com/bitnami/charts/issues/35164</a></li>
 </ul>
 <h2 id="v-deos-y-charlas">Vídeos y charlas</h2>
 <ul>
