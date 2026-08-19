@@ -486,6 +486,65 @@ body.con-barra{padding-bottom:66px}
 </div>
 </section>
 
+<section class="seccion" aria-labelledby="t-preguntas">
+<div class="contenedor">
+<p class="eyebrow">Cómo se lee una página</p>
+<h2 id="t-preguntas">239 preguntas, a pie de YAML</h2>
+<p class="estrecho suave" style="margin:16px 0 28px">Casi todos los libros técnicos ponen el manifiesto, explican tres campos y siguen. Los otros nueve se quedan ahí. Aquí, debajo de cada manifiesto va lo que uno se pregunta al leerlo por primera vez, contestado: no un test al final del capítulo, sino la respuesta donde aparece la duda. Cuatro páginas tal y como están impresas.</p>
+<div data-carrusel="carrusel de páginas del libro" role="group" aria-roledescription="carrusel">
+<ul class="carrusel" tabindex="0" aria-label="Páginas del libro con sus preguntas. Usa las flechas izquierda y derecha para cambiar de página.">
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../media/paginas/pagina-48.jpg" target="_blank" rel="noopener" title="Abrir la página a tamaño completo"><img width="1000" height="1454" loading="lazy" src="../../media/paginas/pagina-48.jpg" alt="Página 48 del libro. Arriba, el final del manifiesto YAML del Pod web. En medio, la explicación campo por campo: apiVersion, kind, metadata.name, metadata.namespace, metadata.labels, spec y spec.containers. Abajo, tres preguntas en negrita con su respuesta: por qué apiVersion es v1 y no apps/v1, qué pasa si no se indica el namespace, y si pueden existir dos objetos con el mismo name."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Capítulo 4 · Objetos de Kubernetes · página 48</p>
+<h3>El primer manifiesto, línea a línea</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Doce líneas de YAML explicadas campo por campo, y luego tres preguntas: <em>¿por qué <code>apiVersion</code> es <code>v1</code> y no algo como <code>apps/v1</code>?</em> · <em>¿qué pasa si no indico el <code>namespace</code>?</em> · <em>¿puedo tener dos objetos con el mismo <code>name</code>?</em></p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../media/paginas/pagina-49.jpg" target="_blank" rel="noopener" title="Abrir la página a tamaño completo"><img width="1000" height="1454" loading="lazy" src="../../media/paginas/pagina-49.jpg" alt="Página 49 del libro. Arriba, dos preguntas con respuesta sobre el status y las labels. Después, la sección Namespaces, con los cuatro Namespaces que Kubernetes trae de fábrica, el manifiesto YAML del Namespace tienda, y la pregunta de qué recursos no son namespaced."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Capítulo 4 · Objetos de Kubernetes · página 49</p>
+<h3>Namespaces, y lo que no aíslan</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">La que más gente falla está en esta página: <em>¿aíslan los Namespaces el tráfico de red?</em> No. Separan nombres y permisos, no paquetes; para aislar tráfico hace falta una NetworkPolicy, que llega tres capítulos después.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../media/paginas/pagina-132.jpg" target="_blank" rel="noopener" title="Abrir la página a tamaño completo"><img width="1000" height="1454" loading="lazy" src="../../media/paginas/pagina-132.jpg" alt="Página 132 del libro. Arriba, el final de un manifiesto que reserva 2 CPU y 4 GiB. Después, tres preguntas con respuesta sobre dónde está el error si el manifiesto no da ningún fallo, por qué importa si sobra sitio en el clúster, y por qué no arreglar los números a mano. Abajo, el manifiesto YAML del VerticalPodAutoscaler del Deployment holgazan."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Capítulo 6 · Escalado · página 132</p>
+<h3>El manifiesto que no da ningún fallo</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Pide 2 CPU y 4 GiB, y usa una décima parte. No hay evento rojo ni Pod en Pending: solo un tercio de la cuota del Namespace gastado en aire. Es el fallo más caro de Kubernetes precisamente porque no se parece a un fallo.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../media/paginas/pagina-261.jpg" target="_blank" rel="noopener" title="Abrir la página a tamaño completo"><img width="1000" height="1454" loading="lazy" src="../../media/paginas/pagina-261.jpg" alt="Página 261 del libro. Manifiesto YAML de un PodDisruptionBudget para el Deployment web, seguido de dos preguntas con respuesta: por qué el PDB no se declara dentro del Deployment, y qué ocurre si se pone minAvailable igual al número de réplicas."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Capítulo 12 · Scheduling · página 261</p>
+<h3>La protección que bloquea el mantenimiento</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px"><em>¿Qué ocurre si pongo <code>minAvailable: 3</code> con solo 3 réplicas?</em> Que bloqueas cualquier desalojo voluntario, incluido el drenaje de nodos, y acabas con actualizaciones de clúster atascadas.</p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<div class="carrusel-ctrl">
+<button class="btn btn-sec btn-min" type="button" data-prev>← Anterior</button>
+<button class="btn btn-sec btn-min" type="button" data-next>Siguiente →</button>
+<button class="btn btn-sec btn-min" type="button" data-pausa aria-pressed="false">‖ Pausar</button>
+<span class="dato" data-contador aria-live="polite">1 / 4</span>
+<span class="puntos"><button class="punto" type="button" aria-label="Ir a la página 1" aria-current="true"></button><button class="punto" type="button" aria-label="Ir a la página 2"></button><button class="punto" type="button" aria-label="Ir a la página 3"></button><button class="punto" type="button" aria-label="Ir a la página 4"></button></span>
+</div>
+</div>
+<p class="suave" style="margin:26px 0 0;font-size:15px">El capítulo de Workloads tiene 45 preguntas y el de Seguridad 42. Las 239 están repartidas por los quince capítulos, siempre pegadas al manifiesto que las provoca.</p>
+</div>
+</section>
 <section class="seccion" aria-labelledby="t-pasos">
 <div class="contenedor">
 <p class="eyebrow">La parte práctica</p>
