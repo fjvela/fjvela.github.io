@@ -154,7 +154,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 "headline":"Novedades de Kubernetes 1.37, en español",
 "description":"Qué cambia en Kubernetes 1.37 y qué te toca hacer.",
 "inLanguage":"es-ES",
-"datePublished":"2026-08-03","dateModified":"2026-08-03",
+"datePublished":"2026-08-03","dateModified":"2026-08-26",
 "author":{"@type":"Person","name":"Javier Vela Aylón","url":"https://www.javivela.dev/"},
 "publisher":{"@type":"Person","name":"Javier Vela Aylón"},
 "mainEntityOfPage":{"@type":"WebPage","@id":"https://www.javivela.dev/kubernetes/novedades-1-37/"},
@@ -204,24 +204,21 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <nav aria-label="Migas de pan" class="dato" style="padding:18px 0 0"><a href="../../" style="border:0;color:var(--texto-suave)">Inicio</a> <span aria-hidden="true">/</span> Novedades de Kubernetes 1.37</nav>
 
 <div style="padding:44px 0 0">
-<p class="eyebrow">Kubernetes 1.37 · 26 de agosto de 2026</p>
+<p class="eyebrow">Kubernetes 1.37 «Garhwal» · 26 de agosto de 2026</p>
 <h1>Novedades de Kubernetes 1.37, en español</h1>
-<p class="estrecho" style="margin:22px 0 0">Ordenadas por lo que te toca hacer, no por lo que suena mejor: primero lo que puede romperte una actualización, después lo que ya puedes usar en producción, y al final lo que deja de funcionar.</p>
-</div>
-
-<div class="aviso" style="margin-top:30px">
-<p style="margin:0"><strong>Versión provisional.</strong> Esta página está escrita a partir del <a href="https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/" rel="noopener">sneak peek oficial del 31 de julio</a> y del changelog de <code>v1.37.0-alpha.1</code>. La release sale el 26 de agosto y algunas funcionalidades pueden caerse del milestone hasta entonces. Se actualiza ese mismo día con las notas definitivas.</p>
+<p class="estrecho" style="margin:22px 0 0">Ordenadas por lo que te toca revisar antes, no por lo que suena mejor: primero lo que puede romperte una actualización, después lo que ya puedes usar en producción, y al final lo que deja de funcionar.</p>
 </div>
 
 <section class="seccion" aria-labelledby="t-cifras">
 <h2 id="t-cifras">El release en cifras</h2>
 <div class="cifras">
-<div class="cifra"><strong>1.203</strong><span>issues y PR cerradas</span></div>
+<div class="cifra"><strong>67</strong><span>KEPs: 16 GA · 23 beta · 27 alfa</span></div>
+<div class="cifra"><strong>1.224</strong><span>issues y PR cerradas</span></div>
 <div class="cifra"><strong>3.7</strong><span>etcd por defecto</span></div>
-<div class="cifra"><strong>1.14.3</strong><span>CoreDNS</span></div>
-<div class="cifra"><strong>1.26.4</strong><span>Go</span></div>
+<div class="cifra"><strong>1.14.6</strong><span>CoreDNS</span></div>
+<div class="cifra"><strong>1.26.5</strong><span>Go</span></div>
 </div>
-<p class="dato" style="margin-top:16px">El reparto entre alfa, beta y estable se publica con las notas de la release. Fuente de las cifras: el <a href="https://github.com/kubernetes/kubernetes/milestone/70?closed=1" rel="noopener">milestone v1.37</a>, cerrado al 100&nbsp;%.</p>
+<p class="dato" style="margin-top:16px">Fuentes de las cifras: el <a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/" rel="noopener">anuncio oficial</a> (67 enhancements, más una deprecación) y el <a href="https://github.com/kubernetes/kubernetes/milestone/70?closed=1" rel="noopener">milestone v1.37</a>.</p>
 </section>
 
 <section class="seccion" aria-labelledby="t-rompe">
@@ -230,24 +227,41 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 <article class="novedad rompe">
 <p class="kep estable">Estable</p>
 <h3>SELinuxMount llega a GA y puede impedir que arranquen Pods</h3>
-<p class="dato" style="margin:8px 0 0">SELinuxMount · SIG Storage</p>
+<p class="dato" style="margin:8px 0 0">KEP-1710 · SELinuxMount · SIG Storage</p>
 <div class="bloque"><p class="m">Qué era</p><p>Los volúmenes se reetiquetaban recursivamente. Varios Pods con etiquetas SELinux distintas podían compartir un volumen en el mismo nodo sin problema.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Ahora se montan con <code>-o context=&lt;label&gt;</code>, y un montaje solo admite un contexto. Esos Pods que antes convivían pueden dejar de arrancar. Solo aplica cuando el driver CSI lo declara:</p><pre><code>apiVersion: storage.k8s.io/v1
 kind: CSIDriver
 spec:
   seLinuxMount: true</code></pre></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien tenga SELinux activo. Si tu clúster no usa SELinux, no te afecta en absoluto.</p></div><div class="bloque"><p class="m">La salida</p><p>Conservar el comportamiento anterior, carga por carga:</p><pre><code>kind: Pod
 spec:
   securityContext:
-    seLinuxChangePolicy: Recursive</code></pre><p>Es una excepción por carga, no un ajuste global. Sirve para ganar tiempo, no para quedarse.</p></div>
+    seLinuxChangePolicy: Recursive</code></pre><p>Es una excepción por carga, no un ajuste global. Sirve para ganar tiempo, no para quedarse. Y si necesitas frenar en seco: el feature gate <code>SELinuxMount</code> aún se puede desactivar a nivel de clúster durante una versión más — no queda bloqueado hasta la 1.38.</p></div>
 </article>
 
 
 <article class="novedad rompe">
 <p class="kep deprecado">Deprecado</p>
-<h3>cgroup v1: el kubelet ya no arranca, y el parche cuesta caro</h3>
+<h3>cgroup v1: el kubelet ya no arranca</h3>
 <p class="dato" style="margin:8px 0 0">KEP-5573 · SIG Node</p>
-<div class="bloque"><p class="m">Qué era</p><p>cgroup v1 funcionaba sin más.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Nada en 1.37. Pero desde 1.35, <code>failCgroupV1</code> vale <code>true</code> por defecto, así que <strong>el kubelet no llega a inicializarse</strong> en un nodo que siga en cgroup v1.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien siga en cgroup v1 y necesite arrancar el kubelet hoy. El override es un campo de primer nivel de <code>KubeletConfiguration</code>, no un feature gate:</p><pre><code>apiVersion: kubelet.config.k8s.io/v1beta1
+<div class="bloque"><p class="m">Qué era</p><p>cgroup v1 funcionaba sin más.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Nada en 1.37. Pero desde 1.35, <code>failCgroupV1</code> vale <code>true</code> por defecto, así que <strong>el kubelet no llega a inicializarse</strong> en un nodo que siga en cgroup v1.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien siga en cgroup v1 y necesite arrancar el kubelet hoy. El override es un campo de primer nivel de <code>KubeletConfiguration</code>, no un feature gate:</p><pre>
+<code>apiVersion: kubelet.config.k8s.io/v1beta1
 kind: KubeletConfiguration
-failCgroupV1: false   # parche temporal</code></pre></div><div class="bloque"><p class="m">Lo que pierdes</p><p>In-Place Pod Resize y Memory QoS dependen enteramente de cgroup v2 y dejan de estar disponibles. Es un parche, no una solución: la retirada de cgroup v1 está planificada para una versión futura.</p></div>
+failCgroupV1: false   # parche temporal</code></pre></div><div class="bloque"><p class="m">Lo que pierdes</p><p>Las capacidades avanzadas de gestión de recursos — Memory QoS, el redimensionado en caliente de volúmenes en memoria — solo funcionan con cgroup v2. Es un parche, no una solución: la retirada de cgroup v1 está planificada para una versión futura.</p></div>
+</article>
+
+
+<article class="novedad rompe">
+<p class="kep beta">Beta</p>
+<h3>Workload y PodGroup promocionan a v1beta1: borra los objetos v1alpha2 antes de actualizar</h3>
+<p class="dato" style="margin:8px 0 0">Workload-Aware Scheduling · SIG Scheduling</p>
+<div class="bloque"><p class="m">Qué era</p><p>Las APIs de scheduling por grupos (<code>Workload</code>, <code>PodGroup</code>) estaban en <code>scheduling.k8s.io/v1alpha2</code>.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Pasan a <code>v1beta1</code>. La versión alfa desaparece y el api-server no migra los objetos por ti.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>Solo a quien probara la <code>v1alpha2</code> en 1.36. En ese caso, hay que eliminar todos los objetos <code>v1alpha2</code> del api-server <strong>antes</strong> de subir de 1.36 a 1.37. Si no la usaste, no hay nada que hacer.</p></div>
+</article>
+
+
+<article class="novedad rompe">
+<p class="kep deprecado">Deprecado</p>
+<h3>El kubelet no arranca con flags antiguos de cAdvisor</h3>
+<p class="dato" style="margin:8px 0 0">SIG Node</p>
+<div class="bloque"><p class="m">Qué era</p><p>El kubelet aceptaba una colección de flags heredados de cAdvisor, deprecados desde hace años.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Si alguno sigue en la configuración, <strong>el kubelet falla al arrancar</strong>: <code>--containerd</code>, <code>--event-storage-age-limit</code>, <code>--global-housekeeping-interval</code>, los <code>--storage-driver-*</code>… Solo sobrevive <code>--housekeeping-interval</code>. También desaparecen de <code>/metrics/cadvisor</code> las series <code>container_cpu_load_average_10s</code> y <code>container_tasks_state</code>.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien arrastre configuración de kubelet de hace años, y a quien tenga dashboards o alertas sobre esas métricas. Revisa los flags de los nodos antes de actualizar.</p></div>
 </article>
 
 </section>
@@ -257,7 +271,7 @@ failCgroupV1: false   # parche temporal</code></pre></div><div class="bloque"><p
 
 <article class="novedad ">
 <p class="kep estable">Estable</p>
-<h3>La Metrics API llega a v1 tras nueve años en beta</h3>
+<h3>La Metrics API llega a v1 tras casi nueve años en beta</h3>
 <p class="dato" style="margin:8px 0 0">KEP-5207 · metrics.k8s.io · SIG Instrumentation</p>
 <div class="bloque"><p class="m">Qué era</p><p><code>metrics.k8s.io/v1beta1</code>, en beta desde la 1.8.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Llega a <code>v1</code>. Sin cambios funcionales, y <code>v1beta1</code> sigue sirviendo durante la transición, así que se puede adoptar al ritmo de cada uno.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A todo el mundo, aunque no se note: es la API que hay debajo de <code>kubectl top</code> y del HorizontalPodAutoscaler.</p></div>
 </article>
@@ -266,8 +280,40 @@ failCgroupV1: false   # parche temporal</code></pre></div><div class="bloque"><p
 <article class="novedad ">
 <p class="kep estable">Estable</p>
 <h3>Pedir una GPU con DRA vuelve a ser una línea</h3>
-<p class="dato" style="margin:8px 0 0">DRA · recursos extendidos · SIG Node · SIG Scheduling</p>
-<div class="bloque"><p class="m">Qué era</p><p>Repartir dispositivos con Dynamic Resource Allocation obligaba a declarar ResourceClaims.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Los recursos extendidos sobre DRA llegan a GA: se piden con la sintaxis clásica de <code>resources</code> y el driver los resuelve por debajo.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien reparta GPUs o aceleradores entre varios Pods.</p></div>
+<p class="dato" style="margin:8px 0 0">KEP-5004 · DRA · recursos extendidos · SIG Scheduling</p>
+<div class="bloque"><p class="m">Qué era</p><p>Repartir dispositivos con Dynamic Resource Allocation obligaba a declarar ResourceClaims.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Los recursos extendidos sobre DRA llegan a GA: un nombre como <code>example.com/gpu</code> se asigna a una DeviceClass, se pide con la sintaxis clásica de <code>resources</code>, y el driver lo resuelve por debajo. Graduan también los taints/tolerations de dispositivos (KEP-5055) y el estado por dispositivo en el ResourceClaim (KEP-4817), que por fin expone cosas como la IP de una interfaz de red asignada por DRA.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien reparta GPUs o aceleradores entre varios Pods.</p></div>
+</article>
+
+
+<article class="novedad ">
+<p class="kep estable">Estable</p>
+<h3>Certificados de identidad por Pod, sin montar Secrets</h3>
+<p class="dato" style="margin:8px 0 0">KEP-4317 · KEP-3257 · SIG Auth</p>
+<div class="bloque"><p class="m">Qué era</p><p>Utilizar certificados X.509 era un proceso "manual": Secrets montados, controladores externos y rotaciones que alguien tenía que vigilar.</p></div><div class="bloque"><p class="m">Qué cambia</p><p><code>PodCertificateRequest</code> y <code>ClusterTrustBundle</code> llegan a GA. Un controlador firmante emite y rota los certificados de cada Pod; él los recibe con un volumen proyectado <code>podCertificate</code>, y las anclas de confianza para verificarlos, con otro <code>clusterTrustBundle</code>.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien haga mTLS entre servicios o necesite identidad de carga verificable sin depender de herramientas externas.</p></div>
+</article>
+
+
+<article class="novedad ">
+<p class="kep estable">Estable</p>
+<h3>KYAML: la salida de kubectl sin los problemas de YAML</h3>
+<p class="dato" style="margin:8px 0 0">KEP-5295 · SIG CLI</p>
+<div class="bloque"><p class="m">Qué era</p><p>YAML clásico, con sus sorpresas: el problema de Noruega (<code>no</code> se convierte en <code>false</code>), números que se vuelven strings, sangrado significativo que se rompe al copiar.</p></div><div class="bloque"><p class="m">Qué cambia</p><p><code>kubectl get -o kyaml</code> llega a estable. Es un dialecto de YAML con llaves y comillas explícitas, pensado para copiar y pegar sin sustos. No lo estrena la 1.37: alfa en la 1.34, disponible por defecto desde la 1.35.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien copia manifests de un sitio a otro o los genera con scripts. Es de esos cambios pequeños que se agradecen cada día.</p></div>
+</article>
+
+
+<article class="novedad ">
+<p class="kep beta">Beta</p>
+<h3>El HPA ya puede escalar a cero</h3>
+<p class="dato" style="margin:8px 0 0">KEP-2021 · SIG Autoscaling</p>
+<div class="bloque"><p class="m">Qué era</p><p>Un HorizontalPodAutoscaler no podía bajar de una réplica: las cargas ociosas seguían consumiendo, y apagarlas era cosa tuya.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Con <code>minReplicas: 0</code>, el HPA lleva a 0 las réplicas y las recupera cuando vuelve la demanda. Solo con métricas <em>object</em> o <em>external</em>: con CPU y memoria no puede, porque dependen de que haya Pods en ejecución. Llega a beta, activado por defecto, tras estrenarse en la 1.16.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A consumidores de colas, trabajos batch y cargas con GPU: todo lo que pasa horas esperando trabajo.</p></div>
+</article>
+
+
+<article class="novedad ">
+<p class="kep beta">Beta</p>
+<h3>Gang scheduling: o cabe el grupo entero, o nada</h3>
+<p class="dato" style="margin:8px 0 0">KEP-4671 · SIG Scheduling</p>
+<div class="bloque"><p class="m">Qué era</p><p>El scheduler colocaba los Pods de uno en uno. En un entrenamiento distribuido con decenas de Pods acoplados, la mitad arrancaba y la otra mitad se quedaba <code>Pending</code>: recursos bloqueados sin que nadie avance.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Sobre las APIs de Workload y PodGroup, el grupo se programa todo o nada: solo si el clúster puede acomodar el conjunto completo. Con preemption consciente del workload, para no desalojar Pods sueltos que no liberan capacidad útil.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien ejecute entrenamiento de ML distribuido o HPC sobre Kubernetes.</p></div>
 </article>
 
 
@@ -275,7 +321,7 @@ failCgroupV1: false   # parche temporal</code></pre></div><div class="bloque"><p
 <p class="kep beta">Beta</p>
 <h3>El kubelet deja de necesitar root en el host</h3>
 <p class="dato" style="margin:8px 0 0">KEP-2033 · SIG Node</p>
-<div class="bloque"><p class="m">Qué era</p><p>Los componentes de nodo corrían con privilegios de root en la máquina.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Pueden correr dentro de un user namespace de Linux: usuario sin privilegios en el host, root dentro del namespace. Una capa más de aislamiento si aparece una vulnerabilidad en un componente de nodo.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien tenga la superficie de ataque del nodo como una preocupación real. Es beta: todavía no para producción sin pruebas.</p></div>
+<div class="bloque"><p class="m">Qué era</p><p>Los componentes de nodo se ejecutaban con privilegios de root en la máquina.</p></div><div class="bloque"><p class="m">Qué cambia</p><p>Pueden correr dentro de un user namespace de Linux: usuario sin privilegios en el host, root dentro del namespace. Una capa más de aislamiento si aparece una vulnerabilidad en un componente de nodo.</p></div><div class="bloque"><p class="m">A quién afecta</p><p>A quien tenga la superficie de ataque del nodo como una preocupación real. Es beta: todavía no para producción sin pruebas.</p></div>
 </article>
 
 </section>
@@ -283,9 +329,10 @@ failCgroupV1: false   # parche temporal</code></pre></div><div class="bloque"><p
 <section class="seccion" aria-labelledby="t-deja">
 <h2 id="t-deja">Lo que deja de funcionar</h2>
 <ul style="margin-top:22px">
-<li><strong>kube-proxy en modo <code>ipvs</code> queda deprecado.</strong> A partir de 1.37 registra un aviso al arrancar. Se desactivará por defecto en 1.40 y se eliminará en 1.43. El destino es <code>nftables</code>. Para saber en qué modo estás:
+<li><strong>kube-proxy en modo <code>ipvs</code> sigue camino de desaparecer.</strong> Está deprecado desde 1.35, y desde entonces avisa al arrancar. Lo nuevo en 1.37 es el feature gate <code>KubeProxyIPVS</code>: el interruptor con el que se desactivará por defecto en 1.40 y se eliminará en 1.43 (KEP-5495). El destino es <code>nftables</code>. Para saber en qué modo estás:
 <pre><code>kubectl -n kube-system get configmap kube-proxy \
   -o jsonpath='{.data.config\.conf}' | grep 'mode:'</code></pre></li>
+<li><strong>kube-dns entra en deprecación.</strong> CoreDNS es el DNS por defecto desde la 1.13 y kube-dns se quedó atrás hace años: ni EndpointSlices ni dual-stack. El proyecto está retirado y no se esperan paquetes nuevos después de la 1.40. Si aún lo ejecutas, planifica la migración a CoreDNS.</li>
 <li><strong>Los Pods estáticos ya no pueden referenciar Secrets ni ConfigMaps.</strong> Era un bug que les permitía leer recursos de la API mediante <code>configMapRef</code> o <code>secretRef</code>. Ahora queda prohibido, y el feature gate que permitía optar por el comportamiento antiguo ha desaparecido.</li>
 <li><strong><code>kubectl run --filename</code> / <code>-f</code> queda deprecado.</strong> El Pod generado siempre se construye a partir de los argumentos de la línea de comandos.</li>
 </ul>
@@ -295,6 +342,16 @@ failCgroupV1: false   # parche temporal</code></pre></div><div class="bloque"><p
 <h2 id="t-comprobar">Cómo comprobar tu clúster antes de actualizar</h2>
 <pre style="margin-top:22px"><code># En qué versión estás
 kubectl version
+
+# Qué drivers CSI activan el montaje SELinux (el riesgo n.º 1)
+kubectl get csidriver \
+  -o custom-columns=NAME:.metadata.name,SELINUXMOUNT:.spec.seLinuxMount
+
+# En cada nodo: versión de cgroup (cgroup2fs = v2 · tmpfs = v1)
+stat -fc %T /sys/fs/cgroup
+
+# ¿Sirves la v1alpha2 de scheduling? Borra sus objetos antes de subir
+kubectl api-versions | grep scheduling.k8s.io
 
 # El estado real de un feature gate concreto
 kubectl get --raw /metrics | grep kubernetes_feature_enabled
@@ -306,21 +363,23 @@ kubectl -n kube-system get configmap kube-proxy \
 
 <section class="seccion" aria-labelledby="t-libro">
 <h2 id="t-libro">Este es el nivel de detalle del libro</h2>
-<p class="estrecho" style="margin:18px 0 0"><strong>Kubernetes 101</strong> es la guía en español para entender Kubernetes desde cero, y sale con esta misma versión: la 1.37 se publica el 26 de agosto y el libro el 1 de septiembre. El apéndice C recoge, capítulo a capítulo, en qué estado está cada funcionalidad y desde qué versión, para que puedas comprobar de un vistazo si lo que lees sigue vigente en tu clúster.</p>
+<p class="estrecho" style="margin:18px 0 0"><strong>Kubernetes 101</strong> es la guía en español para entender Kubernetes desde cero, y sale con esta misma versión: la 1.37 se publicó el 26 de agosto y el libro llega el 1 de septiembre. El apéndice C — «Desde cuándo funciona cada pieza» — recoge, capítulo a capítulo, en qué estado está cada funcionalidad y desde qué versión, para que puedas comprobar de un vistazo si lo que lees sigue vigente en tu clúster.</p>
 <div class="botonera" style="margin:24px 0 12px">
 <a class="btn" href="/ir/kindle-es/" target="_blank" rel="noopener" data-evento="compra-kindle-1-37">Reservar en Kindle · 12,99 €</a>
 <a class="btn btn-sec" href="../../libros/kubernetes-101/#suscripcion" data-evento="capitulo-gratis-1-37">Leer gratis el arranque del libro</a>
 </div>
-<p class="dato" style="margin:0">365 páginas · 15 capítulos · 53 laboratorios en un clúster real</p>
+<p class="dato" style="margin:0">365 páginas · 15 capítulos · 55 laboratorios en un clúster real</p>
 </section>
 
 <section class="seccion" aria-labelledby="t-fuentes">
 <h2 id="t-fuentes">Fuentes</h2>
 <ul style="margin-top:18px">
+<li><a href="https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/" rel="noopener">Kubernetes v1.37: Garhwal</a>, anuncio oficial de la release, 26 de agosto de 2026</li>
 <li><a href="https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/" rel="noopener">Kubernetes v1.37 Sneak Peek</a>, blog oficial, 31 de julio de 2026</li>
 <li><a href="https://github.com/kubernetes/kubernetes/blob/master/CHANGELOG/CHANGELOG-1.37.md" rel="noopener">CHANGELOG-1.37.md</a>, repositorio kubernetes/kubernetes</li>
 <li><a href="https://github.com/kubernetes/kubernetes/milestone/70?closed=1" rel="noopener">Milestone v1.37</a></li>
 <li><a href="https://kubernetes.io/blog/2026/04/22/breaking-changes-in-selinux-volume-labeling/" rel="noopener">SELinux Volume Label Changes goes GA</a>, blog oficial</li>
+<li><a href="https://github.com/kubernetes/enhancements/tree/master/keps/sig-network/5495-deprecate-ipvs-mode-in-kube-proxy" rel="noopener">KEP-5495: deprecación del modo ipvs de kube-proxy</a></li>
 </ul>
 </section>
 
