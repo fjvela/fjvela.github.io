@@ -94,3 +94,7 @@ th{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spac
 @media (max-width:760px){.hero-libro{grid-template-columns:1fr;gap:28px;padding:40px 0}.hero-libro .portada{max-width:200px}.seccion{padding:52px 0}body{font-size:16.5px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
 @media print{body{background:#fff;color:#111}.nav,.carrusel-ctrl,.saltar{display:none}a{color:#111}}
+.idiomas a[aria-current]{color:var(--texto)}
+.banner-idioma{display:flex;justify-content:center;align-items:center;gap:16px;padding:10px 16px;background:var(--superficie);border-bottom:1px solid var(--borde);font-family:var(--mono);font-size:13px}
+.banner-idioma a{color:var(--acento-claro);border-bottom:0}
+.banner-idioma button{background:none;border:0;color:var(--texto-suave);font-size:18px;line-height:1;cursor:pointer;padding:0 4px}

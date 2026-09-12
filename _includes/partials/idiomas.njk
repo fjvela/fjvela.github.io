@@ -1,0 +1,11 @@
+{#- Selector de idioma. Solo se pinta con dos o más idiomas vivos. Enlaces
+    reales (nunca un <select> con JS): cada uno lleva hreflang y lang, y el
+    actual aria-current. Apunta a la página equivalente o a la home del
+    idioma si esta página no existe en él. `formato` = "nav" | "pie". -#}
+{%- if idiomas.live.length > 1 -%}
+{%- if formato == "nav" %}
+<li class="idiomas">{% for code in idiomas.live %}{% if not loop.first %} · {% endif %}<a href="{{ collections.routes | destinoIdioma(key, code) | enlace(pre) }}" hreflang="{{ code }}" lang="{{ code }}"{% if code == lang %} aria-current="true"{% endif %}>{{ code | upper }}</a>{% endfor %}</li>
+{%- else %}
+<span class="m idiomas" aria-label="{{ t.idiomas_label }}">{% for code in idiomas.live %}{% if not loop.first %} · {% endif %}<a href="{{ collections.routes | destinoIdioma(key, code) | enlace(pre) }}" hreflang="{{ code }}" lang="{{ code }}"{% if code == lang %} aria-current="true"{% endif %}>{{ code | upper }}</a>{% endfor %}</span>
+{%- endif %}
+{%- endif -%}

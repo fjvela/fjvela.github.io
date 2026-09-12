@@ -42,3 +42,11 @@ puente:
   volver:
     book: Volver a la ficha del libro
     practice: Volver a la parte práctica
+
+# live: el idioma cuenta para hreflang, selector, sitemap, banner y 404.
+# draft: se construye (para revisarlo en /<lang>/) pero no se anuncia.
+status: live
+idiomas_label: Idioma
+banner:
+  texto: Esta página está disponible en español
+  cerrar: Cerrar

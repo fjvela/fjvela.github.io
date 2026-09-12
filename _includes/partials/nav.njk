@@ -2,9 +2,11 @@
 <div class="nav-int">
 <a class="nav-marca m" href="{{ pre if pre else './' }}">{{ t.marca }}</a>
 <ul class="nav-lista">
-{%- for item in t.nav %}
+{#- Una entrada con key que aún no existe en este idioma se omite: así una
+    traducción parcial (draft, o bloque 2 pendiente) no rompe el build. #}
+{%- for item in t.nav | existentes(collections.routes[lang]) %}
 <li><a href="{% if item.key %}{{ collections.routes[lang][item.key] | enlace(pre) }}{% else %}{{ item.url }}{% endif %}"{% if item.rel %} rel="{{ item.rel }}"{% endif %}{% if item.key and item.key == key %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
-{%- endfor %}
+{%- endfor %}{% set formato = "nav" %}{% include "partials/idiomas.njk" %}
 </ul>
 </div>
 </nav>

@@ -7,7 +7,7 @@ robots: "index, follow, max-snippet:-1, max-image-preview:large"
 og:
   type: "book"
   title: "Kubernetes 101 — la guía en español para entender Kubernetes desde cero"
-  image: "og-kubernetes-101.png"
+  image: "og-book.png"
   alt: "Portada de Kubernetes 101, la guía en español para entender Kubernetes desde cero, de Javier Vela Aylón"
 preload_cover: true
 sitemap:
@@ -258,7 +258,7 @@ jsonld: |
 <ul class="carrusel" tabindex="0" aria-label="Diagramas del libro. Usa las flechas izquierda y derecha para cambiar de diagrama.">
 <li>
 <figure style="margin:0">
-<div class="diagrama"><a href="../../media/diagramas/01-arquitectura-cluster.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1420" loading="lazy" src="../../media/diagramas/01-arquitectura-cluster.png" alt="Diagrama de la arquitectura de un clúster: a la izquierda el control plane con kube-apiserver, etcd, kube-scheduler y kube-controller-manager; a la derecha los nodos worker con kubelet, kube-proxy y el runtime de contenedores. Todas las flechas de los nodos apuntan al kube-apiserver, y solo el kube-apiserver habla con etcd."></a></div>
+<div class="diagrama"><a href="../../media/es/diagrams/01-cluster-architecture.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1420" loading="lazy" src="../../media/es/diagrams/01-cluster-architecture.png" alt="Diagrama de la arquitectura de un clúster: a la izquierda el control plane con kube-apiserver, etcd, kube-scheduler y kube-controller-manager; a la derecha los nodos worker con kubelet, kube-proxy y el runtime de contenedores. Todas las flechas de los nodos apuntan al kube-apiserver, y solo el kube-apiserver habla con etcd."></a></div>
 <figcaption class="pie-diagrama">
 <p class="eyebrow" style="margin:0 0 6px">Fundamentos · diagrama 1 de 6</p>
 <h3>Arquitectura del clúster</h3>
@@ -268,7 +268,7 @@ jsonld: |
 </li>
 <li>
 <figure style="margin:0">
-<div class="diagrama"><a href="../../media/diagramas/15-deployment-replicaset-pods.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1094" src="../../media/diagramas/15-deployment-replicaset-pods.png" alt="Diagrama jerárquico: un Deployment arriba, debajo dos ReplicaSets (la revisión antigua reduciéndose a cero y la nueva creciendo) y, bajo cada uno, sus Pods. Las flechas muestran el rolling update y la vuelta atrás a la revisión anterior." loading="lazy"></a></div>
+<div class="diagrama"><a href="../../media/es/diagrams/15-deployment-replicaset-pods.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1094" src="../../media/es/diagrams/15-deployment-replicaset-pods.png" alt="Diagrama jerárquico: un Deployment arriba, debajo dos ReplicaSets (la revisión antigua reduciéndose a cero y la nueva creciendo) y, bajo cada uno, sus Pods. Las flechas muestran el rolling update y la vuelta atrás a la revisión anterior." loading="lazy"></a></div>
 <figcaption class="pie-diagrama">
 <p class="eyebrow" style="margin:0 0 6px">Workloads · diagrama 2 de 6</p>
 <h3>Deployments, rollout y rollback</h3>
@@ -278,7 +278,7 @@ jsonld: |
 </li>
 <li>
 <figure style="margin:0">
-<div class="diagrama"><a href="../../media/diagramas/24-service-tipos-enrutamiento.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1327" src="../../media/diagramas/24-service-tipos-enrutamiento.png" alt="Diagrama comparativo de los tipos de Service: ClusterIP, NodePort y LoadBalancer. Muestra el camino del tráfico desde el exterior hasta los Pods, pasando por kube-proxy y los EndpointSlices que indican qué Pods están listos." loading="lazy"></a></div>
+<div class="diagrama"><a href="../../media/es/diagrams/24-service-types-routing.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1327" src="../../media/es/diagrams/24-service-types-routing.png" alt="Diagrama comparativo de los tipos de Service: ClusterIP, NodePort y LoadBalancer. Muestra el camino del tráfico desde el exterior hasta los Pods, pasando por kube-proxy y los EndpointSlices que indican qué Pods están listos." loading="lazy"></a></div>
 <figcaption class="pie-diagrama">
 <p class="eyebrow" style="margin:0 0 6px">Red · diagrama 3 de 6</p>
 <h3>Services y enrutamiento</h3>
@@ -288,7 +288,7 @@ jsonld: |
 </li>
 <li>
 <figure style="margin:0">
-<div class="diagrama"><a href="../../media/diagramas/38-taints-tolerations.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1411" src="../../media/diagramas/38-taints-tolerations.png" alt="Diagrama con varios nodos marcados con taints y Pods con y sin tolerations. Indica el resultado de cada combinación según el efecto del taint: NoSchedule, PreferNoSchedule y NoExecute." loading="lazy"></a></div>
+<div class="diagrama"><a href="../../media/es/diagrams/38-taints-tolerations.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1411" src="../../media/es/diagrams/38-taints-tolerations.png" alt="Diagrama con varios nodos marcados con taints y Pods con y sin tolerations. Indica el resultado de cada combinación según el efecto del taint: NoSchedule, PreferNoSchedule y NoExecute." loading="lazy"></a></div>
 <figcaption class="pie-diagrama">
 <p class="eyebrow" style="margin:0 0 6px">Scheduling · diagrama 4 de 6</p>
 <h3>Taints y tolerations</h3>
@@ -298,7 +298,7 @@ jsonld: |
 </li>
 <li>
 <figure style="margin:0">
-<div class="diagrama"><a href="../../media/diagramas/42-observabilidad-arquitectura.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1369" src="../../media/diagramas/42-observabilidad-arquitectura.png" alt="Diagrama de la arquitectura de observabilidad: los Pods exponen métricas que Prometheus recoge en modo pull, los logs viajan en modo push hacia Loki y las trazas se agrupan en spans. Los tres flujos convergen en Grafana como capa de visualización." loading="lazy"></a></div>
+<div class="diagrama"><a href="../../media/es/diagrams/42-observability-architecture.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1369" src="../../media/es/diagrams/42-observability-architecture.png" alt="Diagrama de la arquitectura de observabilidad: los Pods exponen métricas que Prometheus recoge en modo pull, los logs viajan en modo push hacia Loki y las trazas se agrupan en spans. Los tres flujos convergen en Grafana como capa de visualización." loading="lazy"></a></div>
 <figcaption class="pie-diagrama">
 <p class="eyebrow" style="margin:0 0 6px">Observabilidad · diagrama 5 de 6</p>
 <h3>Métricas, logs y trazas</h3>
@@ -308,7 +308,7 @@ jsonld: |
 </li>
 <li>
 <figure style="margin:0">
-<div class="diagrama"><a href="../../media/diagramas/50-bucle-reconciliacion.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1157" src="../../media/diagramas/50-bucle-reconciliacion.png" alt="Diagrama del bucle de reconciliación de un operador: el watch avisa de un cambio en el recurso, el operador vuelve a leer el estado deseado y el real, actúa para acercarlos y escribe el resultado en el status. El aviso y la lectura del estado son dos flechas distintas." loading="lazy"></a></div>
+<div class="diagrama"><a href="../../media/es/diagrams/50-reconciliation-loop.png" target="_blank" rel="noopener" title="Abrir el diagrama a tamaño completo"><img width="1200" height="1157" src="../../media/es/diagrams/50-reconciliation-loop.png" alt="Diagrama del bucle de reconciliación de un operador: el watch avisa de un cambio en el recurso, el operador vuelve a leer el estado deseado y el real, actúa para acercarlos y escribe el resultado en el status. El aviso y la lectura del estado son dos flechas distintas." loading="lazy"></a></div>
 <figcaption class="pie-diagrama">
 <p class="eyebrow" style="margin:0 0 6px">Extensibilidad · diagrama 6 de 6</p>
 <h3>El bucle de reconciliación</h3>
