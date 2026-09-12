@@ -61,3 +61,123 @@ en:
     titulo: 55 labs on a real cluster
     subtitulo: "Open and free, in your browser, nothing to install."
     tamano: 56
+fr:
+  home:
+    eyebrow: javivela.dev
+    titulo: Javier Vela Aylón
+    subtitulo: "Senior Platform Engineer · +20 ans · Auteur de Kubernetes 101"
+  book:
+    eyebrow: "Livre · Français · 2026"
+    titulo: Kubernetes 101
+    subtitulo: "Le guide pratique pour comprendre Kubernetes en partant de zéro, avec un lab par chapitre."
+    portada: true
+  glossary:
+    eyebrow: "Kubernetes · Glossaire"
+    titulo: Glossaire de Kubernetes
+    subtitulo: "160 entrées : les 74 sigles de l’annexe de Kubernetes 101 et 86 concepts de l’écosystème."
+    tamano: 56
+  whats-new-1-37:
+    eyebrow: "Kubernetes 1.37 · Nouveautés"
+    titulo: Nouveautés de Kubernetes 1.37
+    subtitulo: "Ce qui change et ce que tu dois faire."
+    tamano: 56
+  errata:
+    eyebrow: "Kubernetes 101 · Errata"
+    titulo: Errata de Kubernetes 101
+    subtitulo: "Corrections de l’édition française, avec le numéro de page."
+    tamano: 56
+  practice:
+    eyebrow: "Kubernetes 101 · Partie pratique"
+    titulo: 55 labs sur un vrai cluster
+    subtitulo: "Ouverts et gratuits, dans le navigateur, rien à installer."
+    tamano: 56
+it:
+  home:
+    eyebrow: javivela.dev
+    titulo: Javier Vela Aylón
+    subtitulo: "Senior Platform Engineer · +20 anni · Autore di Kubernetes 101"
+  book:
+    eyebrow: "Libro · Italiano · 2026"
+    titulo: Kubernetes 101
+    subtitulo: "La guida pratica per capire Kubernetes partendo da zero, con un laboratorio per ogni capitolo."
+    portada: true
+  glossary:
+    eyebrow: "Kubernetes · Glossario"
+    titulo: Glossario di Kubernetes
+    subtitulo: "160 voci: le 74 sigle dell’appendice di Kubernetes 101 e 86 concetti dell’ecosistema."
+    tamano: 56
+  whats-new-1-37:
+    eyebrow: "Kubernetes 1.37 · Novità"
+    titulo: Novità di Kubernetes 1.37
+    subtitulo: "Cosa cambia e cosa devi fare."
+    tamano: 56
+  errata:
+    eyebrow: "Kubernetes 101 · Errata corrige"
+    titulo: Errata corrige di Kubernetes 101
+    subtitulo: "Correzioni all’edizione italiana, con il numero di pagina."
+    tamano: 56
+  practice:
+    eyebrow: "Kubernetes 101 · Parte pratica"
+    titulo: 55 laboratori su un cluster reale
+    subtitulo: "Aperti e gratuiti, nel browser, senza installare nulla."
+    tamano: 56
+de:
+  home:
+    eyebrow: javivela.dev
+    titulo: Javier Vela Aylón
+    subtitulo: "Senior Platform Engineer · 20+ Jahre · Autor von Kubernetes 101"
+  book:
+    eyebrow: "Buch · Deutsch · 2026"
+    titulo: Kubernetes 101
+    subtitulo: "Der praktische Leitfaden, um Kubernetes von Grund auf zu verstehen, mit einem Lab pro Kapitel."
+    portada: true
+  glossary:
+    eyebrow: "Kubernetes · Glossar"
+    titulo: Kubernetes-Glossar
+    subtitulo: "160 Einträge: die 74 Abkürzungen aus dem Anhang von Kubernetes 101 und 86 Begriffe aus dem Ökosystem."
+    tamano: 56
+  whats-new-1-37:
+    eyebrow: "Kubernetes 1.37 · Neuerungen"
+    titulo: Neu in Kubernetes 1.37
+    subtitulo: "Was sich ändert und was du tun musst."
+    tamano: 56
+  errata:
+    eyebrow: "Kubernetes 101 · Errata"
+    titulo: Errata zu Kubernetes 101
+    subtitulo: "Korrekturen zur deutschen Ausgabe, mit Seitenzahl."
+    tamano: 56
+  practice:
+    eyebrow: "Kubernetes 101 · Praxisteil"
+    titulo: 55 Labs auf einem echten Cluster
+    subtitulo: "Offen und kostenlos, im Browser, nichts zu installieren."
+    tamano: 56
+pt:
+  home:
+    eyebrow: javivela.dev
+    titulo: Javier Vela Aylón
+    subtitulo: "Senior Platform Engineer · +20 anos · Autor de Kubernetes 101"
+  book:
+    eyebrow: "Livro · Português · 2026"
+    titulo: Kubernetes 101
+    subtitulo: "O guia prático para entender Kubernetes do zero, com um laboratório por capítulo."
+    portada: true
+  glossary:
+    eyebrow: "Kubernetes · Glossário"
+    titulo: Glossário de Kubernetes
+    subtitulo: "160 entradas: as 74 siglas do apêndice de Kubernetes 101 e 86 conceitos do ecossistema."
+    tamano: 56
+  whats-new-1-37:
+    eyebrow: "Kubernetes 1.37 · Novidades"
+    titulo: Novidades do Kubernetes 1.37
+    subtitulo: "O que muda e o que você precisa fazer."
+    tamano: 56
+  errata:
+    eyebrow: "Kubernetes 101 · Errata"
+    titulo: Errata de Kubernetes 101
+    subtitulo: "Correções da edição em português, com número de página."
+    tamano: 56
+  practice:
+    eyebrow: "Kubernetes 101 · Parte prática"
+    titulo: 55 laboratórios em um cluster real
+    subtitulo: "Abertos e gratuitos, no navegador, sem instalar nada."
+    tamano: 56

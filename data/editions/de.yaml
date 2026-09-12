@@ -1,0 +1,48 @@
+# Deutsche Ausgabe von Kubernetes 101. Gleiches Schema wie es.yaml.
+# PENDIENTE = noch unbekannt (KDP vergibt ISBN/ASIN und Preise bei der Veröffentlichung).
+lang: de
+title: Kubernetes 101
+headline: Der praktische Leitfaden, um Kubernetes von Grund auf zu verstehen
+ld_description: "Praktischer Leitfaden, um Kubernetes von Grund auf zu lernen, mit 15 Kapiteln, 5 Anhängen und einem Praxisteil mit 55 Labs in 15 Modulen auf iximiuz Labs."
+edition_label: "Ausgabe 2026 · Kubernetes 1.37"
+isbn: "PENDIENTE"
+pages: 381            # 387 Blätter in build/kubernetes-101.de-print.pdf minus 6 Blätter Titelei; am endgültigen Satz prüfen
+published: "PENDIENTE"
+status: preorder
+availability: PreOrder
+price_valid_until: "2027-12-31"
+genre: Informatik
+about: [Kubernetes, Container, DevOps]
+cover: portada-kubernetes-101.png   # PENDIENTE: spanisches Cover als Platzhalter
+labs_course: PENDIENTE              # iximiuz-Kurs der deutschen Ausgabe, noch nicht angelegt
+
+formats:
+  - id: kindle
+    slug: kindle
+    evento: compra
+    ld_id: kindle
+    ld_format: EBook
+    name: "Kubernetes 101 · Kindle-Ausgabe"
+    label: Kindle
+    price_label: "PENDIENTE"
+    asin: PENDIENTE
+    markets:
+      - { id: de, label: Deutschland, domain: amazon.de, price: "PENDIENTE", currency: EUR, seller: Amazon.de }
+      - { id: com, label: "USA und weltweit", domain: amazon.com }
+  - id: paperback
+    slug: taschenbuch
+    evento: compra-papel
+    ld_id: papel
+    ld_format: Paperback
+    name: "Kubernetes 101 · Taschenbuch"
+    label: Taschenbuch
+    price_label: "PENDIENTE"
+    asin: PENDIENTE
+    markets:
+      - { id: de, label: Deutschland, domain: amazon.de, price: "PENDIENTE", currency: EUR, seller: Amazon.de }
+      - { id: com, label: "USA und weltweit", domain: amazon.com }
+
+puentes:
+  - { id: github, url: "https://github.com/fjvela/kubernetes-101", abriendo: github, volver: book }
+  - { id: substack, url: "https://blog.javivela.dev/subscribe", abriendo: substack, volver: book }
+  - { id: labs, url: "https://labs.iximiuz.com/signup?referral=6a817bab02dbaa512df09237", abriendo: labs, volver: practice }

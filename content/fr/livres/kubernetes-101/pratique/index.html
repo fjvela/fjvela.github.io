@@ -1,0 +1,86 @@
+---
+key: "practice"
+# Page publique et indexable depuis le 16 août 2026 · voir NOTAS-PUBLICACION.md
+permalink: "/fr/livres/kubernetes-101/pratique/index.html"
+translated_from: "ae2d1d6"
+title: "Laboratoires Kubernetes — 55 labs gratuits dans le navigateur"
+description: "Pratique Kubernetes pour de vrai : 55 laboratoires gratuits sur un cluster réel dans le navigateur, sans rien installer. Pods, Services, RBAC, scheduling et un opérateur en Go."
+robots: "index, follow, max-snippet:-1, max-image-preview:large"
+og:
+  type: "article"
+  title: "Laboratoires Kubernetes — 55 labs gratuits"
+  image: "og-practice.png"
+  alt: "Partie pratique de Kubernetes 101 : 55 laboratoires en 15 modules, avec un cluster réel dans le navigateur"
+sitemap:
+  lastmod: "2026-08-16"
+  changefreq: "monthly"
+  priority: "0.7"
+jsonld: |
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"Kubernetes 101 — partie pratique","description":"Cours pratique de Kubernetes : 55 laboratoires en 15 modules sur un cluster réel dans le navigateur, avec vérification automatique. Partie pratique du livre Kubernetes 101.","url":"https://www.javivela.dev/fr/livres/kubernetes-101/pratique/","inLanguage":"fr","isAccessibleForFree":true,"teaches":["Kubernetes","Pods","Deployments","Services","RBAC","Scheduling","Opérateurs"],"educationalLevel":"Débutant","provider":{"@type":"Person","name":"Javier Vela Aylón","url":"https://www.javivela.dev"},"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR","category":"Free","availability":"https://schema.org/InStock"},"hasCourseInstance":{"@type":"CourseInstance","courseMode":"online","courseWorkload":"PT20H","instructor":{"@type":"Person","name":"Javier Vela Aylón"}},"isPartOf":{"@type":"Book","name":"Kubernetes 101","url":"https://www.javivela.dev/fr/livres/kubernetes-101/"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"javivela.dev","item":"https://www.javivela.dev/fr/"},{"@type":"ListItem","position":2,"name":"Kubernetes 101","item":"https://www.javivela.dev/fr/livres/kubernetes-101/"},{"@type":"ListItem","position":3,"name":"Partie pratique","item":"https://www.javivela.dev/fr/livres/kubernetes-101/pratique/"}]}</script>
+---
+<main id="contenido">
+<div class="contenedor" style="max-width:820px">
+
+<nav aria-label="Fil d’Ariane" class="dato" style="padding:18px 0 0"><a href="../" style="border:0;color:var(--texto-suave)">Kubernetes 101</a> <span aria-hidden="true">/</span> Partie pratique</nav>
+
+<div style="padding:44px 0 0">
+<p class="eyebrow">Partie pratique</p>
+<h1>Bienvenue dans la partie pratique de Kubernetes 101</h1>
+<p style="margin:22px 0 28px;font-size:1.08rem"><strong>55 laboratoires en 15 modules</strong>, avec 7 <em>challenges</em>, dont le dernier est le défi final. Ouverts et gratuits : pas besoin d’acheter le livre, ni de saisir un code, ni de valider quoi que ce soit. Un vrai cluster Kubernetes dans le navigateur, sans rien installer sur ta machine.</p>
+<div class="botonera" style="margin:0"><a class="btn" href="../../../../fr/go/labs/" data-evento="referral-labs-cta">Créer un compte gratuit</a><a class="btn btn-sec" href="https://labs.iximiuz.com/courses/{{ edition.labs_course }}" rel="noopener" data-evento="labs-curso-cta">Aller aux laboratoires →</a></div>
+</div>
+
+<section class="seccion" aria-labelledby="t-como" style="margin-top:56px">
+<h2 id="t-como">Comment ça marche</h2>
+<div style="margin-top:18px">
+<p>Le cours combine deux formats. Les <strong>tutoriels</strong> te guident pas à pas, avec le YAML expliqué en questions et réponses. Les <strong>challenges</strong> te livrent un cluster où quelque chose est cassé et te demandent de le réparer, et c’est là qu’on apprend vraiment.</p>
+<p>Chaque leçon démarre un vrai cluster Kubernetes dans ton navigateur, sans rien installer sur ta machine.</p>
+<p>La vérification est automatique : le cours enregistre ta progression au fur et à mesure que tu réussis les tâches.</p>
+<p style="margin:0">Avance à ton rythme et reprends là où tu t’étais arrêté depuis ton dashboard.</p>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-programa">
+<h2 id="t-programa">Le programme</h2>
+<ul style="list-style:none;padding:0;margin:24px 0 0;display:flex;flex-direction:column;gap:14px">
+<li class="tarjeta" style="padding:18px 20px"><strong>Conteneurs</strong> — comment une image s’empile en couches, et tu construis la <code>tienda/api</code> qui se déploie tout au long du cours.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Fondamentaux</strong> — ton premier Pod dès le premier écran, ton premier Pod cassé, et labels, selectors et annotations.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Workloads</strong> — probes, requests, limits et QoS, Deployments avec rollout et rollback, StatefulSets, DaemonSets, init containers et sidecars, Jobs et CronJobs.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Mise à l’échelle</strong> — Horizontal Pod Autoscaler et Vertical Pod Autoscaler.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Réseau</strong> — Services avec DNS interne, Ingress avec Traefik, Gateway API, NetworkPolicies et CoreDNS.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Configuration</strong> — ConfigMaps et Secrets, les identifiants d’un registre privé et la Downward API.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Stockage</strong> — emptyDir, PersistentVolumeClaims et StorageClasses.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Sécurité</strong> — Namespaces, RBAC, ServiceAccounts et Pod Security Admission.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Policies</strong> — ResourceQuotas et LimitRanges.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Scheduling</strong> — affinités, taints et tolerations, priorité et préemption, PodDisruptionBudgets et drainage des nœuds, et les périphériques avec Dynamic Resource Allocation. <span class="m" style="font-size:12.5px">Ici, tu publies un périphérique à la main et tu vois le sélecteur l’écarter ; le livre ne va pas aussi loin.</span></li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Travailler avec le cluster</strong> — débogage impératif en mode mission, le flux déclaratif avec Kustomize, Helm et les commandes qui ne figurent dans aucun manuel.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Extensibilité</strong> — CRD et opérateur en Go avec controller-runtime. <span class="m" style="font-size:12.5px">Le chapitre 14 du livre s’arrête à mi-chemin ; ici, tu écris l’opérateur en entier.</span></li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Observabilité</strong> — les Events du cluster, les métriques avec <code>kubectl top</code>, et une stack réelle avec Prometheus, Grafana, Loki et VictoriaMetrics.</li>
+<li class="tarjeta" style="padding:18px 20px"><strong>Le cluster vu de l’intérieur</strong> — le laboratoire de l’annexe D : un parcours composant par composant sur un vrai cluster kubeadm, pas k3s.</li>
+<li class="tarjeta" style="padding:18px 20px;border-color:#2f4d8f"><strong>Défi final</strong> — éteins le scheduler et diagnostique le cluster à cœur ouvert. <span class="m" style="font-size:12.5px;color:var(--alerta)">Laboratoire seulement : il n’a pas de chapitre dans le livre.</span></li>
+</ul>
+</section>
+
+<section class="seccion" aria-labelledby="t-libro">
+<h2 id="t-libro">Et si tu te demandes à quoi sert le livre</h2>
+<p style="margin:18px 0 0">Les laboratoires te mettent à la tâche. Le livre explique <strong>pourquoi</strong> c’est ainsi : d’où vient chaque décision, ce qui se casse en silence quand un champ manque, et ce qui se passe en dessous quand tu tapes <code>kubectl apply</code>.</p>
+<p style="margin:14px 0 0">Ce qui ne tient pas dans un terminal : les <strong>54 diagrammes</strong> — le cycle d’une requête à l’intérieur du kube-apiserver ne se voit pas avec <code>kubectl</code> —, l’annexe <em>Depuis quand fonctionne chaque pièce</em>, qui te dit dans quelle version chaque chose est arrivée et dans quel état elle se trouve, une <strong>antisèche <code>kubectl</code></strong> classée selon ce que tu veux faire et non par ordre alphabétique, un glossaire des sigles et un index pour y revenir.</p>
+<div class="nota" style="margin:22px 0 0">
+<p style="margin:0"><strong>Tu peux en juger gratuitement.</strong> Il y a 31 pages du livre en PDF, sans inscription ni e-mail (pour l’instant, les pages de l’édition espagnole ; le PDF français les remplacera) : « Avant de commencer », le chapitre <strong>Architecture de Kubernetes</strong> — celui qui, ici, se répartit entre plusieurs modules — et l’<strong>Annexe D : le cluster vu de l’intérieur</strong> au complet, qui est le chapitre du module <em>Le cluster vu de l’intérieur</em>. Avec ses huit diagrammes, tels qu’ils apparaissent à l’impression.</p>
+</div>
+<div class="botonera" style="margin:22px 0 0"><a class="btn" href="../">Voir le livre et en télécharger le début</a></div>
+</section>
+
+<section class="seccion" aria-labelledby="t-necesitas">
+<h2 id="t-necesitas">Ce qu’il te faut</h2>
+<p style="margin:18px 0 0"><a href="../../../../fr/go/labs/" data-evento="referral-labs-necesitas">Un compte sur iximiuz Labs</a> et un navigateur. Le cluster, kubectl et l’éditeur de code sont déjà prêts dans chaque leçon. Commence par le module Fondamentaux. Si tu préfères ne pas dépendre d’une plateforme externe, le <a href="https://github.com/fjvela/kubernetes-101" rel="noopener">dépôt du livre</a> monte toute la tienda, le système d’exemple du livre, sur ta machine avec <code>kind</code>.</p>
+</section>
+
+<section class="seccion" aria-label="Mentions légales">
+<p class="suave" style="font-size:14px">Ce livre inclut une partie pratique hébergée sur la plateforme <strong>iximiuz Labs</strong> (labs.iximiuz.com). L’auteur ne participe pas à la plateforme ni à sa gestion. Le lien d’inscription de cette page est un <strong>lien de parrainage</strong> : si tu t’inscris en passant par lui, l’auteur peut recevoir une contrepartie de la plateforme. Ça ne change rien pour toi — la partie pratique est en accès public et gratuit, et n’exige aucun achat.</p>
+<p class="suave" style="font-size:14px">Elle est proposée telle quelle, sans garantie de fonctionnement futur. Les changements qu’introduisent Kubernetes ou d’autres outils peuvent affecter les scénarios. L’auteur s’engage à faire tout son possible pour les maintenir à jour, mais il ne peut garantir ni leur disponibilité ni leur fonctionnement permanent.</p>
+<p class="suave" style="font-size:14px;margin:0">Le fonctionnement, la disponibilité et le traitement des données de la plateforme relèvent de la responsabilité d’iximiuz Labs, pas de celle de l’auteur.</p>
+</section>
+</div>
+</main>
