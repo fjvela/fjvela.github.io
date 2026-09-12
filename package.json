@@ -1,0 +1,15 @@
+{
+  "name": "javivela.dev",
+  "private": true,
+  "description": "Sitio estático de www.javivela.dev, generado con Eleventy",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "check": "node scripts/check-i18n.mjs",
+    "status": "node scripts/i18n-status.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^4.1.0"
+  }
+}

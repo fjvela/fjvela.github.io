@@ -1,0 +1,16 @@
+---
+permalink: /sitemap.xml
+layout: false
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in collections.all | sort(false, false, "url") %}{% if p.data.sitemap %}
+  <url>
+    <loc>{{ site.url }}{{ p.url }}</loc>
+    <lastmod>{{ p.data.sitemap.lastmod }}</lastmod>
+    <changefreq>{{ p.data.sitemap.changefreq }}</changefreq>
+    <priority>{{ p.data.sitemap.priority }}</priority>
+  </url>
+{%- endif %}{% endfor %}
+</urlset>

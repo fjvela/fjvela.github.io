@@ -1,0 +1,29 @@
+---
+pagination:
+  data: puentes
+  size: 1
+  alias: p
+permalink: "{{ p.path }}index.html"
+layout: false
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="{{ p.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="{{ site.url }}{{ collections.routes[p.lang].book }}">
+<title>{{ p.abriendo }}</title>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflare_token }}"}'></script>
+<script>
+setTimeout(function () { location.replace("{{ p.url }}"); }, 300);
+</script>
+<noscript><meta http-equiv="refresh" content="0; url={{ p.url }}"></noscript>
+</head>
+<body style="background:#0a0e1a;color:#e8ecf4;font-family:'Space Grotesk',system-ui,sans-serif;text-align:center;padding:80px 24px">
+<p>{{ p.abriendo }}</p>
+<p><a href="{{ p.url }}" style="color:#5b8ef0">{{ i18n[p.lang].puente.pulsa }}</a></p>
+<p style="margin-top:32px"><a href="{{ site.url }}{{ collections.routes[p.lang][p.volver] }}" style="color:#8b95ab;font-size:14px">{{ i18n[p.lang].puente.volver[p.volver] }}</a></p>
+</body>
+</html>

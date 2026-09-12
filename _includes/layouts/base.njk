@@ -1,0 +1,84 @@
+{%- set pre = base if base is defined else (page.url | relprefix) -%}
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title | safe }}</title>
+<meta name="description" content="{{ description | safe }}">
+{%- if head != "minimo" %}
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{%- endif %}
+<meta name="robots" content="{{ robots or 'index, follow, max-image-preview:large' }}">
+{%- if head == "minimo" %}
+<meta name="googlebot" content="{{ robots }}">
+{%- endif %}
+<meta name="author" content="{{ site.author.name }}">
+<meta name="theme-color" content="{{ site.theme_color }}">
+<meta name="color-scheme" content="dark">
+{%- if head != "minimo" %}
+<meta property="og:site_name" content="{{ site.og_site_name }}">
+<meta property="og:locale" content="{{ t.locale }}">
+<meta property="og:type" content="{{ og.type }}">
+<meta property="og:title" content="{{ og.title | safe }}">
+<meta property="og:description" content="{{ description | safe }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/media/{{ og.image }}">
+<meta property="og:image:secure_url" content="{{ site.url }}/media/{{ og.image }}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{ og.alt | safe }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ site.twitter }}">
+<meta name="twitter:creator" content="{{ site.twitter }}">
+<meta name="twitter:title" content="{{ og.title | safe }}">
+<meta name="twitter:description" content="{{ description | safe }}">
+<meta name="twitter:image" content="{{ site.url }}/media/{{ og.image }}">
+<meta name="twitter:image:alt" content="{{ og.alt | safe }}">
+{%- endif %}
+<link rel="icon" href="{{ pre }}favicon.ico" sizes="32x32">
+<link rel="icon" href="{{ pre }}favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ pre }}apple-touch-icon.png">
+{%- if preload_cover %}
+<link rel="preload" as="image" href="{{ pre }}media/{{ edition.cover }}" fetchpriority="high">
+{%- endif %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap">
+<style>
+{% if css_base != false %}{% include "css/base.css" %}{% endif %}{% if css %}{% include "css/" + css + ".css" %}{% endif %}</style>
+{%- if book_jsonld %}
+{{ edition | jsonldBook(site, page.url, lang) | safe }}
+{%- endif %}
+{%- if jsonld %}
+{{ jsonld | trim | safe }}
+{%- endif %}
+{%- if jsonld_site %}
+{{ site | jsonldSite(lang) | safe }}
+{%- endif %}
+<script>document.documentElement.className="js";</script>
+<script>
+(function () {
+  function ev(nombre, props) {
+    try {
+      if (typeof window.plausible === "function") { window.plausible(nombre, { props: props || {} }); return; }
+      if (window.umami && typeof window.umami.track === "function") { window.umami.track(nombre, props || {}); return; }
+      if (typeof window.gtag === "function") { window.gtag("event", nombre, props || {}); return; }
+    } catch (e) {}
+  }
+  document.addEventListener("click", function (e) {
+    var t = e.target;
+    var a = t && t.closest ? t.closest("[data-evento]") : null;
+    if (a) ev(a.getAttribute("data-evento"), { destino: a.getAttribute("href") || "" });
+  }, { passive: true });
+})();
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflare_token }}"}'></script>
+</head>
+<body>
+<a class="saltar" href="#contenido">{{ t.saltar }}</a>
+{% include "partials/nav.njk" %}
+{{ content | safe }}{% include "partials/footer.njk" %}
+</body>
+</html>

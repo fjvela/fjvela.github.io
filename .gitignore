@@ -1,1 +1,8 @@
 .DS_Store
+node_modules/
+_site/
+
+# Notas de trabajo: no se publican (la web despliega el repo entero).
+NOTAS-PUBLICACION.md
+PLAN-MULTIIDIOMA.md
+OPCIONES-I18N.md

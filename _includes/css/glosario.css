@@ -1,0 +1,6 @@
+.buscador{display:none}
+.js .buscador{display:block;padding:30px 0 0}
+.buscador input{width:100%;max-width:420px;font-family:var(--mono);font-size:15px;color:var(--texto);background:var(--superficie);border:1px solid var(--borde);border-radius:8px;padding:12px 14px}
+.buscador input:focus{outline:2px solid var(--acento-claro);outline-offset:2px}
+.buscador input::placeholder{color:var(--texto-suave)}
+.termino h3 .etq{vertical-align:2px;margin-left:4px}

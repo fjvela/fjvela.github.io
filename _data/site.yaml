@@ -1,0 +1,19 @@
+# Datos del sitio, iguales en todos los idiomas.
+url: https://www.javivela.dev
+og_site_name: "Javier Vela Aylón · javivela.dev"
+twitter: "@jvela"
+theme_color: "#0a0e1a"
+cloudflare_token: 50d9f6beac8b4fb39fb24b63102848ce
+author:
+  name: Javier Vela Aylón
+  alternateName: Javier Vela
+  jobTitle: Senior Software & Platform Engineer
+  knowsAbout: [Kubernetes, DevOps, Microsoft Azure, AWS, CI/CD, Contenedores, Arquitectura de software]
+  knowsLanguage: [es, en]
+  sameAs:
+    - https://www.linkedin.com/in/javiervelaaylon/
+    - https://github.com/fjvela
+    - https://x.com/jvela
+    - https://blog.javivela.dev
+# Idioma base: vive en la raíz y es el x-default (fase 2).
+default_lang: es
