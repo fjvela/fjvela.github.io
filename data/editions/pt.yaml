@@ -1,0 +1,52 @@
+# Edição em português (pt-BR) de Kubernetes 101. Mesmo esquema de es.yaml.
+# PENDIENTE = ainda não conhecido (a KDP atribui ISBN/ASIN e preços na publicação).
+lang: pt
+title: Kubernetes 101
+headline: O guia prático para entender Kubernetes do zero
+ld_description: "Guia prático para aprender Kubernetes do zero, com 15 capítulos, 5 apêndices e uma parte prática com 55 laboratórios em 15 módulos, hospedada no iximiuz Labs."
+edition_label: "Edição 2026 · Kubernetes 1.37"
+isbn: "PENDIENTE"
+pages: 371            # 377 folhas em build/kubernetes-101.pt-print.pdf menos as 6 folhas preliminares; confirmar na diagramação final
+published: "PENDIENTE"
+status: preorder
+availability: PreOrder
+price_valid_until: "2027-12-31"
+genre: Informática
+about: [Kubernetes, Contêineres, DevOps]
+cover: portada-kubernetes-101.png   # PENDIENTE: capa espanhola como marcador
+labs_course: PENDIENTE              # curso iximiuz da edição em português, ainda não criado
+
+# A KDP não imprime sob demanda no Brasil: o Kindle está na amazon.com.br,
+# o livro impresso se pede na amazon.com (envio internacional) ou, de
+# Portugal, na amazon.es.
+formats:
+  - id: kindle
+    slug: kindle
+    evento: compra
+    ld_id: kindle
+    ld_format: EBook
+    name: "Kubernetes 101 · Edição Kindle"
+    label: Kindle
+    price_label: "PENDIENTE"
+    asin: PENDIENTE
+    markets:
+      - { id: br, label: Brasil, domain: amazon.com.br, price: "PENDIENTE", currency: BRL, seller: Amazon.com.br }
+      - { id: com, label: "Estados Unidos e resto do mundo", domain: amazon.com }
+      - { id: es, label: Portugal (Amazon.es), domain: amazon.es }
+  - id: paperback
+    slug: impresso
+    evento: compra-papel
+    ld_id: papel
+    ld_format: Paperback
+    name: "Kubernetes 101 · Edição impressa"
+    label: Impresso
+    price_label: "PENDIENTE"
+    asin: PENDIENTE
+    markets:
+      - { id: com, label: "Estados Unidos e resto do mundo", domain: amazon.com, price: "PENDIENTE", currency: USD, seller: Amazon.com }
+      - { id: es, label: Portugal (Amazon.es), domain: amazon.es }
+
+puentes:
+  - { id: github, url: "https://github.com/fjvela/kubernetes-101", abriendo: github, volver: book }
+  - { id: substack, url: "https://blog.javivela.dev/subscribe", abriendo: substack, volver: book }
+  - { id: labs, url: "https://labs.iximiuz.com/signup?referral=6a817bab02dbaa512df09237", abriendo: labs, volver: practice }

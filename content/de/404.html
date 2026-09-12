@@ -1,0 +1,43 @@
+---
+key: "404"
+permalink: false
+layout: false
+translated_from: "ae2d1d6"
+# Fragment der 404-Seite in dieser Sprache. content/404.njk umschließt es: das
+# ist die einzige 404-Seite, die GitHub Pages ausliefert, mit einer <section>
+# pro Sprache.
+---
+<div class="contenedor" style="max-width:860px;padding-top:56px;padding-bottom:72px">
+<p class="codigo-404" aria-hidden="true">404</p>
+<p class="eyebrow">Fehler 404 · Ressource nicht gefunden</p>
+<h1>Diese Seite ist nicht im Cluster</h1>
+<p class="estrecho" style="margin:22px 0 30px;font-size:1.08rem;color:var(--texto-suave)">Die URL, die du aufgerufen hast, existiert nicht, ist umgezogen oder hat einen Tippfehler. Nichts ist kaputt: Such dir ein Ziel aus der Liste aus und mach da weiter, wo du aufgehört hast.</p>
+
+<div class="terminal">
+<div class="terminal-barra"><span class="punto-t"></span><span class="punto-t"></span><span class="punto-t"></span><span class="terminal-tit">javivela.dev</span></div>
+<pre><span class="prompt">$</span> <span class="cmd">kubectl get page <span data-ruta>/der-pfad-den-du-gesucht-hast</span> -n javivela.dev</span>
+<span class="err">Error from server (NotFound): pages "<span data-ruta2>der-pfad-den-du-gesucht-hast</span>" not found</span>
+<span class="prompt">$</span> <span class="cmd">kubectl get pages -n javivela.dev</span>
+NAME                          STATUS    AGE
+home                          Running   2026
+kubernetes-101                Running   2026
+kubernetes-101/bibliografia   Running   2026
+kubernetes-101/errata         Running   2026
+kubernetes-101/praxis         Running   2026
+kubernetes/glosario           Running   2026
+kubernetes/novedades-1-37     Running   2026</pre>
+</div>
+
+<h2 style="font-size:1.15rem;margin:0 0 14px">Wohin jetzt</h2>
+<ul class="destinos rejilla">
+<li><a href="/de/" data-evento="404-inicio"><strong>Startseite</strong><span>javivela.dev</span></a></li>
+<li><a href="/de/buecher/kubernetes-101/" data-evento="404-libro"><strong>Kubernetes 101</strong><span>Die Buchseite</span></a></li>
+<li><a href="/de/buecher/kubernetes-101/praxis/" data-evento="404-practica"><strong>Praxisteil</strong><span>55 Labs in 15 Modulen</span></a></li>
+<li><a href="/kubernetes/glosario/" data-evento="404-glosario"><strong>Glossar</strong><span>158 Begriffe (auf Spanisch)</span></a></li>
+<li><a href="/kubernetes/novedades-1-37/" data-evento="404-novedades"><strong>Kubernetes 1.37</strong><span>Was sich in der neuen Version ändert (auf Spanisch)</span></a></li>
+<li><a href="/de/buecher/kubernetes-101/errata/" data-evento="404-erratas"><strong>Errata</strong><span>Korrekturen zur Ausgabe 2026</span></a></li>
+<li><a href="/libros/kubernetes-101/bibliografia/" data-evento="404-bibliografia"><strong>Literaturverzeichnis</strong><span>Die im Buch zitierten Quellen (auf Spanisch)</span></a></li>
+</ul>
+
+<p class="dato" style="margin:26px 0 0">Bist du über eine im Buch gedruckte URL hier gelandet? Sag mir auf <a href="https://github.com/fjvela/kubernetes-101/issues" rel="noopener">GitHub</a> oder unter <a href="https://x.com/jvela" rel="me noopener">@jvela</a> Bescheid, und ich behebe es.</p>
+</div>

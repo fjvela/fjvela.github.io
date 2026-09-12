@@ -1,0 +1,46 @@
+# Testi dell’interfaccia, edizione italiana. Stesse chiavi di es.yaml.
+code: it
+locale: it_IT
+label: Italiano
+prefix: "/it"
+go_prefix: go
+status: draft
+
+saltar: Vai al contenuto
+marca: javivela.dev
+nav_label: Navigazione principale
+
+nav:
+  - { key: book, label: Il libro }
+  - { key: glossary, label: Glossario }
+  - { key: whats-new-1-37, label: Kubernetes 1.37 }
+  - { label: Blog, url: "https://blog.javivela.dev", rel: me noopener }
+  - { label: GitHub, url: "https://github.com/fjvela", rel: me noopener }
+
+pie:
+  copyright: "© 2026 Javier Vela Aylón · www.javivela.dev"
+  enlaces:
+    - { key: book, label: Kubernetes 101 }
+    - { key: glossary, label: Glossario }
+    - { key: errata, label: Errata corrige }
+    - { key: bibliography, label: Bibliografia }
+    - { label: "@jvela", url: "https://x.com/jvela", rel: me noopener }
+
+compra:
+  comprar_en: acquista su
+
+puente:
+  abriendo:
+    amazon: Apertura di Amazon…
+    github: Apertura di GitHub…
+    substack: Apertura della pagina di iscrizione…
+    labs: Apertura di iximiuz Labs…
+  pulsa: Se non si apre da solo, clicca qui
+  volver:
+    book: Torna alla pagina del libro
+    practice: Torna alla parte pratica
+
+idiomas_label: Lingua
+banner:
+  texto: Questa pagina è disponibile in italiano
+  cerrar: Chiudi

@@ -1,0 +1,663 @@
+---
+key: "book"
+permalink: "/pt/livros/kubernetes-101/index.html"
+translated_from: "ae2d1d6"
+title: "Kubernetes 101 · O livro prático de Kubernetes, do zero à produção"
+description: "Aprenda Kubernetes do zero: 15 capítulos, 5 apêndices e 55 laboratórios em um cluster real, sem instalar nada. Edição 2026 · Kubernetes 1.37."
+robots: "index, follow, max-snippet:-1, max-image-preview:large"
+og:
+  type: "book"
+  title: "Kubernetes 101 — o guia prático para entender Kubernetes do zero"
+  image: "og-book.png"
+  alt: "Capa de Kubernetes 101, o guia prático para entender Kubernetes do zero, de Javier Vela Aylón"
+preload_cover: true
+sitemap:
+  lastmod: "2026-08-31"
+  changefreq: "weekly"
+  priority: "1.0"
+css: "book"
+book_jsonld: true
+jsonld: |
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Início","item":"https://www.javivela.dev/pt/"},{"@type":"ListItem","position":2,"name":"Kubernetes 101","item":"https://www.javivela.dev/pt/livros/kubernetes-101/"}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Preciso saber Docker ou contêineres para começar?","acceptedAnswer":{"@type":"Answer","text":"Não. O livro começa pelos fundamentos de contêineres e orquestração antes de tocar no Kubernetes, e não dá nada por sabido."}},{"@type":"Question","name":"Tenho que instalar algo para fazer os laboratórios?","acceptedAnswer":{"@type":"Answer","text":"Nada. Cada laboratório sobe um cluster de Kubernetes real no navegador; você só precisa de conexão e de uma conta no iximiuz Labs."}},{"@type":"Question","name":"Já trabalho com Kubernetes. Ele me serve?","acceptedAnswer":{"@type":"Answer","text":"Sim. Ele foi pensado também para quem usa a tecnologia todo dia e quer entender de verdade o que acontece por baixo, com os diagramas e os challenges como rede de segurança."}},{"@type":"Question","name":"Impresso ou digital?","acceptedAnswer":{"@type":"Answer","text":"Os dois. A parte prática é a mesma em qualquer um dos dois formatos, e além disso é de acesso público: você pode abrir o guia da parte prática sem ter o livro. Há uma diferença por país: o Kindle está na Amazon.com.br, na Amazon.com e na Amazon.es, e o livro impresso só na Amazon.com e na Amazon.es, porque a Amazon não imprime sob demanda no Brasil. Do Brasil, o impresso se pede na Amazon.com com envio internacional; de Portugal, na Amazon.es."}},{"@type":"Question","name":"Os laboratórios são pagos à parte?","acceptedAnswer":{"@type":"Answer","text":"Não. A parte prática é de acesso público e gratuito, e não exige nenhuma compra adicional. Ela está hospedada no iximiuz Labs."}},{"@type":"Question","name":"Todo o conteúdo programático está no livro?","acceptedAnswer":{"@type":"Answer","text":"Os 15 capítulos e os 5 apêndices, sim. Só há um bloco que existe unicamente como laboratório e não tem capítulo: o desafio final, e ele está marcado no conteúdo. A extensibilidade tem capítulo, sim, o 14: o livro define o CRD e explica o que faz um operador; o laboratório é onde você o escreve inteiro, em Go."}},{"@type":"Question","name":"Qual versão do Kubernetes o livro usa?","acceptedAnswer":{"@type":"Answer","text":"O livro é a edição 1.37. O Kubernetes publica três versões por ano, então nenhum livro vai estar nunca na última: por isso ele inclui o Apêndice C, que registra capítulo a capítulo o estado de cada funcionalidade e desde qual versão ela existe, para que você possa conferir de relance se o que está lendo continua valendo no seu cluster. O que a 1.37 traz está resumido em novidades do Kubernetes 1.37 (em espanhol), e as correções posteriores são publicadas na página de errata."}}]}
+  </script>
+---
+<main id="contenido">
+<div class="contenedor">
+<nav aria-label="Trilha de navegação" class="dato" style="padding:18px 0 0"><a href="../../../pt/" style="border:0;color:var(--texto-suave)">Início</a> <span aria-hidden="true">/</span> Kubernetes 101</nav>
+
+<div class="hero-libro">
+<img src="../../../media/portada-kubernetes-101.png" alt="Capa de Kubernetes 101: fundo azul quase preto, o título em branco, o número 101 em azul Kubernetes e o nome de Javier Vela Aylón no rodapé." width="1600" height="2400" fetchpriority="high" decoding="async" class="portada">
+<div>
+<p class="eyebrow">Livro · Edição em português · 2026</p>
+<h1>Kubernetes 101 — o guia prático para entender Kubernetes do zero</h1>
+<p class="suave" style="margin:20px 0 8px;font-size:1.1rem;max-width:56ch">15 capítulos, 5 apêndices e uma parte prática com 55 laboratórios em um cluster real, sem instalar nada. Você lê o conceito e o testa na hora.</p>
+<p class="dato" style="margin:0 0 24px">{{ edition.pages }} páginas · Edição 2026 · Kubernetes 1.37 · Kindle e impresso</p>
+<div class="botonera" style="margin:0 0 12px">
+<a class="btn" href="/pt/go/kindle-br/" target="_blank" rel="noopener" data-evento="compra-kindle-hero">Comprar no Kindle · {{ edition.formats[0].price_label }}</a>
+<a class="btn btn-sec" href="#suscripcion" data-evento="capitulo-gratis-hero">Ler grátis o início do livro</a>
+</div>
+{% set pos = "hero" %}{% include "partials/compra.njk" %}
+</div>
+</div>
+
+</div>
+
+<section class="seccion" aria-labelledby="t-quien">
+<div class="contenedor">
+<p class="eyebrow">Para quem</p>
+<h2 id="t-quien">Para quem é este livro?</h2>
+<div class="estrecho" style="margin-top:20px">
+<p>Para qualquer pessoa que queira aprender Kubernetes de verdade, venha ou não do mundo de TI. Também — e sobretudo — para quem já trabalha com a tecnologia todo dia e nunca chegou a entender direito o que acontece por baixo.</p>
+<p style="margin:0">É o livro que eu gostaria de ter lido alguns anos atrás: com diagramas que explicam quem faz o quê, e com uma parte prática onde quebrar coisas sem medo.</p>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-prologo">
+<div class="contenedor">
+<p class="eyebrow">O prólogo</p>
+<h2 id="t-prologo">Escrito por alguém que esteve do outro lado</h2>
+<div class="prologo">
+<blockquote>“Uma diferença do Kubernetes em relação a outras tecnologias é que não basta memorizar alguns passos ou comandos. Espero que este livro ajude seus leitores da mesma maneira que teria nos ajudado na época: fornecendo uma base sólida, esclarecendo conceitos que no início dão medo e oferecendo as ferramentas necessárias para se virar operacionalmente diante de um cluster real.”</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)">Eric Trigo, Software Engineer · do prólogo do livro</p>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-lectores">
+<div class="contenedor">
+<p class="eyebrow">Leitores</p>
+<h2 id="t-lectores">O que dizem os que já leram</h2>
+<div class="prologo" style="margin-top:24px">
+<blockquote>Se a mim, que de Kubernetes não sabia muito mais que o nome, este livro me fez entender todo o básico, não consigo imaginar TUDO o que ele vai ajudar você, que já começou a mexer com scripts, Pods, clusters e afins. Agradável, claro e prático, um must para o próximo time de DevOps que você precisar montar</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)"><a href="https://www.linkedin.com/in/uzabal/" target="_blank" rel="noopener">Adolfo G.U.</a> · <a href="https://www.tiempodeexposicion.com/" target="_blank" rel="noopener">Tiempo de Exposición</a></p>
+</div>
+<div class="prologo" style="margin-top:16px">
+<blockquote>Se você se sente com os Pods como Dom Quixote lutando contra gigantes, este é o seu livro. Porque às vezes só é preciso entender um pouco melhor o moinho para deixar de vê-lo como um gigante.</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)"><a href="https://www.linkedin.com/in/dmunicio/" target="_blank" rel="noopener">Diego Municio García</a>, Principal Software Engineer</p>
+</div>
+<div class="prologo" style="margin-top:16px">
+<blockquote>Se você quer entender o que é o Kubernetes e como ele funciona de forma prática, com diagramas de fluxo, gráficos claros e respostas a muitas das dúvidas que todos nós já tivemos alguma vez ao aprender esta tecnologia, sem dúvida este é o livro que você deveria ler.</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)"><a href="https://www.linkedin.com/in/roberto-gomez-prieto-5ba6b990/" target="_blank" rel="noopener">Roberto Gomez</a>, VMware Solutions Architect
+</p>
+</div>
+<div class="prologo" style="margin-top:16px">
+<blockquote>Se você está dando seus primeiros passos no Kubernetes ou quer consolidar conceitos de uma forma clara e prática, este livro é uma aposta segura. Ele explica temas complexos de maneira simples e com exemplos que ajudam a entender não só o “como”, mas também o “porquê”.</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)"><a href="https://www.linkedin.com/in/davidriverafer/" target="_blank" rel="noopener">David Rivera</a>, Microsoft MVP Azure - Cloud & Datacenter Management
+</p>
+</div>
+
+<!-- <div class="prologo" style="margin-top:16px">
+<blockquote>“Segunda citação.”</blockquote>
+<p class="m" style="margin:16px 0 0;font-size:12.5px;color:var(--acento-claro)">Nome e sobrenome, cargo · empresa</p>
+</div> -->
+</div>
+</section>
+
+
+<section class="seccion" aria-labelledby="t-temario">
+<div class="contenedor">
+<p class="eyebrow">Conteúdo</p>
+<h2 id="t-temario">O que você vai aprender</h2>
+<p class="estrecho suave" style="margin:16px 0 10px">Cada capítulo tem seu laboratório, e o Apêndice D também. Além disso, há um bloco que existe só como laboratório: o desafio final.</p>
+<ul class="etqs" style="margin:0 0 28px"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+<div class="rejilla rejilla-2">
+<article class="tarjeta">
+<span class="num">Capítulo 01</span>
+<h3>Introdução aos contêineres e à orquestração</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Imagem, contêiner, controller e nó explicados antes de nomear o Kubernetes. Como se constrói a imagem que se implanta ao longo de todo o livro: Dockerfile multistage, base distroless e um processo que não roda como root. E as vantagens e desvantagens reais dos contêineres, com o que se complica ao orquestrá-los em escala.</p>
+<p class="dato" style="margin:8px 0 0;font-size:12.5px">Seu laboratório é o módulo de Contêineres: você constrói a imagem <code>tienda/api</code> e a publica no registry.</p><ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 02</span>
+<h3>Arquitetura do Kubernetes</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">O kube-apiserver e o kubelet, e a comunicação hub-and-spoke: por que tudo passa pelo API server e só ele fala com o etcd. O resto dos componentes é contado onde faz falta de verdade — o kube-proxy em Rede, o scheduler em Scheduling — e juntos, no final, no Apêndice D.</p>
+<p class="dato" style="margin:8px 0 0;font-size:12.5px">Seu laboratório é o módulo “O cluster por dentro”, sobre um cluster kubeadm de verdade, junto com o Apêndice D.</p><ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 03</span>
+<h3>Falar com o cluster</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Por que o <code>kubectl</code> não é o Kubernetes, mas um cliente HTTP contra o API server, e como ver isso com <code>--v</code>. O Namespace <code>tienda</code> vazio, o primeiro Pod <code>web</code> dentro dele, olhá-lo por dentro, ler seus logs e apagá-lo. É o capítulo em que ainda não importa não entender direito o que você está implantando.</p>
+<p class="dato" style="margin:8px 0 0;font-size:12.5px">Compartilha laboratório com o capítulo 04, no módulo de Fundamentos.</p><ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 04</span>
+<h3>Objetos do Kubernetes</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">O primeiro Pod, Namespaces, labels e selectors, e annotations: como se nomeia e se agrupa o que vive no cluster. E por que a lista de tipos que um cluster entende não está congelada, que é a porta para o capítulo de Extensibilidade.</p>
+<p class="dato" style="margin:8px 0 0;font-size:12.5px">Compartilha laboratório com o capítulo 03, no módulo de Fundamentos.</p><ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 05</span>
+<h3>Workloads</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Pods com probes, requests, limits e QoS. ReplicaSets, Deployments com rollout e rollback, StatefulSets, DaemonSets, Jobs e CronJobs.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 06</span>
+<h3>Escalonamento</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Escalonamento automático de nós (Cluster Autoscaler e Karpenter) e de Pods: Horizontal Pod Autoscaler e Vertical Pod Autoscaler, o que cada um mede e quando eles atrapalham um ao outro.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 07</span>
+<h3>Rede</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">O kube-proxy e as regras que fazem o IP de um Service acabar em um Pod. Services e DNS interno com CoreDNS, Ingress, Gateway API — o Ingress é derrubado e refeito — e NetworkPolicy para fechar o tráfego nas camadas 3 e 4.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 08</span>
+<h3>Configuração</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">ConfigMaps para o que não é confidencial e Secrets para o que é, consumidos como variáveis de ambiente ou como arquivos montados no Pod. imagePullSecrets para baixar imagens de um registry privado, e a Downward API para que o Pod saiba quem é e onde roda.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 09</span>
+<h3>Armazenamento</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">StorageClass, PersistentVolume e PersistentVolumeClaim com provisioners CSI, como um Pod acaba montando o disco que não pode perder, e VolumeSnapshot para os backups.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 10</span>
+<h3>Segurança</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Autenticação e autorização diante da API, RBAC e ServiceAccounts, a cadeia de admissão, securityContext e os Pod Security Standards que o PSA aplica por Namespace. E o que o securityContext não protege: a supply chain, com SBOM e assinatura com cosign.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 11</span>
+<h3>Policies</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">ResourceQuota e LimitRange: o orçamento de CPU e memória de um Namespace e os valores padrão de cada contêiner.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 12</span>
+<h3>Scheduling</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Taints e tolerations, nodeSelector, afinidades e nodeName; prioridade e preemption, PodDisruptionBudgets e Dynamic Resource Allocation.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 13</span>
+<h3>Trabalhando com o cluster</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Contextos e Namespaces, o arquivo de preferências kuberc, quatro armadilhas que se repetem, o que o Kustomize traz e o que o Helm traz, GitOps com Argo CD e Flux, e o que olhar quando algo quebra na tienda, a loja de exemplo do livro. A referência de comandos inteira vive no Apêndice E.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 14</span>
+<h3>Extensibilidade</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">O CRD que ensina ao cluster uma palavra nova — a <code>Promocion</code> da tienda — e o operador que faz com que ela signifique algo: o loop de reconciliação, o que o status conta e quando <em>não</em> escrever um operador. No laboratório você o escreve inteiro, em Go e com controller-runtime.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Capítulo 15</span>
+<h3>Observabilidade</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Os Events do cluster, métricas, logs e traces — Prometheus, Loki, Grafana —, qual dos quatro olhar primeiro e a observabilidade emergente com eBPF.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-cap">Capítulo no livro</span></li><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+</div>
+<h3 style="margin:44px 0 14px;font-size:1.25rem">E um bloco que só existe como laboratório</h3>
+<p class="suave" style="margin:0 0 20px;max-width:68ch;font-size:15px">Ele está dentro da parte prática e é de acesso gratuito, mas <strong>não tem capítulo correspondente no livro</strong>. Não precisa: não há nada novo para aprender, é a prova de tudo o que veio antes.</p>
+<div class="rejilla rejilla-2">
+<article class="tarjeta" style="border-color:#6b5325;background:rgba(224,163,62,.07)">
+<span class="num" style="color:var(--alerta)">Só na parte prática</span>
+<h3>Desafio final: desligue o scheduler</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Diagnostique o cluster de coração aberto, sem scheduler, e traga-o de volta à vida. O que deixa de funcionar e o que continua funcionando, e não é o que a maioria espera.</p>
+</article>
+</div>
+<h3 style="margin:44px 0 14px;font-size:1.25rem">E cinco apêndices</h3>
+<div class="rejilla rejilla-3">
+<article class="tarjeta">
+<span class="num">Apêndice A</span>
+<h3>Glossário de siglas</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">As 74 siglas que aparecem no livro, reunidas em uma tabela para consultá-las de relance. Publicado completo no <a href="../../../kubernetes/glosario/">glossário do site</a> (em espanhol).</p>
+</article>
+<article class="tarjeta">
+<span class="num">Apêndice B</span>
+<h3>O sistema completo</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Tudo o que foi construído capítulo a capítulo, junto e em ordem de aplicação: mais de seiscentas linhas de YAML que não se digitam a partir de uma folha de papel, porque vivem no <a href="/pt/go/github/" rel="noopener">repositório de código</a>.</p>
+</article>
+<article class="tarjeta">
+<span class="num">Apêndice C</span>
+<h3>Desde quando funciona cada peça</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Capítulo a capítulo, quais funcionalidades o livro data e desde qual versão elas existem, para conferir de relance se o que você lê continua valendo no seu cluster. Tudo referido ao Kubernetes 1.37.</p>
+</article>
+<article class="tarjeta">
+<span class="num">Apêndice D</span>
+<h3>O cluster por dentro</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">A casa de máquinas, no final e não no começo: o etcd, o controller-manager, o cloud-controller-manager, como os contêineres são executados de verdade — CRI, runtimes e OCI — e os Leases. É o único apêndice com laboratório próprio, sobre um cluster kubeadm de verdade.</p>
+<ul class="etqs" style="margin:14px 0 0"><li><span class="etq etq-lab">Laboratório prático</span></li></ul>
+</article>
+<article class="tarjeta">
+<span class="num">Apêndice E</span>
+<h3>Colinha de kubectl</h3>
+<p class="suave" style="margin:10px 0 0;font-size:15px">Toda a referência de comandos, ordenada pelo que você quer fazer e não por verbo: situar-se, olhar o cluster, olhar dentro de um Pod, mudar à mão, mudar com arquivos, nós e manutenção, permissões e auditoria, e Helm.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-incluido">
+<div class="contenedor">
+<p class="eyebrow">Incluído com o livro</p>
+<h2 id="t-incluido">A parte prática: 55 laboratórios em 15 módulos</h2>
+<div class="estrecho" style="margin-top:20px">
+<p><strong>15 módulos, 53 unidades e 7 <em>challenges</em></strong>: tutoriais passo a passo com o YAML explicado, e <em>challenges</em> em que entregam a você um cluster com algo quebrado e você tem que consertá-lo.</p>
+<p style="margin:0">Um <strong>cluster de Kubernetes real no navegador</strong>, pronto em segundos. Sem instalar nada, sem configurar nada e sem custo adicional. A parte prática é <strong>pública e gratuita</strong>: não há código, nem cupom, nem nada para validar. Não é preciso ter o livro para começar: os laboratórios se explicam sozinhos. O que o livro acrescenta é o porquê — de onde sai cada decisão e o que falha em silêncio quando você não a toma — mais os 54 diagramas e os cinco apêndices, que não cabem em um terminal.</p>
+<div class="botonera" style="margin:22px 0 0"><a class="btn btn-sec" href="pratica/" data-evento="practica-desde-ficha">Ver a parte prática</a></div>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-diagramas">
+<div class="contenedor">
+<p class="eyebrow">Uma olhada por dentro</p>
+<h2 id="t-diagramas">Diagramas do livro</h2>
+<p class="estrecho suave" style="margin:16px 0 28px">Cada conceito é explicado com um diagrama que mostra quem faz o quê e por quê. Seis dos cinquenta e quatro que você vai encontrar lá dentro; clique em qualquer um para vê-lo em tamanho completo.</p>
+<div data-carrusel="carrossel de diagramas" role="group" aria-roledescription="carrossel" aria-label="Diagramas do livro Kubernetes 101">
+<ul class="carrusel" tabindex="0" aria-label="Diagramas do livro. Use as setas para a esquerda e para a direita para mudar de diagrama.">
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/pt/diagrams/01-cluster-architecture.png" target="_blank" rel="noopener" title="Abrir o diagrama em tamanho completo"><img width="1200" height="1419" loading="lazy" src="../../../media/pt/diagrams/01-cluster-architecture.png" alt="Diagrama da arquitetura de um cluster: à esquerda o control plane com kube-apiserver, etcd, kube-scheduler e kube-controller-manager; à direita os nós worker com kubelet, kube-proxy e o runtime de contêineres. Todas as setas dos nós apontam para o kube-apiserver, e só o kube-apiserver fala com o etcd."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Fundamentos · diagrama 1 de 6</p>
+<h3>Arquitetura do cluster</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Control plane e nós worker: quem fala com quem, e por que o kube-apiserver é o único portão de entrada para o etcd.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/pt/diagrams/15-deployment-replicaset-pods.png" target="_blank" rel="noopener" title="Abrir o diagrama em tamanho completo"><img width="1200" height="1094" src="../../../media/pt/diagrams/15-deployment-replicaset-pods.png" alt="Diagrama hierárquico: um Deployment em cima, embaixo dois ReplicaSets (a revisão antiga encolhendo até zero e a nova crescendo) e, sob cada um, seus Pods. As setas mostram o rolling update e a volta à revisão anterior." loading="lazy"></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Workloads · diagrama 2 de 6</p>
+<h3>Deployments, rollout e rollback</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Um Deployment gerencia um ReplicaSet por revisão: é assim que ele faz rolling updates e volta atrás sem downtime.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/pt/diagrams/24-service-types-routing.png" target="_blank" rel="noopener" title="Abrir o diagrama em tamanho completo"><img width="1200" height="1191" src="../../../media/pt/diagrams/24-service-types-routing.png" alt="Diagrama comparativo dos tipos de Service: ClusterIP, NodePort e LoadBalancer. Mostra o caminho do tráfego desde o exterior até os Pods, passando pelo kube-proxy e pelos EndpointSlices que indicam quais Pods estão prontos." loading="lazy"></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Rede · diagrama 3 de 6</p>
+<h3>Services e roteamento</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">ClusterIP, NodePort e LoadBalancer: como o tráfego chega aos Pods via kube-proxy e os EndpointSlices.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/pt/diagrams/38-taints-tolerations.png" target="_blank" rel="noopener" title="Abrir o diagrama em tamanho completo"><img width="1200" height="1411" src="../../../media/pt/diagrams/38-taints-tolerations.png" alt="Diagrama com vários nós marcados com taints e Pods com e sem tolerations. Indica o resultado de cada combinação segundo o efeito do taint: NoSchedule, PreferNoSchedule e NoExecute." loading="lazy"></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Scheduling · diagrama 4 de 6</p>
+<h3>Taints e tolerations</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Como dirigir Pods para — ou para longe de — certos nós, com os três efeitos possíveis de um taint.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/pt/diagrams/42-observability-architecture.png" target="_blank" rel="noopener" title="Abrir o diagrama em tamanho completo"><img width="1200" height="1369" src="../../../media/pt/diagrams/42-observability-architecture.png" alt="Diagrama da arquitetura de observabilidade: os Pods expõem métricas que o Prometheus recolhe em modo pull, os logs viajam em modo push para o Loki e os traces se agrupam em spans. Os três fluxos convergem no Grafana como camada de visualização." loading="lazy"></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Observabilidade · diagrama 5 de 6</p>
+<h3>Métricas, logs e traces</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Os três pilares são recolhidos separadamente e convergem no Grafana, com Prometheus, Loki e traces.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/pt/diagrams/50-reconciliation-loop.png" target="_blank" rel="noopener" title="Abrir o diagrama em tamanho completo"><img width="1200" height="1157" src="../../../media/pt/diagrams/50-reconciliation-loop.png" alt="Diagrama do loop de reconciliação de um operador: o watch avisa de uma mudança no recurso, o operador volta a ler o estado desejado e o real, age para aproximá-los e escreve o resultado no status. O aviso e a leitura do estado são duas setas distintas." loading="lazy"></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Extensibilidade · diagrama 6 de 6</p>
+<h3>O loop de reconciliação</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Por que um operador não age sobre o aviso, mas volta a ler: tanto faz se chegam dois avisos juntos ou se um se perde.</p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<div class="carrusel-ctrl">
+<button class="btn btn-sec btn-min" type="button" data-prev>← Anterior</button>
+<button class="btn btn-sec btn-min" type="button" data-next>Próximo →</button>
+<button class="btn btn-sec btn-min" type="button" data-pausa aria-pressed="false">‖ Pausar</button>
+<span class="dato" data-contador aria-live="polite">1 / 6</span>
+<span class="puntos"><button class="punto" type="button" aria-label="Ir ao diagrama 1" aria-current="true"></button><button class="punto" type="button" aria-label="Ir ao diagrama 2"></button><button class="punto" type="button" aria-label="Ir ao diagrama 3"></button><button class="punto" type="button" aria-label="Ir ao diagrama 4"></button><button class="punto" type="button" aria-label="Ir ao diagrama 5"></button><button class="punto" type="button" aria-label="Ir ao diagrama 6"></button></span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-preguntas">
+<div class="contenedor">
+<p class="eyebrow">Como se lê uma página</p>
+<h2 id="t-preguntas">239 perguntas, ao pé do YAML</h2>
+<p class="estrecho suave" style="margin:16px 0 28px">Quase todos os livros técnicos colocam o manifesto, explicam três campos e seguem em frente. Os outros nove ficam ali. Aqui, embaixo de cada manifesto vai o que a gente se pergunta ao lê-lo pela primeira vez, respondido: não um teste no final do capítulo, mas a resposta onde aparece a dúvida. Quatro páginas da edição impressa em espanhol, tal como saem da gráfica.</p>
+<div data-carrusel="carrossel de páginas do livro" role="group" aria-roledescription="carrossel">
+<ul class="carrusel" tabindex="0" aria-label="Páginas do livro com suas perguntas. Use as setas para a esquerda e para a direita para mudar de página.">
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/paginas/pagina-48.jpg" target="_blank" rel="noopener" title="Abrir a página em tamanho completo"><img width="1000" height="1454" loading="lazy" src="../../../media/paginas/pagina-48.jpg" alt="Página 48 da edição impressa em espanhol. Em cima, o final do manifesto YAML do Pod web. No meio, a explicação campo por campo: apiVersion, kind, metadata.name, metadata.namespace, metadata.labels, spec e spec.containers. Embaixo, três perguntas em negrito com sua resposta: por que apiVersion é v1 e não apps/v1, o que acontece se o namespace não é indicado, e se podem existir dois objetos com o mesmo name."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Capítulo 4 · Objetos do Kubernetes · página 48</p>
+<h3>O primeiro manifesto, linha a linha</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Doze linhas de YAML explicadas campo por campo, e depois três perguntas: <em>por que <code>apiVersion</code> é <code>v1</code> e não algo como <code>apps/v1</code>?</em> · <em>o que acontece se eu não indicar o <code>namespace</code>?</em> · <em>posso ter dois objetos com o mesmo <code>name</code>?</em></p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/paginas/pagina-49.jpg" target="_blank" rel="noopener" title="Abrir a página em tamanho completo"><img width="1000" height="1454" loading="lazy" src="../../../media/paginas/pagina-49.jpg" alt="Página 49 da edição impressa em espanhol. Em cima, duas perguntas com resposta sobre o status e os labels. Depois, a seção Namespaces, com os quatro Namespaces que o Kubernetes traz de fábrica, o manifesto YAML do Namespace tienda, e a pergunta de quais recursos não são namespaced."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Capítulo 4 · Objetos do Kubernetes · página 49</p>
+<h3>Namespaces, e o que eles não isolam</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">A que mais gente erra está nesta página: <em>os Namespaces isolam o tráfego de rede?</em> Não. Eles separam nomes e permissões, não pacotes; para isolar tráfego é preciso uma NetworkPolicy, que chega três capítulos depois.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/paginas/pagina-132.jpg" target="_blank" rel="noopener" title="Abrir a página em tamanho completo"><img width="1000" height="1454" loading="lazy" src="../../../media/paginas/pagina-132.jpg" alt="Página 132 da edição impressa em espanhol. Em cima, o final de um manifesto que reserva 2 CPU e 4 GiB. Depois, três perguntas com resposta sobre onde está o erro se o manifesto não dá nenhuma falha, por que importa se sobra espaço no cluster, e por que não consertar os números à mão. Embaixo, o manifesto YAML do VerticalPodAutoscaler do Deployment holgazan."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Capítulo 6 · Escalonamento · página 132</p>
+<h3>O manifesto que não dá nenhuma falha</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px">Pede 2&nbsp;CPU e 4&nbsp;GiB, e usa um décimo disso. Não há evento vermelho nem Pod em Pending: só um terço da cota do Namespace gasto em ar. É a falha mais cara do Kubernetes justamente porque não se parece com uma falha.</p>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure style="margin:0">
+<div class="diagrama"><a href="../../../media/paginas/pagina-261.jpg" target="_blank" rel="noopener" title="Abrir a página em tamanho completo"><img width="1000" height="1454" loading="lazy" src="../../../media/paginas/pagina-261.jpg" alt="Página 261 da edição impressa em espanhol. Manifesto YAML de um PodDisruptionBudget para o Deployment web, seguido de duas perguntas com resposta: por que o PDB não é declarado dentro do Deployment, e o que acontece se minAvailable é colocado igual ao número de réplicas."></a></div>
+<figcaption class="pie-diagrama">
+<p class="eyebrow" style="margin:0 0 6px">Capítulo 12 · Scheduling · página 261</p>
+<h3>A proteção que bloqueia a manutenção</h3>
+<p class="suave" style="margin:6px 0 0;font-size:15px"><em>O que acontece se eu colocar <code>minAvailable: 3</code> com só 3 réplicas?</em> Você bloqueia qualquer despejo voluntário, inclusive a drenagem de nós, e acaba com atualizações de cluster travadas.</p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<div class="carrusel-ctrl">
+<button class="btn btn-sec btn-min" type="button" data-prev>← Anterior</button>
+<button class="btn btn-sec btn-min" type="button" data-next>Próximo →</button>
+<button class="btn btn-sec btn-min" type="button" data-pausa aria-pressed="false">‖ Pausar</button>
+<span class="dato" data-contador aria-live="polite">1 / 4</span>
+<span class="puntos"><button class="punto" type="button" aria-label="Ir à página 1" aria-current="true"></button><button class="punto" type="button" aria-label="Ir à página 2"></button><button class="punto" type="button" aria-label="Ir à página 3"></button><button class="punto" type="button" aria-label="Ir à página 4"></button></span>
+</div>
+</div>
+<p class="suave" style="margin:26px 0 0;font-size:15px">O capítulo de Workloads tem 45 perguntas e o de Segurança, 42. As 239 estão distribuídas pelos quinze capítulos, sempre coladas ao manifesto que as provoca.</p>
+</div>
+</section>
+<section class="seccion" aria-labelledby="t-pasos">
+<div class="contenedor">
+<p class="eyebrow">A parte prática</p>
+<h2 id="t-pasos">Como funcionam os laboratórios</h2>
+<ol class="rejilla-3" style="list-style:none;padding:0;margin:28px 0 0">
+<li class="tarjeta"><span class="num">Passo 1</span><h3>Leia o capítulo</h3><p class="suave" style="margin:8px 0 0;font-size:15px">O conceito explicado com seu diagrama e seus exemplos, sem dar nada por sabido.</p></li>
+<li class="tarjeta"><span class="num">Passo 2</span><h3>Abra o laboratório</h3><p class="suave" style="margin:8px 0 0;font-size:15px">Um cluster real no navegador, pronto em segundos. Nada para instalar na sua máquina.</p></li>
+<li class="tarjeta"><span class="num">Passo 3</span><h3>Conserte o cluster quebrado</h3><p class="suave" style="margin:8px 0 0;font-size:15px">Você diagnostica, repara, e o laboratório verifica a sua solução. Você aprende fazendo, não memorizando.</p></li>
+</ol>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-componentes">
+<div class="contenedor">
+<p class="eyebrow">Um respiro</p>
+<h2 id="t-componentes">O que dizem os componentes do cluster</h2>
+<p class="estrecho suave" style="margin:16px 0 28px">Aqui não há resenhas: quem assina são os componentes do Kubernetes, que há anos aguentam o que não é pouco. É uma brincadeira, mas cada queixa é verdadeira.</p>
+<div data-carrusel="carrossel de citações" role="group" aria-roledescription="carrossel" aria-label="Citações dos componentes do cluster">
+<ul class="carrusel carrusel-citas" tabindex="0" aria-label="Citações dos componentes do cluster. Use as setas para a esquerda e para a direita para mudar de citação.">
+<li>
+<figure class="tarjeta" style="margin:0">
+<blockquote style="margin:0;font-size:16px">“Há anos sou o único portão para o etcd e ninguém me entendia. Depois deste livro, até os Pods novos sabem me pedir as coisas pelo nome.”</blockquote>
+<figcaption class="m" style="margin-top:14px;font-size:12.5px;color:var(--acento-claro)">kube-apiserver, guardião do cluster</figcaption>
+</figure>
+</li>
+<li>
+<figure class="tarjeta" style="margin:0">
+<blockquote style="margin:0;font-size:16px">“Eu guardo tudo, mas explicar o consenso Raft era impossível. O capítulo de fundamentos finalmente conta a minha história sem perder um único dado.”</blockquote>
+<figcaption class="m" style="margin-top:14px;font-size:12.5px;color:var(--acento-claro)">etcd, memória do cluster</figcaption>
+</figure>
+</li>
+<li>
+<figure class="tarjeta" style="margin:0">
+<blockquote style="margin:0;font-size:16px">“Antes eu colocava Pods às cegas e me culpavam por tudo. Agora os leitores entendem minhas afinidades, taints e tolerations… e até o desafio de me desligar.”</blockquote>
+<figcaption class="m" style="margin-top:14px;font-size:12.5px;color:var(--acento-claro)">kube-scheduler, quem decide onde você mora</figcaption>
+</figure>
+</li>
+<li>
+<figure class="tarjeta" style="margin:0">
+<blockquote style="margin:0;font-size:16px">“Reinicio contêineres a noite inteira sem que ninguém me agradeça. Este livro explica minhas probes tão bem que agora me tratam melhor.”</blockquote>
+<figcaption class="m" style="margin-top:14px;font-size:12.5px;color:var(--acento-claro)">kubelet, vigia de cada nó</figcaption>
+</figure>
+</li>
+<li>
+<figure class="tarjeta" style="margin:0">
+<blockquote style="margin:0;font-size:16px">“Traduzir nomes de Services em IPs era a minha cruz silenciosa. Com o capítulo de rede, finalmente resolvem as minhas dúvidas antes que eu resolva as deles.”</blockquote>
+<figcaption class="m" style="margin-top:14px;font-size:12.5px;color:var(--acento-claro)">CoreDNS, a agenda do cluster</figcaption>
+</figure>
+</li>
+</ul>
+<div class="carrusel-ctrl">
+<button class="btn btn-sec btn-min" type="button" data-prev>← Anterior</button>
+<button class="btn btn-sec btn-min" type="button" data-next>Próximo →</button>
+<button class="btn btn-sec btn-min" type="button" data-pausa aria-pressed="false">‖ Pausar</button>
+<span class="dato" data-contador aria-live="polite">1 / 5</span>
+<span class="puntos"><button class="punto" type="button" aria-label="Ir à citação 1" aria-current="true"></button><button class="punto" type="button" aria-label="Ir à citação 2"></button><button class="punto" type="button" aria-label="Ir à citação 3"></button><button class="punto" type="button" aria-label="Ir à citação 4"></button><button class="punto" type="button" aria-label="Ir à citação 5"></button></span>
+</div>
+</div>
+</div>
+</section>
+
+<section class="seccion" id="suscripcion" aria-labelledby="t-suscripcion">
+<div class="contenedor">
+<p class="eyebrow">Grátis, agora</p>
+<h2 id="t-suscripcion">Baixe o início do livro</h2>
+<div style="display:grid;grid-template-columns:1fr minmax(280px,460px);gap:40px;align-items:start;margin-top:24px" class="susc">
+<div>
+<p>Assine o blog e receba <strong>o início do livro</strong> completo: “Antes de começar”, o capítulo de <strong>Arquitetura do Kubernetes</strong> e o <strong>Apêndice D: o cluster por dentro</strong>.</p>
+<p>Trinta e uma páginas e os oito diagramas, tal como aparecem no livro (por enquanto, as páginas da edição em espanhol; o PDF em português vai substituí-las). Não é uma prévia recortada: é por onde se começa a lê-lo e onde se termina de entender a casa de máquinas.</p>
+<p style="margin:0">É a forma mais honesta de saber se o livro serve para você antes de pagar qualquer coisa.</p>
+</div>
+<div>
+<iframe src="https://blog.javivela.dev/embed" title="Formulário de assinatura do blog de Javier Vela" width="480" height="320" frameborder="0" scrolling="no" loading="lazy" style="border:1px solid #EEE;background:white;max-width:100%"></iframe>
+<p class="dato" style="margin:12px 0 0">Se o formulário não carregar, assine em <a href="https://blog.javivela.dev/subscribe" rel="noopener">blog.javivela.dev</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-faq">
+<div class="contenedor">
+<p class="eyebrow">Antes de começar</p>
+<h2 id="t-faq">Perguntas frequentes</h2>
+<div style="margin-top:28px;max-width:80ch">
+<div class="faq-item" data-faq>
+<h3 style="margin:0"><button class="faq-b" type="button" id="faq-b0" aria-expanded="true" aria-controls="faq-p0"><span>Preciso saber Docker ou contêineres para começar?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
+<p class="faq-p" id="faq-p0" role="region" aria-labelledby="faq-b0">Não. O livro começa pelos fundamentos de contêineres e orquestração antes de tocar no Kubernetes, e não dá nada por sabido.</p>
+</div>
+<div class="faq-item" data-faq>
+<h3 style="margin:0"><button class="faq-b" type="button" id="faq-b1" aria-expanded="true" aria-controls="faq-p1"><span>Tenho que instalar algo para fazer os laboratórios?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
+<p class="faq-p" id="faq-p1" role="region" aria-labelledby="faq-b1">Nada. Cada laboratório sobe um cluster de Kubernetes real no navegador; você só precisa de conexão e de uma conta no iximiuz Labs.</p>
+</div>
+<div class="faq-item" data-faq>
+<h3 style="margin:0"><button class="faq-b" type="button" id="faq-b2" aria-expanded="true" aria-controls="faq-p2"><span>Já trabalho com Kubernetes. Ele me serve?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
+<p class="faq-p" id="faq-p2" role="region" aria-labelledby="faq-b2">Sim. Ele foi pensado também para quem usa a tecnologia todo dia e quer entender de verdade o que acontece por baixo, com os diagramas e os challenges como rede de segurança.</p>
+</div>
+<div class="faq-item" data-faq>
+<h3 style="margin:0"><button class="faq-b" type="button" id="faq-b3" aria-expanded="true" aria-controls="faq-p3"><span>Impresso ou digital?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
+<p class="faq-p" id="faq-p3" role="region" aria-labelledby="faq-b3">Os dois. A parte prática é a mesma em qualquer um dos dois formatos, e além disso é de acesso público: você pode abrir <a href="pratica/">o guia da parte prática</a> sem ter o livro. Há uma diferença por país: o Kindle está na Amazon.com.br, na Amazon.com e na Amazon.es, e o livro impresso só na Amazon.com e na Amazon.es, porque a Amazon não imprime sob demanda no Brasil. Do Brasil, o impresso se pede na Amazon.com com envio internacional; de Portugal, na Amazon.es.</p>
+</div>
+<div class="faq-item" data-faq>
+<h3 style="margin:0"><button class="faq-b" type="button" id="faq-b4" aria-expanded="true" aria-controls="faq-p4"><span>Os laboratórios são pagos à parte?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
+<p class="faq-p" id="faq-p4" role="region" aria-labelledby="faq-b4">Não. A parte prática é de acesso público e gratuito, e não exige nenhuma compra adicional. Ela está hospedada no iximiuz Labs.</p>
+</div>
+<div class="faq-item" data-faq>
+<h3 style="margin:0"><button class="faq-b" type="button" id="faq-b5" aria-expanded="true" aria-controls="faq-p5"><span>Todo o conteúdo programático está no livro?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
+<p class="faq-p" id="faq-p5" role="region" aria-labelledby="faq-b5">Os 15 capítulos e os 5 apêndices, sim. Só há um bloco que existe unicamente como laboratório e não tem capítulo: o desafio final, e ele está marcado no conteúdo. A extensibilidade tem capítulo, sim, o 14: o livro define o CRD e explica o que faz um operador; o laboratório é onde você o escreve inteiro, em Go.</p>
+</div>
+<div class="faq-item" data-faq>
+<h3 style="margin:0"><button class="faq-b" type="button" id="faq-b6" aria-expanded="true" aria-controls="faq-p6"><span>Qual versão do Kubernetes o livro usa?</span><span class="faq-ico" aria-hidden="true">−</span></button></h3>
+<p class="faq-p" id="faq-p6" role="region" aria-labelledby="faq-b6">O livro é a edição 1.37. O Kubernetes publica três versões por ano, então nenhum livro vai estar nunca na última: por isso ele inclui o Apêndice C, que registra capítulo a capítulo o estado de cada funcionalidade e desde qual versão ela existe, para que você possa conferir de relance se o que está lendo continua valendo no seu cluster. O que a 1.37 traz está resumido em <a href="../../../kubernetes/novedades-1-37/">novidades do Kubernetes 1.37</a> (em espanhol), e as correções posteriores são publicadas na <a href="errata/">página de errata</a>.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-autor">
+<div class="contenedor">
+<p class="eyebrow">Sobre o autor</p>
+<h2 id="t-autor">Javier Vela Aylón</h2>
+<div class="estrecho" style="margin-top:20px">
+<p>Desenvolvedor .NET que virou <strong>Senior Software &amp; Platform Engineer</strong>, com mais de 20 anos construindo e mantendo plataformas. Certificado em Azure e no ecossistema CNCF, e palestrante na DotNetters.</p>
+<p style="margin:0 0 20px">Escrevo sobre DevOps, Azure, AWS, CI/CD, Kubernetes, contêineres e arquitetura em <a href="https://blog.javivela.dev" rel="me noopener">blog.javivela.dev</a>.</p>
+</div>
+<div class="botonera" style="margin:0">
+<a class="btn btn-sec btn-min" href="https://www.linkedin.com/in/javiervelaaylon/" rel="me noopener">LinkedIn</a>
+<a class="btn btn-sec btn-min" href="https://github.com/fjvela" rel="me noopener">GitHub</a>
+<a class="btn btn-sec btn-min" href="https://x.com/jvela" rel="me noopener">@jvela</a>
+</div>
+</div>
+</section>
+
+<section class="seccion" aria-labelledby="t-codigo">
+<div class="contenedor">
+<p class="eyebrow">Código</p>
+<h2 id="t-codigo">Todos os manifestos do livro, no GitHub</h2>
+<div class="estrecho" style="margin-top:20px">
+<p>O repositório reúne os YAML, os exemplos e o operador em Go tal como aparecem nos capítulos e nos laboratórios. Clone-o, quebre-o e mande um pull request se encontrar algo para melhorar.</p>
+</div>
+<div class="botonera" style="margin:20px 0 0">
+<a class="btn" href="/pt/go/github/" rel="noopener">Ver o repositório no GitHub</a>
+<a class="btn btn-sec" href="pratica/">Parte prática</a>
+<a class="btn btn-sec" href="errata/">Errata do livro</a>
+<a class="btn btn-sec" href="../../../libros/kubernetes-101/bibliografia/">Bibliografia (em espanhol)</a>
+</div>
+</div>
+</section>
+<section class="seccion" id="cierre" aria-labelledby="t-cierre">
+<div class="contenedor">
+<div class="cierre-caja">
+<p class="eyebrow">Kubernetes 101</p>
+<h2 id="t-cierre">De um Pod avulso a um sistema que você entende</h2>
+<p class="estrecho" style="margin:16px 0 24px">{{ edition.pages }} páginas, 15 capítulos, 5 apêndices e 55 laboratórios em um cluster real. Baseado no Kubernetes 1.37, a versão de referência do livro.</p>
+<div class="botonera" style="margin:0 0 14px">
+<a class="btn" href="/pt/go/kindle-br/" target="_blank" rel="noopener" data-evento="compra-kindle-cierre">Comprar no Kindle · {{ edition.formats[0].price_label }}</a>
+<a class="btn btn-sec" href="#suscripcion" data-evento="capitulo-gratis-cierre">Ler grátis o início do livro</a>
+</div>
+{% set pos = "cierre" %}{% include "partials/compra.njk" %}
+</div>
+</div>
+</section>
+</main>
+<script>
+(function () {
+  "use strict";
+  /* ---- FAQ: sem JS fica aberta; o script a recolhe ---- */
+  var items = document.querySelectorAll("[data-faq]");
+  for (var n = 0; n < items.length; n++) (function (item) {
+    var b = item.querySelector(".faq-b"), p = item.querySelector(".faq-p"), ico = item.querySelector(".faq-ico");
+    if (!b || !p) return;
+    b.setAttribute("aria-expanded", "false");
+    p.hidden = true;
+    if (ico) ico.textContent = "+";
+    b.addEventListener("click", function () {
+      var abierto = b.getAttribute("aria-expanded") === "true";
+      b.setAttribute("aria-expanded", abierto ? "false" : "true");
+      p.hidden = abierto;
+      if (ico) ico.textContent = abierto ? "+" : "\u2212";
+    });
+  })(items[n]);
+
+  /* ---- Carrossel: sem JS é uma lista vertical ---- */
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var cajas = document.querySelectorAll("[data-carrusel]");
+
+  for (var c = 0; c < cajas.length; c++) (function (caja) {
+    var track = caja.querySelector(".carrusel");
+    if (!track) return;
+    var slides = Array.prototype.slice.call(track.children);
+    var dots = Array.prototype.slice.call(caja.querySelectorAll(".punto"));
+    var btnPausa = caja.querySelector("[data-pausa]");
+    var contador = caja.querySelector("[data-contador]");
+    var nombre = caja.getAttribute("data-carrusel") || "carrossel";
+    var i = 0, timer = null, reproduciendo = !reduce, suspendido = false;
+
+    function sync() {
+      for (var k = 0; k < dots.length; k++) dots[k].setAttribute("aria-current", k === i ? "true" : "false");
+      if (contador) contador.textContent = (i + 1) + " / " + slides.length;
+    }
+    function ir(n, animar) {
+      i = (n + slides.length) % slides.length;
+      track.scrollTo({ left: slides[i].offsetLeft - slides[0].offsetLeft, behavior: (animar === false || reduce) ? "auto" : "smooth" });
+      sync();
+    }
+    function arrancar() { if (timer) clearInterval(timer); timer = setInterval(function () { if (reproduciendo && !suspendido) ir(i + 1); }, 6500); }
+    function estadoBoton() {
+      if (!btnPausa) return;
+      btnPausa.setAttribute("aria-pressed", reproduciendo ? "false" : "true");
+      btnPausa.textContent = reproduciendo ? "\u2016 Pausar" : "\u25B6 Reproduzir";
+      btnPausa.setAttribute("aria-label", (reproduciendo ? "Pausar o " : "Reproduzir o ") + nombre);
+    }
+
+    for (var d = 0; d < dots.length; d++) (function (dot, k) {
+      dot.addEventListener("click", function () { reproduciendo = false; estadoBoton(); ir(k); });
+    })(dots[d], d);
+
+    var prev = caja.querySelector("[data-prev]"), next = caja.querySelector("[data-next]");
+    if (prev) prev.addEventListener("click", function () { reproduciendo = false; estadoBoton(); ir(i - 1); });
+    if (next) next.addEventListener("click", function () { reproduciendo = false; estadoBoton(); ir(i + 1); });
+    if (btnPausa) btnPausa.addEventListener("click", function () { reproduciendo = !reproduciendo; estadoBoton(); });
+
+    track.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") { e.preventDefault(); reproduciendo = false; estadoBoton(); ir(i + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); reproduciendo = false; estadoBoton(); ir(i - 1); }
+    });
+    caja.addEventListener("mouseenter", function () { suspendido = true; });
+    caja.addEventListener("mouseleave", function () { suspendido = false; });
+    caja.addEventListener("focusin", function () { suspendido = true; });
+    caja.addEventListener("focusout", function () { suspendido = false; });
+
+    var t = null;
+    track.addEventListener("scroll", function () {
+      if (t) clearTimeout(t);
+      t = setTimeout(function () {
+        var centro = track.scrollLeft + track.clientWidth / 2, cerca = 0, min = Infinity;
+        for (var k = 0; k < slides.length; k++) {
+          var x = slides[k].offsetLeft - slides[0].offsetLeft + slides[k].clientWidth / 2;
+          if (Math.abs(x - centro) < min) { min = Math.abs(x - centro); cerca = k; }
+        }
+        i = cerca; sync();
+      }, 120);
+    }, { passive: true });
+
+    estadoBoton();
+    sync();
+    arrancar();
+  })(cajas[c]);
+})();
+</script>
+<div class="barra" id="barra-compra" aria-hidden="true">
+<span class="m">Kindle {{ edition.formats[0].price_label }} · impresso {{ edition.formats[1].price_label }}</span>
+<a class="btn btn-min" href="/pt/go/kindle-br/" target="_blank" rel="noopener" data-evento="compra-kindle-barra">Comprar</a>
+</div>
+<script>
+/* Barra de compra fixa no celular: aparece ao passar o hero e desaparece
+   quando o CTA de fechamento já está na tela, para não duplicar o botão. */
+(function () {
+  var b = document.getElementById("barra-compra");
+  var cierre = document.getElementById("cierre");
+  if (!b) return;
+  function upd() {
+    var pasado = window.scrollY > 640;
+    var finVisible = cierre && cierre.getBoundingClientRect().top < window.innerHeight;
+    var ver = pasado && !finVisible;
+    b.classList.toggle("visible", ver);
+    b.setAttribute("aria-hidden", ver ? "false" : "true");
+    document.body.classList.toggle("con-barra", ver);
+  }
+  window.addEventListener("scroll", upd, { passive: true });
+  window.addEventListener("resize", upd, { passive: true });
+  upd();
+})();
+</script>
