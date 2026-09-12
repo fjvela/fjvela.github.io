@@ -1,0 +1,51 @@
+# English edition of Kubernetes 101. Same schema as es.yaml.
+# PENDIENTE = not known yet (KDP assigns ISBN/ASIN and prices on publication).
+# The linter refuses to set the language live while any PENDIENTE remains.
+lang: en
+title: Kubernetes 101
+headline: The practical guide to understanding Kubernetes from scratch
+ld_description: "A practical guide to learning Kubernetes from scratch, with 15 chapters, 5 appendices and a hands-on part of 55 labs in 15 modules, hosted on iximiuz Labs."
+edition_label: "2026 edition · Kubernetes 1.37"
+isbn: "PENDIENTE"
+pages: 367            # 373 sheets in build/kubernetes-101.en-print.pdf minus the 6 front-matter sheets; confirm on the final layout
+published: "PENDIENTE"
+status: preorder      # preorder | live
+availability: PreOrder
+price_valid_until: "2027-12-31"
+genre: Computers
+about: [Kubernetes, Containers, DevOps]
+cover: portada-kubernetes-101.png   # PENDIENTE: Spanish cover as placeholder until the English cover exists (books/kubernetes-101.en/covers/)
+labs_course: kubernetes-101-975b3f87
+
+# KDP paperback marketplaces: .com, .co.uk, .de, .fr, .es, .it, .nl, .pl,
+# .se, .co.jp, .ca, .com.au, .ie, .com.be (NOTAS-PUBLICACION.md).
+formats:
+  - id: kindle
+    slug: kindle
+    evento: compra
+    ld_id: kindle
+    ld_format: EBook
+    name: "Kubernetes 101 · Kindle edition"
+    label: Kindle
+    price_label: "PENDIENTE"
+    asin: PENDIENTE
+    markets:
+      - { id: com, label: "United States & worldwide", domain: amazon.com, price: "PENDIENTE", currency: USD, seller: Amazon.com }
+      - { id: uk, label: "United Kingdom", domain: amazon.co.uk }
+  - id: paperback
+    slug: paperback
+    evento: compra-papel
+    ld_id: papel
+    ld_format: Paperback
+    name: "Kubernetes 101 · Paperback"
+    label: Paperback
+    price_label: "PENDIENTE"
+    asin: PENDIENTE
+    markets:
+      - { id: com, label: "United States & worldwide", domain: amazon.com, price: "PENDIENTE", currency: USD, seller: Amazon.com }
+      - { id: uk, label: "United Kingdom", domain: amazon.co.uk }
+
+puentes:
+  - { id: github, url: "https://github.com/fjvela/kubernetes-101", abriendo: github, volver: book }
+  - { id: substack, url: "https://blog.javivela.dev/subscribe", abriendo: substack, volver: book }
+  - { id: labs, url: "https://labs.iximiuz.com/signup?referral=6a817bab02dbaa512df09237", abriendo: labs, volver: practice }

@@ -1,0 +1,50 @@
+# Interface strings, English edition. Same keys as es.yaml.
+code: en
+locale: en_US
+label: English
+prefix: "/en"
+go_prefix: go       # bridge pages: /en/go/kindle-com/
+
+# draft: builds under /en/ for review but is not announced (no hreflang,
+# selector, sitemap, banner or 404 section). Switch to live when the
+# English edition is on sale and data/editions/en.yaml has no PENDIENTE.
+status: draft
+
+saltar: Skip to content
+marca: javivela.dev
+nav_label: Main navigation
+
+nav:
+  - { key: book, label: The book }
+  - { key: glossary, label: Glossary }
+  - { key: whats-new-1-37, label: Kubernetes 1.37 }
+  - { label: Blog, url: "https://blog.javivela.dev", rel: me noopener }
+  - { label: GitHub, url: "https://github.com/fjvela", rel: me noopener }
+
+pie:
+  copyright: "© 2026 Javier Vela Aylón · www.javivela.dev"
+  enlaces:
+    - { key: book, label: Kubernetes 101 }
+    - { key: glossary, label: Glossary }
+    - { key: errata, label: Errata }
+    - { key: bibliography, label: Bibliography }
+    - { label: "@jvela", url: "https://x.com/jvela", rel: me noopener }
+
+compra:
+  comprar_en: buy on
+
+puente:
+  abriendo:
+    amazon: Opening Amazon…
+    github: Opening GitHub…
+    substack: Opening the subscription page…
+    labs: Opening iximiuz Labs…
+  pulsa: If it doesn't open by itself, click here
+  volver:
+    book: Back to the book page
+    practice: Back to the hands-on part
+
+idiomas_label: Language
+banner:
+  texto: This page is available in English
+  cerrar: Close

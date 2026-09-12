@@ -26,8 +26,12 @@ i18n/<lang>.yaml              textos de interfaz: nav, pie, puentes, botones
 data/editions/<lang>.yaml     la edición del libro: ISBN, ASIN, precios, mercados, labs
 _data/site.yaml               dominio, autor, redes, token de Cloudflare
 media/, favicon*, robots.txt  se copian tal cual a _site/
-scripts/check-i18n.mjs        linter (CI): imágenes, dimensiones, keys, traducciones
+scripts/check-i18n.mjs        linter (CI): imágenes, enlaces, hreflang, keys, traducciones
 scripts/i18n-status.mjs       qué traducciones están obsoletas (translated_from)
+tools/og/render.mjs           genera las OG de un idioma (textos en tools/og/og.yaml)
+tools/diagramas.sh            copia los diagramas traducidos del repo books a media/<lang>/
+i18n/README.md                runbook «añadir el idioma N» y tabla de slugs
+i18n/TRADUCCION.md            reglas para traducir una página
 ```
 
 ## Una página

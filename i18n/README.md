@@ -39,11 +39,16 @@ impresos en cada edición del libro, así que no se cambian):
    (`erratas/`, `practica/`) pasan a sus slugs traducidos. `make check`
    falla por cada enlace o imagen que no exista, así que no hace falta
    revisarlos a ojo.
-5. **Imágenes** en `media/<lang>/`, **mismos nombres y mismas dimensiones**
-   que en `media/es/`: `og-home.png`, `og-book.png`, `og-glossary.png`,
-   `og-whats-new-1-37.png`, `og-errata.png`, `og-practice.png` (1200×630) y
-   `diagrams/*.png` (los del repo `books`, ya traducidos). La portada de la
-   edición va en `media/` con su propio nombre y se declara en `cover:`.
+5. **Imágenes** en `media/<lang>/`, con los mismos nombres que en `media/es/`:
+   - OG (1200×630): textos en `tools/og/og.yaml` y
+     `NODE_PATH=<node_modules con playwright> node tools/og/render.mjs <lang>`.
+   - Diagramas: `tools/diagramas.sh <lang>` los copia del repo `books`
+     (ya traducidos) a 1200 px de ancho. Si la altura de alguno no coincide
+     con la española, se ajusta el `height` del `<img>` en la ficha: el
+     linter compara los atributos con el fichero real.
+   - La portada de la edición va en `media/` con su propio nombre y se
+     declara en `cover:` (hasta que exista, la española como marcador).
+   Cómo traducir cada página: `i18n/TRADUCCION.md`.
 6. `make check` en verde y `make status` sin obsoletas.
 7. **`status: live`** en `i18n/<lang>.yaml`. Con eso aparecen solos el
    selector en nav y pie, los `hreflang`, los `og:locale:alternate`, las
