@@ -4,10 +4,17 @@ layout: false
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{%- for p in collections.all | sort(false, false, "url") %}{% if p.data.sitemap %}
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for p in collections.all | sort(false, false, "url") %}{% if p.data.sitemap and (p.data.lang in idiomas.live) %}
+{%- set alts = collections.routes | alternates(p.data.key, idiomas.live) %}
   <url>
     <loc>{{ site.url }}{{ p.url }}</loc>
+{%- if alts.length > 1 %}
+{%- for a in alts %}
+    <xhtml:link rel="alternate" hreflang="{{ a.lang }}" href="{{ site.url }}{{ a.url }}"/>
+{%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ collections.routes | xdefault(p.data.key, site.default_lang) }}"/>
+{%- endif %}
     <lastmod>{{ p.data.sitemap.lastmod }}</lastmod>
     <changefreq>{{ p.data.sitemap.changefreq }}</changefreq>
     <priority>{{ p.data.sitemap.priority }}</priority>

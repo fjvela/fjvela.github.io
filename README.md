@@ -69,8 +69,25 @@ mismo fichero: **un precio o un ASIN se cambia en un solo sitio**.
    (el commit del español del que viene).
 4. `make check` y `make status`.
 
-hreflang, selector de idioma, sitemap con alternates y el 404 por idioma
-son la fase 2 (ver `OPCIONES-I18N.md`, no versionado).
+Con `status: live` en su `i18n/<lang>.yaml`, el idioma aparece solo en el
+selector (nav y pie), en los `hreflang` y `og:locale:alternate`, en el
+sitemap con alternates, en el 404 (una `<section data-lang>` por idioma) y
+en el banner «esta página está disponible en…», que nunca redirige. El
+runbook completo, con la tabla de slugs por idioma, está en
+[i18n/README.md](i18n/README.md).
+
+Una página que solo existe en un idioma no lleva `hreflang`; por eso con el
+español solo vivo la salida es la misma que antes.
+
+## Imágenes
+
+`media/` es neutro (portada, `icon-512.png`, fotos del libro impreso);
+`media/<lang>/` lleva las OG y los diagramas de ese idioma, con los mismos
+nombres en todos los idiomas para que el linter compare dimensiones.
+Las rutas antiguas (`media/og-*.png`, `media/diagramas/`) se conservan hasta
+el **1 de noviembre de 2026** porque LinkedIn, X y WhatsApp vuelven a pedir la
+OG por su URL al compartir un enlace ya publicado; el linter avisa cuando
+toca borrarlas.
 
 ## Qué cambió respecto al HTML a mano (septiembre de 2026)
 
@@ -83,4 +100,9 @@ son la fase 2 (ver `OPCIONES-I18N.md`, no versionado).
   Comprobado con Playwright que los estilos computados de cada elemento son
   idénticos a 1280, 700 y 400 px.
 - En la ficha, la barra de compra móvil va antes del pie (es `position:fixed`).
-- El `sitemap.xml` va ordenado por URL.
+- El `sitemap.xml` va ordenado por URL y declara el namespace `xhtml` para
+  los alternates.
+- Las OG y los diagramas se sirven desde `media/es/` con ids en inglés.
+- El 404 envuelve su cuerpo en `<section data-lang="es">` y su script
+  cambia de sección según el prefijo de la URL.
+- `base.css` gana las reglas del selector de idioma y del banner.

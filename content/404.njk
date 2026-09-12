@@ -1,0 +1,42 @@
+---
+# GitHub Pages sirve un solo 404.html para cualquier ruta, así que esta
+# página lleva una <section> por idioma vivo (el fragmento content/<lang>/404.html)
+# y un script que muestra la que corresponde al prefijo de la URL pedida.
+# El <head> va en el idioma base; la página es noindex, así que depender de
+# JavaScript aquí no cuesta SEO.
+permalink: /404.html
+lang: es
+head: minimo
+base: "/"
+title: "Página no encontrada (404) — javivela.dev"
+description: "La página que buscas no existe en javivela.dev. Vuelve al inicio, a la landing de Kubernetes 101 o al glosario de Kubernetes en español."
+robots: "noindex, follow"
+css_base: false
+css: "404"
+eleventyExcludeFromCollections: true
+---
+<main id="contenido">
+{%- for code in idiomas.live %}
+{%- set frag = collections.all | pagina("404", code) %}
+{%- if frag %}
+<section data-lang="{{ code }}" lang="{{ code }}"{% if code != site.default_lang %} hidden{% endif %}>
+{{ frag.templateContent | safe }}</section>
+{%- endif %}
+{%- endfor %}
+</main>
+<script>
+(function(){
+  "use strict";
+  var idiomas = {{ idiomas.live | dump | safe }};
+  var m = location.pathname.match(/^\/([a-z]{2})(\/|$)/);
+  var idioma = (m && idiomas.indexOf(m[1]) > -1) ? m[1] : "{{ site.default_lang }}";
+  var secciones = document.querySelectorAll("main > section[data-lang]");
+  for (var i = 0; i < secciones.length; i++) secciones[i].hidden = secciones[i].getAttribute("data-lang") !== idioma;
+  document.documentElement.lang = idioma;
+  var ruta = location.pathname + location.search;
+  if (!ruta || ruta === "/" || ruta.length > 120) return;
+  var a = document.querySelectorAll("[data-ruta]"), b = document.querySelectorAll("[data-ruta2]");
+  for (i = 0; i < a.length; i++) a[i].textContent = ruta;
+  for (i = 0; i < b.length; i++) b[i].textContent = ruta.replace(/^\//, "");
+})();
+</script>

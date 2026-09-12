@@ -8,6 +8,16 @@
 <meta name="description" content="{{ description | safe }}">
 {%- if head != "minimo" %}
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{#- hreflang solo si la página existe en dos o más idiomas vivos: recíproco,
+    autorreferencial y con x-default al idioma base. Lo genera routes, así
+    que no puede quedar sin retorno. #}
+{%- set alts = collections.routes | alternates(key, idiomas.live) %}
+{%- if alts.length > 1 %}
+{%- for a in alts %}
+<link rel="alternate" hreflang="{{ a.lang }}" href="{{ site.url }}{{ a.url }}">
+{%- endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ collections.routes | xdefault(key, site.default_lang) }}">
+{%- endif %}
 {%- endif %}
 <meta name="robots" content="{{ robots or 'index, follow, max-image-preview:large' }}">
 {%- if head == "minimo" %}
@@ -19,12 +29,15 @@
 {%- if head != "minimo" %}
 <meta property="og:site_name" content="{{ site.og_site_name }}">
 <meta property="og:locale" content="{{ t.locale }}">
+{%- if alts.length > 1 %}{% for a in alts %}{% if a.lang != lang %}
+<meta property="og:locale:alternate" content="{{ i18n[a.lang].locale }}">
+{%- endif %}{% endfor %}{% endif %}
 <meta property="og:type" content="{{ og.type }}">
 <meta property="og:title" content="{{ og.title | safe }}">
 <meta property="og:description" content="{{ description | safe }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="{{ site.url }}/media/{{ og.image }}">
-<meta property="og:image:secure_url" content="{{ site.url }}/media/{{ og.image }}">
+<meta property="og:image" content="{{ site.url }}/media/{{ lang }}/{{ og.image }}">
+<meta property="og:image:secure_url" content="{{ site.url }}/media/{{ lang }}/{{ og.image }}">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -34,7 +47,7 @@
 <meta name="twitter:creator" content="{{ site.twitter }}">
 <meta name="twitter:title" content="{{ og.title | safe }}">
 <meta name="twitter:description" content="{{ description | safe }}">
-<meta name="twitter:image" content="{{ site.url }}/media/{{ og.image }}">
+<meta name="twitter:image" content="{{ site.url }}/media/{{ lang }}/{{ og.image }}">
 <meta name="twitter:image:alt" content="{{ og.alt | safe }}">
 {%- endif %}
 <link rel="icon" href="{{ pre }}favicon.ico" sizes="32x32">
@@ -74,6 +87,34 @@
   }, { passive: true });
 })();
 </script>
+{%- if idiomas.live.length > 1 %}
+<script>
+/* Banner «esta página está disponible en tu idioma». Nunca redirige: Googlebot
+   rastrea con Accept-Language en-US y un salto automático desindexaría la
+   raíz. Se descarta con un clic y localStorage lo recuerda. */
+(function () {
+  try { if (localStorage.getItem("banner-idioma") === "no") return; } catch (e) {}
+  var textos = {{ idiomas.banner | dump | safe }};
+  var actual = document.documentElement.lang;
+  var alts = {}, links = document.querySelectorAll('link[rel="alternate"][hreflang]');
+  for (var i = 0; i < links.length; i++) { var h = links[i].getAttribute("hreflang"); if (h !== "x-default") alts[h] = links[i].getAttribute("href"); }
+  var prefs = navigator.languages || [navigator.language || ""], elegido = null;
+  for (var j = 0; j < prefs.length && !elegido; j++) {
+    var c = String(prefs[j] || "").slice(0, 2).toLowerCase();
+    if (c && c !== actual && alts[c] && textos[c]) elegido = c;
+  }
+  if (!elegido) return;
+  function pintar() {
+    var div = document.createElement("div"); div.className = "banner-idioma"; div.lang = elegido; div.setAttribute("role", "status");
+    var a = document.createElement("a"); a.href = alts[elegido]; a.hreflang = elegido; a.textContent = textos[elegido].texto;
+    var b = document.createElement("button"); b.type = "button"; b.textContent = "×"; b.setAttribute("aria-label", textos[elegido].cerrar);
+    b.addEventListener("click", function () { div.remove(); try { localStorage.setItem("banner-idioma", "no"); } catch (e) {} });
+    div.appendChild(a); div.appendChild(b); document.body.insertBefore(div, document.body.firstChild);
+  }
+  if (document.body) pintar(); else document.addEventListener("DOMContentLoaded", pintar);
+})();
+</script>
+{%- endif %}
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflare_token }}"}'></script>
 </head>
 <body>

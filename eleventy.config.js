@@ -50,8 +50,14 @@ module.exports = function (eleventyConfig) {
   // Enlace relativo a otra página del sitio: prefijo + URL sin la barra inicial.
   eleventyConfig.addFilter("enlace", (url, pre) => {
     if (!url) throw new Error("enlace: ruta vacía (¿key sin página en este idioma?)");
-    return pre + url.replace(/^\//, "");
+    return pre + url.replace(/^\//, "") || "./";
   });
+
+  // Entradas de nav o pie cuya página existe en este idioma (o son externas).
+  // Una key sin página todavía (traducción parcial) se omite sin romper el build.
+  eleventyConfig.addFilter("existentes", (items, rutasIdioma) =>
+    (items || []).filter((item) => !item.key || rutasIdioma?.[item.key]),
+  );
 
   // JSON-LD Person + WebSite de la home. Person lleva el mismo @id en todos
   // los idiomas (es la misma persona); WebSite es uno por idioma.
@@ -65,7 +71,7 @@ module.exports = function (eleventyConfig) {
       jobTitle: site.author.jobTitle,
       url: `${site.url}/`,
       mainEntityOfPage: `${site.url}/`,
-      image: `${site.url}/media/og-home.png`,
+      image: `${site.url}/media/${site.default_lang}/og-home.png`,
       knowsAbout: site.author.knowsAbout,
       knowsLanguage: site.author.knowsLanguage,
       sameAs: site.author.sameAs,
@@ -83,6 +89,24 @@ module.exports = function (eleventyConfig) {
     const tag = (o) => `<script type="application/ld+json">\n${JSON.stringify(o)}\n</script>`;
     return `${tag(person)}\n${tag(website)}`;
   });
+
+  // Versiones de una página (key) en los idiomas vivos, idioma base primero.
+  // Alimenta hreflang, og:locale:alternate, el selector y el sitemap.
+  eleventyConfig.addFilter("alternates", (routes, key, live) =>
+    live.filter((lang) => routes[lang]?.[key]).map((lang) => ({ lang, url: routes[lang][key] })),
+  );
+
+  // x-default: la versión en el idioma base, o su home si no existe.
+  eleventyConfig.addFilter("xdefault", (routes, key, base) => routes[base]?.[key] || routes[base]?.home);
+
+  // Destino del selector de idioma: la página equivalente o, si no existe en
+  // ese idioma, su home. Nunca un 404.
+  eleventyConfig.addFilter("destinoIdioma", (routes, key, lang) => routes[lang]?.[key] || routes[lang]?.home);
+
+  // Página de una colección por key e idioma (para el 404 multiidioma).
+  eleventyConfig.addFilter("pagina", (coleccion, key, lang) =>
+    coleccion.find((p) => p.data.key === key && p.data.lang === lang),
+  );
 
   // JSON-LD del libro a partir de data/editions/<lang>.yaml. El orden de las
   // claves reproduce el que tenía el HTML escrito a mano.
