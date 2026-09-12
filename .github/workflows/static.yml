@@ -1,4 +1,5 @@
-# Simple workflow for deploying static content to GitHub Pages
+# Genera el sitio con Eleventy y lo sube a GitHub Pages.
+# Un push a main es producción: si el build o el linter fallan, no se despliega.
 name: Deploy static content to Pages
 
 on:
@@ -22,7 +23,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -31,13 +31,28 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          # i18n-status compara commits: necesita el historial entero.
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Check i18n
+        run: npm run check
+      - name: Translation status
+        run: npm run status
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5

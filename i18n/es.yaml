@@ -1,0 +1,44 @@
+# Textos de interfaz en español. Es el idioma base: vive en la raíz.
+# Para añadir un idioma: copiar este fichero a i18n/<lang>.yaml, traducir, y
+# poner prefix: /<lang> y go_prefix (por ejemplo "go").
+code: es
+locale: es_ES
+label: Español
+prefix: ""          # "" = raíz del sitio; los demás idiomas usan "/en", "/fr"…
+go_prefix: ir       # carpeta de las páginas puente: /ir/kindle-es/
+
+saltar: Saltar al contenido
+marca: javivela.dev
+nav_label: Navegación principal
+
+# Barra de navegación. `key` enlaza con la página de ese key en este idioma;
+# `url` es un enlace externo. Un idioma puede tener menos entradas que otro.
+nav:
+  - { key: book, label: El libro }
+  - { key: glossary, label: Glosario }
+  - { key: whats-new-1-37, label: Kubernetes 1.37 }
+  - { label: Blog, url: "https://blog.javivela.dev", rel: me noopener }
+  - { label: GitHub, url: "https://github.com/fjvela", rel: me noopener }
+
+pie:
+  copyright: "© 2026 Javier Vela Aylón · www.javivela.dev"
+  enlaces:
+    - { key: book, label: Kubernetes 101 }
+    - { key: glossary, label: Glosario }
+    - { key: errata, label: Erratas }
+    - { key: bibliography, label: Bibliografía }
+    - { label: "@jvela", url: "https://x.com/jvela", rel: me noopener }
+
+compra:
+  comprar_en: comprar en
+
+puente:
+  abriendo:
+    amazon: Abriendo Amazon…
+    github: Abriendo GitHub…
+    substack: Abriendo la suscripción…
+    labs: Abriendo iximiuz Labs…
+  pulsa: Si no se abre solo, pulsa aquí
+  volver:
+    book: Volver a la ficha del libro
+    practice: Volver a la parte práctica

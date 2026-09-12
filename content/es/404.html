@@ -1,0 +1,58 @@
+---
+key: "404"
+permalink: "/404.html"
+base: "/"
+eleventyExcludeFromCollections: true
+title: "Página no encontrada (404) — javivela.dev"
+description: "La página que buscas no existe en javivela.dev. Vuelve al inicio, a la landing de Kubernetes 101 o al glosario de Kubernetes en español."
+robots: "noindex, follow"
+head: "minimo"
+css_base: false
+css: "404"
+---
+<main id="contenido">
+<div class="contenedor" style="max-width:860px;padding-top:56px;padding-bottom:72px">
+<p class="codigo-404" aria-hidden="true">404</p>
+<p class="eyebrow">Error 404 · Recurso no encontrado</p>
+<h1>Esta página no está en el clúster</h1>
+<p class="estrecho" style="margin:22px 0 30px;font-size:1.08rem;color:var(--texto-suave)">La URL que has pedido no existe, cambió de sitio o tiene una errata. Nada se ha roto: elige un destino de la lista y sigues donde lo dejaste.</p>
+
+<div class="terminal">
+<div class="terminal-barra"><span class="punto-t"></span><span class="punto-t"></span><span class="punto-t"></span><span class="terminal-tit">javivela.dev</span></div>
+<pre><span class="prompt">$</span> <span class="cmd">kubectl get page <span id="ruta">/la-ruta-que-buscabas</span> -n javivela.dev</span>
+<span class="err">Error from server (NotFound): pages "<span id="ruta2">la-ruta-que-buscabas</span>" not found</span>
+<span class="prompt">$</span> <span class="cmd">kubectl get pages -n javivela.dev</span>
+NAME                          STATUS    AGE
+home                          Running   2026
+kubernetes-101                Running   2026
+kubernetes-101/bibliografia   Running   2026
+kubernetes-101/erratas        Running   2026
+kubernetes-101/practica       Running   2026
+kubernetes/glosario           Running   2026
+kubernetes/novedades-1-37     Running   2026</pre>
+</div>
+
+<h2 style="font-size:1.15rem;margin:0 0 14px">Dónde ir ahora</h2>
+<ul class="destinos rejilla">
+<li><a href="/" data-evento="404-inicio"><strong>Inicio</strong><span>javivela.dev</span></a></li>
+<li><a href="/libros/kubernetes-101/" data-evento="404-libro"><strong>Kubernetes 101</strong><span>La landing del libro</span></a></li>
+<li><a href="/libros/kubernetes-101/practica/" data-evento="404-practica"><strong>Parte práctica</strong><span>55 laboratorios en 15 módulos</span></a></li>
+<li><a href="/kubernetes/glosario/" data-evento="404-glosario"><strong>Glosario</strong><span>158 términos en español</span></a></li>
+<li><a href="/kubernetes/novedades-1-37/" data-evento="404-novedades"><strong>Kubernetes 1.37</strong><span>Qué cambia en la nueva versión</span></a></li>
+<li><a href="/libros/kubernetes-101/erratas/" data-evento="404-erratas"><strong>Fe de erratas</strong><span>Correcciones de la edición 2026</span></a></li>
+<li><a href="/libros/kubernetes-101/bibliografia/" data-evento="404-bibliografia"><strong>Bibliografía</strong><span>Las fuentes citadas en el libro</span></a></li>
+</ul>
+
+<p class="dato" style="margin:26px 0 0">¿Has llegado desde una URL impresa en el libro? Dímelo en <a href="https://github.com/fjvela/kubernetes-101/issues" rel="noopener">GitHub</a> o en <a href="https://x.com/jvela" rel="me noopener">@jvela</a> y la arreglo.</p>
+</div>
+</main>
+<script>
+(function(){
+  "use strict";
+  var ruta = location.pathname + location.search;
+  if (!ruta || ruta === "/" || ruta.length > 120) return;
+  var a = document.getElementById("ruta"), b = document.getElementById("ruta2");
+  if (a) a.textContent = ruta;
+  if (b) b.textContent = ruta.replace(/^\//, "");
+})();
+</script>

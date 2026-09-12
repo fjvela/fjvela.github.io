@@ -1,0 +1,6 @@
+<footer class="pie">
+<div class="pie-int">
+<span class="m">{{ t.pie.copyright }}</span>
+<span class="m">{% for e in t.pie.enlaces %}{% if not loop.first %} · {% endif %}<a href="{% if e.key %}{{ collections.routes[lang][e.key] | enlace(pre) }}{% else %}{{ e.url }}{% endif %}"{% if e.rel %} rel="{{ e.rel }}"{% endif %}>{{ e.label }}</a>{% endfor %}</span>
+</div>
+</footer>

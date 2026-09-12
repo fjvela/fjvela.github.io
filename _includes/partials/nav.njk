@@ -1,0 +1,10 @@
+<nav class="nav" aria-label="{{ t.nav_label }}">
+<div class="nav-int">
+<a class="nav-marca m" href="{{ pre if pre else './' }}">{{ t.marca }}</a>
+<ul class="nav-lista">
+{%- for item in t.nav %}
+<li><a href="{% if item.key %}{{ collections.routes[lang][item.key] | enlace(pre) }}{% else %}{{ item.url }}{% endif %}"{% if item.rel %} rel="{{ item.rel }}"{% endif %}{% if item.key and item.key == key %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
+{%- endfor %}
+</ul>
+</div>
+</nav>

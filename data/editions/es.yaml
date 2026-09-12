@@ -1,0 +1,57 @@
+# Edición española de Kubernetes 101. Una sola fuente para la ficha, la
+# home, las páginas puente y el JSON-LD Book. Al cambiar un precio o un ASIN
+# se cambia aquí y en ningún otro sitio.
+lang: es
+title: Kubernetes 101
+headline: La guía en español para entender Kubernetes desde cero
+ld_description: "Guía en español para aprender Kubernetes desde cero, con 15 capítulos, 5 apéndices y una parte práctica de 55 laboratorios en 15 módulos, alojada en iximiuz Labs."
+edition_label: "Edición 2026 · Kubernetes 1.37"
+isbn: "9798184662862"
+pages: 365            # folios numerados; KDP cuenta 371 hojas (ver NOTAS-PUBLICACION.md)
+published: "2026-09-01"
+status: live          # preorder | live
+availability: InStock # schema.org: PreOrder | InStock
+price_valid_until: "2027-12-31"
+genre: Informática
+about: [Kubernetes, Contenedores, DevOps]
+cover: portada-kubernetes-101.png
+labs_course: kubernetes-101-1bdca3e4
+
+# Formatos y mercados. El primer mercado de cada formato es el de la oferta
+# del JSON-LD (precio, moneda, vendedor). El orden es el de la fila de compra.
+#   slug   → carpeta del puente: /ir/<slug>-<mercado>/
+#   evento → data-evento="<evento>-<mercado>-<hero|cierre>"
+formats:
+  - id: kindle
+    slug: kindle
+    evento: compra
+    ld_id: kindle
+    ld_format: EBook
+    name: "Kubernetes 101 · Edición Kindle"
+    label: Kindle
+    price_label: "12,99 €"
+    asin: B0H8VY2WRT
+    markets:
+      - { id: es, label: España, domain: amazon.es, price: "12.99", currency: EUR, seller: Amazon.es }
+      - { id: com, label: "EE. UU. y Latinoamérica", domain: amazon.com }
+      - { id: mx, label: México, domain: amazon.com.mx }
+  - id: paperback
+    slug: papel
+    evento: compra-papel
+    ld_id: papel
+    ld_format: Paperback
+    name: "Kubernetes 101 · Edición en papel"
+    label: Papel
+    price_label: "24,99 €"
+    asin: B0H96FM7FC
+    # KDP no imprime bajo demanda en México: no hay papel-mx (NOTAS-PUBLICACION.md).
+    markets:
+      - { id: es, label: España, domain: amazon.es, price: "24.99", currency: EUR, seller: Amazon.es }
+      - { id: com, label: "EE. UU. y Latinoamérica", domain: amazon.com }
+
+# Puentes que no son de Amazon. `abriendo` es la clave del texto en i18n;
+# `volver` es el key de la página a la que vuelve el enlace de abajo.
+puentes:
+  - { id: github, url: "https://github.com/fjvela/kubernetes-101", abriendo: github, volver: book }
+  - { id: substack, url: "https://blog.javivela.dev/subscribe", abriendo: substack, volver: book }
+  - { id: labs, url: "https://labs.iximiuz.com/signup?referral=6a817bab02dbaa512df09237", abriendo: labs, volver: practice }
