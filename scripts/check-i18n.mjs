@@ -85,6 +85,10 @@ for (const file of walk(CONTENT, (p) => p.endsWith(".html"))) {
 }
 for (const [lang, keys] of Object.entries(paginas)) {
   if (!i18n[lang]) errores.push(`falta i18n/${lang}.yaml`);
+  const edicion = path.join(RAIZ, "data", "editions", `${lang}.yaml`);
+  if (vivos.includes(lang) && fs.existsSync(edicion) && fs.readFileSync(edicion, "utf8").includes("PENDIENTE")) {
+    errores.push(`data/editions/${lang}.yaml tiene datos PENDIENTE y el idioma está live`);
+  }
   if (keys.book && !fs.existsSync(path.join(RAIZ, "data", "editions", `${lang}.yaml`))) errores.push(`falta data/editions/${lang}.yaml`);
   if (lang === BASE) continue;
   for (const key of Object.keys(keys)) {

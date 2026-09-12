@@ -1,0 +1,63 @@
+# Textos de las imágenes Open Graph por idioma (tools/og/render.mjs).
+# Claves = tipo → media/<lang>/og-<tipo>.png. `portada: true` añade la
+# portada de data/editions/<lang>.yaml a la derecha.
+es:
+  home:
+    eyebrow: javivela.dev
+    titulo: Javier Vela Aylón
+    subtitulo: "Senior Platform Engineer · +20 años · Autor de Kubernetes 101"
+  book:
+    eyebrow: "Libro · Español · 1 sep 2026"
+    titulo: Kubernetes 101
+    subtitulo: "La guía en español para entender Kubernetes desde cero, con un laboratorio por capítulo."
+    portada: true
+  glossary:
+    eyebrow: "Kubernetes · Glosario"
+    titulo: Glosario de Kubernetes en español
+    subtitulo: "160 entradas: las 74 siglas del apéndice de Kubernetes 101 y 86 conceptos del ecosistema."
+    tamano: 56
+  whats-new-1-37:
+    eyebrow: "Kubernetes 1.37 · Novedades"
+    titulo: Novedades de Kubernetes 1.37
+    subtitulo: "Qué cambia y qué te toca hacer, explicado en español."
+    tamano: 56
+  errata:
+    eyebrow: "Kubernetes 101 · Erratas"
+    titulo: Erratas de Kubernetes 101
+    subtitulo: "Correcciones a la edición española, con número de página."
+    tamano: 56
+  practice:
+    eyebrow: "Kubernetes 101 · Parte práctica"
+    titulo: 55 laboratorios en un clúster real
+    subtitulo: "Abiertos y gratis, en el navegador, sin instalar nada."
+    tamano: 56
+en:
+  home:
+    eyebrow: javivela.dev
+    titulo: Javier Vela Aylón
+    subtitulo: "Senior Platform Engineer · 20+ years · Author of Kubernetes 101"
+  book:
+    eyebrow: "Book · English · 2026"
+    titulo: Kubernetes 101
+    subtitulo: "The practical guide to understanding Kubernetes from scratch, with a lab for every chapter."
+    portada: true
+  glossary:
+    eyebrow: "Kubernetes · Glossary"
+    titulo: Kubernetes glossary
+    subtitulo: "160 entries: the 74 acronyms from the Kubernetes 101 appendix and 86 concepts from the ecosystem."
+    tamano: 56
+  whats-new-1-37:
+    eyebrow: "Kubernetes 1.37 · What's new"
+    titulo: What's new in Kubernetes 1.37
+    subtitulo: "What changes and what you need to do about it."
+    tamano: 56
+  errata:
+    eyebrow: "Kubernetes 101 · Errata"
+    titulo: Kubernetes 101 errata
+    subtitulo: "Corrections to the English edition, with page numbers."
+    tamano: 56
+  practice:
+    eyebrow: "Kubernetes 101 · Hands-on part"
+    titulo: 55 labs on a real cluster
+    subtitulo: "Open and free, in your browser, nothing to install."
+    tamano: 56
