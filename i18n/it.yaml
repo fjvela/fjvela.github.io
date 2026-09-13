@@ -4,7 +4,7 @@ locale: it_IT
 label: Italiano
 prefix: "/it"
 go_prefix: go
-status: draft
+status: live
 
 saltar: Vai al contenuto
 marca: javivela.dev
@@ -44,3 +44,11 @@ idiomas_label: Lingua
 banner:
   texto: Questa pagina è disponibile in italiano
   cerrar: Chiudi
+
+# Aviso mientras la edición no está a la venta (data/editions/it.yaml status != live).
+beta:
+  titulo: "Cerco lettori beta."
+  texto: "L’edizione italiana è tradotta. Uscirà quando avrò il feedback di alcuni lettori beta. Se vuoi essere uno di loro, dimmelo:"
+  github: "apri una issue su GitHub"
+  github_url: "https://github.com/fjvela/kubernetes-101/issues/new?title=Lettore%20beta%3A%20edizione%20italiana"
+  x: "scrivimi su X"

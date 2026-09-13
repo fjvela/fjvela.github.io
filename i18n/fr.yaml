@@ -4,7 +4,7 @@ locale: fr_FR
 label: Français
 prefix: "/fr"
 go_prefix: go
-status: draft
+status: live
 
 saltar: Aller au contenu
 marca: javivela.dev
@@ -44,3 +44,11 @@ idiomas_label: Langue
 banner:
   texto: Cette page est disponible en français
   cerrar: Fermer
+
+# Aviso mientras la edición no está a la venta (data/editions/fr.yaml status != live).
+beta:
+  titulo: "Lecteurs bêta recherchés."
+  texto: "L’édition française est traduite. Elle sortira quand j’aurai les retours de quelques lecteurs bêta. Si tu veux en faire partie, dis-le-moi :"
+  github: "ouvre une issue sur GitHub"
+  github_url: "https://github.com/fjvela/kubernetes-101/issues/new?title=Lecteur%20b%C3%AAta%20%3A%20%C3%A9dition%20fran%C3%A7aise"
+  x: "écris-moi sur X"

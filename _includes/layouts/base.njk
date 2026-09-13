@@ -19,7 +19,10 @@
 <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ collections.routes | xdefault(key, site.default_lang) }}">
 {%- endif %}
 {%- endif %}
-<meta name="robots" content="{{ robots or 'index, follow, max-image-preview:large' }}">
+{#- Un idioma en draft se despliega (para revisarlo en su prefijo) pero no se
+    indexa: lleva precios y datos PENDIENTE. Al pasar a live, el robots de
+    cada página vuelve a mandar. #}
+<meta name="robots" content="{% if t.status != 'live' %}noindex, follow{% else %}{{ robots or 'index, follow, max-image-preview:large' }}{% endif %}">
 {%- if head == "minimo" %}
 <meta name="googlebot" content="{{ robots }}">
 {%- endif %}
@@ -89,6 +92,18 @@
 </script>
 {%- if idiomas.live.length > 1 %}
 <script>
+/* Desplegable de idioma: se cierra al pulsar fuera o con Escape. Sin JS
+   sigue funcionando (details abre y cierra solo). */
+(function () {
+  function cerrar(salvo) {
+    var abiertos = document.querySelectorAll("details.idioma[open]");
+    for (var i = 0; i < abiertos.length; i++) if (abiertos[i] !== salvo) abiertos[i].removeAttribute("open");
+  }
+  document.addEventListener("click", function (e) { cerrar(e.target.closest ? e.target.closest("details.idioma") : null); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") cerrar(null); });
+})();
+</script>
+<script>
 /* Banner «esta página está disponible en tu idioma». Nunca redirige: Googlebot
    rastrea con Accept-Language en-US y un salto automático desindexaría la
    raíz. Se descarta con un clic y localStorage lo recuerda. */
@@ -120,6 +135,9 @@
 <body>
 <a class="saltar" href="#contenido">{{ t.saltar }}</a>
 {% include "partials/nav.njk" %}
+{%- if edition and edition.status != "live" and t.beta %}
+<div class="contenedor" style="padding-top:22px"><div class="aviso" role="note"><strong>{{ t.beta.titulo }}</strong> {{ t.beta.texto }} <a href="{{ t.beta.github_url }}" rel="noopener" data-evento="beta-github">{{ t.beta.github }}</a> · <a href="https://x.com/jvela" rel="me noopener" data-evento="beta-x">{{ t.beta.x }}</a>.</div></div>
+{%- endif %}
 {{ content | safe }}{% include "partials/footer.njk" %}
 </body>
 </html>

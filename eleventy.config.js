@@ -118,6 +118,10 @@ module.exports = function (eleventyConfig) {
       url: site.url + "/",
       sameAs: site.author.sameAs,
     };
+    // Una edición que aún no está a la venta no declara ofertas, ASIN, ISBN
+    // ni fecha: llevan PENDIENTE hasta que KDP los asigne.
+    const enVenta = ed.status === "live";
+    const dato = (v) => (v && v !== "PENDIENTE" ? v : undefined);
     const workExample = ed.formats.map((f) => {
       const m = f.markets[0];
       const ex = {
@@ -130,8 +134,9 @@ module.exports = function (eleventyConfig) {
       };
       if (f.id === "paperback") {
         ex.numberOfPages = ed.pages;
-        ex.isbn = ed.isbn;
+        if (dato(ed.isbn)) ex.isbn = ed.isbn;
       }
+      if (!enVenta) return ex;
       ex.identifier = { "@type": "PropertyValue", propertyID: "ASIN", value: f.asin };
       ex.offers = {
         "@type": "Offer",
@@ -153,9 +158,9 @@ module.exports = function (eleventyConfig) {
       image: `${site.url}/media/${ed.cover}`,
       inLanguage: lang,
       bookEdition: ed.edition_label,
-      isbn: ed.isbn,
+      isbn: dato(ed.isbn),
       numberOfPages: ed.pages,
-      datePublished: ed.published,
+      datePublished: dato(ed.published),
       genre: ed.genre,
       about: ed.about,
       author,
