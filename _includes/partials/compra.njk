@@ -1,2 +1,2 @@
-{% for f in edition.formats %}<p class="compra"{% if not loop.last %} style="margin-bottom:8px"{% endif %}><span>{{ f.label }} · {{ f.price_label }} · {{ t.compra.comprar_en }}</span>{% for m in f.markets %}<a href="{{ t.prefix }}/{{ t.go_prefix }}/{{ f.slug }}-{{ m.id }}/" target="_blank" rel="noopener" data-evento="{{ f.evento }}-{{ m.id }}-{{ pos }}">{{ m.label }}</a>{% endfor %}</p>{% if not loop.last %}
-{% endif %}{% endfor %}
+{% if edition.status == "live" %}{% for f in edition.formats %}<p class="compra"{% if not loop.last %} style="margin-bottom:8px"{% endif %}><span>{{ f.label }} · {{ f.price_label }} · {{ t.compra.comprar_en }}</span>{% for m in f.markets %}<a href="{{ t.prefix }}/{{ t.go_prefix }}/{{ f.slug }}-{{ m.id }}/" target="_blank" rel="noopener" data-evento="{{ f.evento }}-{{ m.id }}-{{ pos }}">{{ m.label }}</a>{% endfor %}</p>{% if not loop.last %}
+{% endif %}{% endfor %}{% endif %}

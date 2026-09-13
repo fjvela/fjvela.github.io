@@ -10,7 +10,9 @@ for (const [lang, ed] of Object.entries(editions)) {
   const t = i18n[lang];
   if (!t) throw new Error(`data/editions/${lang}.yaml sin i18n/${lang}.yaml`);
   const base = `${t.prefix}/${t.go_prefix}/`;
-  for (const f of ed.formats) {
+  // Los puentes a Amazon solo existen cuando la edición está a la venta:
+  // antes no hay ASIN (PENDIENTE) y la ficha no muestra botones de compra.
+  for (const f of ed.status === "live" ? ed.formats : []) {
     for (const m of f.markets) {
       puentes.push({
         lang,

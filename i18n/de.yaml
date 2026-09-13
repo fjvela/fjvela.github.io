@@ -4,7 +4,7 @@ locale: de_DE
 label: Deutsch
 prefix: "/de"
 go_prefix: go
-status: draft
+status: live
 
 saltar: Zum Inhalt springen
 marca: javivela.dev
@@ -44,3 +44,11 @@ idiomas_label: Sprache
 banner:
   texto: Diese Seite gibt es auch auf Deutsch
   cerrar: Schließen
+
+# Aviso mientras la edición no está a la venta (data/editions/de.yaml status != live).
+beta:
+  titulo: "Betaleser gesucht."
+  texto: "Die deutsche Ausgabe ist übersetzt. Sie erscheint, sobald ich Rückmeldungen von einigen Betalesern habe. Wenn du dabei sein willst, sag mir Bescheid:"
+  github: "eröffne ein Issue auf GitHub"
+  github_url: "https://github.com/fjvela/kubernetes-101/issues/new?title=Betaleser%3A%20deutsche%20Ausgabe"
+  x: "schreib mir auf X"

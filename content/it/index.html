@@ -34,7 +34,7 @@ sitemap:
 <div>
 <h2 id="t-libro" style="font-size:1.6rem">Kubernetes 101</h2>
 <p class="suave" style="margin:10px 0 14px">La guida pratica per capire Kubernetes partendo da zero: 15 capitoli, 5 appendici e una parte pratica con 55 laboratori su un cluster reale. {{ edition.pages }} pagine, edizione 2026 · Kubernetes 1.37.</p>
-<p style="margin:0 0 12px;display:flex;flex-wrap:wrap;gap:12px"><a class="btn" href="libri/kubernetes-101/" data-evento="home-ver-libro">Vedi il libro</a><a class="btn btn-sec" href="libri/kubernetes-101/#suscripcion" data-evento="home-capitulo-gratis">Leggi gratis l’inizio del libro</a></p><p class="dato" style="margin:0">Kindle {{ edition.formats[0].price_label }} · cartaceo {{ edition.formats[1].price_label }} · su Amazon.it e .com</p>
+<p style="margin:0 0 12px;display:flex;flex-wrap:wrap;gap:12px"><a class="btn" href="libri/kubernetes-101/" data-evento="home-ver-libro">Vedi il libro</a><a class="btn btn-sec" href="libri/kubernetes-101/#suscripcion" data-evento="home-capitulo-gratis">Leggi gratis l’inizio del libro</a></p>{% if edition.status == "live" %}<p class="dato" style="margin:0">Kindle {{ edition.formats[0].price_label }} · cartaceo {{ edition.formats[1].price_label }} · su Amazon.it e .com</p>{% endif %}
 </div>
 </div>
 </div>

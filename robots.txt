@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /ir/
+Disallow: /*/go/
 Disallow: /libros/kubernetes-101/downloads/
 
 Sitemap: https://www.javivela.dev/sitemap.xml

@@ -85,9 +85,11 @@ for (const file of walk(CONTENT, (p) => p.endsWith(".html"))) {
 }
 for (const [lang, keys] of Object.entries(paginas)) {
   if (!i18n[lang]) errores.push(`falta i18n/${lang}.yaml`);
+  // Una edición a la venta (status: live en su YAML) no puede tener datos PENDIENTE.
   const edicion = path.join(RAIZ, "data", "editions", `${lang}.yaml`);
-  if (vivos.includes(lang) && fs.existsSync(edicion) && fs.readFileSync(edicion, "utf8").includes("PENDIENTE")) {
-    errores.push(`data/editions/${lang}.yaml tiene datos PENDIENTE y el idioma está live`);
+  if (fs.existsSync(edicion)) {
+    const ed = yaml.load(fs.readFileSync(edicion, "utf8"));
+    if (ed.status === "live" && JSON.stringify(ed).includes("PENDIENTE")) errores.push(`data/editions/${lang}.yaml: status live con datos PENDIENTE`);
   }
   if (keys.book && !fs.existsSync(path.join(RAIZ, "data", "editions", `${lang}.yaml`))) errores.push(`falta data/editions/${lang}.yaml`);
   if (lang === BASE) continue;
@@ -170,6 +172,12 @@ if (!fs.existsSync(SITE)) {
       const otro = og.match(/^([a-z]{2})\//)?.[1];
       if (otro && otro !== lang) errores.push(`${rel}: og:image de otro idioma (${og})`);
     }
+
+    // Ningún PENDIENTE puede llegar al HTML de un idioma vivo.
+    if (vivos.includes(lang) && /PENDIENTE/.test(html.replace(/<!--[\s\S]*?-->/g, ""))) errores.push(`${rel}: PENDIENTE visible en un idioma live`);
+
+    // Un idioma que no está live no puede indexarse (lleva PENDIENTE).
+    if (lang !== BASE && !vivos.includes(lang) && !/<meta name="robots" content="noindex/.test(html)) errores.push(`${rel}: idioma ${lang} en draft sin noindex`);
 
     const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
     if (canonical && !/noindex/.test(html) && canonical !== site.url + url) errores.push(`${rel}: canonical ${canonical} ≠ ${site.url + url}`);

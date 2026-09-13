@@ -4,7 +4,7 @@ locale: pt_BR
 label: Português
 prefix: "/pt"
 go_prefix: go
-status: draft
+status: live
 
 saltar: Pular para o conteúdo
 marca: javivela.dev
@@ -44,3 +44,11 @@ idiomas_label: Idioma
 banner:
   texto: Esta página está disponível em português
   cerrar: Fechar
+
+# Aviso mientras la edición no está a la venta (data/editions/pt.yaml status != live).
+beta:
+  titulo: "Procuro leitores beta."
+  texto: "A edição em português está traduzida. Ela será lançada quando eu tiver o retorno de alguns leitores beta. Se você quiser ser um deles, me avise:"
+  github: "abra uma issue no GitHub"
+  github_url: "https://github.com/fjvela/kubernetes-101/issues/new?title=Leitor%20beta%3A%20edi%C3%A7%C3%A3o%20em%20portugu%C3%AAs"
+  x: "me escreva no X"

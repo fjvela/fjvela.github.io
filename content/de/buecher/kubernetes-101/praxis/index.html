@@ -28,7 +28,7 @@ jsonld: |
 <p class="eyebrow">Praxisteil</p>
 <h1>Willkommen im Praxisteil von Kubernetes 101</h1>
 <p style="margin:22px 0 28px;font-size:1.08rem"><strong>55 Labs in 15 Modulen</strong>, mit 7 <em>Challenges</em> – die letzte davon ist die finale Challenge. Offen und kostenlos: Du musst weder das Buch kaufen noch einen Code eingeben noch irgendetwas validieren. Ein echter Kubernetes-Cluster in deinem Browser, ohne etwas auf deinem Rechner zu installieren.</p>
-<div class="botonera" style="margin:0"><a class="btn" href="../../../../de/go/labs/" data-evento="referral-labs-cta">Kostenloses Konto anlegen</a><a class="btn btn-sec" href="https://labs.iximiuz.com/courses/{{ edition.labs_course }}" rel="noopener" data-evento="labs-curso-cta">Zu den Labs →</a></div>
+<div class="botonera" style="margin:0"><a class="btn" href="../../../../de/go/labs/" data-evento="referral-labs-cta">Kostenloses Konto anlegen</a>{% if edition.labs_course != "PENDIENTE" %}<a class="btn btn-sec" href="https://labs.iximiuz.com/courses/{{ edition.labs_course }}" rel="noopener" data-evento="labs-curso-cta">Zu den Labs →</a>{% endif %}</div>
 </div>
 
 <section class="seccion" aria-labelledby="t-como" style="margin-top:56px">

@@ -37,7 +37,7 @@ jsonld: |
 <p class="suave" style="margin:20px 0 8px;font-size:1.1rem;max-width:56ch">15 chapitres, 5 annexes et une partie pratique de 55 laboratoires sur un vrai cluster, sans rien installer. Tu lis le concept et tu l’essaies aussitôt.</p>
 <p class="dato" style="margin:0 0 24px">{{ edition.pages }} pages · Édition 2026 · Kubernetes 1.37 · Kindle et papier</p>
 <div class="botonera" style="margin:0 0 12px">
-<a class="btn" href="/fr/go/kindle-fr/" target="_blank" rel="noopener" data-evento="compra-kindle-hero">Acheter sur Kindle · {{ edition.formats[0].price_label }}</a>
+{% if edition.status == "live" %}<a class="btn" href="/fr/go/kindle-fr/" target="_blank" rel="noopener" data-evento="compra-kindle-hero">Acheter sur Kindle · {{ edition.formats[0].price_label }}</a>{% endif %}
 <a class="btn btn-sec" href="#suscripcion" data-evento="capitulo-gratis-hero">Lire gratuitement le début du livre</a>
 </div>
 {% set pos = "hero" %}{% include "partials/compra.njk" %}
@@ -542,7 +542,7 @@ jsonld: |
 <h2 id="t-cierre">D’un Pod isolé à un système que tu comprends</h2>
 <p class="estrecho" style="margin:16px 0 24px">{{ edition.pages }} pages, 15 chapitres, 5 annexes et 55 laboratoires sur un vrai cluster. Bâti sur Kubernetes 1.37, la version de référence du livre.</p>
 <div class="botonera" style="margin:0 0 14px">
-<a class="btn" href="/fr/go/kindle-fr/" target="_blank" rel="noopener" data-evento="compra-kindle-cierre">Acheter sur Kindle · {{ edition.formats[0].price_label }}</a>
+{% if edition.status == "live" %}<a class="btn" href="/fr/go/kindle-fr/" target="_blank" rel="noopener" data-evento="compra-kindle-cierre">Acheter sur Kindle · {{ edition.formats[0].price_label }}</a>{% endif %}
 <a class="btn btn-sec" href="#suscripcion" data-evento="capitulo-gratis-cierre">Lire gratuitement le début du livre</a>
 </div>
 {% set pos = "cierre" %}{% include "partials/compra.njk" %}
@@ -637,10 +637,12 @@ jsonld: |
   })(cajas[c]);
 })();
 </script>
+{% if edition.status == "live" %}
 <div class="barra" id="barra-compra" aria-hidden="true">
 <span class="m">Kindle {{ edition.formats[0].price_label }} · papier {{ edition.formats[1].price_label }}</span>
 <a class="btn btn-min" href="/fr/go/kindle-fr/" target="_blank" rel="noopener" data-evento="compra-kindle-barra">Acheter</a>
 </div>
+{% endif %}
 <script>
 /* Barre d'achat fixe sur mobile : elle apparaît une fois le hero passé et disparaît
    quand le CTA de clôture est déjà à l'écran, pour ne pas dupliquer le bouton. */

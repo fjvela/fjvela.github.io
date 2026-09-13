@@ -54,6 +54,18 @@ impresos en cada edición del libro, así que no se cambian):
    selector en nav y pie, los `hreflang`, los `og:locale:alternate`, las
    entradas del sitemap con alternates, la sección del 404 y el banner.
 
+Son dos estados distintos:
+
+- `i18n/<lang>.yaml` → `status: live`: el **idioma se anuncia** (selector,
+  hreflang, sitemap, indexable). En `draft` se construye con `noindex`.
+- `data/editions/<lang>.yaml` → `status: live`: el **libro está a la
+  venta**. Hasta entonces (`preorder`) la ficha no muestra botones ni filas
+  de compra, no se generan los puentes a Amazon, el JSON-LD no lleva
+  ofertas, y todas las páginas del idioma abren con el aviso `beta:` de su
+  `i18n/<lang>.yaml` («la edición está traducida; busco lectores beta»).
+  Al pasar a `live` no puede quedar ningún `PENDIENTE` en el YAML, y el
+  linter comprueba que ningún `PENDIENTE` llega al HTML.
+
 ## Mantener
 
 - Cuando cambia una página española, `make status` lista qué traducciones

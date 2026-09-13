@@ -8,7 +8,7 @@ go_prefix: go       # bridge pages: /en/go/kindle-com/
 # draft: builds under /en/ for review but is not announced (no hreflang,
 # selector, sitemap, banner or 404 section). Switch to live when the
 # English edition is on sale and data/editions/en.yaml has no PENDIENTE.
-status: draft
+status: live
 
 saltar: Skip to content
 marca: javivela.dev
@@ -48,3 +48,11 @@ idiomas_label: Language
 banner:
   texto: This page is available in English
   cerrar: Close
+
+# Aviso mientras la edición no está a la venta (data/editions/en.yaml status != live).
+beta:
+  titulo: "Beta readers wanted."
+  texto: "The English edition is translated. It will be released once I get feedback from a few beta readers. If you would like to be one of them, tell me:"
+  github: "open an issue on GitHub"
+  github_url: "https://github.com/fjvela/kubernetes-101/issues/new?title=Beta%20reader%3A%20English%20edition"
+  x: "message me on X"
